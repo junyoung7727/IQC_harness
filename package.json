@@ -1,0 +1,17 @@
+{
+  "name": "worldquant-multi-agent-harness",
+  "version": "0.1.0",
+  "type": "module",
+  "bin": {
+    "alp": "./src/harness/cli.js"
+  },
+  "scripts": {
+    "test": "node --test tests/**/*.test.js",
+    "start:server": "node ./src/harness/server.js",
+    "worker": "node ./src/harness/cli.js worker run",
+    "normalize-db": "node ./scripts/normalize-current-db.mjs"
+  },
+  "dependencies": {
+    "playwright": "1.60.0"
+  }
+}

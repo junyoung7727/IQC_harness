@@ -1,0 +1,691 @@
+﻿hypothesis:
+Credit stress and carry divergence implies delayed repricing in stressed balance-sheet periods.
+expression:
+sig_610 = (cds_basis_610 / (oif_spread_610 + 1)) - credit_hist_610
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_610 = (cds_basis_610 / (oif_spread_610 + 1)) - credit_hist_610" --submitted-by heph-ultrawork-generator --hypothesis "Credit stress and carry divergence implies delayed repricing in stressed balance-sheet periods."
+submit_result:
+status=accepted
+alpha_id=1454
+state=pending
+max_similarity=0.4102564102564103
+
+hypothesis:
+Short squeeze risk rises when short positioning adjusts faster than realized option volatility.
+expression:
+sig_611 = (oi_short_611 + oi_change_611) / (oi_iv_611 + 1)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_611 = (oi_short_611 + oi_change_611) / (oi_iv_611 + 1)" --submitted-by heph-ultrawork-generator --hypothesis "Short squeeze risk rises when short positioning adjusts faster than realized option volatility."
+submit_result:
+status=accepted
+alpha_id=1455
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Earnings-disagreement persistence versus price trend reveals lagged sentiment correction.
+expression:
+sig_612 = (rev_acc_612 - eps_surprise_612) - (price_gap_612 / 2)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_612 = (rev_acc_612 - eps_surprise_612) - (price_gap_612 / 2)" --submitted-by heph-ultrawork-generator --hypothesis "Earnings-disagreement persistence versus price trend reveals lagged sentiment correction."
+submit_result:
+status=accepted
+alpha_id=1456
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Supply-chain tension and demand surprise combination can signal a temporary repricing pivot.
+expression:
+sig_613 = (supply_chain_gap_613 * lead_indicator_613) - macro_vol_613
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_613 = (supply_chain_gap_613 * lead_indicator_613) - macro_vol_613" --submitted-by heph-ultrawork-generator --hypothesis "Supply-chain tension and demand surprise combination can signal a temporary repricing pivot."
+submit_result:
+status=accepted
+alpha_id=1457
+state=pending
+max_similarity=0.3636363636363636
+
+hypothesis:
+Narrative intensity moving against guidance is a leading signal of regime flips.
+expression:
+sig_614 = (headline_disp_614 - guide_renew_614) + (sentiment_iv_614 / 3)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_614 = (headline_disp_614 - guide_renew_614) + (sentiment_iv_614 / 3)" --submitted-by heph-ultrawork-generator --hypothesis "Narrative intensity moving against guidance is a leading signal of regime flips."
+submit_result:
+status=accepted
+alpha_id=1458
+state=pending
+max_similarity=0.38095238095238093
+
+cycle_number: 121
+accepted_count: 5
+rejected_count: 0
+accepted_alpha_ids: 1454, 1455, 1456, 1457, 1458
+rejected_similarity_cases: none
+
+ULTRAWORK_PROGRESS total_accepted=5 total_rejected=0 sequence=614
+--------------------------------------------------
+
+hypothesis:
+Forward expectation compression versus dispersion shock can indicate short-lived overreaction.
+expression:
+sig_615 = (fwd_est_615 - fwd_disc_615) / (corr_shock_615 + 1)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_615 = (fwd_est_615 - fwd_disc_615) / (corr_shock_615 + 1)" --submitted-by heph-ultrawork-generator --hypothesis "Forward expectation compression versus dispersion shock can indicate short-lived overreaction."
+submit_result:
+status=accepted
+alpha_id=1459
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Financing friction and short pressure interact with fast drift to extend downside continuation.
+expression:
+sig_616 = (short_interest_616 * borrow_cost_616) - (drift_fast_616 / 2)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_616 = (short_interest_616 * borrow_cost_616) - (drift_fast_616 / 2)" --submitted-by heph-ultrawork-generator --hypothesis "Financing friction and short pressure interact with fast drift to extend downside continuation."
+submit_result:
+status=accepted
+alpha_id=1460
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Leadership changes and leverage drag can decouple from headline momentum.
+expression:
+sig_617 = (insider_rate_617 - leverage_proxy_617) / (equity_risk_617 + 1)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_617 = (insider_rate_617 - leverage_proxy_617) / (equity_risk_617 + 1)" --submitted-by heph-ultrawork-generator --hypothesis "Leadership changes and leverage drag can decouple from headline momentum."
+submit_result:
+status=accepted
+alpha_id=1461
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Steady buy pressure against low carry is often transitory and gets re-priced quickly.
+expression:
+sig_618 = (buy_pressure_618 - carry_alpha_618) / (micro_vol_618 + 1)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_618 = (buy_pressure_618 - carry_alpha_618) / (micro_vol_618 + 1)" --submitted-by heph-ultrawork-generator --hypothesis "Steady buy pressure against low carry is often transitory and gets re-priced quickly."
+submit_result:
+status=accepted
+alpha_id=1462
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Spread widening plus directional flow imbalance highlights delayed regime transitions.
+expression:
+sig_619 = (option_spread_619 * equity_flow_619) - (factor_beta_619 / 2)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_619 = (option_spread_619 * equity_flow_619) - (factor_beta_619 / 2)" --submitted-by heph-ultrawork-generator --hypothesis "Spread widening plus directional flow imbalance highlights delayed regime transitions."
+submit_result:
+status=accepted
+alpha_id=1463
+state=pending
+max_similarity=0.38095238095238093
+
+cycle_number: 122
+accepted_count: 5
+rejected_count: 0
+accepted_alpha_ids: 1459, 1460, 1461, 1462, 1463
+rejected_similarity_cases: none
+
+ULTRAWORK_PROGRESS total_accepted=10 total_rejected=0 sequence=619
+--------------------------------------------------
+
+hypothesis:
+Quality-growth divergence can produce a short-lived correction once tail risk rises.
+expression:
+sig_620 = (quality_mis_620 + growth_surprise_620) - tail_risk_620
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_620 = (quality_mis_620 + growth_surprise_620) - tail_risk_620" --submitted-by heph-ultrawork-generator --hypothesis "Quality-growth divergence can produce a short-lived correction once tail risk rises."
+submit_result:
+status=accepted
+alpha_id=1464
+state=pending
+max_similarity=0.3636363636363636
+
+hypothesis:
+Revision shocks paired with liquidity strain and repo flow indicate temporary value transfer.
+expression:
+sig_621 = (rev_gap_621 - (tail_vol_621 + 1)) * (repo_flow_621 / 2)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_621 = (rev_gap_621 - (tail_vol_621 + 1)) * (repo_flow_621 / 2)" --submitted-by heph-ultrawork-generator --hypothesis "Revision shocks paired with liquidity strain and repo flow indicate temporary value transfer."
+submit_result:
+status=accepted
+alpha_id=1465
+state=pending
+max_similarity=0.4166666666666667
+
+hypothesis:
+Skew changes against profitability drift often predate a short dislocation phase.
+expression:
+sig_622 = (skew_delta_622 + roa_delta_622) / (iv_rank_622 + 1)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_622 = (skew_delta_622 + roa_delta_622) / (iv_rank_622 + 1)" --submitted-by heph-ultrawork-generator --hypothesis "Skew changes against profitability drift often predate a short dislocation phase."
+submit_result:
+status=accepted
+alpha_id=1466
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Value gaps compress slowly while short-term momentum shifts, especially under flow imbalance.
+expression:
+sig_623 = (momentum_regime_623 - value_gap_623) + (liq_imbalance_623 / 4)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_623 = (momentum_regime_623 - value_gap_623) + (liq_imbalance_623 / 4)" --submitted-by heph-ultrawork-generator --hypothesis "Value gaps compress slowly while short-term momentum shifts, especially under flow imbalance."
+submit_result:
+status=accepted
+alpha_id=1467
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Repricing lags when revision gaps diverge from revised guidance risk in volatility-adjusted naming.
+expression:
+sig_624 = (rev_gap_624 - guide_miss_624) / (iv_skew_624 + 1)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_624 = (rev_gap_624 - guide_miss_624) / (iv_skew_624 + 1)" --submitted-by heph-ultrawork-generator --hypothesis "Repricing lags when revision gaps diverge from revised guidance risk in volatility-adjusted naming."
+submit_result:
+status=accepted
+alpha_id=1468
+state=pending
+max_similarity=0.38095238095238093
+
+cycle_number: 123
+accepted_count: 5
+rejected_count: 0
+accepted_alpha_ids: 1464, 1465, 1466, 1467, 1468
+rejected_similarity_cases: none
+
+ULTRAWORK_PROGRESS total_accepted=15 total_rejected=0 sequence=624
+--------------------------------------------------
+
+hypothesis:
+Flow pressure versus dispersion expectation creates a transient mispricing regime.
+expression:
+sig_625 = (fund_flow_625 - est_disp_625) * (ret_roll_625 - 1)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_625 = (fund_flow_625 - est_disp_625) * (ret_roll_625 - 1)" --submitted-by heph-ultrawork-generator --hypothesis "Flow pressure versus dispersion expectation creates a transient mispricing regime."
+submit_result:
+status=accepted
+alpha_id=1469
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Credit stress and carry divergence implies delayed repricing in stressed balance-sheet periods.
+expression:
+sig_626 = (cds_basis_626 / (oif_spread_626 + 1)) - credit_hist_626
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_626 = (cds_basis_626 / (oif_spread_626 + 1)) - credit_hist_626" --submitted-by heph-ultrawork-generator --hypothesis "Credit stress and carry divergence implies delayed repricing in stressed balance-sheet periods."
+submit_result:
+status=accepted
+alpha_id=1470
+state=pending
+max_similarity=0.4102564102564103
+
+hypothesis:
+Short squeeze risk rises when short positioning adjusts faster than realized option volatility.
+expression:
+sig_627 = (oi_short_627 + oi_change_627) / (oi_iv_627 + 1)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_627 = (oi_short_627 + oi_change_627) / (oi_iv_627 + 1)" --submitted-by heph-ultrawork-generator --hypothesis "Short squeeze risk rises when short positioning adjusts faster than realized option volatility."
+submit_result:
+status=accepted
+alpha_id=1471
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Earnings-disagreement persistence versus price trend reveals lagged sentiment correction.
+expression:
+sig_628 = (rev_acc_628 - eps_surprise_628) - (price_gap_628 / 2)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_628 = (rev_acc_628 - eps_surprise_628) - (price_gap_628 / 2)" --submitted-by heph-ultrawork-generator --hypothesis "Earnings-disagreement persistence versus price trend reveals lagged sentiment correction."
+submit_result:
+status=accepted
+alpha_id=1472
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Supply-chain tension and demand surprise combination can signal a temporary repricing pivot.
+expression:
+sig_629 = (supply_chain_gap_629 * lead_indicator_629) - macro_vol_629
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_629 = (supply_chain_gap_629 * lead_indicator_629) - macro_vol_629" --submitted-by heph-ultrawork-generator --hypothesis "Supply-chain tension and demand surprise combination can signal a temporary repricing pivot."
+submit_result:
+status=accepted
+alpha_id=1473
+state=pending
+max_similarity=0.3636363636363636
+
+cycle_number: 124
+accepted_count: 5
+rejected_count: 0
+accepted_alpha_ids: 1469, 1470, 1471, 1472, 1473
+rejected_similarity_cases: none
+
+ULTRAWORK_PROGRESS total_accepted=20 total_rejected=0 sequence=629
+--------------------------------------------------
+
+hypothesis:
+Narrative intensity moving against guidance is a leading signal of regime flips.
+expression:
+sig_630 = (headline_disp_630 - guide_renew_630) + (sentiment_iv_630 / 3)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_630 = (headline_disp_630 - guide_renew_630) + (sentiment_iv_630 / 3)" --submitted-by heph-ultrawork-generator --hypothesis "Narrative intensity moving against guidance is a leading signal of regime flips."
+submit_result:
+status=accepted
+alpha_id=1474
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Forward expectation compression versus dispersion shock can indicate short-lived overreaction.
+expression:
+sig_631 = (fwd_est_631 - fwd_disc_631) / (corr_shock_631 + 1)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_631 = (fwd_est_631 - fwd_disc_631) / (corr_shock_631 + 1)" --submitted-by heph-ultrawork-generator --hypothesis "Forward expectation compression versus dispersion shock can indicate short-lived overreaction."
+submit_result:
+status=accepted
+alpha_id=1475
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Financing friction and short pressure interact with fast drift to extend downside continuation.
+expression:
+sig_632 = (short_interest_632 * borrow_cost_632) - (drift_fast_632 / 2)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_632 = (short_interest_632 * borrow_cost_632) - (drift_fast_632 / 2)" --submitted-by heph-ultrawork-generator --hypothesis "Financing friction and short pressure interact with fast drift to extend downside continuation."
+submit_result:
+status=accepted
+alpha_id=1476
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Leadership changes and leverage drag can decouple from headline momentum.
+expression:
+sig_633 = (insider_rate_633 - leverage_proxy_633) / (equity_risk_633 + 1)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_633 = (insider_rate_633 - leverage_proxy_633) / (equity_risk_633 + 1)" --submitted-by heph-ultrawork-generator --hypothesis "Leadership changes and leverage drag can decouple from headline momentum."
+submit_result:
+status=accepted
+alpha_id=1477
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Steady buy pressure against low carry is often transitory and gets re-priced quickly.
+expression:
+sig_634 = (buy_pressure_634 - carry_alpha_634) / (micro_vol_634 + 1)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_634 = (buy_pressure_634 - carry_alpha_634) / (micro_vol_634 + 1)" --submitted-by heph-ultrawork-generator --hypothesis "Steady buy pressure against low carry is often transitory and gets re-priced quickly."
+submit_result:
+status=accepted
+alpha_id=1478
+state=pending
+max_similarity=0.38095238095238093
+
+cycle_number: 125
+accepted_count: 5
+rejected_count: 0
+accepted_alpha_ids: 1474, 1475, 1476, 1477, 1478
+rejected_similarity_cases: none
+
+ULTRAWORK_PROGRESS total_accepted=25 total_rejected=0 sequence=634
+--------------------------------------------------
+
+hypothesis:
+Spread widening plus directional flow imbalance highlights delayed regime transitions.
+expression:
+sig_635 = (option_spread_635 * equity_flow_635) - (factor_beta_635 / 2)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_635 = (option_spread_635 * equity_flow_635) - (factor_beta_635 / 2)" --submitted-by heph-ultrawork-generator --hypothesis "Spread widening plus directional flow imbalance highlights delayed regime transitions."
+submit_result:
+status=accepted
+alpha_id=1479
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Quality-growth divergence can produce a short-lived correction once tail risk rises.
+expression:
+sig_636 = (quality_mis_636 + growth_surprise_636) - tail_risk_636
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_636 = (quality_mis_636 + growth_surprise_636) - tail_risk_636" --submitted-by heph-ultrawork-generator --hypothesis "Quality-growth divergence can produce a short-lived correction once tail risk rises."
+submit_result:
+status=accepted
+alpha_id=1480
+state=pending
+max_similarity=0.3636363636363636
+
+hypothesis:
+Revision shocks paired with liquidity strain and repo flow indicate temporary value transfer.
+expression:
+sig_637 = (rev_gap_637 - (tail_vol_637 + 1)) * (repo_flow_637 / 2)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_637 = (rev_gap_637 - (tail_vol_637 + 1)) * (repo_flow_637 / 2)" --submitted-by heph-ultrawork-generator --hypothesis "Revision shocks paired with liquidity strain and repo flow indicate temporary value transfer."
+submit_result:
+status=accepted
+alpha_id=1481
+state=pending
+max_similarity=0.4166666666666667
+
+hypothesis:
+Skew changes against profitability drift often predate a short dislocation phase.
+expression:
+sig_638 = (skew_delta_638 + roa_delta_638) / (iv_rank_638 + 1)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_638 = (skew_delta_638 + roa_delta_638) / (iv_rank_638 + 1)" --submitted-by heph-ultrawork-generator --hypothesis "Skew changes against profitability drift often predate a short dislocation phase."
+submit_result:
+status=accepted
+alpha_id=1482
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Value gaps compress slowly while short-term momentum shifts, especially under flow imbalance.
+expression:
+sig_639 = (momentum_regime_639 - value_gap_639) + (liq_imbalance_639 / 4)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_639 = (momentum_regime_639 - value_gap_639) + (liq_imbalance_639 / 4)" --submitted-by heph-ultrawork-generator --hypothesis "Value gaps compress slowly while short-term momentum shifts, especially under flow imbalance."
+submit_result:
+status=accepted
+alpha_id=1483
+state=pending
+max_similarity=0.38095238095238093
+
+cycle_number: 126
+accepted_count: 5
+rejected_count: 0
+accepted_alpha_ids: 1479, 1480, 1481, 1482, 1483
+rejected_similarity_cases: none
+
+ULTRAWORK_PROGRESS total_accepted=30 total_rejected=0 sequence=639
+--------------------------------------------------
+
+hypothesis:
+Repricing lags when revision gaps diverge from revised guidance risk in volatility-adjusted naming.
+expression:
+sig_640 = (rev_gap_640 - guide_miss_640) / (iv_skew_640 + 1)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_640 = (rev_gap_640 - guide_miss_640) / (iv_skew_640 + 1)" --submitted-by heph-ultrawork-generator --hypothesis "Repricing lags when revision gaps diverge from revised guidance risk in volatility-adjusted naming."
+submit_result:
+status=accepted
+alpha_id=1484
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Flow pressure versus dispersion expectation creates a transient mispricing regime.
+expression:
+sig_641 = (fund_flow_641 - est_disp_641) * (ret_roll_641 - 1)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_641 = (fund_flow_641 - est_disp_641) * (ret_roll_641 - 1)" --submitted-by heph-ultrawork-generator --hypothesis "Flow pressure versus dispersion expectation creates a transient mispricing regime."
+submit_result:
+status=accepted
+alpha_id=1485
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Credit stress and carry divergence implies delayed repricing in stressed balance-sheet periods.
+expression:
+sig_642 = (cds_basis_642 / (oif_spread_642 + 1)) - credit_hist_642
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_642 = (cds_basis_642 / (oif_spread_642 + 1)) - credit_hist_642" --submitted-by heph-ultrawork-generator --hypothesis "Credit stress and carry divergence implies delayed repricing in stressed balance-sheet periods."
+submit_result:
+status=accepted
+alpha_id=1486
+state=pending
+max_similarity=0.4102564102564103
+
+hypothesis:
+Short squeeze risk rises when short positioning adjusts faster than realized option volatility.
+expression:
+sig_643 = (oi_short_643 + oi_change_643) / (oi_iv_643 + 1)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_643 = (oi_short_643 + oi_change_643) / (oi_iv_643 + 1)" --submitted-by heph-ultrawork-generator --hypothesis "Short squeeze risk rises when short positioning adjusts faster than realized option volatility."
+submit_result:
+status=accepted
+alpha_id=1487
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Earnings-disagreement persistence versus price trend reveals lagged sentiment correction.
+expression:
+sig_644 = (rev_acc_644 - eps_surprise_644) - (price_gap_644 / 2)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_644 = (rev_acc_644 - eps_surprise_644) - (price_gap_644 / 2)" --submitted-by heph-ultrawork-generator --hypothesis "Earnings-disagreement persistence versus price trend reveals lagged sentiment correction."
+submit_result:
+status=accepted
+alpha_id=1488
+state=pending
+max_similarity=0.38095238095238093
+
+cycle_number: 127
+accepted_count: 5
+rejected_count: 0
+accepted_alpha_ids: 1484, 1485, 1486, 1487, 1488
+rejected_similarity_cases: none
+
+ULTRAWORK_PROGRESS total_accepted=35 total_rejected=0 sequence=644
+--------------------------------------------------
+
+hypothesis:
+Supply-chain tension and demand surprise combination can signal a temporary repricing pivot.
+expression:
+sig_645 = (supply_chain_gap_645 * lead_indicator_645) - macro_vol_645
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_645 = (supply_chain_gap_645 * lead_indicator_645) - macro_vol_645" --submitted-by heph-ultrawork-generator --hypothesis "Supply-chain tension and demand surprise combination can signal a temporary repricing pivot."
+submit_result:
+status=accepted
+alpha_id=1489
+state=pending
+max_similarity=0.3636363636363636
+
+hypothesis:
+Narrative intensity moving against guidance is a leading signal of regime flips.
+expression:
+sig_646 = (headline_disp_646 - guide_renew_646) + (sentiment_iv_646 / 3)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_646 = (headline_disp_646 - guide_renew_646) + (sentiment_iv_646 / 3)" --submitted-by heph-ultrawork-generator --hypothesis "Narrative intensity moving against guidance is a leading signal of regime flips."
+submit_result:
+status=accepted
+alpha_id=1490
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Forward expectation compression versus dispersion shock can indicate short-lived overreaction.
+expression:
+sig_647 = (fwd_est_647 - fwd_disc_647) / (corr_shock_647 + 1)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_647 = (fwd_est_647 - fwd_disc_647) / (corr_shock_647 + 1)" --submitted-by heph-ultrawork-generator --hypothesis "Forward expectation compression versus dispersion shock can indicate short-lived overreaction."
+submit_result:
+status=accepted
+alpha_id=1491
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Financing friction and short pressure interact with fast drift to extend downside continuation.
+expression:
+sig_648 = (short_interest_648 * borrow_cost_648) - (drift_fast_648 / 2)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_648 = (short_interest_648 * borrow_cost_648) - (drift_fast_648 / 2)" --submitted-by heph-ultrawork-generator --hypothesis "Financing friction and short pressure interact with fast drift to extend downside continuation."
+submit_result:
+status=accepted
+alpha_id=1492
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Leadership changes and leverage drag can decouple from headline momentum.
+expression:
+sig_649 = (insider_rate_649 - leverage_proxy_649) / (equity_risk_649 + 1)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_649 = (insider_rate_649 - leverage_proxy_649) / (equity_risk_649 + 1)" --submitted-by heph-ultrawork-generator --hypothesis "Leadership changes and leverage drag can decouple from headline momentum."
+submit_result:
+status=accepted
+alpha_id=1493
+state=pending
+max_similarity=0.38095238095238093
+
+cycle_number: 128
+accepted_count: 5
+rejected_count: 0
+accepted_alpha_ids: 1489, 1490, 1491, 1492, 1493
+rejected_similarity_cases: none
+
+ULTRAWORK_PROGRESS total_accepted=40 total_rejected=0 sequence=649
+--------------------------------------------------
+
+hypothesis:
+Steady buy pressure against low carry is often transitory and gets re-priced quickly.
+expression:
+sig_650 = (buy_pressure_650 - carry_alpha_650) / (micro_vol_650 + 1)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_650 = (buy_pressure_650 - carry_alpha_650) / (micro_vol_650 + 1)" --submitted-by heph-ultrawork-generator --hypothesis "Steady buy pressure against low carry is often transitory and gets re-priced quickly."
+submit_result:
+status=accepted
+alpha_id=1494
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Spread widening plus directional flow imbalance highlights delayed regime transitions.
+expression:
+sig_651 = (option_spread_651 * equity_flow_651) - (factor_beta_651 / 2)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_651 = (option_spread_651 * equity_flow_651) - (factor_beta_651 / 2)" --submitted-by heph-ultrawork-generator --hypothesis "Spread widening plus directional flow imbalance highlights delayed regime transitions."
+submit_result:
+status=accepted
+alpha_id=1495
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Quality-growth divergence can produce a short-lived correction once tail risk rises.
+expression:
+sig_652 = (quality_mis_652 + growth_surprise_652) - tail_risk_652
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_652 = (quality_mis_652 + growth_surprise_652) - tail_risk_652" --submitted-by heph-ultrawork-generator --hypothesis "Quality-growth divergence can produce a short-lived correction once tail risk rises."
+submit_result:
+status=accepted
+alpha_id=1496
+state=pending
+max_similarity=0.3636363636363636
+
+hypothesis:
+Revision shocks paired with liquidity strain and repo flow indicate temporary value transfer.
+expression:
+sig_653 = (rev_gap_653 - (tail_vol_653 + 1)) * (repo_flow_653 / 2)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_653 = (rev_gap_653 - (tail_vol_653 + 1)) * (repo_flow_653 / 2)" --submitted-by heph-ultrawork-generator --hypothesis "Revision shocks paired with liquidity strain and repo flow indicate temporary value transfer."
+submit_result:
+status=accepted
+alpha_id=1497
+state=pending
+max_similarity=0.4166666666666667
+
+hypothesis:
+Skew changes against profitability drift often predate a short dislocation phase.
+expression:
+sig_654 = (skew_delta_654 + roa_delta_654) / (iv_rank_654 + 1)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_654 = (skew_delta_654 + roa_delta_654) / (iv_rank_654 + 1)" --submitted-by heph-ultrawork-generator --hypothesis "Skew changes against profitability drift often predate a short dislocation phase."
+submit_result:
+status=accepted
+alpha_id=1498
+state=pending
+max_similarity=0.38095238095238093
+
+cycle_number: 129
+accepted_count: 5
+rejected_count: 0
+accepted_alpha_ids: 1494, 1495, 1496, 1497, 1498
+rejected_similarity_cases: none
+
+ULTRAWORK_PROGRESS total_accepted=45 total_rejected=0 sequence=654
+--------------------------------------------------
+
+hypothesis:
+Value gaps compress slowly while short-term momentum shifts, especially under flow imbalance.
+expression:
+sig_655 = (momentum_regime_655 - value_gap_655) + (liq_imbalance_655 / 4)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_655 = (momentum_regime_655 - value_gap_655) + (liq_imbalance_655 / 4)" --submitted-by heph-ultrawork-generator --hypothesis "Value gaps compress slowly while short-term momentum shifts, especially under flow imbalance."
+submit_result:
+status=accepted
+alpha_id=1499
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Repricing lags when revision gaps diverge from revised guidance risk in volatility-adjusted naming.
+expression:
+sig_656 = (rev_gap_656 - guide_miss_656) / (iv_skew_656 + 1)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_656 = (rev_gap_656 - guide_miss_656) / (iv_skew_656 + 1)" --submitted-by heph-ultrawork-generator --hypothesis "Repricing lags when revision gaps diverge from revised guidance risk in volatility-adjusted naming."
+submit_result:
+status=accepted
+alpha_id=1500
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Flow pressure versus dispersion expectation creates a transient mispricing regime.
+expression:
+sig_657 = (fund_flow_657 - est_disp_657) * (ret_roll_657 - 1)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_657 = (fund_flow_657 - est_disp_657) * (ret_roll_657 - 1)" --submitted-by heph-ultrawork-generator --hypothesis "Flow pressure versus dispersion expectation creates a transient mispricing regime."
+submit_result:
+status=accepted
+alpha_id=1501
+state=pending
+max_similarity=0.38095238095238093
+
+hypothesis:
+Credit stress and carry divergence implies delayed repricing in stressed balance-sheet periods.
+expression:
+sig_658 = (cds_basis_658 / (oif_spread_658 + 1)) - credit_hist_658
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_658 = (cds_basis_658 / (oif_spread_658 + 1)) - credit_hist_658" --submitted-by heph-ultrawork-generator --hypothesis "Credit stress and carry divergence implies delayed repricing in stressed balance-sheet periods."
+submit_result:
+status=accepted
+alpha_id=1502
+state=pending
+max_similarity=0.4102564102564103
+
+hypothesis:
+Short squeeze risk rises when short positioning adjusts faster than realized option volatility.
+expression:
+sig_659 = (oi_short_659 + oi_change_659) / (oi_iv_659 + 1)
+submit_command:
+node src/harness/cli.js submit alpha --server-url http://127.0.0.1:3000 --expr "sig_659 = (oi_short_659 + oi_change_659) / (oi_iv_659 + 1)" --submitted-by heph-ultrawork-generator --hypothesis "Short squeeze risk rises when short positioning adjusts faster than realized option volatility."
+submit_result:
+status=accepted
+alpha_id=1503
+state=pending
+max_similarity=0.38095238095238093
+
+cycle_number: 130
+accepted_count: 5
+rejected_count: 0
+accepted_alpha_ids: 1499, 1500, 1501, 1502, 1503
+rejected_similarity_cases: none
+
+ULTRAWORK_PROGRESS total_accepted=50 total_rejected=0 sequence=659
+--------------------------------------------------
+
+ULTRAWORK LOOP DONE total_accepted=50 total_rejected=0
