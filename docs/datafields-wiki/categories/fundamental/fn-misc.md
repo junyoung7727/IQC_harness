@@ -1,0 +1,24 @@
+# Datafield Category: Fundamental / Footnotes / Misc
+
+- Parent category: [Fundamental](../fundamental.md)
+- Total fields: 17
+
+## Fields
+
+- [fn_allowance_for_doubtful_accounts_receivable_a](../../datafields/fn_allowance_for_doubtful_accounts_receivable_a.md) - For an unclassified balance sheet, a valuation allowance for receivables due a company that are expected to be uncollectible.
+- [fn_allowance_for_doubtful_accounts_receivable_q](../../datafields/fn_allowance_for_doubtful_accounts_receivable_q.md) - For an unclassified balance sheet, a valuation allowance for receivables due a company that are expected to be uncollectible.
+- [fn_antidilutive_securities_excl_from_eps_a](../../datafields/fn_antidilutive_securities_excl_from_eps_a.md) - Securities (including those issuable pursuant to contingent stock agreements) that could potentially dilute basic earnings per share (EPS) or earnings per unit (EPU) in the future that were not included in the computation of diluted EPS or EPU because to do so would increase EPS or EPU amounts or decrease loss per share or unit amounts for the period presented.
+- [fn_antidilutive_securities_excl_from_eps_q](../../datafields/fn_antidilutive_securities_excl_from_eps_q.md) - Securities (including those issuable pursuant to contingent stock agreements) that could potentially dilute basic earnings per share (EPS) or earnings per unit (EPU) in the future that were not included in the computation of diluted EPS or EPU because to do so would increase EPS or EPU amounts or decrease loss per share or unit amounts for the period presented.
+- [fn_effect_of_exchange_rate_on_cash_and_equiv_a](../../datafields/fn_effect_of_exchange_rate_on_cash_and_equiv_a.md) - Amount of increase (decrease) from the effect of exchange rate changes on cash and cash equivalent balances held in foreign currencies.
+- [fn_effect_of_exchange_rate_on_cash_and_equiv_q](../../datafields/fn_effect_of_exchange_rate_on_cash_and_equiv_q.md) - Amount of increase (decrease) from the effect of exchange rate changes on cash and cash equivalent balances held in foreign currencies.
+- [fn_income_from_equity_investments_a](../../datafields/fn_income_from_equity_investments_a.md) - Income From Equity Method Investments
+- [fn_income_from_equity_investments_q](../../datafields/fn_income_from_equity_investments_q.md) - Income From Equity Method Investments
+- [fn_interest_paid_net_a](../../datafields/fn_interest_paid_net_a.md) - Net interest
+- [fn_interest_paid_net_q](../../datafields/fn_interest_paid_net_q.md) - Net interest
+- [fn_interest_payable_a](../../datafields/fn_interest_payable_a.md) - Carrying value as of the balance sheet date of [accrued] interest payable on all forms of debt, including trade payables, that has been incurred and is unpaid. For classified balance sheets, used to reflect the current portion of the liabilities (due within 1 year or within the normal operating cycle if longer); for unclassified balance sheets, used to reflect the total liabilities (regardless of due date).
+- [fn_interest_payable_q](../../datafields/fn_interest_payable_q.md) - Carrying value as of the balance sheet date of accrued interest payable on all forms of debt, including trade payables, that has been incurred and is unpaid. For classified balance sheets, used to reflect the current portion of the liabilities (due within 1 year or within the normal operating cycle if longer); for unclassified balance sheets, used to reflect the total liabilities (regardless of due date).
+- [fn_mne_a](../../datafields/fn_mne_a.md) - Amount before accumulated depreciation of tangible personal property used to produce goods and services, including, but is not limited to, tools, dies and molds, computer and office equipment.
+- [fn_ppne_gross_a](../../datafields/fn_ppne_gross_a.md) - Amount before accumulated depreciation, depletion, and amortization of physical assets used in the normal conduct of business and not intended for resale. Examples include, but are not limited to, land, buildings, machinery and equipment, office equipment, and furniture and fixtures.
+- [fn_ppne_gross_q](../../datafields/fn_ppne_gross_q.md) - Amount before accumulated depreciation, depletion and amortization of physical assets used in the normal conduct of business and not intended for resale. Examples include, but are not limited to, land, buildings, machinery and equipment, office equipment, and furniture and fixtures.
+- [fn_profit_loss_a](../../datafields/fn_profit_loss_a.md) - The consolidated profit or loss for the period, net of income taxes, including the portion attributable to the noncontrolling interest.
+- [fn_profit_loss_q](../../datafields/fn_profit_loss_q.md) - The consolidated profit or loss for the period, net of income taxes, including the portion attributable to the noncontrolling interest.

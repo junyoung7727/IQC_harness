@@ -6,6 +6,14 @@ function nowIso() {
   return new Date().toISOString();
 }
 
+function normalizeIdentity(value) {
+  if (value === undefined || value === null) {
+    return null;
+  }
+  const normalized = String(value).trim();
+  return normalized.length > 0 ? normalized : null;
+}
+
 function rowToAlpha(row) {
   if (!row) return null;
   const settings = materializeStructuredObject(row, SETTINGS_FIELDS) ?? (row.settings_json ? JSON.parse(row.settings_json) : null);
@@ -112,7 +120,14 @@ export class HarnessRepository {
           UPDATE alphas
           SET status = 'leased', lease_id = ?, leased_to = ?, brain_account_id = ?, chrome_profile_id = ?, updated_at = ?
           WHERE alpha_id = ? AND status = 'pending'
-        `).run(leaseId, workerId, brainAccountId, chromeProfileId, timestamp, id);
+        `).run(
+          leaseId,
+          normalizeIdentity(workerId),
+          normalizeIdentity(brainAccountId),
+          normalizeIdentity(chromeProfileId),
+          timestamp,
+          id
+        );
       }
       this.db.exec('COMMIT');
       return {
@@ -129,11 +144,12 @@ export class HarnessRepository {
 
   markRunning({ alphaId, leaseId }) {
     const timestamp = nowIso();
+    const normalizedLeaseId = normalizeIdentity(leaseId);
     const result = this.db.prepare(`
       UPDATE alphas
       SET status = 'running', attempt_count = attempt_count + 1, updated_at = ?
       WHERE alpha_id = ? AND lease_id = ? AND status = 'leased'
-    `).run(timestamp, alphaId, leaseId);
+    `).run(timestamp, alphaId, normalizedLeaseId);
     if (result.changes === 0) {
       throw new Error('invalid_lease_or_state');
     }
@@ -142,10 +158,22 @@ export class HarnessRepository {
 
   submitResult({ alphaId, leaseId, workerId, brainAccountId, chromeProfileId, settings, metrics }) {
     const row = this.db.prepare('SELECT status, lease_id, leased_to, brain_account_id, chrome_profile_id FROM alphas WHERE alpha_id = ?').get(alphaId);
-    if (!row || row.lease_id !== leaseId || row.leased_to !== workerId || row.status !== 'running') {
+    const normalizedLeaseId = normalizeIdentity(leaseId);
+    const normalizedWorkerId = normalizeIdentity(workerId);
+    const normalizedBrainAccountId = normalizeIdentity(brainAccountId);
+    const normalizedChromeProfileId = normalizeIdentity(chromeProfileId);
+    if (
+      !row ||
+      normalizeIdentity(row.lease_id) !== normalizedLeaseId ||
+      normalizeIdentity(row.leased_to) !== normalizedWorkerId ||
+      row.status !== 'running'
+    ) {
       throw new Error('invalid_lease_or_state');
     }
-    if (row.brain_account_id !== brainAccountId || row.chrome_profile_id !== chromeProfileId) {
+    if (
+      normalizeIdentity(row.brain_account_id) !== normalizedBrainAccountId ||
+      normalizeIdentity(row.chrome_profile_id) !== normalizedChromeProfileId
+    ) {
       throw new Error('lease_identity_mismatch');
     }
     const timestamp = nowIso();
@@ -163,8 +191,8 @@ export class HarnessRepository {
     `).run(
       ...extractStructuredValues(settings, SETTINGS_FIELDS),
       ...extractStructuredValues(metrics, METRICS_FIELDS),
-      brainAccountId,
-      chromeProfileId,
+      normalizedBrainAccountId,
+      normalizedChromeProfileId,
       timestamp,
       alphaId
     );
@@ -173,10 +201,22 @@ export class HarnessRepository {
 
   reportFailure({ alphaId, leaseId, workerId, brainAccountId, chromeProfileId, retryable, failureClass, failureMessage }) {
     const row = this.db.prepare('SELECT status, lease_id, leased_to, attempt_count, brain_account_id, chrome_profile_id FROM alphas WHERE alpha_id = ?').get(alphaId);
-    if (!row || row.lease_id !== leaseId || row.leased_to !== workerId || row.status !== 'running') {
+    const normalizedLeaseId = normalizeIdentity(leaseId);
+    const normalizedWorkerId = normalizeIdentity(workerId);
+    const normalizedBrainAccountId = normalizeIdentity(brainAccountId);
+    const normalizedChromeProfileId = normalizeIdentity(chromeProfileId);
+    if (
+      !row ||
+      normalizeIdentity(row.lease_id) !== normalizedLeaseId ||
+      normalizeIdentity(row.leased_to) !== normalizedWorkerId ||
+      row.status !== 'running'
+    ) {
       throw new Error('invalid_lease_or_state');
     }
-    if (row.brain_account_id !== brainAccountId || row.chrome_profile_id !== chromeProfileId) {
+    if (
+      normalizeIdentity(row.brain_account_id) !== normalizedBrainAccountId ||
+      normalizeIdentity(row.chrome_profile_id) !== normalizedChromeProfileId
+    ) {
       throw new Error('lease_identity_mismatch');
     }
     const state = retryable ? 'failed_retryable' : 'failed_terminal';
@@ -196,7 +236,18 @@ export class HarnessRepository {
         alpha_id, worker_id, brain_account_id, chrome_profile_id, lease_id,
         attempt_number, failure_class, failure_message, retryable, recorded_at
       ) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
-    `).run(alphaId, workerId, brainAccountId, chromeProfileId, leaseId, row.attempt_count, failureClass, failureMessage, retryable ? 1 : 0, timestamp);
+    `).run(
+      alphaId,
+      normalizedWorkerId,
+      normalizedBrainAccountId,
+      normalizedChromeProfileId,
+      normalizedLeaseId,
+      row.attempt_count,
+      failureClass,
+      failureMessage,
+      retryable ? 1 : 0,
+      timestamp
+    );
     return { status: 'accepted', alphaId, state };
   }
 

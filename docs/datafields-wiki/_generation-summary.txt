@@ -1,0 +1,4 @@
+Generated: 2646 datafields
+Source: C:\Users\user\worldquant-multi-agent-harness\docs\datafields-reference.md
+Root: C:\Users\user\worldquant-multi-agent-harness\docs\datafields-wiki
+Categories: 7

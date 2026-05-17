@@ -5,6 +5,7 @@ import { pathToFileURL } from 'node:url';
 import { submitAlpha, requestNext, submitResult, reportFailure } from './client.js';
 import { startServer } from './server.js';
 import { runWorkerLoop } from './worker.js';
+import { validateAlphaExpression } from './validators/expression-validator.js';
 
 function parseFlags(args) {
   const flags = {};
@@ -43,9 +44,25 @@ async function main() {
   const serverUrl = flags['server-url'] ?? 'http://127.0.0.1:3000';
 
   if (command === 'submit' && subcommand === 'alpha') {
+    const expression = requireFlag(flags, 'expr');
+
+    // CSV 기반 검증: operator 존재 여부, datafield 존재 여부
+    const validation = validateAlphaExpression(expression);
+    if (!validation.valid) {
+      output([
+        'status=validation_failed',
+        ...validation.errors.map((e) => `error=${e}`),
+        ...(validation.warnings.map((w) => `warning=${w}`))
+      ]);
+      process.exit(1);
+    }
+    if (validation.warnings.length > 0) {
+      validation.warnings.forEach((w) => process.stderr.write(`warning: ${w}\n`));
+    }
+
     const result = await submitAlpha(
       serverUrl,
-      requireFlag(flags, 'expr'),
+      expression,
       flags['submitted-by'] ?? null,
       flags.hypothesis ?? null
     );

@@ -1,0 +1,68 @@
+# Datafield Category: Fundamental / fnd6 newa1
+
+- Parent category: [Fundamental](../fundamental.md)
+- Total fields: 61
+
+## Fields
+
+- [fnd6_newa1v1300_aco](../../datafields/fnd6_newa1v1300_aco.md) - Current Assets - Other - Total
+- [fnd6_newa1v1300_acominc](../../datafields/fnd6_newa1v1300_acominc.md) - Accumulated Other Comprehensive Income (Loss)
+- [fnd6_newa1v1300_act](../../datafields/fnd6_newa1v1300_act.md) - Current Assets - Total
+- [fnd6_newa1v1300_ano](../../datafields/fnd6_newa1v1300_ano.md) - Assets Netting & Other Adjustments
+- [fnd6_newa1v1300_ao](../../datafields/fnd6_newa1v1300_ao.md) - Assets - Other
+- [fnd6_newa1v1300_aocidergl](../../datafields/fnd6_newa1v1300_aocidergl.md) - Accum Other Comp Inc - Derivatives Unrealized Gain/Loss
+- [fnd6_newa1v1300_aociother](../../datafields/fnd6_newa1v1300_aociother.md) - Accum Other Comp Inc - Other Adjustments
+- [fnd6_newa1v1300_aocipen](../../datafields/fnd6_newa1v1300_aocipen.md) - Accum Other Comp Inc - Min Pension Liab Adj
+- [fnd6_newa1v1300_aol2](../../datafields/fnd6_newa1v1300_aol2.md) - Assets Level 2 (Observable)
+- [fnd6_newa1v1300_aoloch](../../datafields/fnd6_newa1v1300_aoloch.md) - Assets and Liabilities - Other - Net Change
+- [fnd6_newa1v1300_ap](../../datafields/fnd6_newa1v1300_ap.md) - Accounts Payable - Trade
+- [fnd6_newa1v1300_apalch](../../datafields/fnd6_newa1v1300_apalch.md) - Accounts Payable and Accrued Liabilities - Increase/(Decrease)
+- [fnd6_newa1v1300_aqpl1](../../datafields/fnd6_newa1v1300_aqpl1.md) - Assets Level 1 (Quoted Prices)
+- [fnd6_newa1v1300_at](../../datafields/fnd6_newa1v1300_at.md) - Assets - Total
+- [fnd6_newa1v1300_aul3](../../datafields/fnd6_newa1v1300_aul3.md) - Assets Level 3 (Unobservable)
+- [fnd6_newa1v1300_bkvlps](../../datafields/fnd6_newa1v1300_bkvlps.md) - Book Value Per Share
+- [fnd6_newa1v1300_caps](../../datafields/fnd6_newa1v1300_caps.md) - Capital Surplus/Share Premium Reserve
+- [fnd6_newa1v1300_capx](../../datafields/fnd6_newa1v1300_capx.md) - Capital Expenditures
+- [fnd6_newa1v1300_ceq](../../datafields/fnd6_newa1v1300_ceq.md) - Common/Ordinary Equity - Total
+- [fnd6_newa1v1300_ceqt](../../datafields/fnd6_newa1v1300_ceqt.md) - Common Equity - Tangible
+- [fnd6_newa1v1300_che](../../datafields/fnd6_newa1v1300_che.md) - Cash and Short-Term Investments
+- [fnd6_newa1v1300_chech](../../datafields/fnd6_newa1v1300_chech.md) - Cash and Cash Equivalents - Increase/(Decrease)
+- [fnd6_newa1v1300_cogs](../../datafields/fnd6_newa1v1300_cogs.md) - Cost of Goods Sold
+- [fnd6_newa1v1300_cshfd](../../datafields/fnd6_newa1v1300_cshfd.md) - Common Shares Used to Calc Earnings Per Share - Fully Diluted
+- [fnd6_newa1v1300_cshi](../../datafields/fnd6_newa1v1300_cshi.md) - Common Shares Issued
+- [fnd6_newa1v1300_csho](../../datafields/fnd6_newa1v1300_csho.md) - Common Shares Outstanding
+- [fnd6_newa1v1300_cstk](../../datafields/fnd6_newa1v1300_cstk.md) - Common/Ordinary Stock (Capital)
+- [fnd6_newa1v1300_dcom](../../datafields/fnd6_newa1v1300_dcom.md) - Deferred Compensation
+- [fnd6_newa1v1300_dlc](../../datafields/fnd6_newa1v1300_dlc.md) - Debt in Current Liabilities - Total
+- [fnd6_newa1v1300_dltt](../../datafields/fnd6_newa1v1300_dltt.md) - Long-Term Debt - Total
+- [fnd6_newa1v1300_dp](../../datafields/fnd6_newa1v1300_dp.md) - Depreciation and Amortization
+- [fnd6_newa1v1300_dpact](../../datafields/fnd6_newa1v1300_dpact.md) - Depreciation, Depletion and Amortization (Accumulated)
+- [fnd6_newa1v1300_dpc](../../datafields/fnd6_newa1v1300_dpc.md) - Depreciation and Amortization (Cash Flow)
+- [fnd6_newa1v1300_dv](../../datafields/fnd6_newa1v1300_dv.md) - Cash Dividends (Cash Flow)
+- [fnd6_newa1v1300_dvc](../../datafields/fnd6_newa1v1300_dvc.md) - Dividends Common/Ordinary
+- [fnd6_newa1v1300_dvt](../../datafields/fnd6_newa1v1300_dvt.md) - Dividends - Total
+- [fnd6_newa1v1300_ebit](../../datafields/fnd6_newa1v1300_ebit.md) - Earnings Before Interest and Taxes
+- [fnd6_newa1v1300_ebitda](../../datafields/fnd6_newa1v1300_ebitda.md) - Earnings Before Interest
+- [fnd6_newa1v1300_emp](../../datafields/fnd6_newa1v1300_emp.md) - Employees
+- [fnd6_newa1v1300_epsfi](../../datafields/fnd6_newa1v1300_epsfi.md) - Earnings Per Share (Diluted) - Including Extraordinary Items
+- [fnd6_newa1v1300_epsfx](../../datafields/fnd6_newa1v1300_epsfx.md) - Earnings Per Share (Diluted) - Excluding Extraordinary Items
+- [fnd6_newa1v1300_epspi](../../datafields/fnd6_newa1v1300_epspi.md) - Earnings Per Share (Basic) - Including Extraordinary Items
+- [fnd6_newa1v1300_epspx](../../datafields/fnd6_newa1v1300_epspx.md) - Earnings Per Share (Basic) - Excluding Extraordinary Items
+- [fnd6_newa1v1300_fca](../../datafields/fnd6_newa1v1300_fca.md) - Foreign Exchange Income (Loss)
+- [fnd6_newa1v1300_fincf](../../datafields/fnd6_newa1v1300_fincf.md) - Financing Activities - Net Cash Flow
+- [fnd6_newa1v1300_gdwl](../../datafields/fnd6_newa1v1300_gdwl.md) - Goodwill
+- [fnd6_newa1v1300_gp](../../datafields/fnd6_newa1v1300_gp.md) - Gross Profit (Loss)
+- [fnd6_newa1v1300_ib](../../datafields/fnd6_newa1v1300_ib.md) - Income Before Extraordinary Items
+- [fnd6_newa1v1300_ibadj](../../datafields/fnd6_newa1v1300_ibadj.md) - Income Before Extraordinary Items - Adjusted for Common Stock Equivalents
+- [fnd6_newa1v1300_ibc](../../datafields/fnd6_newa1v1300_ibc.md) - Income Before Extraordinary Items (Cash Flow)
+- [fnd6_newa1v1300_ibcom](../../datafields/fnd6_newa1v1300_ibcom.md) - Income Before Extraordinary Items - Available for Common
+- [fnd6_newa1v1300_icapt](../../datafields/fnd6_newa1v1300_icapt.md) - Invested Capital - Total
+- [fnd6_newa1v1300_intano](../../datafields/fnd6_newa1v1300_intano.md) - Other Intangibles
+- [fnd6_newa1v1300_invch](../../datafields/fnd6_newa1v1300_invch.md) - Mortgages - Decrease (Increase)
+- [fnd6_newa1v1300_invt](../../datafields/fnd6_newa1v1300_invt.md) - Inventories - Total
+- [fnd6_newa1v1300_ivncf](../../datafields/fnd6_newa1v1300_ivncf.md) - Investing Activities - Net Cash Flow
+- [fnd6_newa1v1300_lco](../../datafields/fnd6_newa1v1300_lco.md) - Current Liabilities - Other - Total
+- [fnd6_newa1v1300_lct](../../datafields/fnd6_newa1v1300_lct.md) - Current Liabilities - Total
+- [fnd6_newa1v1300_lo](../../datafields/fnd6_newa1v1300_lo.md) - Liabilities - Other - Total
+- [fnd6_newa1v1300_lse](../../datafields/fnd6_newa1v1300_lse.md) - Liabilities and Stockholders Equity - Total
+- [fnd6_newa1v1300_lt](../../datafields/fnd6_newa1v1300_lt.md) - Liabilities - Total

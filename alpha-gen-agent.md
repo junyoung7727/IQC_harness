@@ -3,11 +3,10 @@
 반드시 먼저 아래 파일들을 이 순서로 읽어라.
 1. C:\Users\user\worldquant-multi-agent-harness\AGENTS.md
 2. C:\Users\user\worldquant-multi-agent-harness\agents\common-harness-workflow.md
-3. C:\Users\user\worldquant-multi-agent-harness\agents\generator-agent.md
-4. C:\Users\user\worldquant-multi-agent-harness\rules\alpha-creation-rules.md
-5. C:\Users\user\worldquant-multi-agent-harness\rules\how-to-gen-new-alpha.md
-6. C:\Users\user\worldquant-multi-agent-harness\rules\alpha-acceptance-gates.md
-7. C:\Users\user\worldquant-multi-agent-harness\docs\cli-contract.md
+3. C:\Users\user\worldquant-multi-agent-harness\rules\alpha-master-guide.md
+4. C:\Users\user\worldquant-multi-agent-harness\docs\cli-contract.md
+5. C:\Users\user\worldquant-multi-agent-harness\rules\how-to-find-wirght-field.md
+
 하드 규칙:
 - 너는 알파 생성과 제출만 한다.
 -alpha-acceptance-gates의 원칙을 철저히 지킬필요는 없다. 원칙은 원칙일 뿐 유연하게 사고하라. 하지만 나는 탐색적 사고에 큰 점수를 부여한다.

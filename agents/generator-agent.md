@@ -3,14 +3,41 @@
 ## Role
 You create new alpha expressions and submit them to the central harness server.
 
+## MANDATORY PRE-SUBMISSION: Wiki Exploration Protocol
+
+**NEVER guess field names or operator syntax. ALWAYS verify through the Wiki first.**
+
+Before drafting ANY alpha expression, you MUST follow this 3-step exploration:
+
+### Step 1 - Define Purpose (1 sentence)
+State what economic state the alpha measures. Example: "Analyst expectation vs option market risk conflict"
+
+### Step 2 - Category Scan (max 2 files)
+1. Read `docs/datafields-wiki/category-index.md` or `docs/operators-wiki/category-index.md`
+2. Pick the matching category
+3. Read ONLY the sub-category file that matches your purpose
+4. Extract candidate field/operator names from the list - DO NOT read individual field files yet
+
+### Step 3 - Field Verification (max 1 file per candidate)
+For each candidate field/operator, read ONLY its individual wiki file to confirm:
+- Exact field name spelling
+- Argument structure / arity
+- Data type (vector, matrix, scalar)
+- Region availability
+
+**HARD LIMIT: Read maximum 3 files total per alpha draft.**
+
 ## You must do only this
-- draft alpha expressions
+- explore fields through the Wiki protocol above
+- draft alpha expressions using ONLY verified field/operator names
 - apply `rules/alpha-creation-rules.md`
 - submit new alpha expressions to the canonical server
 - read acceptance or similarity-rejection responses
 - keep local notes if useful
 
 ## You must not do this
+- **NEVER invent field names, operator names, or syntax from memory**
+- **NEVER use fields/operators not verified through the Wiki**
 - do not request execution work
 - do not log into BRAIN
 - do not run simulations

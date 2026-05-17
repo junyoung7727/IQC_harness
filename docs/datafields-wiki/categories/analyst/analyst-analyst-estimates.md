@@ -1,0 +1,660 @@
+# Datafield Category: Analyst / Analyst Estimates
+
+- Parent category: [Analyst](../analyst.md)
+- Total fields: 653
+
+## Fields
+
+- [actual_cashflow_per_share_value_quarterly](../../datafields/actual_cashflow_per_share_value_quarterly.md) - Cash Flow Per Share - actual value for the quarter
+- [actual_dividend_value_quarterly](../../datafields/actual_dividend_value_quarterly.md) - Dividend - Actual value for the quarter
+- [actual_eps_value_quarterly](../../datafields/actual_eps_value_quarterly.md) - Earnings Per Share (Income Statement/Per Share) (Actual)
+- [actual_sales_value_annual](../../datafields/actual_sales_value_annual.md) - Sales - Actual Value
+- [actual_sales_value_quarterly](../../datafields/actual_sales_value_quarterly.md) - Sales - Value in financial services income statement (in millions)
+- [actuals_reporting_currency](../../datafields/actuals_reporting_currency.md) - Home currency of instrument
+- [actuals_value_currency_code](../../datafields/actuals_value_currency_code.md) - Pricing Currency where the security trades
+- [anl4_adjusted_netincome_ft](../../datafields/anl4_adjusted_netincome_ft.md) - Adjusted net income - forecast type (revision/new/...)
+- [anl4_ads1detailafv110_bk](../../datafields/anl4_ads1detailafv110_bk.md) - Broker name (int)
+- [anl4_ads1detailafv110_estvalue](../../datafields/anl4_ads1detailafv110_estvalue.md) - Estimation value
+- [anl4_ads1detailafv110_person](../../datafields/anl4_ads1detailafv110_person.md) - Broker Id
+- [anl4_ads1detailafv110_prevval](../../datafields/anl4_ads1detailafv110_prevval.md) - The Previous Estimation of Financial Item
+- [anl4_ads1detailqfv110_bk](../../datafields/anl4_ads1detailqfv110_bk.md) - Broker name (int)
+- [anl4_ads1detailqfv110_estvalue](../../datafields/anl4_ads1detailqfv110_estvalue.md) - Estimation value
+- [anl4_ads1detailqfv110_person](../../datafields/anl4_ads1detailqfv110_person.md) - Broker Id
+- [anl4_ads1detailqfv110_prevval](../../datafields/anl4_ads1detailqfv110_prevval.md) - The previous estimation of financial item
+- [anl4_adxqfv110_down](../../datafields/anl4_adxqfv110_down.md) - Number of lower estimations
+- [anl4_adxqfv110_high](../../datafields/anl4_adxqfv110_high.md) - The highest estimation
+- [anl4_adxqfv110_low](../../datafields/anl4_adxqfv110_low.md) - The lowest estimation
+- [anl4_adxqfv110_mean](../../datafields/anl4_adxqfv110_mean.md) - Mean of estimations
+- [anl4_adxqfv110_median](../../datafields/anl4_adxqfv110_median.md) - Median of estimations
+- [anl4_adxqfv110_numest](../../datafields/anl4_adxqfv110_numest.md) - The number of forecasts counted in aggregation
+- [anl4_adxqfv110_pu](../../datafields/anl4_adxqfv110_pu.md) - The number of upper estimations
+- [anl4_ady_down](../../datafields/anl4_ady_down.md) - Number of lower estimations
+- [anl4_ady_high](../../datafields/anl4_ady_high.md) - The highest estimation
+- [anl4_ady_low](../../datafields/anl4_ady_low.md) - The lowest estimation
+- [anl4_ady_mean](../../datafields/anl4_ady_mean.md) - Mean of estimations
+- [anl4_ady_median](../../datafields/anl4_ady_median.md) - Median of estimations
+- [anl4_ady_numest](../../datafields/anl4_ady_numest.md) - The number of forecasts counted in aggregation
+- [anl4_ady_pu](../../datafields/anl4_ady_pu.md) - The number of upper estimations
+- [anl4_af_cfps_value](../../datafields/anl4_af_cfps_value.md) - Cash Flow Per Share - Actual Value
+- [anl4_af_div_value](../../datafields/anl4_af_div_value.md) - Dividend - Actual value
+- [anl4_af_eps_value](../../datafields/anl4_af_eps_value.md) - Earnings Per Share - Actual Value
+- [anl4_afv4_actual](../../datafields/anl4_afv4_actual.md) - Announced financial data
+- [anl4_afv4_cfps_high](../../datafields/anl4_afv4_cfps_high.md) - Cash Flow Per Share - The highest estimation for the annual forecast
+- [anl4_afv4_cfps_low](../../datafields/anl4_afv4_cfps_low.md) - Cash Flow Per Share - The lowest estimation for the upcoming fiscal year
+- [anl4_afv4_cfps_mean](../../datafields/anl4_afv4_cfps_mean.md) - Cash Flow Per Share - average of estimations for the annual frequency
+- [anl4_afv4_cfps_median](../../datafields/anl4_afv4_cfps_median.md) - Cash Flow Per Share - Median value among forecasts for the annual frequency
+- [anl4_afv4_cfps_number](../../datafields/anl4_afv4_cfps_number.md) - Cash Flow Per Share - number of estimations for annual frequency
+- [anl4_afv4_div_high](../../datafields/anl4_afv4_div_high.md) - Dividend per share - The highest estimation for the annual forecast.
+- [anl4_afv4_div_low](../../datafields/anl4_afv4_div_low.md) - Dividend - The lowest estimation for the annual forecast
+- [anl4_afv4_div_mean](../../datafields/anl4_afv4_div_mean.md) - Dividend per share - average of estimations for annual frequency
+- [anl4_afv4_div_median](../../datafields/anl4_afv4_div_median.md) - Dividend per share - Median value among forecasts
+- [anl4_afv4_div_number](../../datafields/anl4_afv4_div_number.md) - Number of estimations for Dividend per share - annually
+- [anl4_afv4_div_std](../../datafields/anl4_afv4_div_std.md) - Dividend per share - standard deviation of estimations
+- [anl4_afv4_dts_spe](../../datafields/anl4_afv4_dts_spe.md) - Earnings per share - standard deviation of estimations
+- [anl4_afv4_eps_high](../../datafields/anl4_afv4_eps_high.md) - Earnings per share - The highest estimation
+- [anl4_afv4_eps_low](../../datafields/anl4_afv4_eps_low.md) - Earnings per share - The lowest estimation for annual frequency
+- [anl4_afv4_eps_mean](../../datafields/anl4_afv4_eps_mean.md) - Earnings per share - mean of estimations for annual frequency
+- [anl4_afv4_eps_number](../../datafields/anl4_afv4_eps_number.md) - Earnings per share - number of estimations for annual frequency
+- [anl4_afv4_maxguidance](../../datafields/anl4_afv4_maxguidance.md) - Max guidance value
+- [anl4_afv4_median_eps](../../datafields/anl4_afv4_median_eps.md) - Earnings per share - median of estimations
+- [anl4_afv4_minguidance](../../datafields/anl4_afv4_minguidance.md) - Min guidance value
+- [anl4_bac1actualqfv110_actual](../../datafields/anl4_bac1actualqfv110_actual.md) - Announced financial data
+- [anl4_bac1actualqfv110_item](../../datafields/anl4_bac1actualqfv110_item.md) - Financial item
+- [anl4_bac1conafv110_item](../../datafields/anl4_bac1conafv110_item.md) - Financial item
+- [anl4_bac1conltv110_item](../../datafields/anl4_bac1conltv110_item.md) - Financial item
+- [anl4_bac1conqfv110_item](../../datafields/anl4_bac1conqfv110_item.md) - Financial item
+- [anl4_bac1conrecv110_item](../../datafields/anl4_bac1conrecv110_item.md) - Financial item
+- [anl4_bac1detailafv110_item](../../datafields/anl4_bac1detailafv110_item.md) - Financial item
+- [anl4_bac1detaillt_item](../../datafields/anl4_bac1detaillt_item.md) - Financial item
+- [anl4_bac1detailqfv110_item](../../datafields/anl4_bac1detailqfv110_item.md) - Financial item
+- [anl4_bac1detailrec_item](../../datafields/anl4_bac1detailrec_item.md) - Financial item
+- [anl4_basicafv4_actual](../../datafields/anl4_basicafv4_actual.md) - Announced financial data for the annual period.
+- [anl4_basicconafv110_down](../../datafields/anl4_basicconafv110_down.md) - Number of lower estimations
+- [anl4_basicconafv110_high](../../datafields/anl4_basicconafv110_high.md) - The highest estimation
+- [anl4_basicconafv110_low](../../datafields/anl4_basicconafv110_low.md) - The lowest estimation
+- [anl4_basicconafv110_mean](../../datafields/anl4_basicconafv110_mean.md) - Mean of estimations
+- [anl4_basicconafv110_median](../../datafields/anl4_basicconafv110_median.md) - Median of estimations
+- [anl4_basicconafv110_numest](../../datafields/anl4_basicconafv110_numest.md) - The number of forecasts counted in aggregation
+- [anl4_basicconafv110_pu](../../datafields/anl4_basicconafv110_pu.md) - The number of upper estimations
+- [anl4_basicconltv110_down](../../datafields/anl4_basicconltv110_down.md) - Number of lower estimations
+- [anl4_basicconltv110_high](../../datafields/anl4_basicconltv110_high.md) - The highest estimation
+- [anl4_basicconltv110_low](../../datafields/anl4_basicconltv110_low.md) - The lowest estimation
+- [anl4_basicconltv110_mean](../../datafields/anl4_basicconltv110_mean.md) - Mean of estimations
+- [anl4_basicconltv110_median](../../datafields/anl4_basicconltv110_median.md) - Median of estimations
+- [anl4_basicconltv110_numest](../../datafields/anl4_basicconltv110_numest.md) - The number of forecasts counted in aggregation
+- [anl4_basicconltv110_pu](../../datafields/anl4_basicconltv110_pu.md) - The number of upper estimations
+- [anl4_basicconqfv110_down](../../datafields/anl4_basicconqfv110_down.md) - Number of lower estimations
+- [anl4_basicconqfv110_high](../../datafields/anl4_basicconqfv110_high.md) - The highest estimation
+- [anl4_basicconqfv110_low](../../datafields/anl4_basicconqfv110_low.md) - The lowest estimation
+- [anl4_basicconqfv110_mean](../../datafields/anl4_basicconqfv110_mean.md) - Mean of estimations
+- [anl4_basicconqfv110_median](../../datafields/anl4_basicconqfv110_median.md) - Median of estimations
+- [anl4_basicconqfv110_numest](../../datafields/anl4_basicconqfv110_numest.md) - The number of forecasts counted in aggregation
+- [anl4_basicconqfv110_pu](../../datafields/anl4_basicconqfv110_pu.md) - The number of upper estimations
+- [anl4_basicdetaillt_bk](../../datafields/anl4_basicdetaillt_bk.md) - Broker name (int)
+- [anl4_basicdetaillt_estvalue](../../datafields/anl4_basicdetaillt_estvalue.md) - Estimation value
+- [anl4_basicdetaillt_person](../../datafields/anl4_basicdetaillt_person.md) - Broker Id
+- [anl4_basicdetaillt_prevval](../../datafields/anl4_basicdetaillt_prevval.md) - The Previous Estimation of Financial Item
+- [anl4_basicdetailqfv110_bk](../../datafields/anl4_basicdetailqfv110_bk.md) - Broker name (int)
+- [anl4_basicdetailqfv110_estvalue](../../datafields/anl4_basicdetailqfv110_estvalue.md) - Estimation value
+- [anl4_basicdetailqfv110_person](../../datafields/anl4_basicdetailqfv110_person.md) - Broker Id
+- [anl4_basicdetailqfv110_prevval](../../datafields/anl4_basicdetailqfv110_prevval.md) - The previous estimation of financial item
+- [anl4_basicdetailrec_bk](../../datafields/anl4_basicdetailrec_bk.md) - Broker name (int)
+- [anl4_basicdetailrec_person](../../datafields/anl4_basicdetailrec_person.md) - Broker Id
+- [anl4_basicdetailrec_ratingvalue](../../datafields/anl4_basicdetailrec_ratingvalue.md) - Score on the given instrument
+- [anl4_basicqfv4_actual](../../datafields/anl4_basicqfv4_actual.md) - Announced financial data
+- [anl4_basicqfv4_maxguidance](../../datafields/anl4_basicqfv4_maxguidance.md) - Max guidance value
+- [anl4_basicqfv4_minguidance](../../datafields/anl4_basicqfv4_minguidance.md) - Min guidance value
+- [anl4_baz1v110_bk](../../datafields/anl4_baz1v110_bk.md) - Broker name (int)
+- [anl4_baz1v110_estvalue](../../datafields/anl4_baz1v110_estvalue.md) - Estimation value
+- [anl4_baz1v110_person](../../datafields/anl4_baz1v110_person.md) - Broker Id
+- [anl4_baz1v110_prevval](../../datafields/anl4_baz1v110_prevval.md) - The previous estimation of financial item
+- [anl4_buy](../../datafields/anl4_buy.md) - The number of recommendations to long the instrument
+- [anl4_bvps_flag](../../datafields/anl4_bvps_flag.md) - Book value per share - forecast type (revision/new/...)
+- [anl4_bvps_high](../../datafields/anl4_bvps_high.md) - Book value - the highest estimation, per share
+- [anl4_bvps_low](../../datafields/anl4_bvps_low.md) - Book value - the lowest estimation, per share
+- [anl4_bvps_mean](../../datafields/anl4_bvps_mean.md) - Book value per share - average of estimations
+- [anl4_bvps_median](../../datafields/anl4_bvps_median.md) - Book value per share - Median value among forecasts
+- [anl4_bvps_number](../../datafields/anl4_bvps_number.md) - Book value per share - number of estimations
+- [anl4_bvps_value](../../datafields/anl4_bvps_value.md) - Book value per share - announced financial value
+- [anl4_capex_flag](../../datafields/anl4_capex_flag.md) - Capital Expenditures - forecast type (revision/new/...)
+- [anl4_capex_high](../../datafields/anl4_capex_high.md) - Capital Expenditures - The highest estimation
+- [anl4_capex_low](../../datafields/anl4_capex_low.md) - Capital Expenditures - The lowest estimation
+- [anl4_capex_mean](../../datafields/anl4_capex_mean.md) - Capital Expenditures - mean of estimations
+- [anl4_capex_number](../../datafields/anl4_capex_number.md) - Capital Expenditures - number of estimations
+- [anl4_capex_std](../../datafields/anl4_capex_std.md) - Capital Expenditures - standard deviation of estimations
+- [anl4_capex_value](../../datafields/anl4_capex_value.md) - Capital Expenditures - announced financial value
+- [anl4_cff_flag](../../datafields/anl4_cff_flag.md) - Cash Flow From Financing Activities - forecast type (revision/new/...)
+- [anl4_cff_high](../../datafields/anl4_cff_high.md) - Cash Flow From Financing - The highest of forecasted values
+- [anl4_cff_low](../../datafields/anl4_cff_low.md) - Cash Flow From Financing - The lowest estimation
+- [anl4_cff_mean](../../datafields/anl4_cff_mean.md) - Cash Flow From Financing - mean of estimations
+- [anl4_cff_median](../../datafields/anl4_cff_median.md) - Cash Flow From Financing Activities - Median value among forecasts
+- [anl4_cff_number](../../datafields/anl4_cff_number.md) - Cash Flow From Financing - number of estimations
+- [anl4_cff_value](../../datafields/anl4_cff_value.md) - Cash Flow From Financing - announced financial value
+- [anl4_cfi_flag](../../datafields/anl4_cfi_flag.md) - Cash Flow From Investing - forecast type (revision/new/...)
+- [anl4_cfi_high](../../datafields/anl4_cfi_high.md) - Cash Flow From Investing - The highest estimation
+- [anl4_cfi_low](../../datafields/anl4_cfi_low.md) - Cash Flow From Investing - The lowest estimation
+- [anl4_cfi_mean](../../datafields/anl4_cfi_mean.md) - Cash Flow From Investing - mean of estimations
+- [anl4_cfi_median](../../datafields/anl4_cfi_median.md) - Cash Flow From Investing - median of estimations
+- [anl4_cfi_number](../../datafields/anl4_cfi_number.md) - Cash Flow From Investing - number of estimations
+- [anl4_cfi_value](../../datafields/anl4_cfi_value.md) - Cash Flow From Investing - announced financial value
+- [anl4_cfo_flag](../../datafields/anl4_cfo_flag.md) - Cash Flow From Operations - forecast type (revision/new/...)
+- [anl4_cfo_high](../../datafields/anl4_cfo_high.md) - Cash Flow From Operations - The highest value among forecasts
+- [anl4_cfo_low](../../datafields/anl4_cfo_low.md) - Cash Flow From Operations - The lowest estimation
+- [anl4_cfo_mean](../../datafields/anl4_cfo_mean.md) - Cash Flow From Operations - mean of estimations
+- [anl4_cfo_median](../../datafields/anl4_cfo_median.md) - Cash Flow From Operations - median of estimations
+- [anl4_cfo_number](../../datafields/anl4_cfo_number.md) - Cash Flow From Operations - number of estimations
+- [anl4_cfo_value](../../datafields/anl4_cfo_value.md) - Cash Flow From Operations - announced financial value
+- [anl4_cuo1actualqfv110_actual](../../datafields/anl4_cuo1actualqfv110_actual.md) - Announced financial data
+- [anl4_cuo1actualqfv110_item](../../datafields/anl4_cuo1actualqfv110_item.md) - Financial item
+- [anl4_cuo1conafv110_item](../../datafields/anl4_cuo1conafv110_item.md) - Financial item
+- [anl4_cuo1conqfv110_item](../../datafields/anl4_cuo1conqfv110_item.md) - Financial item
+- [anl4_cuo1detailafv110_item](../../datafields/anl4_cuo1detailafv110_item.md) - Financial item
+- [anl4_cuo1detailqfv110_item](../../datafields/anl4_cuo1detailqfv110_item.md) - Financial item
+- [anl4_cuo1guidaf_item](../../datafields/anl4_cuo1guidaf_item.md) - Financial item
+- [anl4_cuo1guidaf_maxguidance](../../datafields/anl4_cuo1guidaf_maxguidance.md) - Max guidance value
+- [anl4_cuo1guidaf_minguidance](../../datafields/anl4_cuo1guidaf_minguidance.md) - Minimum guidance value
+- [anl4_dei2laf_item](../../datafields/anl4_dei2laf_item.md) - Financial item
+- [anl4_dei2lqfv110_item](../../datafields/anl4_dei2lqfv110_item.md) - Financial item
+- [anl4_dei3lafv110_item](../../datafields/anl4_dei3lafv110_item.md) - Financial item
+- [anl4_dei3lltv110_item](../../datafields/anl4_dei3lltv110_item.md) - Financial item
+- [anl4_dei3lqfv110_item](../../datafields/anl4_dei3lqfv110_item.md) - Financial item
+- [anl4_dei3lrec_item](../../datafields/anl4_dei3lrec_item.md) - Financial item
+- [anl4_detailltv4_est](../../datafields/anl4_detailltv4_est.md) - Long term estimation value
+- [anl4_detailltv4_preest](../../datafields/anl4_detailltv4_preest.md) - The previous estimation of financial item
+- [anl4_detailltv4v104_est](../../datafields/anl4_detailltv4v104_est.md) - Estimation value
+- [anl4_detailltv4v104_preest](../../datafields/anl4_detailltv4v104_preest.md) - The previous estimation of financial item
+- [anl4_detailrecv4_est](../../datafields/anl4_detailrecv4_est.md) - Estimation value for recommendation detail
+- [anl4_detailrecv4v104_est](../../datafields/anl4_detailrecv4v104_est.md) - Estimation value
+- [anl4_dez1afv4_est](../../datafields/anl4_dez1afv4_est.md) - Estimation value
+- [anl4_dez1afv4_preest](../../datafields/anl4_dez1afv4_preest.md) - The previous estimation of finanicial item
+- [anl4_dez1basicafv4_est](../../datafields/anl4_dez1basicafv4_est.md) - Estimation value
+- [anl4_dez1basicafv4_preest](../../datafields/anl4_dez1basicafv4_preest.md) - The previous estimation of finanicial item
+- [anl4_dez1basicafv4v104_est](../../datafields/anl4_dez1basicafv4v104_est.md) - Estimation value
+- [anl4_dez1basicafv4v104_preest](../../datafields/anl4_dez1basicafv4v104_preest.md) - The previous estimation of financial item
+- [anl4_dez1basicqfv4_est](../../datafields/anl4_dez1basicqfv4_est.md) - Estimation value
+- [anl4_dez1basicqfv4_preest](../../datafields/anl4_dez1basicqfv4_preest.md) - The previous estimation of finanicial item
+- [anl4_dez1basicqfv4v104_est](../../datafields/anl4_dez1basicqfv4v104_est.md) - Estimation value
+- [anl4_dez1basicqfv4v104_preest](../../datafields/anl4_dez1basicqfv4v104_preest.md) - The previous estimation of financial item
+- [anl4_dez1qfv4_est](../../datafields/anl4_dez1qfv4_est.md) - Estimation value
+- [anl4_dez1qfv4_preest](../../datafields/anl4_dez1qfv4_preest.md) - The previous estimation of finanicial item
+- [anl4_dez1safv4_est](../../datafields/anl4_dez1safv4_est.md) - Estimation value
+- [anl4_dez1safv4_preest](../../datafields/anl4_dez1safv4_preest.md) - The previous estimation of finanicial item
+- [anl4_dts_ptp](../../datafields/anl4_dts_ptp.md) - Pretax income - std of estimations
+- [anl4_dts_rspe](../../datafields/anl4_dts_rspe.md) - Reported Earnings per share - standard deviation of estimations
+- [anl4_eaz1laf_bk](../../datafields/anl4_eaz1laf_bk.md) - Broker name (int)
+- [anl4_eaz1laf_estvalue](../../datafields/anl4_eaz1laf_estvalue.md) - Estimation value
+- [anl4_eaz1laf_person](../../datafields/anl4_eaz1laf_person.md) - Broker Id
+- [anl4_eaz1laf_prevval](../../datafields/anl4_eaz1laf_prevval.md) - The previous estimation of financial item
+- [anl4_eaz1lqfv110_bk](../../datafields/anl4_eaz1lqfv110_bk.md) - Broker name (int)
+- [anl4_eaz1lqfv110_estvalue](../../datafields/anl4_eaz1lqfv110_estvalue.md) - Estimation value
+- [anl4_eaz1lqfv110_person](../../datafields/anl4_eaz1lqfv110_person.md) - Broker Id
+- [anl4_eaz1lqfv110_prevval](../../datafields/anl4_eaz1lqfv110_prevval.md) - The previous estimation of financial item
+- [anl4_eaz2lafv110_bk](../../datafields/anl4_eaz2lafv110_bk.md) - Broker name (int)
+- [anl4_eaz2lafv110_estvalue](../../datafields/anl4_eaz2lafv110_estvalue.md) - Estimation value
+- [anl4_eaz2lafv110_person](../../datafields/anl4_eaz2lafv110_person.md) - Broker Id
+- [anl4_eaz2lafv110_prevval](../../datafields/anl4_eaz2lafv110_prevval.md) - The previous estimation of financial item
+- [anl4_eaz2lltv110_bk](../../datafields/anl4_eaz2lltv110_bk.md) - Broker name (int)
+- [anl4_eaz2lltv110_estvalue](../../datafields/anl4_eaz2lltv110_estvalue.md) - Estimation value
+- [anl4_eaz2lltv110_person](../../datafields/anl4_eaz2lltv110_person.md) - Broker Id
+- [anl4_eaz2lltv110_prevval](../../datafields/anl4_eaz2lltv110_prevval.md) - The previous estimation of financial item
+- [anl4_eaz2lqfv110_bk](../../datafields/anl4_eaz2lqfv110_bk.md) - Broker name (int)
+- [anl4_eaz2lqfv110_estvalue](../../datafields/anl4_eaz2lqfv110_estvalue.md) - Estimation value
+- [anl4_eaz2lqfv110_person](../../datafields/anl4_eaz2lqfv110_person.md) - Broker Id
+- [anl4_eaz2lqfv110_prevval](../../datafields/anl4_eaz2lqfv110_prevval.md) - The previous estimation of financial item
+- [anl4_eaz2lrec_bk](../../datafields/anl4_eaz2lrec_bk.md) - Broker name (int)
+- [anl4_eaz2lrec_person](../../datafields/anl4_eaz2lrec_person.md) - Broker Id
+- [anl4_eaz2lrec_ratingvalue](../../datafields/anl4_eaz2lrec_ratingvalue.md) - Score on the given instrument
+- [anl4_ebit_high](../../datafields/anl4_ebit_high.md) - Earnings before interest and taxes - The highest estimation
+- [anl4_ebit_low](../../datafields/anl4_ebit_low.md) - Earnings before interest and taxes - The lowest estimation
+- [anl4_ebit_mean](../../datafields/anl4_ebit_mean.md) - Earnings before interest and taxes - mean of estimations
+- [anl4_ebit_median](../../datafields/anl4_ebit_median.md) - Earnings before interest and taxes - median of estimations
+- [anl4_ebit_number](../../datafields/anl4_ebit_number.md) - Earnings before interest and taxes - number of estimations
+- [anl4_ebit_std](../../datafields/anl4_ebit_std.md) - Earnings before interest and taxes - standard deviation of estimations
+- [anl4_ebit_value](../../datafields/anl4_ebit_value.md) - Earnings before interest and taxes - announced financial value
+- [anl4_ebitda_flag](../../datafields/anl4_ebitda_flag.md) - Earnings before interest, taxes, depreciation and amortization - forecast type (revision/new/...)
+- [anl4_ebitda_high](../../datafields/anl4_ebitda_high.md) - Earnings before interest, taxes, depreciation, and amortization - the highest estimation
+- [anl4_ebitda_low](../../datafields/anl4_ebitda_low.md) - Earnings before interest, taxes, depreciation and amortization - The lowest estimation
+- [anl4_ebitda_mean](../../datafields/anl4_ebitda_mean.md) - Earnings before interest, taxes, depreciation and amortization - mean of estimations
+- [anl4_ebitda_number](../../datafields/anl4_ebitda_number.md) - Earnings before interest, taxes, depreciation and amortization - number of estimations
+- [anl4_ebitda_std](../../datafields/anl4_ebitda_std.md) - Earnings before interest, taxes, depreciation, and amortization - standard deviation of estimations
+- [anl4_ebitda_value](../../datafields/anl4_ebitda_value.md) - Earnings before interest, taxes, depreciation and amortization - announced financial value
+- [anl4_epsa_flag](../../datafields/anl4_epsa_flag.md) - Earnings per share adjusted by excluding extraordinary items and stock option expenses - forecast type (revision/new/...)
+- [anl4_epsr_flag](../../datafields/anl4_epsr_flag.md) - GAAP Earnings - estimation type (revision/new/...), per share
+- [anl4_epsr_high](../../datafields/anl4_epsr_high.md) - GAAP Earnings per share - The highest estimation
+- [anl4_epsr_low](../../datafields/anl4_epsr_low.md) - GAAP Earnings per share - The lowest estimation
+- [anl4_epsr_mean](../../datafields/anl4_epsr_mean.md) - GAAP Earnings per share - mean of estimations
+- [anl4_epsr_number](../../datafields/anl4_epsr_number.md) - GAAP Earnings per share - number of estimations
+- [anl4_epsr_value](../../datafields/anl4_epsr_value.md) - GAAP Earnings per share - announced financial value
+- [anl4_fcf_flag](../../datafields/anl4_fcf_flag.md) - Free cash flow - forecast type (revision/new/...)
+- [anl4_fcf_high](../../datafields/anl4_fcf_high.md) - Free cash flow - aggregation on estimations, max
+- [anl4_fcf_low](../../datafields/anl4_fcf_low.md) - Free Cash Flow - The lowest estimation
+- [anl4_fcf_mean](../../datafields/anl4_fcf_mean.md) - Free Cash Flow - mean of estimations
+- [anl4_fcf_median](../../datafields/anl4_fcf_median.md) - Free cash flow - aggregation on estimations, 50th percentile
+- [anl4_fcf_number](../../datafields/anl4_fcf_number.md) - Free Cash Flow - number of estimations
+- [anl4_fcf_value](../../datafields/anl4_fcf_value.md) - Free cash flow- announced financial value
+- [anl4_fcfps_flag](../../datafields/anl4_fcfps_flag.md) - Free cash flow per share - forecast type (revision/new/...)
+- [anl4_fcfps_high](../../datafields/anl4_fcfps_high.md) - Free Cash Flow Per Share - the highest estimation
+- [anl4_fcfps_low](../../datafields/anl4_fcfps_low.md) - Free Cash Flow Per Share - the lowest estimation
+- [anl4_fcfps_mean](../../datafields/anl4_fcfps_mean.md) - Free cash flow per share - mean of estimations
+- [anl4_fcfps_median](../../datafields/anl4_fcfps_median.md) - Free cash flow - summary on estimations, 50th-percentile, per share
+- [anl4_fcfps_number](../../datafields/anl4_fcfps_number.md) - Free Cash Flow per Share - number of estimations
+- [anl4_ffo_flag](../../datafields/anl4_ffo_flag.md) - Funds from Operation - forecast type (revision/new/...)
+- [anl4_flag_erbfintax](../../datafields/anl4_flag_erbfintax.md) - Earnings before interest and taxes - forecast type (revision/new/...)
+- [anl4_fsactualafv4_actual](../../datafields/anl4_fsactualafv4_actual.md) - Announced financial data
+- [anl4_fsactualafv4_item](../../datafields/anl4_fsactualafv4_item.md) - Financial item
+- [anl4_fsactualqfv4_actual](../../datafields/anl4_fsactualqfv4_actual.md) - Announced financial data
+- [anl4_fsactualqfv4_item](../../datafields/anl4_fsactualqfv4_item.md) - Financial item
+- [anl4_fsdetailltv4v104_item](../../datafields/anl4_fsdetailltv4v104_item.md) - Financial item
+- [anl4_fsdetailrecv4v104_item](../../datafields/anl4_fsdetailrecv4v104_item.md) - Financial item
+- [anl4_fsdtlestmtafv4_item](../../datafields/anl4_fsdtlestmtafv4_item.md) - Financial item
+- [anl4_fsdtlestmtbscqv104_item](../../datafields/anl4_fsdtlestmtbscqv104_item.md) - Financial item
+- [anl4_fsdtlestmtbscv104_item](../../datafields/anl4_fsdtlestmtbscv104_item.md) - Financial item
+- [anl4_fsdtlestmtqfv4_item](../../datafields/anl4_fsdtlestmtqfv4_item.md) - Financial item
+- [anl4_fsdtlestmtsafv4_item](../../datafields/anl4_fsdtlestmtsafv4_item.md) - Financial item
+- [anl4_fsgdncbscv4_maxguidance](../../datafields/anl4_fsgdncbscv4_maxguidance.md) - Max guidance value
+- [anl4_fsgdncbscv4_minguidance](../../datafields/anl4_fsgdncbscv4_minguidance.md) - Minimum guidance value
+- [anl4_fsguidanceafv4_item](../../datafields/anl4_fsguidanceafv4_item.md) - Financial item
+- [anl4_fsguidanceafv4_maxguidance](../../datafields/anl4_fsguidanceafv4_maxguidance.md) - Maximum guidance value
+- [anl4_fsguidanceafv4_minguidance](../../datafields/anl4_fsguidanceafv4_minguidance.md) - Min guidance value
+- [anl4_fsguidancebasicqfv4_item](../../datafields/anl4_fsguidancebasicqfv4_item.md) - Financial item
+- [anl4_fsguidanceqfv4_item](../../datafields/anl4_fsguidanceqfv4_item.md) - Financial item
+- [anl4_fsguidanceqfv4_maxguidance](../../datafields/anl4_fsguidanceqfv4_maxguidance.md) - Max guidance value
+- [anl4_fsguidanceqfv4_minguidance](../../datafields/anl4_fsguidanceqfv4_minguidance.md) - Min guidance value
+- [anl4_gric_flag](../../datafields/anl4_gric_flag.md) - Gross income - forecast type (revision/new/...)
+- [anl4_gric_high](../../datafields/anl4_gric_high.md) - Gross income - The highest estimation
+- [anl4_gric_low](../../datafields/anl4_gric_low.md) - Gross income - The lowest estimation
+- [anl4_gric_mean](../../datafields/anl4_gric_mean.md) - Gross income - mean of estimations
+- [anl4_gric_median](../../datafields/anl4_gric_median.md) - Gross income - median of estimations
+- [anl4_gric_number](../../datafields/anl4_gric_number.md) - Gross income - number of estimations
+- [anl4_gric_std](../../datafields/anl4_gric_std.md) - Gross income - std of estimations
+- [anl4_gric_value](../../datafields/anl4_gric_value.md) - Gross income- announced financial value
+- [anl4_guiafv4_est](../../datafields/anl4_guiafv4_est.md) - Estimation value
+- [anl4_guibasicqfv4_est](../../datafields/anl4_guibasicqfv4_est.md) - Estimation value
+- [anl4_guiqfv4_est](../../datafields/anl4_guiqfv4_est.md) - Estimation value
+- [anl4_hold](../../datafields/anl4_hold.md) - The number of recommendations not clear about short or long the instrument
+- [anl4_mark](../../datafields/anl4_mark.md) - Recommendation consensus score
+- [anl4_median_capexp](../../datafields/anl4_median_capexp.md) - Capital Expenditures - median of estimations
+- [anl4_median_epsreported](../../datafields/anl4_median_epsreported.md) - GAAP Earnings per share - median of estimations
+- [anl4_medianepsbfam](../../datafields/anl4_medianepsbfam.md) - Earnings before interest, taxes, depreciation and amortization - median of estimations
+- [anl4_netdebt_flag](../../datafields/anl4_netdebt_flag.md) - Net debt - forecast type (revision/new/...)
+- [anl4_netdebt_high](../../datafields/anl4_netdebt_high.md) - Net debt - the highest estimation
+- [anl4_netdebt_low](../../datafields/anl4_netdebt_low.md) - Net debt - the lowest estimation
+- [anl4_netdebt_mean](../../datafields/anl4_netdebt_mean.md) - Net debt - mean of estimations
+- [anl4_netdebt_median](../../datafields/anl4_netdebt_median.md) - Net Debt - median of estimations
+- [anl4_netdebt_number](../../datafields/anl4_netdebt_number.md) - Net debt - Number of estimations
+- [anl4_netprofit_flag](../../datafields/anl4_netprofit_flag.md) - Net profit - forecast type (revision/new/...)
+- [anl4_netprofit_high](../../datafields/anl4_netprofit_high.md) - Net Profit - The highest estimation
+- [anl4_netprofit_low](../../datafields/anl4_netprofit_low.md) - Net Profit - The Lowest Estimation
+- [anl4_netprofit_mean](../../datafields/anl4_netprofit_mean.md) - Net profit - mean of estimations
+- [anl4_netprofit_median](../../datafields/anl4_netprofit_median.md) - Net profit - Median of estimations
+- [anl4_netprofit_number](../../datafields/anl4_netprofit_number.md) - Net profit - number of estimations
+- [anl4_netprofit_std](../../datafields/anl4_netprofit_std.md) - Net profit - standard deviation of estimations
+- [anl4_netprofit_value](../../datafields/anl4_netprofit_value.md) - Net profit- announced financial value
+- [anl4_netprofita_high](../../datafields/anl4_netprofita_high.md) - Adjusted Net Income - the highest estimation
+- [anl4_netprofita_low](../../datafields/anl4_netprofita_low.md) - Adjusted net income - the lowest estimation
+- [anl4_netprofita_mean](../../datafields/anl4_netprofita_mean.md) - Adjusted net income - mean of estimations
+- [anl4_netprofita_median](../../datafields/anl4_netprofita_median.md) - Adjusted net income - median of estimations
+- [anl4_netprofita_number](../../datafields/anl4_netprofita_number.md) - Adjusted net income - number of estimations
+- [anl4_netprofita_std](../../datafields/anl4_netprofita_std.md) - Adjusted net income - std of estimations
+- [anl4_netprofita_value](../../datafields/anl4_netprofita_value.md) - Adjusted net income- announced financial value
+- [anl4_norec](../../datafields/anl4_norec.md) - The number of brokers with no recommendation
+- [anl4_ptp_flag](../../datafields/anl4_ptp_flag.md) - Pretax income - forecast type (revision/new/...)
+- [anl4_ptp_high](../../datafields/anl4_ptp_high.md) - Pretax income - the highest estimation
+- [anl4_ptp_low](../../datafields/anl4_ptp_low.md) - Pretax income - the lowest estimation
+- [anl4_ptp_mean](../../datafields/anl4_ptp_mean.md) - Pretax income - mean of estimations
+- [anl4_ptp_median](../../datafields/anl4_ptp_median.md) - Pretax income - median of estimations
+- [anl4_ptp_number](../../datafields/anl4_ptp_number.md) - Pretax Income - number of estimations
+- [anl4_ptp_value](../../datafields/anl4_ptp_value.md) - Pretax income- announced financial value
+- [anl4_ptpr_flag](../../datafields/anl4_ptpr_flag.md) - Reported Pretax income - forecast type (revision/new/...)
+- [anl4_ptpr_high](../../datafields/anl4_ptpr_high.md) - Reported pretax income - the highest estimation
+- [anl4_ptpr_low](../../datafields/anl4_ptpr_low.md) - Reported Pretax Income - The Lowest Estimation
+- [anl4_ptpr_mean](../../datafields/anl4_ptpr_mean.md) - Reported Pretax income - mean of estimations
+- [anl4_ptpr_median](../../datafields/anl4_ptpr_median.md) - Reported pretax income - Median of estimations
+- [anl4_ptpr_number](../../datafields/anl4_ptpr_number.md) - Reported Pretax Income - number of estimations
+- [anl4_qf_az_cfps_mean](../../datafields/anl4_qf_az_cfps_mean.md) - Cash Flow Per Share - average of estimations
+- [anl4_qf_az_cfps_median](../../datafields/anl4_qf_az_cfps_median.md) - Cash Flow Per Share - Median value among forecasts
+- [anl4_qf_az_cfps_number](../../datafields/anl4_qf_az_cfps_number.md) - Cash Flow Per Share - number of estimations
+- [anl4_qf_az_div_mean](../../datafields/anl4_qf_az_div_mean.md) - Dividend per share - average of estimations
+- [anl4_qf_az_div_median](../../datafields/anl4_qf_az_div_median.md) - Dividend per share - median of estimations
+- [anl4_qf_az_div_number](../../datafields/anl4_qf_az_div_number.md) - Dividend per share - number of estimations
+- [anl4_qf_az_dts_spe](../../datafields/anl4_qf_az_dts_spe.md) - Earnings per share - std of estimations
+- [anl4_qf_az_eps](../../datafields/anl4_qf_az_eps.md) - EPS - aggregation on estimations, 50th percentile
+- [anl4_qf_az_eps_mean](../../datafields/anl4_qf_az_eps_mean.md) - Earnings per share - mean of estimations
+- [anl4_qf_az_eps_number](../../datafields/anl4_qf_az_eps_number.md) - Earnings per share - number of estimations
+- [anl4_qf_az_hgih_spe](../../datafields/anl4_qf_az_hgih_spe.md) - Earnings per share - The highest estimation
+- [anl4_qf_az_hgih_spfc](../../datafields/anl4_qf_az_hgih_spfc.md) - Cash Flow - The highest estimation, per share
+- [anl4_qf_az_hgih_vid](../../datafields/anl4_qf_az_hgih_vid.md) - Dividend per share - The highest estimation
+- [anl4_qf_az_wol_spe](../../datafields/anl4_qf_az_wol_spe.md) - Earnings per share - The lowest estimation
+- [anl4_qf_az_wol_spfc](../../datafields/anl4_qf_az_wol_spfc.md) - Cash Flow Per Share - The lowest estimation
+- [anl4_qf_az_wol_vid](../../datafields/anl4_qf_az_wol_vid.md) - Dividend per share - The lowest value among forecasts
+- [anl4_qfd1_az_cfps_median](../../datafields/anl4_qfd1_az_cfps_median.md) - Cash Flow Per Share - Median value among forecasts
+- [anl4_qfd1_az_cfps_number](../../datafields/anl4_qfd1_az_cfps_number.md) - Cash Flow Per Share - number of estimations
+- [anl4_qfd1_az_div_median](../../datafields/anl4_qfd1_az_div_median.md) - Dividend per share - median of estimations
+- [anl4_qfd1_az_div_number](../../datafields/anl4_qfd1_az_div_number.md) - Dividend per share - number of estimations
+- [anl4_qfd1_az_dts_spe](../../datafields/anl4_qfd1_az_dts_spe.md) - Earnings per share - std of estimations
+- [anl4_qfd1_az_eps_number](../../datafields/anl4_qfd1_az_eps_number.md) - Earnings per share - number of estimations
+- [anl4_qfd1_az_hgih_spe](../../datafields/anl4_qfd1_az_hgih_spe.md) - Earnings per share - The highest estimation
+- [anl4_qfd1_az_hgih_spfc](../../datafields/anl4_qfd1_az_hgih_spfc.md) - Cash Flow - The highest estimation, per share
+- [anl4_qfd1_az_hgih_vid](../../datafields/anl4_qfd1_az_hgih_vid.md) - Dividend per share - The highest estimation
+- [anl4_qfd1_az_wol_spe](../../datafields/anl4_qfd1_az_wol_spe.md) - Earnings per share - The lowest estimation
+- [anl4_qfd1_az_wol_spfc](../../datafields/anl4_qfd1_az_wol_spfc.md) - Cash Flow Per Share - The lowest estimation
+- [anl4_qfd1_az_wol_vid](../../datafields/anl4_qfd1_az_wol_vid.md) - Dividend per share - The lowest value among forecasts
+- [anl4_qfd1_azeps](../../datafields/anl4_qfd1_azeps.md) - EPS - aggregation on estimations, 50th percentile
+- [anl4_qfv4_actual](../../datafields/anl4_qfv4_actual.md) - Announced financial data
+- [anl4_qfv4_cfps_high](../../datafields/anl4_qfv4_cfps_high.md) - Cash Flow Per Share - The highest estimation for the quarter
+- [anl4_qfv4_cfps_low](../../datafields/anl4_qfv4_cfps_low.md) - Cash Flow Per Share - The lowest estimation
+- [anl4_qfv4_cfps_mean](../../datafields/anl4_qfv4_cfps_mean.md) - Cash Flow Per Share - average of estimations
+- [anl4_qfv4_cfps_median](../../datafields/anl4_qfv4_cfps_median.md) - Cash Flow Per Share - Median value among forecasts
+- [anl4_qfv4_cfps_number](../../datafields/anl4_qfv4_cfps_number.md) - Cash Flow Per Share - number of estimations
+- [anl4_qfv4_div_high](../../datafields/anl4_qfv4_div_high.md) - Dividend per share - The highest estimation
+- [anl4_qfv4_div_low](../../datafields/anl4_qfv4_div_low.md) - Dividend per share - The lowest estimation
+- [anl4_qfv4_div_mean](../../datafields/anl4_qfv4_div_mean.md) - Dividend per share - mean of estimations
+- [anl4_qfv4_div_median](../../datafields/anl4_qfv4_div_median.md) - Dividend per share - median of estimations
+- [anl4_qfv4_div_number](../../datafields/anl4_qfv4_div_number.md) - Dividend - number of estimations
+- [anl4_qfv4_dts_spe](../../datafields/anl4_qfv4_dts_spe.md) - Earnings per share - standard deviation of estimations
+- [anl4_qfv4_eps_high](../../datafields/anl4_qfv4_eps_high.md) - Earnings per share - The highest estimation
+- [anl4_qfv4_eps_low](../../datafields/anl4_qfv4_eps_low.md) - Earnings per share - The lowest estimation
+- [anl4_qfv4_eps_mean](../../datafields/anl4_qfv4_eps_mean.md) - Earnings per share - mean of estimations
+- [anl4_qfv4_eps_number](../../datafields/anl4_qfv4_eps_number.md) - Earnings per share - number of estimations
+- [anl4_qfv4_maxguidance](../../datafields/anl4_qfv4_maxguidance.md) - Max guidance value
+- [anl4_qfv4_median_eps](../../datafields/anl4_qfv4_median_eps.md) - Earnings per share - median of estimations
+- [anl4_qfv4_minguidance](../../datafields/anl4_qfv4_minguidance.md) - Min guidance value
+- [anl4_rd_exp_flag](../../datafields/anl4_rd_exp_flag.md) - Research and Development Expense - forecast type (revision/new/...)
+- [anl4_rd_exp_high](../../datafields/anl4_rd_exp_high.md) - Research and Development Expense - the highest estimation
+- [anl4_rd_exp_low](../../datafields/anl4_rd_exp_low.md) - Research and Development Expense - the lowest estimation
+- [anl4_rd_exp_mean](../../datafields/anl4_rd_exp_mean.md) - Research and Development Expense - mean of estimations
+- [anl4_rd_exp_median](../../datafields/anl4_rd_exp_median.md) - Research and Development Expense - Median of estimations
+- [anl4_rd_exp_number](../../datafields/anl4_rd_exp_number.md) - Research and Development Expense - Number of Estimations
+- [anl4_tbve_ft](../../datafields/anl4_tbve_ft.md) - Tangible Book Value per Share - forecast type (revision/new/...)
+- [anl4_tbvps_high](../../datafields/anl4_tbvps_high.md) - Tangible Book Value per Share - The highest estimation
+- [anl4_tbvps_low](../../datafields/anl4_tbvps_low.md) - Tangible Book Value per Share - The lowest estimation
+- [anl4_tbvps_mean](../../datafields/anl4_tbvps_mean.md) - Tangible Book Value per Share - mean of estimations
+- [anl4_tbvps_median](../../datafields/anl4_tbvps_median.md) - Tangible Book Value per Share - median of estimations
+- [anl4_tbvps_number](../../datafields/anl4_tbvps_number.md) - Tangible Book Value per Share - number of estimations
+- [anl4_tot_gw_ft](../../datafields/anl4_tot_gw_ft.md) - Total Goodwill - forecast type (revision/new/...)
+- [anl4_total_rec](../../datafields/anl4_total_rec.md) - The total number of recommendations
+- [anl4_totassets_flag](../../datafields/anl4_totassets_flag.md) - Total Assets - forecast type (revision/new/...)
+- [anl4_totassets_high](../../datafields/anl4_totassets_high.md) - Total Assets - The highest estimation
+- [anl4_totassets_low](../../datafields/anl4_totassets_low.md) - Total Assets - The lowest estimation
+- [anl4_totassets_mean](../../datafields/anl4_totassets_mean.md) - Total Assets - mean of estimations
+- [anl4_totassets_median](../../datafields/anl4_totassets_median.md) - Total Assets - median of estimations
+- [anl4_totassets_number](../../datafields/anl4_totassets_number.md) - Total Assets - number of estimations
+- [anl4_totassets_std](../../datafields/anl4_totassets_std.md) - Total Assets - standard deviation of estimations
+- [anl4_totassets_value](../../datafields/anl4_totassets_value.md) - Total Assets - actual value
+- [anl4_totgw_high](../../datafields/anl4_totgw_high.md) - Total Goodwill - The highest estimation
+- [anl4_totgw_low](../../datafields/anl4_totgw_low.md) - Total Goodwill - The lowest estimation
+- [anl4_totgw_mean](../../datafields/anl4_totgw_mean.md) - Total Goodwill - mean of estimations
+- [anl4_totgw_median](../../datafields/anl4_totgw_median.md) - Total Goodwill - median of estimations
+- [anl4_totgw_number](../../datafields/anl4_totgw_number.md) - Total Goodwill - number of estimations
+- [anl4_under](../../datafields/anl4_under.md) - The number of Underweight recommendations
+- [basic_shares_max_guidance_qtr](../../datafields/basic_shares_max_guidance_qtr.md) - The maximum guidance value for Basic Shares.
+- [book_value_per_share_2](../../datafields/book_value_per_share_2.md) - Book Value Per Share - Actual Value
+- [book_value_per_share_min_guidance_qtr](../../datafields/book_value_per_share_min_guidance_qtr.md) - Book value per share - minimum guidance value
+- [book_value_per_share_reported_value](../../datafields/book_value_per_share_reported_value.md) - Book Value Per Share - Actual Value
+- [capital_expenditure_amount](../../datafields/capital_expenditure_amount.md) - Capital Expenditures - Total value
+- [capital_expenditure_guidance_value](../../datafields/capital_expenditure_guidance_value.md) - Capital Expenditures - Total value for the annual guidance
+- [capital_expenditure_max_guidance_qtr](../../datafields/capital_expenditure_max_guidance_qtr.md) - The maximum guidance value for Capital Expenditures
+- [capital_expenditure_reported_value](../../datafields/capital_expenditure_reported_value.md) - Capital Expenditures - Total (Cash Flow/Investing) (Millions)
+- [cash_flow_financing_max_guidance](../../datafields/cash_flow_financing_max_guidance.md) - Cash Flow From Financing - Maximum guidance value provided annually
+- [cash_flow_from_financing](../../datafields/cash_flow_from_financing.md) - Cash Flow From Financing - Value
+- [cash_flow_from_investing](../../datafields/cash_flow_from_investing.md) - Cash Flow from Investing - Value
+- [cash_flow_from_operations](../../datafields/cash_flow_from_operations.md) - Cash Flow from Operations - Value for the annual period
+- [cash_flow_operations_min_guidance](../../datafields/cash_flow_operations_min_guidance.md) - Minimum guidance value for Cash Flow from Operations on an annual basis.
+- [cashflow_per_share_average](../../datafields/cashflow_per_share_average.md) - Cash Flow Per Share - average of estimations with a delay of 1 quarter
+- [cashflow_per_share_estimate_count](../../datafields/cashflow_per_share_estimate_count.md) - Cash Flow Per Share - number of estimations - delay1
+- [cashflow_per_share_max_guidance](../../datafields/cashflow_per_share_max_guidance.md) - The maximum guidance value for Cash Flow Per Share on an annual basis.
+- [cashflow_per_share_max_guidance_quarterly](../../datafields/cashflow_per_share_max_guidance_quarterly.md) - The maximum guidance value for Cash Flow Per Share.
+- [cashflow_per_share_maximum](../../datafields/cashflow_per_share_maximum.md) - Cash Flow - The highest estimation, per share, with a delay of 1 quarter
+- [cashflow_per_share_median_value](../../datafields/cashflow_per_share_median_value.md) - Cash Flow Per Share - Median value among forecasts
+- [cashflow_per_share_min_guidance](../../datafields/cashflow_per_share_min_guidance.md) - Cash Flow Per Share - Minimum guidance value for the annual period
+- [cashflow_per_share_min_guidance_quarterly](../../datafields/cashflow_per_share_min_guidance_quarterly.md) - Minimum guidance value for Cash Flow Per Share
+- [cashflow_per_share_minimum](../../datafields/cashflow_per_share_minimum.md) - Cash Flow Per Share - The lowest estimation, delay 1 quarter
+- [dividend_estimate_average](../../datafields/dividend_estimate_average.md) - Dividend per share - average of estimations - delay 1
+- [dividend_estimate_count](../../datafields/dividend_estimate_count.md) - Dividend per share - number of estimations with a delay of 1 quarter
+- [dividend_estimate_maximum](../../datafields/dividend_estimate_maximum.md) - Dividend per share - The highest value among forecasts with a delay of 1 quarter
+- [dividend_estimate_median_value](../../datafields/dividend_estimate_median_value.md) - Dividend per share - median of estimations
+- [dividend_estimate_minimum](../../datafields/dividend_estimate_minimum.md) - Dividend per share - The lowest value among forecasts - D1
+- [dividend_estimate_standard_deviation](../../datafields/dividend_estimate_standard_deviation.md) - Dividend per share - standard deviation of estimations
+- [dividend_estimate_stddev_quarterly](../../datafields/dividend_estimate_stddev_quarterly.md) - Dividend per share - standard deviation of estimations
+- [dividend_estimate_value](../../datafields/dividend_estimate_value.md) - Dividend per share - estimated value
+- [dividend_max_guidance_quarterly](../../datafields/dividend_max_guidance_quarterly.md) - Maximum guidance value for Dividend per share
+- [dividend_max_guidance_value](../../datafields/dividend_max_guidance_value.md) - The maximum guidance value for Dividend per share on an annual basis.
+- [dividend_min_guidance_quarterly](../../datafields/dividend_min_guidance_quarterly.md) - Minimum guidance value for Dividend per share
+- [dividend_min_guidance_value](../../datafields/dividend_min_guidance_value.md) - Minimum guidance value for Dividend per share on an annual basis
+- [dividend_previous_estimate_value](../../datafields/dividend_previous_estimate_value.md) - The previous estimation of dividend
+- [earnings_per_share_average](../../datafields/earnings_per_share_average.md) - Earnings per share - mean of estimations
+- [earnings_per_share_estimate_count](../../datafields/earnings_per_share_estimate_count.md) - Earnings per share - number of estimations
+- [earnings_per_share_guidance_value](../../datafields/earnings_per_share_guidance_value.md) - Earnings Per Share - guidance value for annual frequency
+- [earnings_per_share_max_guidance](../../datafields/earnings_per_share_max_guidance.md) - The maximum guidance value for Earnings Per Share on an annual basis.
+- [earnings_per_share_maximum](../../datafields/earnings_per_share_maximum.md) - Earnings per share - The highest estimation
+- [earnings_per_share_median_value](../../datafields/earnings_per_share_median_value.md) - Earnings per share - median of estimations
+- [earnings_per_share_min_guidance](../../datafields/earnings_per_share_min_guidance.md) - Minimum guidance value for Earnings Per Share on an annual basis.
+- [earnings_per_share_minimum](../../datafields/earnings_per_share_minimum.md) - Earnings per share - The lowest estimation
+- [earnings_per_share_nongaap_value](../../datafields/earnings_per_share_nongaap_value.md) - Non-GAAP Earnings Per Share - Actual Value
+- [earnings_per_share_reported](../../datafields/earnings_per_share_reported.md) - Reported Earnings Per Share - Actual Value
+- [earnings_per_share_reported_value](../../datafields/earnings_per_share_reported_value.md) - Reported Earnings Per Share - Actual Value
+- [earnings_per_share_standard_deviation](../../datafields/earnings_per_share_standard_deviation.md) - Earnings per share - standard deviation of estimations
+- [ebit_reported_value](../../datafields/ebit_reported_value.md) - Earnings Before Interest & Taxes - actual value for the quarter
+- [ebitda_reported_value](../../datafields/ebitda_reported_value.md) - EBITDA value for the quarter.
+- [eps_adjusted_min_guidance_qtr](../../datafields/eps_adjusted_min_guidance_qtr.md) - Minimum guidance value for adjusted Earnings per share excluding extraordinary items and stock option expenses.
+- [eps_adjusted_min_guidance_value](../../datafields/eps_adjusted_min_guidance_value.md) - The minimum guidance value for adjusted earnings per share excluding extraordinary items and stock option expenses on an annual basis.
+- [eps_estimate_value](../../datafields/eps_estimate_value.md) - Earnings per share - estimation value
+- [eps_guidance_value_quarterly](../../datafields/eps_guidance_value_quarterly.md) - Earnings Per Share - Basic value
+- [eps_max_guidance_quarterly](../../datafields/eps_max_guidance_quarterly.md) - The maximum guidance value for Earnings Per Share.
+- [eps_min_guidance_quarterly](../../datafields/eps_min_guidance_quarterly.md) - Minimum guidance value for Earnings per Share
+- [eps_previous_estimate_value](../../datafields/eps_previous_estimate_value.md) - The previous estimation of Earnings Per Share
+- [eps_reported_min_guidance_qtr](../../datafields/eps_reported_min_guidance_qtr.md) - Reported Earnings Per Share - Minimum guidance value
+- [est_bookvalue_ps](../../datafields/est_bookvalue_ps.md) - Book value per share - average of estimations
+- [est_capex](../../datafields/est_capex.md) - Capital Expenditures - mean of estimations
+- [est_cashflow_fin](../../datafields/est_cashflow_fin.md) - Cash Flow From Financing - mean of estimations
+- [est_cashflow_invst](../../datafields/est_cashflow_invst.md) - Cash Flow From Investing - mean of estimations
+- [est_cashflow_op](../../datafields/est_cashflow_op.md) - Cash Flow From Operations - mean of estimations
+- [est_cashflow_ps](../../datafields/est_cashflow_ps.md) - Cash Flow Per Share - average of estimations
+- [est_dividend_ps](../../datafields/est_dividend_ps.md) - Dividend per share - average of estimations
+- [est_ebit](../../datafields/est_ebit.md) - Earnings before interest and taxes - mean of estimations
+- [est_ebitda](../../datafields/est_ebitda.md) - Earnings before interest, taxes, depreciation, and amortization - mean of estimations
+- [est_eps](../../datafields/est_eps.md) - Earnings per share - mean of estimations
+- [est_epsa](../../datafields/est_epsa.md) - Earnings per share adjusted by excluding extraordinary items and stock option expenses - average of estimations
+- [est_epsr](../../datafields/est_epsr.md) - GAAP Earnings per share - mean of estimations
+- [est_fcf](../../datafields/est_fcf.md) - Free Cash Flow - Mean of Estimations
+- [est_fcf_ps](../../datafields/est_fcf_ps.md) - Free Cash Flow Per Share - Mean of Estimations
+- [est_ffo](../../datafields/est_ffo.md) - Funds From Operation - Summary on Estimations, Mean
+- [est_grossincome](../../datafields/est_grossincome.md) - Gross income - Mean of estimations
+- [est_netdebt](../../datafields/est_netdebt.md) - Net debt - mean of estimations
+- [est_netprofit](../../datafields/est_netprofit.md) - Net profit - mean of estimations
+- [est_netprofit_adj](../../datafields/est_netprofit_adj.md) - Adjusted net income - Mean of estimations
+- [est_ptp](../../datafields/est_ptp.md) - Pretax income - mean of estimations
+- [est_ptpr](../../datafields/est_ptpr.md) - Reported pretax income - mean of estimations
+- [est_rd_expense](../../datafields/est_rd_expense.md) - Research and Development Expense - mean of estimations
+- [est_sales](../../datafields/est_sales.md) - Sales - mean of estimations
+- [est_sga](../../datafields/est_sga.md) - SGA - mean of estimations
+- [est_shequity](../../datafields/est_shequity.md) - Mean of SH Equity segment - mean of estimations
+- [est_tbv_ps](../../datafields/est_tbv_ps.md) - Tangible Book Value per Share - mean of estimations
+- [est_tot_assets](../../datafields/est_tot_assets.md) - Total Assets - mean of estimations
+- [est_tot_goodwill](../../datafields/est_tot_goodwill.md) - Total Goodwill - mean of estimations
+- [estimate_value_currency_code](../../datafields/estimate_value_currency_code.md) - Home currency of instrument
+- [estimate_value_currency_code_detail_qtr](../../datafields/estimate_value_currency_code_detail_qtr.md) - Home currency of instrument
+- [estimate_value_currency_code_qtr](../../datafields/estimate_value_currency_code_qtr.md) - Home currency of instrument
+- [financing_cashflow_reported_value](../../datafields/financing_cashflow_reported_value.md) - Cash Flow From Financing - Value
+- [free_cash_flow_per_share](../../datafields/free_cash_flow_per_share.md) - Free cash flow per share - actual financial value for the annual period
+- [free_cash_flow_per_share_actual_value](../../datafields/free_cash_flow_per_share_actual_value.md) - Free cash flow per share- announced financial value
+- [free_cash_flow_per_share_max_guidance](../../datafields/free_cash_flow_per_share_max_guidance.md) - The maximum guidance value for Free Cash Flow Per Share on an annual basis.
+- [free_cash_flow_per_share_reported_value](../../datafields/free_cash_flow_per_share_reported_value.md) - Free cash flow per share- announced financial value
+- [free_cash_flow_reported_value](../../datafields/free_cash_flow_reported_value.md) - Free cash flow value for the quarter.
+- [free_cash_flow_total](../../datafields/free_cash_flow_total.md) - Free Cash Flow value - Annual
+- [funds_from_operations_max_guidance](../../datafields/funds_from_operations_max_guidance.md) - The maximum guidance value for Funds from operation - annual
+- [goodwill_min_guidance_qtr](../../datafields/goodwill_min_guidance_qtr.md) - Minimum guidance value for Total Goodwill
+- [gross_income_reported_value](../../datafields/gross_income_reported_value.md) - Gross Income value for the quarter
+- [gross_income_total](../../datafields/gross_income_total.md) - Gross Income value on an annual basis
+- [guidance_estimate_value](../../datafields/guidance_estimate_value.md) - Estimated value for basic annual financial guidance
+- [guidance_previous_estimate_value_qtr](../../datafields/guidance_previous_estimate_value_qtr.md) - The previous estimation of finanicial item
+- [guidance_reporting_currency](../../datafields/guidance_reporting_currency.md) - Pricing Currency where the security trades - Annual
+- [guidance_value_currency_code_qtr](../../datafields/guidance_value_currency_code_qtr.md) - Home currency of instrument
+- [highest_sales_estimate](../../datafields/highest_sales_estimate.md) - Sales - The highest estimation for the annual period
+- [investing_cashflow_reported_value](../../datafields/investing_cashflow_reported_value.md) - Cash Flow from Investing - Value
+- [lowest_sales_estimate](../../datafields/lowest_sales_estimate.md) - Sales - The lowest estimation for the annual period
+- [max_adjusted_eps_guidance](../../datafields/max_adjusted_eps_guidance.md) - The maximum guidance value for adjusted earnings per share.
+- [max_adjusted_eps_guidance_2](../../datafields/max_adjusted_eps_guidance_2.md) - The maximum guidance value for adjusted earnings per share on an annual basis.
+- [max_adjusted_funds_from_operations_adj_guidance](../../datafields/max_adjusted_funds_from_operations_adj_guidance.md) - Adjusted funds from operation - Maximum guidance value
+- [max_adjusted_funds_from_operations_guidance](../../datafields/max_adjusted_funds_from_operations_guidance.md) - Max guidance value for Funds from operation
+- [max_adjusted_funds_from_operations_guidance_2](../../datafields/max_adjusted_funds_from_operations_guidance_2.md) - Adjusted funds from operation - maximum guidance value for the annual period
+- [max_adjusted_net_income_guidance](../../datafields/max_adjusted_net_income_guidance.md) - The maximum guidance value for Adjusted net income.
+- [max_adjusted_net_profit_guidance](../../datafields/max_adjusted_net_profit_guidance.md) - The maximum guidance value for adjusted net profit on an annual basis.
+- [max_book_value_per_share_guidance](../../datafields/max_book_value_per_share_guidance.md) - Book value per share - Maximum value among forecasts
+- [max_book_value_per_share_guidance_2](../../datafields/max_book_value_per_share_guidance_2.md) - Book value per share - Maximum guidance value for the annual period
+- [max_capital_expenditure_guidance](../../datafields/max_capital_expenditure_guidance.md) - The maximum guidance value for Capital Expenditures on an annual basis.
+- [max_custom_eps_guidance](../../datafields/max_custom_eps_guidance.md) - Custom Earnings per share - The highest guidance value
+- [max_customized_eps_guidance](../../datafields/max_customized_eps_guidance.md) - The maximum guidance value for custom earnings per share on an annual basis.
+- [max_ebit_guidance](../../datafields/max_ebit_guidance.md) - The maximum guidance value for Earnings Before Interest and Taxes (EBIT) on an annual basis.
+- [max_ebitda_guidance](../../datafields/max_ebitda_guidance.md) - The maximum guidance value for Earnings Before Interest, Taxes, Depreciation, and Amortization (EBITDA) on an annual basis.
+- [max_financing_cashflow_guidance](../../datafields/max_financing_cashflow_guidance.md) - Cash Flow From Financing - Maximum guidance value
+- [max_free_cash_flow_guidance](../../datafields/max_free_cash_flow_guidance.md) - The maximum guidance value for Free Cash Flow on an annual basis.
+- [max_free_cashflow_guidance](../../datafields/max_free_cashflow_guidance.md) - The maximum guidance value for Free Cash Flow.
+- [max_free_cashflow_per_share_guidance](../../datafields/max_free_cashflow_per_share_guidance.md) - The maximum guidance value for free cash flow per share.
+- [max_gross_income_guidance](../../datafields/max_gross_income_guidance.md) - The maximum guidance value for Gross Income.
+- [max_gross_income_guidance_2](../../datafields/max_gross_income_guidance_2.md) - The maximum guidance for Gross Income on an annual basis.
+- [max_investing_cashflow_guidance](../../datafields/max_investing_cashflow_guidance.md) - The maximum guidance value for Cash Flow from Investing.
+- [max_investing_cashflow_guidance_2](../../datafields/max_investing_cashflow_guidance_2.md) - The maximum guidance value for Cash Flow from Investing activities on an annual basis.
+- [max_net_debt_guidance](../../datafields/max_net_debt_guidance.md) - The maximum guidance value for Net Debt on an annual basis.
+- [max_net_income_guidance](../../datafields/max_net_income_guidance.md) - The maximum guidance value for net profit.
+- [max_net_profit_guidance](../../datafields/max_net_profit_guidance.md) - The maximum guidance value for net profit on an annual basis.
+- [max_operating_cashflow_guidance](../../datafields/max_operating_cashflow_guidance.md) - The maximum guidance value for Cash Flow from Operations.
+- [max_operating_cashflow_guidance_2](../../datafields/max_operating_cashflow_guidance_2.md) - The maximum guidance value for Cash Flow from Operations on an annual basis.
+- [max_pretax_profit_guidance](../../datafields/max_pretax_profit_guidance.md) - The maximum guidance value for Pretax income on an annual basis.
+- [max_reported_eps_guidance](../../datafields/max_reported_eps_guidance.md) - Reported Earnings Per Share - Maximum guidance value
+- [max_reported_eps_guidance_2](../../datafields/max_reported_eps_guidance_2.md) - Reported Earnings Per Share - Maximum guidance value for the annual period
+- [max_reported_pretax_income_guidance](../../datafields/max_reported_pretax_income_guidance.md) - Reported Pretax income- maximum guidance value
+- [max_reported_pretax_income_guidance_2](../../datafields/max_reported_pretax_income_guidance_2.md) - Reported Pretax income- maximum guidance value
+- [max_research_development_expense_guidance](../../datafields/max_research_development_expense_guidance.md) - The maximum guidance value for Research and Development Expense.
+- [max_selling_general_admin_guidance](../../datafields/max_selling_general_admin_guidance.md) - The maximum guidance value for Selling, General & Administrative Expense
+- [max_share_buyback_guidance](../../datafields/max_share_buyback_guidance.md) - Maximum guidance value for Shares Basic - Annual
+- [max_shareholders_equity_guidance](../../datafields/max_shareholders_equity_guidance.md) - The maximum guidance value for Total Shareholders' Equity.
+- [max_shares_outstanding_guidance](../../datafields/max_shares_outstanding_guidance.md) - The maximum guidance for Shares
+- [max_stock_option_expense_guidance](../../datafields/max_stock_option_expense_guidance.md) - Stock option expense - Maximum guidance value for the annual period
+- [max_tangible_book_value_per_share_guidance](../../datafields/max_tangible_book_value_per_share_guidance.md) - Tangible Book Value per Share - maximum guidance value
+- [max_total_assets_guidance](../../datafields/max_total_assets_guidance.md) - The maximum guidance value for Total Assets.
+- [max_total_assets_guidance_2](../../datafields/max_total_assets_guidance_2.md) - The maximum guidance value for Total Assets
+- [max_total_goodwill_guidance](../../datafields/max_total_goodwill_guidance.md) - The maximum guidance value for Total Goodwill.
+- [max_total_goodwill_guidance_2](../../datafields/max_total_goodwill_guidance_2.md) - The maximum guidance value for Total Goodwill on an annual basis.
+- [maximum_guidance_value](../../datafields/maximum_guidance_value.md) - Maximum guidance value for basic annual financials
+- [median_sales_estimate](../../datafields/median_sales_estimate.md) - Sales - median of estimations
+- [min_adjusted_funds_from_operations_adj_guidance](../../datafields/min_adjusted_funds_from_operations_adj_guidance.md) - Minimum guidance value for Adjusted funds from operation
+- [min_adjusted_funds_from_operations_guidance](../../datafields/min_adjusted_funds_from_operations_guidance.md) - Funds from operation - minimum guidance value
+- [min_adjusted_funds_from_operations_guidance_2](../../datafields/min_adjusted_funds_from_operations_guidance_2.md) - Adjusted funds from operation - minimum guidance for the annual period
+- [min_adjusted_net_income_guidance](../../datafields/min_adjusted_net_income_guidance.md) - Adjusted net income - minimum guidance value
+- [min_basic_shares_guidance](../../datafields/min_basic_shares_guidance.md) - Shares Basic - Minimum guidance value
+- [min_book_value_per_share_guidance](../../datafields/min_book_value_per_share_guidance.md) - Book value per share - minimum guidance value for the annual period
+- [min_capex_guidance](../../datafields/min_capex_guidance.md) - Minimum guidance value for Capital Expenditures
+- [min_capital_expenditure_guidance](../../datafields/min_capital_expenditure_guidance.md) - Minimum guidance value for Capital Expenditures
+- [min_custom_eps_guidance](../../datafields/min_custom_eps_guidance.md) - Custom Earnings per share - Minimum guidance value
+- [min_customized_eps_guidance](../../datafields/min_customized_eps_guidance.md) - Customized Earnings per share - Minimum guidance value for the annual period
+- [min_ebit_guidance](../../datafields/min_ebit_guidance.md) - Minimum guidance value for Earnings Before Interest and Taxes (EBIT)
+- [min_ebit_guidance_2](../../datafields/min_ebit_guidance_2.md) - Minimum guidance value for Earnings Before Interest and Taxes (EBIT) on an annual basis.
+- [min_ebitda_guidance](../../datafields/min_ebitda_guidance.md) - Minimum guidance value for Earnings Before Interest, Taxes, Depreciation, and Amortization (EBITDA) - Annual
+- [min_financing_cashflow_guidance](../../datafields/min_financing_cashflow_guidance.md) - Minimum guidance value for Cash Flow From Financing
+- [min_financing_cashflow_guidance_2](../../datafields/min_financing_cashflow_guidance_2.md) - Minimum guidance value for Cash Flow From Financing on an annual basis
+- [min_free_cash_flow_guidance](../../datafields/min_free_cash_flow_guidance.md) - The minimum guidance value for Free Cash Flow on an annual basis.
+- [min_free_cash_flow_per_share_guidance](../../datafields/min_free_cash_flow_per_share_guidance.md) - Free cash flow per share - minimum guidance value for the annual period
+- [min_free_cashflow_guidance](../../datafields/min_free_cashflow_guidance.md) - Minimum guidance value for Free Cash Flow
+- [min_free_cashflow_per_share_guidance](../../datafields/min_free_cashflow_per_share_guidance.md) - Free cash flow per share - minimum guidance value
+- [min_funds_from_operations_guidance](../../datafields/min_funds_from_operations_guidance.md) - Funds from operation - minimum guidance value for annual period
+- [min_gross_income_guidance](../../datafields/min_gross_income_guidance.md) - The minimum guidance value for Gross Income.
+- [min_gross_income_guidance_2](../../datafields/min_gross_income_guidance_2.md) - The minimum guidance for Gross Income on an annual basis.
+- [min_investing_cashflow_guidance](../../datafields/min_investing_cashflow_guidance.md) - Cash Flow From Investing - Minimum guidance value
+- [min_investing_cashflow_guidance_2](../../datafields/min_investing_cashflow_guidance_2.md) - Cash Flow From Investing - Minimum guidance value for the annual period
+- [min_net_debt_guidance](../../datafields/min_net_debt_guidance.md) - The minimum guidance value for Net Debt on an annual basis.
+- [min_net_income_guidance](../../datafields/min_net_income_guidance.md) - Net profit - minimum guidance value
+- [min_net_profit_guidance](../../datafields/min_net_profit_guidance.md) - Minimum guidance value for Net Profit on an annual basis
+- [min_operating_cashflow_guidance](../../datafields/min_operating_cashflow_guidance.md) - Minimum guidance value for Cash Flow from Operations
+- [min_pretax_profit_guidance](../../datafields/min_pretax_profit_guidance.md) - Minimum guidance value for Pretax income
+- [min_pretax_profit_guidance_2](../../datafields/min_pretax_profit_guidance_2.md) - The minimum guidance value for Pretax income on an annual basis.
+- [min_reported_eps_guidance](../../datafields/min_reported_eps_guidance.md) - Reported Earnings Per Share - Minimum guidance value for the annual period
+- [min_research_development_expense_guidance](../../datafields/min_research_development_expense_guidance.md) - Minimum guidance value for Research & Development Expense
+- [min_research_development_expense_guidance_2](../../datafields/min_research_development_expense_guidance_2.md) - Minimum guidance value for Research & Development Expense on an annual basis
+- [min_sg_and_a_expense_guidance](../../datafields/min_sg_and_a_expense_guidance.md) - Selling, General & Administrative Expense - Minimum guidance value
+- [min_share_buyback_guidance](../../datafields/min_share_buyback_guidance.md) - Shares Basic - Minimum guidance value for the annual period
+- [min_share_count_guidance](../../datafields/min_share_count_guidance.md) - Minimum guidance for shares on an annual basis
+- [min_shareholders_equity_guidance](../../datafields/min_shareholders_equity_guidance.md) - Minimum guidance value for Shareholders' Equity
+- [min_shares_outstanding_guidance](../../datafields/min_shares_outstanding_guidance.md) - Minimum guidance value for Shares
+- [min_stock_option_expense_guidance](../../datafields/min_stock_option_expense_guidance.md) - Stock option expense - minimum guidance value
+- [min_stock_option_expense_guidance_2](../../datafields/min_stock_option_expense_guidance_2.md) - Minimum guidance value for stock option expense on an annual basis
+- [min_tangible_book_value_per_share_guidance](../../datafields/min_tangible_book_value_per_share_guidance.md) - Tangible Book Value per Share - minimum guidance value
+- [min_tangible_book_value_per_share_guidance_2](../../datafields/min_tangible_book_value_per_share_guidance_2.md) - Tangible Book Value per Share - Minimum guidance value
+- [min_total_assets_guidance](../../datafields/min_total_assets_guidance.md) - Minimum guidance value for Total Assets
+- [min_total_assets_guidance_2](../../datafields/min_total_assets_guidance_2.md) - Minimum guidance value for Total Assets on an annual basis
+- [min_total_goodwill_guidance](../../datafields/min_total_goodwill_guidance.md) - Total Goodwill - The lowest guidance value
+- [minimum_guidance_value](../../datafields/minimum_guidance_value.md) - Minimum guidance value for basic annual financials
+- [net_debt_actual_value](../../datafields/net_debt_actual_value.md) - Net debt- announced financial value
+- [net_debt_amount](../../datafields/net_debt_amount.md) - Net debt - actual value for the annual period
+- [net_debt_max_guidance_qtr](../../datafields/net_debt_max_guidance_qtr.md) - Maximum guidance value for Net Debt
+- [net_debt_min_guidance_qtr](../../datafields/net_debt_min_guidance_qtr.md) - Minimum guidance value for Net Debt
+- [net_debt_reported_value](../../datafields/net_debt_reported_value.md) - Net Debt value for the quarter
+- [net_income_adjusted](../../datafields/net_income_adjusted.md) - Adjusted net income- announced financial value for annual frequency
+- [net_income_total_2](../../datafields/net_income_total_2.md) - Net profit- announced financial value for annual data
+- [net_profit_adjusted_min_guidance](../../datafields/net_profit_adjusted_min_guidance.md) - The minimum guidance value for adjusted net profit on an annual basis.
+- [net_profit_adjusted_value](../../datafields/net_profit_adjusted_value.md) - Adjusted net income- announced financial value
+- [net_profit_reported_value](../../datafields/net_profit_reported_value.md) - Net profit- announced financial value
+- [operating_cashflow_reported_value](../../datafields/operating_cashflow_reported_value.md) - Cash Flow from Operations - Value
+- [operating_profit_before_depr_amort](../../datafields/operating_profit_before_depr_amort.md) - EBITDA value - Annual
+- [operating_profit_before_depr_amort_max_guidance_qtr](../../datafields/operating_profit_before_depr_amort_max_guidance_qtr.md) - Max guidance value for Earnings before interest, taxes, depreciation and amortization
+- [operating_profit_before_depr_amort_min_guidance_qtr](../../datafields/operating_profit_before_depr_amort_min_guidance_qtr.md) - Minimum guidance value for Earnings before interest, taxes, depreciation and amortization
+- [operating_profit_before_interest_tax](../../datafields/operating_profit_before_interest_tax.md) - Earnings Before Interest and Taxes (EBIT) - Actual Value
+- [operating_profit_max_guidance_qtr](../../datafields/operating_profit_max_guidance_qtr.md) - The maximum guidance value for Earnings Before Interest and Taxes.
+- [pretax_income_actual_reported_value](../../datafields/pretax_income_actual_reported_value.md) - Reported Pretax income- announced financial value
+- [pretax_income_max_guidance_qtr](../../datafields/pretax_income_max_guidance_qtr.md) - The maximum guidance value for Pretax income.
+- [pretax_income_reported](../../datafields/pretax_income_reported.md) - Reported Pretax income - actual value for the annual fiscal period
+- [pretax_income_reported_min_guidance](../../datafields/pretax_income_reported_min_guidance.md) - Reported Pretax income - minimum guidance value
+- [pretax_income_reported_min_guidance_qtr](../../datafields/pretax_income_reported_min_guidance_qtr.md) - Reported Pretax income- minimum guidance value
+- [pretax_income_reported_value](../../datafields/pretax_income_reported_value.md) - Reported Pretax income - actual value for the quarter
+- [pretax_income_standalone_value](../../datafields/pretax_income_standalone_value.md) - Pretax Profit - actual value for the quarter
+- [pretax_income_total](../../datafields/pretax_income_total.md) - Pretax Profit - Value for the annual period
+- [previous_guidance_estimate](../../datafields/previous_guidance_estimate.md) - The previous estimation of financial item - annual frequency
+- [previous_guidance_value_annual](../../datafields/previous_guidance_value_annual.md) - The previous estimation of finanicial item
+- [previous_quarterly_guidance_estimate](../../datafields/previous_quarterly_guidance_estimate.md) - The previous estimation of finanicial item
+- [previous_recommendation_value](../../datafields/previous_recommendation_value.md) - The previous estimation of financial item for recommendation
+- [reporting_currency_code_9](../../datafields/reporting_currency_code_9.md) - Home currency of instrument
+- [research_development_expense](../../datafields/research_development_expense.md) - Research & Development Expense - Actual Value (Annual)
+- [research_development_expense_actual_value](../../datafields/research_development_expense_actual_value.md) - Research and Development Expense- announced financial value
+- [research_development_expense_reported_value](../../datafields/research_development_expense_reported_value.md) - Research & Development (Income Statement) Value in Millions
+- [research_development_max_guidance](../../datafields/research_development_max_guidance.md) - The maximum guidance value for Research and Development Expense on an annual basis.
+- [sales_estimate_average](../../datafields/sales_estimate_average.md) - Sales - mean of estimations with a delay of 1 quarter
+- [sales_estimate_average_annual](../../datafields/sales_estimate_average_annual.md) - Sales - mean of estimations
+- [sales_estimate_average_quarterly](../../datafields/sales_estimate_average_quarterly.md) - Sales - mean of estimations
+- [sales_estimate_count](../../datafields/sales_estimate_count.md) - Sales - number of estimations
+- [sales_estimate_count_2](../../datafields/sales_estimate_count_2.md) - Number of Sales estimates
+- [sales_estimate_count_quarterly](../../datafields/sales_estimate_count_quarterly.md) - Sales - number of estimations
+- [sales_estimate_dispersion](../../datafields/sales_estimate_dispersion.md) - Standard deviation of Sales estimations for the annual period.
+- [sales_estimate_maximum](../../datafields/sales_estimate_maximum.md) - Sales - The highest estimation
+- [sales_estimate_maximum_quarterly](../../datafields/sales_estimate_maximum_quarterly.md) - Sales - The highest estimation
+- [sales_estimate_median_quarterly](../../datafields/sales_estimate_median_quarterly.md) - Sales - median of estimations
+- [sales_estimate_median_value](../../datafields/sales_estimate_median_value.md) - Sales - Median value among forecasts
+- [sales_estimate_minimum](../../datafields/sales_estimate_minimum.md) - Sales - The lowest estimation
+- [sales_estimate_minimum_quarterly](../../datafields/sales_estimate_minimum_quarterly.md) - Sales - The lowest estimation
+- [sales_estimate_standard_deviation](../../datafields/sales_estimate_standard_deviation.md) - Sales - standard deviation of estimations
+- [sales_estimate_stddev_quarterly](../../datafields/sales_estimate_stddev_quarterly.md) - Standard deviation of Sales estimations
+- [sales_estimate_value](../../datafields/sales_estimate_value.md) - Sales - Estimated value
+- [sales_guidance_value](../../datafields/sales_guidance_value.md) - Sales - Guidance value for the annual period
+- [sales_guidance_value_quarterly](../../datafields/sales_guidance_value_quarterly.md) - Sales - guidance value
+- [sales_max_guidance_quarterly](../../datafields/sales_max_guidance_quarterly.md) - The maximum guidance value for sales.
+- [sales_max_guidance_value](../../datafields/sales_max_guidance_value.md) - Maximum guidance value for annual sales
+- [sales_min_guidance_quarterly](../../datafields/sales_min_guidance_quarterly.md) - Minimum guidance value for Sales
+- [sales_min_guidance_value](../../datafields/sales_min_guidance_value.md) - Minimum sales guidance for the annual period.
+- [sales_previous_estimate_value](../../datafields/sales_previous_estimate_value.md) - The previous estimation of Sales
+- [selling_general_admin_expense](../../datafields/selling_general_admin_expense.md) - Selling, General & Administrative Expense Value
+- [selling_general_admin_expense_actual_value](../../datafields/selling_general_admin_expense_actual_value.md) - Selling, General & Administrative Expense - actual value
+- [selling_general_admin_expense_max_guidance_qtr](../../datafields/selling_general_admin_expense_max_guidance_qtr.md) - Selling, General & Admin Expenses - Maximum guidance value
+- [selling_general_admin_expense_reported_value](../../datafields/selling_general_admin_expense_reported_value.md) - Selling, General & Administrative Expense value
+- [sg_and_admin_min_guidance_value](../../datafields/sg_and_admin_min_guidance_value.md) - Minimum guidance value for Selling, General & Administrative Expense on an annual basis.
+- [shareholders_equity_actual_value](../../datafields/shareholders_equity_actual_value.md) - Shareholders' Equity - Total Value
+- [shareholders_equity_max_guidance](../../datafields/shareholders_equity_max_guidance.md) - The maximum guidance value for Shareholder's Equity on an annual basis.
+- [shareholders_equity_min_guidance](../../datafields/shareholders_equity_min_guidance.md) - Minimum guidance value for Share Equity
+- [shareholders_equity_reported_value](../../datafields/shareholders_equity_reported_value.md) - Shareholders' Equity - Total Value
+- [shareholders_equity_total_2](../../datafields/shareholders_equity_total_2.md) - Shareholder's Equity - Total Value
+- [shares_outstanding_max_guidance](../../datafields/shares_outstanding_max_guidance.md) - Maximum guidance value for Shares
+- [stock_option_expense_max_guidance_qtr](../../datafields/stock_option_expense_max_guidance_qtr.md) - Stock option expense - maximum guidance value
+- [tangible_book_value_per_share_max_guidance](../../datafields/tangible_book_value_per_share_max_guidance.md) - Tangible Book Value per Share - Maximum guidance value
+- [total_assets_amount](../../datafields/total_assets_amount.md) - Total Assets - actual value
+- [total_assets_reported_value](../../datafields/total_assets_reported_value.md) - Total Assets - actual value
+- [total_goodwill_actual_value](../../datafields/total_goodwill_actual_value.md) - Total Goodwill - announced financial value
+- [total_goodwill_amount](../../datafields/total_goodwill_amount.md) - Total Goodwill - Value
+- [total_goodwill_reported_value](../../datafields/total_goodwill_reported_value.md) - Total Goodwill - Actual Value in Millions

@@ -1,0 +1,70 @@
+# Datafield Category: Fundamental / fnd6 Income Statement
+
+- Parent category: [Fundamental](../fundamental.md)
+- Total fields: 63
+
+## Fields
+
+- [fnd6_caxts](../../datafields/fnd6_caxts.md) - Cost and Expenses - Total
+- [fnd6_cogss](../../datafields/fnd6_cogss.md) - Cost of Goods Sold
+- [fnd6_donr](../../datafields/fnd6_donr.md) - Nonrecurring Disc Operations
+- [fnd6_dps](../../datafields/fnd6_dps.md) - Depreciation and Amortization
+- [fnd6_ibmii](../../datafields/fnd6_ibmii.md) - Income before Extraordinary Items and Noncontrolling Interests
+- [fnd6_ibs](../../datafields/fnd6_ibs.md) - Income before Extraordinary Items
+- [fnd6_idit](../../datafields/fnd6_idit.md) - Interest and Related Income - Total
+- [fnd6_iints](../../datafields/fnd6_iints.md) - Interest Income
+- [fnd6_intc](../../datafields/fnd6_intc.md) - Interest Capitalized
+- [fnd6_intseg](../../datafields/fnd6_intseg.md) - Intersegment Eliminations
+- [fnd6_itci](../../datafields/fnd6_itci.md) - Investment Tax Credit (Income Account)
+- [fnd6_niadj](../../datafields/fnd6_niadj.md) - Net Income Adjusted for Common/Ordinary Stock (Capital) Equivalents
+- [fnd6_nis](../../datafields/fnd6_nis.md) - Net Income (Loss)
+- [fnd6_nopio](../../datafields/fnd6_nopio.md) - Nonoperating Income (Expense) - Other
+- [fnd6_nopxs](../../datafields/fnd6_nopxs.md) - Nonoperating Income (Expense) - excluding Interest
+- [fnd6_nxints](../../datafields/fnd6_nxints.md) - Net Interest Income (Expense)
+- [fnd6_ocaxs](../../datafields/fnd6_ocaxs.md) - Other Costs and Expenses
+- [fnd6_oelim](../../datafields/fnd6_oelim.md) - Other Eliminations (Income)
+- [fnd6_oiadps](../../datafields/fnd6_oiadps.md) - Operating Income after Depreciation
+- [fnd6_oibdps](../../datafields/fnd6_oibdps.md) - Operating Income before Depreciation
+- [fnd6_ops](../../datafields/fnd6_ops.md) - Operating Profit (Loss)
+- [fnd6_pidom](../../datafields/fnd6_pidom.md) - Pretax Income - Domestic
+- [fnd6_pifo](../../datafields/fnd6_pifo.md) - Pretax Income - Foreign
+- [fnd6_pncdq](../../datafields/fnd6_pncdq.md) - Core Pension Adjustment Diluted EPS Effect
+- [fnd6_pncepsq](../../datafields/fnd6_pncepsq.md) - Core Pension Adjustment Basic EPS Effect
+- [fnd6_ptis](../../datafields/fnd6_ptis.md) - Pretax Income
+- [fnd6_rds](../../datafields/fnd6_rds.md) - Research and Development
+- [fnd6_revts](../../datafields/fnd6_revts.md) - Total Revenues
+- [fnd6_sales](../../datafields/fnd6_sales.md) - Net Sales
+- [fnd6_salexg](../../datafields/fnd6_salexg.md) - Export Sales
+- [fnd6_spce](../../datafields/fnd6_spce.md) - S&P Core Earnings
+- [fnd6_spis](../../datafields/fnd6_spis.md) - Special Items
+- [fnd6_txc](../../datafields/fnd6_txc.md) - Income Taxes - Current
+- [fnd6_txdfed](../../datafields/fnd6_txdfed.md) - Deferred Taxes - Federal
+- [fnd6_txdfo](../../datafields/fnd6_txdfo.md) - Deferred Taxes - Foreign
+- [fnd6_txdi](../../datafields/fnd6_txdi.md) - Income Taxes - Deferred
+- [fnd6_txds](../../datafields/fnd6_txds.md) - Deferred Taxes - State
+- [fnd6_txfed](../../datafields/fnd6_txfed.md) - Income Taxes - Federal
+- [fnd6_txfo](../../datafields/fnd6_txfo.md) - Income Taxes - Foreign
+- [fnd6_txndbr](../../datafields/fnd6_txndbr.md) - Deferred Tax Residual
+- [fnd6_txo](../../datafields/fnd6_txo.md) - Income Taxes - Other
+- [fnd6_txr](../../datafields/fnd6_txr.md) - Income Tax Refund
+- [fnd6_txs](../../datafields/fnd6_txs.md) - Income Taxes - State
+- [fnd6_txts](../../datafields/fnd6_txts.md) - Income Taxes
+- [fnd6_txtubadjust](../../datafields/fnd6_txtubadjust.md) - Other Unrecognized Tax Benefit Adjustment
+- [fnd6_txtubbegin](../../datafields/fnd6_txtubbegin.md) - Unrecog. Tax Benefits - Beg of Year
+- [fnd6_txtubend](../../datafields/fnd6_txtubend.md) - Unrecog. Tax Benefits - End of Year
+- [fnd6_txtubposdec](../../datafields/fnd6_txtubposdec.md) - Decrease - Current Tax Positions
+- [fnd6_txtubposinc](../../datafields/fnd6_txtubposinc.md) - Increase - Current Tax Positions
+- [fnd6_txtubpospdec](../../datafields/fnd6_txtubpospdec.md) - Decrease - Prior Tax Positions
+- [fnd6_txtubpospinc](../../datafields/fnd6_txtubpospinc.md) - Increase - Prior Tax Positions
+- [fnd6_txtubsettle](../../datafields/fnd6_txtubsettle.md) - Settlements with Tax Authorities
+- [fnd6_txtubsoflimit](../../datafields/fnd6_txtubsoflimit.md) - Lapse of Statute of Limitations
+- [fnd6_txtubtxtr](../../datafields/fnd6_txtubtxtr.md) - Impact on Effective Tax Rate
+- [fnd6_txtubxintbs](../../datafields/fnd6_txtubxintbs.md) - Interest & Penalties Accrued - B/S
+- [fnd6_txtubxintis](../../datafields/fnd6_txtubxintis.md) - Interest & Penalties Recognized - I/S
+- [fnd6_xad](../../datafields/fnd6_xad.md) - Advertising Expense
+- [fnd6_xidos](../../datafields/fnd6_xidos.md) - Extraordinary Items and Discontinued Operations
+- [fnd6_xints](../../datafields/fnd6_xints.md) - Interest Expense
+- [fnd6_xopr](../../datafields/fnd6_xopr.md) - Operating Expenses - Total
+- [fnd6_xpr](../../datafields/fnd6_xpr.md) - Pension and Retirement Expense
+- [fnd6_xrent](../../datafields/fnd6_xrent.md) - Rental Expense
+- [fnd6_xsgas](../../datafields/fnd6_xsgas.md) - Selling, General & Administrative

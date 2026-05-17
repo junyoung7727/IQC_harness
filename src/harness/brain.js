@@ -6,6 +6,71 @@ const LIVE_SIMULATE_URL = 'https://platform.worldquantbrain.com/simulate';
 const LIVE_SIMULATIONS_URL = 'https://api.worldquantbrain.com/simulations';
 const LIVE_AUTH_PROOF_URL = 'https://api.worldquantbrain.com/users/self/messages/summary';
 
+const RETRYABLE_NAVIGATION_ERROR_PATTERNS = [
+  /ERR_NETWORK_CHANGED/i,
+  /ERR_NAME_NOT_RESOLVED/i,
+  /ERR_NAME_RESOLUTION_FAILED/i,
+  /ERR_CONNECTION_RESET/i,
+  /ERR_CONNECTION_REFUSED/i,
+  /ERR_CONNECTION_CLOSED/i,
+  /ERR_CONNECTION_TIMED_OUT/i,
+  /ERR_INTERNET_DISCONNECTED/i,
+  /ERR_NETWORK_ACCESS_DENIED/i,
+  /ERR_ADDRESS_UNREACHABLE/i,
+  /ERR_CONNECTION_ABORTED/i,
+  /navigation timeout/i,
+  /Target page, context or browser has been closed/i
+];
+
+const gotoRetryOptions = {
+  maxAttempts: 3,
+  initialDelayMs: 750
+};
+
+function looksRetryable(error) {
+  const message = `${error?.message ?? ''} ${error?.name ?? ''}`;
+  return RETRYABLE_NAVIGATION_ERROR_PATTERNS.some((pattern) => pattern.test(message));
+}
+
+async function gotoWithRetry(page, url, options = {}) {
+  let lastError;
+
+  for (let attempt = 1; attempt <= gotoRetryOptions.maxAttempts; attempt += 1) {
+    try {
+      return await page.goto(url, options);
+    } catch (error) {
+      lastError = error;
+      const retryable = looksRetryable(error);
+      const isLast = attempt >= gotoRetryOptions.maxAttempts;
+      if (isLast || !retryable) {
+        const brainError = retryable
+          ? createBrainError(`brain_navigation_failed_retry_exhausted:${url}:${error.message}`, 'transient_navigation_error', true)
+          : createBrainError(`brain_navigation_failed:${url}:${error.message}`, 'navigation_error', false);
+        throw brainError;
+      }
+      await sleep(gotoRetryOptions.initialDelayMs * attempt);
+    }
+  }
+
+  const fallbackError = createBrainError(`brain_navigation_failed_exhausted:${url}:${lastError?.message ?? 'unknown'}`, 'transient_navigation_error', true);
+  throw fallbackError;
+}
+
+async function launchBrainContext(chromeProfile, headed) {
+  try {
+    return await chromium.launchPersistentContext(chromeProfile, { channel: 'chrome', headless: !headed });
+  } catch (error) {
+    if (looksRetryable(error)) {
+      const wrapped = createBrainError(`brain_context_launch_failed:${error.message}`, 'transient_browser_start', true);
+      wrapped.cause = error;
+      throw wrapped;
+    }
+    const wrapped = createBrainError(`brain_context_launch_failed:${error.message}`, 'browser_start_error', false);
+    wrapped.cause = error;
+    throw wrapped;
+  }
+}
+
 function sleep(ms) {
   return new Promise((resolve) => setTimeout(resolve, ms));
 }
@@ -172,7 +237,7 @@ async function clearSimulationTutorial(page, maxSteps = 15) {
 
 async function ensureLoggedIn(page, credentials) {
   let activePage = getActivePage(page);
-  await activePage.goto(LIVE_SIGN_IN_URL, { waitUntil: 'domcontentloaded', timeout: 120000 });
+  await gotoWithRetry(activePage, LIVE_SIGN_IN_URL, { waitUntil: 'domcontentloaded', timeout: 120000 });
   await activePage.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
 
   const loginReady = await waitForLoginReady(activePage);
@@ -191,7 +256,7 @@ async function ensureLoggedIn(page, credentials) {
   }
 
   activePage = getActivePage(activePage);
-  await activePage.goto(LIVE_SIMULATE_URL, { waitUntil: 'domcontentloaded', timeout: 120000 });
+  await gotoWithRetry(activePage, LIVE_SIMULATE_URL, { waitUntil: 'domcontentloaded', timeout: 120000 });
   await activePage.waitForLoadState('networkidle', { timeout: 15000 }).catch(() => {});
   activePage = await clearSimulationTutorial(activePage);
   const proof = await verifyBrainSession(activePage);
@@ -317,7 +382,7 @@ export async function preflightBrainAccess({ brainAccount, chromeProfile, headed
     throw createBrainError('missing_brain_credentials', 'credential_binding_error', false);
   }
 
-  const context = await chromium.launchPersistentContext(chromeProfile, { channel: 'chrome', headless: !headed });
+  const context = await launchBrainContext(chromeProfile, headed);
   try {
     const page = context.pages()[0] ?? await context.newPage();
     const { proof } = await ensureLoggedIn(page, credentials);
@@ -334,7 +399,7 @@ export async function runBrainSimulation({ brainAccount, chromeProfile, expressi
     throw error;
   }
 
-  const context = await chromium.launchPersistentContext(chromeProfile, { channel: 'chrome', headless: !headed });
+  const context = await launchBrainContext(chromeProfile, headed);
   try {
     const page = context.pages()[0] ?? await context.newPage();
     let { page: activePage } = await ensureLoggedIn(page, credentials);

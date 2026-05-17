@@ -36,13 +36,19 @@ function expectSingleMatch(matches, errorMessage) {
   return matches[0] ?? null;
 }
 
-export function resolveLoginEntry(entries, { brainAccount, chromeProfile }) {
+export function resolveLoginEntry(entries, { brainAccount, chromeProfile, password }) {
   const hasBrainAccount = Boolean(brainAccount);
   const hasChromeProfile = Boolean(chromeProfile);
+  const hasPassword = Boolean(password);
   const normalizedChromeProfile = normalizeChromeProfilePath(chromeProfile);
 
   if (hasBrainAccount && hasChromeProfile) {
     const matches = entries.filter((entry) => entry.id === brainAccount && normalizeChromeProfilePath(entry.chromeProfileDir) === normalizedChromeProfile);
+    return expectSingleMatch(matches, 'ambiguous_brain_credentials');
+  }
+
+  if (hasBrainAccount && hasPassword) {
+    const matches = entries.filter((entry) => entry.id === brainAccount && entry.password === password);
     return expectSingleMatch(matches, 'ambiguous_brain_credentials');
   }
 
@@ -62,4 +68,9 @@ export function resolveLoginEntry(entries, { brainAccount, chromeProfile }) {
 export function findLoginEntry({ brainAccount, chromeProfile }) {
   const entries = loadLoginEntries();
   return resolveLoginEntry(entries, { brainAccount, chromeProfile });
+}
+
+export function findLoginEntryByIdAndPassword({ brainAccount, password }) {
+  const entries = loadLoginEntries();
+  return resolveLoginEntry(entries, { brainAccount, password });
 }

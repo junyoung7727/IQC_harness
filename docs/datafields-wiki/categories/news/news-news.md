@@ -1,0 +1,329 @@
+# Datafield Category: News / News
+
+- Parent category: [News](../news.md)
+- Total fields: 322
+
+## Fields
+
+- [news_all_vwap](../../datafields/news_all_vwap.md) - Volume weighted average price of all sessions
+- [news_atr_ratio](../../datafields/news_atr_ratio.md) - Ratio of today's range to 20-day average true range
+- [news_atr14](../../datafields/news_atr14.md) - 14-day Average True Range
+- [news_cap](../../datafields/news_cap.md) - Reported market capitalization for the calendar day of the session
+- [news_close_vol](../../datafields/news_close_vol.md) - Main close volume
+- [news_curr_vol](../../datafields/news_curr_vol.md) - Current day's session volume
+- [news_dividend_yield](../../datafields/news_dividend_yield.md) - Annual yield
+- [news_eod_close](../../datafields/news_eod_close.md) - Close price of the session
+- [news_eod_high](../../datafields/news_eod_high.md) - Highest price reached between the time of news and the end of the session
+- [news_eod_low](../../datafields/news_eod_low.md) - Lowest price reached between the time of news and the end of the session
+- [news_eod_vwap](../../datafields/news_eod_vwap.md) - Volume weighted average price between the time of news and the end of the session
+- [news_eps_actual](../../datafields/news_eps_actual.md) - The actual Earnings Per Share value that was conveyed by the news release
+- [news_high_exc_stddev](../../datafields/news_high_exc_stddev.md) - (EODHigh - TONLast)/StdDev, where StdDev is one standard deviation for the close price for 30 calendar days
+- [news_indx_perf](../../datafields/news_indx_perf.md) - ((EODClose - TONLast) / TONLast) - ((SPYClose - SPYLast) / SPYLast)
+- [news_low_exc_stddev](../../datafields/news_low_exc_stddev.md) - (TONLast - EODLow) / StdDev, where StdDev is one standard deviation for the close price for 30 calendar days
+- [news_ls](../../datafields/news_ls.md) - Whether a long or short position would have been more advantageous: If (EODHigh - Last) > (Last - EODLow) Then LS = 1; If (EODHigh - Last) = (Last - EODLow) Then LS= 0; If (EODHigh - Last) < (Last - EODLow) Then LS = -1.
+- [news_main_vwap](../../datafields/news_main_vwap.md) - Main session volume weighted average price
+- [news_max_dn_amt](../../datafields/news_max_dn_amt.md) - The price at the time of the news minus the after the news low
+- [news_max_dn_ret](../../datafields/news_max_dn_ret.md) - Percent change from the price at the time of the news to the after the news low
+- [news_max_up_amt](../../datafields/news_max_up_amt.md) - The after the news high minus the price at the time of the news
+- [news_max_up_ret](../../datafields/news_max_up_ret.md) - Percent change from the price at the time of the news to the after the news high
+- [news_mins_1_chg](../../datafields/news_mins_1_chg.md) - The minimum of L or S above for 1-minute bucket
+- [news_mins_1_pct_dn](../../datafields/news_mins_1_pct_dn.md) - Number of minutes that elapsed before price went down 1 percentage point
+- [news_mins_1_pct_up](../../datafields/news_mins_1_pct_up.md) - Number of minutes that elapsed before price went up 1 percentage point
+- [news_mins_10_chg](../../datafields/news_mins_10_chg.md) - The minimum of L or S above for 10-minute bucket
+- [news_mins_10_pct_dn](../../datafields/news_mins_10_pct_dn.md) - Number of minutes that elapsed before price went down 10 percentage points
+- [news_mins_10_pct_up](../../datafields/news_mins_10_pct_up.md) - Number of minutes that elapsed before price went up 10 percentage points
+- [news_mins_2_chg](../../datafields/news_mins_2_chg.md) - The minimum of L or S above for 2-minute bucket
+- [news_mins_2_pct_dn](../../datafields/news_mins_2_pct_dn.md) - Number of minutes that elapsed before price went down 2 percentage points
+- [news_mins_2_pct_up](../../datafields/news_mins_2_pct_up.md) - Number of minutes that elapsed before price went up 2 percentage points
+- [news_mins_20_chg](../../datafields/news_mins_20_chg.md) - The minimum of L or S above for 20-minute bucket
+- [news_mins_20_pct_dn](../../datafields/news_mins_20_pct_dn.md) - Number of minutes that elapsed before price went down 20 percentage points
+- [news_mins_20_pct_up](../../datafields/news_mins_20_pct_up.md) - Number of minutes that elapsed before price went up 20 percentage points
+- [news_mins_3_chg](../../datafields/news_mins_3_chg.md) - The minimum of L or S above for 3-minute bucket
+- [news_mins_3_pct_dn](../../datafields/news_mins_3_pct_dn.md) - Number of minutes that elapsed before price went down 3 percentage points
+- [news_mins_3_pct_up](../../datafields/news_mins_3_pct_up.md) - Number of minutes that elapsed before price went up 3 percentage points
+- [news_mins_4_chg](../../datafields/news_mins_4_chg.md) - The minimum of L or S above for 4-minute bucket
+- [news_mins_4_pct_dn](../../datafields/news_mins_4_pct_dn.md) - Number of minutes that elapsed before price went down 4 percentage points
+- [news_mins_4_pct_up](../../datafields/news_mins_4_pct_up.md) - Number of minutes that elapsed before price went up 4 percentage points
+- [news_mins_5_chg](../../datafields/news_mins_5_chg.md) - The minimum of L or S above for 5-minute bucket
+- [news_mins_5_pct_dn](../../datafields/news_mins_5_pct_dn.md) - Number of minutes that elapsed before price went down 5 percentage points
+- [news_mins_5_pct_up](../../datafields/news_mins_5_pct_up.md) - Number of minutes that elapsed before price went up 5 percentage points
+- [news_mins_7_5_chg](../../datafields/news_mins_7_5_chg.md) - The minimum of L or S above for 7.5-minute bucket
+- [news_mins_7_5_pct_dn](../../datafields/news_mins_7_5_pct_dn.md) - Number of minutes that elapsed before price went down 7.5 percentage points
+- [news_mins_7_5_pct_up](../../datafields/news_mins_7_5_pct_up.md) - Number of minutes that elapsed before price went up 7.5 percentage points
+- [news_mov_vol](../../datafields/news_mov_vol.md) - 30 day moving average session volume
+- [news_open](../../datafields/news_open.md) - Price at the session open
+- [news_open_gap](../../datafields/news_open_gap.md) - (DayOpen - PrevClose) / PrevClose
+- [news_open_vol](../../datafields/news_open_vol.md) - Main open volume
+- [news_pct_10min](../../datafields/news_pct_10min.md) - The percent change in price in the first 10 minutes following the news release
+- [news_pct_120min](../../datafields/news_pct_120min.md) - The percent change in price in the first 120 minutes following the news release
+- [news_pct_1min](../../datafields/news_pct_1min.md) - The percent change in price in the first minute following the news release
+- [news_pct_30min](../../datafields/news_pct_30min.md) - The percent change in price in the first 30 minutes following the news release
+- [news_pct_30sec](../../datafields/news_pct_30sec.md) - The percent change in price in the 30 seconds following the news release
+- [news_pct_5_min](../../datafields/news_pct_5_min.md) - The percent change in price in the first 5 minutes following the news release
+- [news_pct_60min](../../datafields/news_pct_60min.md) - The percent change in price in the first 60 minutes following the news release
+- [news_pct_90min](../../datafields/news_pct_90min.md) - The percent change in price in the first 90 minutes following the news release
+- [news_pe_ratio](../../datafields/news_pe_ratio.md) - Reported price-to-earnings ratio for the calendar day of the session
+- [news_post_vwap](../../datafields/news_post_vwap.md) - Post-session volume-weighted average price
+- [news_pre_vwap](../../datafields/news_pre_vwap.md) - Pre-session volume weighted average price
+- [news_prev_close](../../datafields/news_prev_close.md) - Previous trading day's close price
+- [news_prev_day_ret](../../datafields/news_prev_day_ret.md) - Percent change between the previous day's open and close
+- [news_prev_vol](../../datafields/news_prev_vol.md) - Previous day's session volume
+- [news_range_stddev](../../datafields/news_range_stddev.md) - (RangeAmt - AvgRange) / RangeStdDev, where AvgRange is the average of the daily range, and RangeStdDev is one standard deviation for the daily range, both for 30 calendar days
+- [news_ratio_vol](../../datafields/news_ratio_vol.md) - Curr_Vol / Mov_Vol
+- [news_session_range](../../datafields/news_session_range.md) - Session High Price - Session Low Price
+- [news_session_range_pct](../../datafields/news_session_range_pct.md) - (Session High Price - Session Low Price) / Session Low Price.
+- [news_short_interest](../../datafields/news_short_interest.md) - Total number of shares sold short divided by total number of shares outstanding
+- [news_spy_close](../../datafields/news_spy_close.md) - Price of SPY at close of session
+- [news_spy_last](../../datafields/news_spy_last.md) - Last Price of the SPY at the time of the news
+- [news_ton_high](../../datafields/news_ton_high.md) - Highest price reached during the session before the time of news
+- [news_ton_last](../../datafields/news_ton_last.md) - Price at the time of news
+- [news_ton_low](../../datafields/news_ton_low.md) - Lowest price reached during the session before the time of the news
+- [news_tot_ticks](../../datafields/news_tot_ticks.md) - Total number of ticks for the trading day
+- [news_vol_stddev](../../datafields/news_vol_stddev.md) - (CurrentVolume - AvgVol)/VolStDev, where AvgVol is the average of the daily volume, and VolStdDev is one standard deviation for the daily volume, both for 30 calendar days
+- [nws12_afterhsz_01l](../../datafields/nws12_afterhsz_01l.md) - Number of minutes that elapsed before price went up 10 percentage points
+- [nws12_afterhsz_01p](../../datafields/nws12_afterhsz_01p.md) - The minimum of L or S above for 10 minute bucket
+- [nws12_afterhsz_01s](../../datafields/nws12_afterhsz_01s.md) - Number of minutes that elapsed before price went down 10 percentage points
+- [nws12_afterhsz_02l](../../datafields/nws12_afterhsz_02l.md) - Number of minutes that elapsed before price went up 20 percentage points
+- [nws12_afterhsz_02p](../../datafields/nws12_afterhsz_02p.md) - The minimum of L or S above for 20-minute bucket
+- [nws12_afterhsz_02s](../../datafields/nws12_afterhsz_02s.md) - Number of minutes that elapsed before price went down 20 percentage points
+- [nws12_afterhsz_1_minute](../../datafields/nws12_afterhsz_1_minute.md) - The percent change in price in the first minute following the news release
+- [nws12_afterhsz_10_min](../../datafields/nws12_afterhsz_10_min.md) - The percent change in price in the first 10 minutes following the news release
+- [nws12_afterhsz_120_min](../../datafields/nws12_afterhsz_120_min.md) - The percent change in price in the first 120 minutes following the news release
+- [nws12_afterhsz_1l](../../datafields/nws12_afterhsz_1l.md) - Number of minutes that elapsed before price went up 1 percentage points
+- [nws12_afterhsz_1p](../../datafields/nws12_afterhsz_1p.md) - The minimum of L or S above for 1-minute bucket
+- [nws12_afterhsz_1s](../../datafields/nws12_afterhsz_1s.md) - Number of minutes that elapsed before price went down 1 percentage point
+- [nws12_afterhsz_2l](../../datafields/nws12_afterhsz_2l.md) - Number of minutes that elapsed before price went up 2 percentage points
+- [nws12_afterhsz_2p](../../datafields/nws12_afterhsz_2p.md) - The minimum of L or S above for 2-minute bucket
+- [nws12_afterhsz_2s](../../datafields/nws12_afterhsz_2s.md) - Number of minutes that elapsed before price went down 2 percentage points
+- [nws12_afterhsz_30_min](../../datafields/nws12_afterhsz_30_min.md) - The percent change in price in the first 30 minutes following the news release
+- [nws12_afterhsz_3l](../../datafields/nws12_afterhsz_3l.md) - Number of minutes that elapsed before price went up 3 percentage points
+- [nws12_afterhsz_3p](../../datafields/nws12_afterhsz_3p.md) - The minimum of L or S above for 3-minute bucket
+- [nws12_afterhsz_3s](../../datafields/nws12_afterhsz_3s.md) - Number of minutes that elapsed before price went down 3 percentage points
+- [nws12_afterhsz_41rta](../../datafields/nws12_afterhsz_41rta.md) - 14-day Average True Range
+- [nws12_afterhsz_4l](../../datafields/nws12_afterhsz_4l.md) - Number of minutes that elapsed before price went up 4 percentage points
+- [nws12_afterhsz_4p](../../datafields/nws12_afterhsz_4p.md) - The minimum of L or S above for 4-minute bucket
+- [nws12_afterhsz_4s](../../datafields/nws12_afterhsz_4s.md) - Number of minutes that elapsed before price went down 4 percentage points
+- [nws12_afterhsz_5_min](../../datafields/nws12_afterhsz_5_min.md) - The percent change in price in the first 5 minutes following the news release
+- [nws12_afterhsz_57l](../../datafields/nws12_afterhsz_57l.md) - Number of minutes that elapsed before price went up 7.5 percentage points
+- [nws12_afterhsz_57p](../../datafields/nws12_afterhsz_57p.md) - The minimum of L or S above for 7.5-minute bucket
+- [nws12_afterhsz_57s](../../datafields/nws12_afterhsz_57s.md) - Number of minutes that elapsed before price went down 7.5 percentage points
+- [nws12_afterhsz_5l](../../datafields/nws12_afterhsz_5l.md) - Number of minutes that elapsed before price went up 5 percentage points
+- [nws12_afterhsz_5p](../../datafields/nws12_afterhsz_5p.md) - The minimum of L or S above for 5-minute bucket
+- [nws12_afterhsz_5s](../../datafields/nws12_afterhsz_5s.md) - Number of minutes that elapsed before price went down 5 percentage points
+- [nws12_afterhsz_60_min](../../datafields/nws12_afterhsz_60_min.md) - The percent change in price in the first 60 minutes following the news release
+- [nws12_afterhsz_90_min](../../datafields/nws12_afterhsz_90_min.md) - The percent change in price in the first 90 minutes following the news release
+- [nws12_afterhsz_allticks](../../datafields/nws12_afterhsz_allticks.md) - Total number of ticks for the trading day
+- [nws12_afterhsz_atrratio](../../datafields/nws12_afterhsz_atrratio.md) - Ratio of Today Range to 20-day average true range
+- [nws12_afterhsz_close_vol](../../datafields/nws12_afterhsz_close_vol.md) - Main close volume
+- [nws12_afterhsz_curr_vol](../../datafields/nws12_afterhsz_curr_vol.md) - Current day's session volume
+- [nws12_afterhsz_dayopen](../../datafields/nws12_afterhsz_dayopen.md) - Price at the session open
+- [nws12_afterhsz_div_y](../../datafields/nws12_afterhsz_div_y.md) - Annual yield
+- [nws12_afterhsz_eodclose](../../datafields/nws12_afterhsz_eodclose.md) - Close price of the session
+- [nws12_afterhsz_eodhigh](../../datafields/nws12_afterhsz_eodhigh.md) - Highest price reached between the time of news and the end of the session
+- [nws12_afterhsz_eodlow](../../datafields/nws12_afterhsz_eodlow.md) - Lowest price reached between the time of news and the end of the session
+- [nws12_afterhsz_eodvwap](../../datafields/nws12_afterhsz_eodvwap.md) - volume weighted average price between the time of news and the end of the session.
+- [nws12_afterhsz_epsactual](../../datafields/nws12_afterhsz_epsactual.md) - The actual Earnings Per Share value that was conveyed by the news release
+- [nws12_afterhsz_highexcstddev](../../datafields/nws12_afterhsz_highexcstddev.md) - (EODHigh - TONLast)/StdDev, where StdDev is one standard deviation for the close price for 30 calendar days
+- [nws12_afterhsz_lowexcstddev](../../datafields/nws12_afterhsz_lowexcstddev.md) - (TONLast - EODLow) / StdDev, where StdDev is one standard deviation for the close price for 30 calendar days
+- [nws12_afterhsz_mainvwap](../../datafields/nws12_afterhsz_mainvwap.md) - Main session volume weighted average price
+- [nws12_afterhsz_maxdnamt](../../datafields/nws12_afterhsz_maxdnamt.md) - The price at the time of the news minus the after the news low
+- [nws12_afterhsz_maxdown](../../datafields/nws12_afterhsz_maxdown.md) - Percent change from the price at the time of the news to the after the news low
+- [nws12_afterhsz_maxup](../../datafields/nws12_afterhsz_maxup.md) - Percent change from the price at the time of the news to the after the news high
+- [nws12_afterhsz_maxupamt](../../datafields/nws12_afterhsz_maxupamt.md) - The after the news high minus the price at the time of the news
+- [nws12_afterhsz_mktcap](../../datafields/nws12_afterhsz_mktcap.md) - Reported market capitalization for the calendar day of the session
+- [nws12_afterhsz_mov_vol](../../datafields/nws12_afterhsz_mov_vol.md) - 30-day moving average session volume
+- [nws12_afterhsz_newrecord](../../datafields/nws12_afterhsz_newrecord.md) - Tracks whether the news is first instance or a duplicate
+- [nws12_afterhsz_newssess](../../datafields/nws12_afterhsz_newssess.md) - Index of the session in which the news was reported
+- [nws12_afterhsz_open_vol](../../datafields/nws12_afterhsz_open_vol.md) - Main open volume
+- [nws12_afterhsz_opengap](../../datafields/nws12_afterhsz_opengap.md) - (DayOpen - PrevClose) / PrevClose.
+- [nws12_afterhsz_peratio](../../datafields/nws12_afterhsz_peratio.md) - Reported price to earnings ratio for the calendar day of the session
+- [nws12_afterhsz_postvwap](../../datafields/nws12_afterhsz_postvwap.md) - Post-session volume weighted average price
+- [nws12_afterhsz_prev_vol](../../datafields/nws12_afterhsz_prev_vol.md) - Previous day's session volume
+- [nws12_afterhsz_prevclose](../../datafields/nws12_afterhsz_prevclose.md) - Previous trading day's close price
+- [nws12_afterhsz_prevday](../../datafields/nws12_afterhsz_prevday.md) - Percent change between the previous day's open and close
+- [nws12_afterhsz_prevwap](../../datafields/nws12_afterhsz_prevwap.md) - Pre session volume weighted average price
+- [nws12_afterhsz_provider](../../datafields/nws12_afterhsz_provider.md) - index of name of the news provider
+- [nws12_afterhsz_range](../../datafields/nws12_afterhsz_range.md) - Session High Price - Session Low Price) / Session Low Price.
+- [nws12_afterhsz_rangeamt](../../datafields/nws12_afterhsz_rangeamt.md) - Session High Price - Session Low Price
+- [nws12_afterhsz_rangestddev](../../datafields/nws12_afterhsz_rangestddev.md) - (RangeAmt - AvgRange) / RangeStdDev, where AvgRange is the average of the daily range, and RangeStdDev is one standard deviation for the daily range, both for 30 calendar days
+- [nws12_afterhsz_reportsess](../../datafields/nws12_afterhsz_reportsess.md) - Index of Session on which the spreadsheet is reporting
+- [nws12_afterhsz_result_vs_index](../../datafields/nws12_afterhsz_result_vs_index.md) - ((EODClose - TONLast) / TONLast) - ((SPYClose - SPYLast) / SPYLast)
+- [nws12_afterhsz_result1](../../datafields/nws12_afterhsz_result1.md) - Percent change between the price at the time of the news release to the price at the close of the session
+- [nws12_afterhsz_result2](../../datafields/nws12_afterhsz_result2.md) - Percent change between the price at the time of the news release to the price at the close of the session
+- [nws12_afterhsz_short_interest](../../datafields/nws12_afterhsz_short_interest.md) - Total number of shares sold short divided by total number of shares outstanding
+- [nws12_afterhsz_sl](../../datafields/nws12_afterhsz_sl.md) - Whether a long or short position would have been more advantageous: If (EODHigh - Last) > (Last - EODLow) Then LS = 1; If (EODHigh - Last) = (Last - EODLow) Then LS = 0; If (EODHigh - Last) < (Last - EODLow) Then LS = -1.
+- [nws12_afterhsz_spyclose](../../datafields/nws12_afterhsz_spyclose.md) - Price of SPY at close of session
+- [nws12_afterhsz_spylast](../../datafields/nws12_afterhsz_spylast.md) - Last Price of the SPY at the time of the news
+- [nws12_afterhsz_tonhigh](../../datafields/nws12_afterhsz_tonhigh.md) - Highest price reached during the session before the time of news
+- [nws12_afterhsz_tonlast](../../datafields/nws12_afterhsz_tonlast.md) - Price at the time of news
+- [nws12_afterhsz_tonlow](../../datafields/nws12_afterhsz_tonlow.md) - Lowest price reached during the session before the time of the news
+- [nws12_afterhsz_vol_ratio](../../datafields/nws12_afterhsz_vol_ratio.md) - Curr_Vol / Mov_Vol
+- [nws12_afterhsz_volstddev](../../datafields/nws12_afterhsz_volstddev.md) - (CurrentVolume - AvgVol)/VolStDev, where AvgVol is the average of the daily volume, and VolStdDev is one standard deviation for the daily volume, both for 30 calendar days
+- [nws12_allz_newrecord](../../datafields/nws12_allz_newrecord.md) - Tracks whether the news is first instance or a duplicate
+- [nws12_allz_newssess](../../datafields/nws12_allz_newssess.md) - Index of session in which the news was reported
+- [nws12_allz_provider](../../datafields/nws12_allz_provider.md) - index of name of the news provider
+- [nws12_allz_reportsess](../../datafields/nws12_allz_reportsess.md) - Index of Session on which the spreadsheet is reporting
+- [nws12_allz_result1](../../datafields/nws12_allz_result1.md) - Percent change between the price at the time of the news release and the price at the close of the session
+- [nws12_allz_result2](../../datafields/nws12_allz_result2.md) - Percent change between the price at the time of the news release and the price at the close of the session
+- [nws12_mainz_01l](../../datafields/nws12_mainz_01l.md) - Number of minutes that elapsed before price went up 10 percentage points
+- [nws12_mainz_01p](../../datafields/nws12_mainz_01p.md) - The minimum of L or S above for 10-minute bucket
+- [nws12_mainz_01s](../../datafields/nws12_mainz_01s.md) - Number of minutes that elapsed before price went down 10 percentage points
+- [nws12_mainz_02l](../../datafields/nws12_mainz_02l.md) - Number of minutes that elapsed before price went up 20 percentage points
+- [nws12_mainz_02p](../../datafields/nws12_mainz_02p.md) - The minimum of L or S above for 20-minute bucket
+- [nws12_mainz_02s](../../datafields/nws12_mainz_02s.md) - Number of minutes that elapsed before price went down 20 percentage points
+- [nws12_mainz_1_minute](../../datafields/nws12_mainz_1_minute.md) - The percent change in price in the first minute following the news release
+- [nws12_mainz_10_min](../../datafields/nws12_mainz_10_min.md) - The percent change in price in the first 10 minutes following the news release
+- [nws12_mainz_120_min](../../datafields/nws12_mainz_120_min.md) - The percent change in price in the first 120 minutes following the news release
+- [nws12_mainz_1l](../../datafields/nws12_mainz_1l.md) - Number of minutes that elapsed before price went up 1 percentage point
+- [nws12_mainz_1p](../../datafields/nws12_mainz_1p.md) - The minimum of L or S above for 1-minute bucket
+- [nws12_mainz_1s](../../datafields/nws12_mainz_1s.md) - Number of minutes that elapsed before price went down 1 percentage point
+- [nws12_mainz_2l](../../datafields/nws12_mainz_2l.md) - Number of minutes that elapsed before price went up 2 percentage points
+- [nws12_mainz_2p](../../datafields/nws12_mainz_2p.md) - The minimum of L or S above for 2 minute bucket
+- [nws12_mainz_2s](../../datafields/nws12_mainz_2s.md) - Number of minutes that elapsed before price went down 2 percentage points
+- [nws12_mainz_30_min](../../datafields/nws12_mainz_30_min.md) - The percent change in price in the first 30 minutes following the news release
+- [nws12_mainz_30_seconds](../../datafields/nws12_mainz_30_seconds.md) - The percent change in price in the 30 seconds following the news release
+- [nws12_mainz_3l](../../datafields/nws12_mainz_3l.md) - Number of minutes that elapsed before price went up 3 percentage points
+- [nws12_mainz_3p](../../datafields/nws12_mainz_3p.md) - The minimum of L or S above for 3-minute bucket
+- [nws12_mainz_3s](../../datafields/nws12_mainz_3s.md) - Number of minutes that elapsed before price went down 3 percentage points
+- [nws12_mainz_41rta](../../datafields/nws12_mainz_41rta.md) - 14-day Average True Range
+- [nws12_mainz_4l](../../datafields/nws12_mainz_4l.md) - Number of minutes that elapsed before price went up 4 percentage points
+- [nws12_mainz_4p](../../datafields/nws12_mainz_4p.md) - The minimum of L or S above for 4 minute bucket
+- [nws12_mainz_4s](../../datafields/nws12_mainz_4s.md) - Number of minutes that elapsed before price went down 4 percentage points
+- [nws12_mainz_5_min](../../datafields/nws12_mainz_5_min.md) - The percent change in price in the first 5 minutes following the news release
+- [nws12_mainz_57l](../../datafields/nws12_mainz_57l.md) - Number of minutes that elapsed before price went up 7.5 percentage points
+- [nws12_mainz_57p](../../datafields/nws12_mainz_57p.md) - The minimum of L or S above for 7.5-minute bucket
+- [nws12_mainz_57s](../../datafields/nws12_mainz_57s.md) - Number of minutes that elapsed before price went down 7.5 percentage points
+- [nws12_mainz_5l](../../datafields/nws12_mainz_5l.md) - Number of minutes that elapsed before price went up 5 percentage points
+- [nws12_mainz_5p](../../datafields/nws12_mainz_5p.md) - The minimum of L or S above for 5-minute bucket
+- [nws12_mainz_5s](../../datafields/nws12_mainz_5s.md) - Number of minutes that elapsed before price went down 5 percentage points
+- [nws12_mainz_60_min](../../datafields/nws12_mainz_60_min.md) - The percent change in price in the first 60 minutes following the news release
+- [nws12_mainz_90_min](../../datafields/nws12_mainz_90_min.md) - The percent change in price in the first 90 minutes following the news release
+- [nws12_mainz_allticks](../../datafields/nws12_mainz_allticks.md) - Total number of ticks for the trading day
+- [nws12_mainz_allvwap](../../datafields/nws12_mainz_allvwap.md) - Volume weighted average price of all sessions
+- [nws12_mainz_atrratio](../../datafields/nws12_mainz_atrratio.md) - Ratio of Today Range to 20-day average true range
+- [nws12_mainz_close_vol](../../datafields/nws12_mainz_close_vol.md) - Main close volume
+- [nws12_mainz_curr_vol](../../datafields/nws12_mainz_curr_vol.md) - Current day's session volume
+- [nws12_mainz_dayopen](../../datafields/nws12_mainz_dayopen.md) - Price at the session open
+- [nws12_mainz_div_y](../../datafields/nws12_mainz_div_y.md) - Annual yield
+- [nws12_mainz_eodclose](../../datafields/nws12_mainz_eodclose.md) - Close price of the session
+- [nws12_mainz_eodhigh](../../datafields/nws12_mainz_eodhigh.md) - Highest price reached between the time of news and the end of the session
+- [nws12_mainz_eodlow](../../datafields/nws12_mainz_eodlow.md) - Lowest price reached between the time of news and the end of the session.
+- [nws12_mainz_eodvwap](../../datafields/nws12_mainz_eodvwap.md) - Volume weighted average price between the time of news and the end of the session
+- [nws12_mainz_epsactual](../../datafields/nws12_mainz_epsactual.md) - The actual Earnings Per Share value that was conveyed by the news release
+- [nws12_mainz_highexcstddev](../../datafields/nws12_mainz_highexcstddev.md) - (EODHigh - TONLast)/StdDev, where StdDev is one standard deviation for the close price for 30 calendar days
+- [nws12_mainz_lowexcstddev](../../datafields/nws12_mainz_lowexcstddev.md) - (TONLast - EODLow)/StdDev, where StdDev is one standard deviation for the close price for 30 calendar days
+- [nws12_mainz_mainvwap](../../datafields/nws12_mainz_mainvwap.md) - Main session volume weighted average price
+- [nws12_mainz_maxdnamt](../../datafields/nws12_mainz_maxdnamt.md) - The price at the time of the news minus the after the news low
+- [nws12_mainz_maxdown](../../datafields/nws12_mainz_maxdown.md) - Percent change from the price at the time of the news to the after-the-news low
+- [nws12_mainz_maxup](../../datafields/nws12_mainz_maxup.md) - Percent change from the price at the time of the news to the after the news high
+- [nws12_mainz_maxupamt](../../datafields/nws12_mainz_maxupamt.md) - The after-the-news high minus the price at the time of the news
+- [nws12_mainz_mktcap](../../datafields/nws12_mainz_mktcap.md) - Reported market capitalization for the calendar day of the session
+- [nws12_mainz_mov_vol](../../datafields/nws12_mainz_mov_vol.md) - 30-day moving average session volume
+- [nws12_mainz_newrecord](../../datafields/nws12_mainz_newrecord.md) - Tracks whether the news is first instance or a duplicate
+- [nws12_mainz_newssess](../../datafields/nws12_mainz_newssess.md) - Index of session in which the news was reported
+- [nws12_mainz_open_vol](../../datafields/nws12_mainz_open_vol.md) - Main open volume
+- [nws12_mainz_opengap](../../datafields/nws12_mainz_opengap.md) - (DayOpen - PrevClose) / PrevClose
+- [nws12_mainz_peratio](../../datafields/nws12_mainz_peratio.md) - Reported price-to-earnings ratio for the calendar day of the session
+- [nws12_mainz_postvwap](../../datafields/nws12_mainz_postvwap.md) - Post session volume weighted average price
+- [nws12_mainz_prev_vol](../../datafields/nws12_mainz_prev_vol.md) - Previous day's session volume
+- [nws12_mainz_prevclose](../../datafields/nws12_mainz_prevclose.md) - Previous trading day's close price
+- [nws12_mainz_prevday](../../datafields/nws12_mainz_prevday.md) - Percent change between the previous day's open and close
+- [nws12_mainz_prevwap](../../datafields/nws12_mainz_prevwap.md) - Pre session volume weighted average price
+- [nws12_mainz_provider](../../datafields/nws12_mainz_provider.md) - index of name of the news provider
+- [nws12_mainz_range](../../datafields/nws12_mainz_range.md) - Session High Price - Session Low Price) / Session Low Price.
+- [nws12_mainz_rangeamt](../../datafields/nws12_mainz_rangeamt.md) - Session High Price - Session Low Price
+- [nws12_mainz_rangestddev](../../datafields/nws12_mainz_rangestddev.md) - (RangeAmt-AvgRange)/RangeStdDev, where AvgRange is the average of the daily range, and RangeStdDev is one standard deviation for the daily range, both for 30 calendar days
+- [nws12_mainz_reportsess](../../datafields/nws12_mainz_reportsess.md) - Index of Session on which the spreadsheet is reporting
+- [nws12_mainz_result_vs_index](../../datafields/nws12_mainz_result_vs_index.md) - ((EODClose - TONLast) / TONLast) - ((SPYClose - SPYLast) / SPYLast)
+- [nws12_mainz_result1](../../datafields/nws12_mainz_result1.md) - Percent change between the price at the time of the news release and the price at the close of the session
+- [nws12_mainz_result2](../../datafields/nws12_mainz_result2.md) - Percent change between the price at the time of the news release to the price at the close of the session
+- [nws12_mainz_short_interest](../../datafields/nws12_mainz_short_interest.md) - Total number of shares sold short divided by total number of shares outstanding
+- [nws12_mainz_sl](../../datafields/nws12_mainz_sl.md) - Whether a long or short position would have been more advantageous: If (EODHigh - Last) > (Last - EODLow) Then LS = 1; If (EODHigh - Last) = (Last - EODLow) Then LS = 0; If (EODHigh - Last) < (Last - EODLow) Then LS = -1.
+- [nws12_mainz_spyclose](../../datafields/nws12_mainz_spyclose.md) - Price of SPY at close of session
+- [nws12_mainz_spylast](../../datafields/nws12_mainz_spylast.md) - Last Price of the SPY at the time of the news
+- [nws12_mainz_tonhigh](../../datafields/nws12_mainz_tonhigh.md) - Highest price reached during the session before the time of news
+- [nws12_mainz_tonlast](../../datafields/nws12_mainz_tonlast.md) - Price at the time of news
+- [nws12_mainz_tonlow](../../datafields/nws12_mainz_tonlow.md) - Lowest price reached during the session before the time of the news
+- [nws12_mainz_vol_ratio](../../datafields/nws12_mainz_vol_ratio.md) - Curr_Vol / Mov_Vol
+- [nws12_mainz_volstddev](../../datafields/nws12_mainz_volstddev.md) - (CurrentVolume - AvgVol)/VolStDev, where AvgVol is the average of the daily volume, and VolStdDev is one standard deviation for the daily volume, both for 30 calendar days
+- [nws12_prez_01l](../../datafields/nws12_prez_01l.md) - Number of minutes that elapsed before price went up 10 percentage points
+- [nws12_prez_01p](../../datafields/nws12_prez_01p.md) - The minimum of L or S above for 10-minute bucket
+- [nws12_prez_01s](../../datafields/nws12_prez_01s.md) - Number of minutes that elapsed before price went down 10 percentage points
+- [nws12_prez_02l](../../datafields/nws12_prez_02l.md) - Number of minutes that elapsed before price went up 20 percentage points
+- [nws12_prez_02p](../../datafields/nws12_prez_02p.md) - The minimum of L or S above for 20-minute bucket
+- [nws12_prez_02s](../../datafields/nws12_prez_02s.md) - Number of minutes that elapsed before price went down 20 percentage points
+- [nws12_prez_1_minute](../../datafields/nws12_prez_1_minute.md) - The percent change in price in the first minute following the news release
+- [nws12_prez_10_min](../../datafields/nws12_prez_10_min.md) - The percent change in price in the first 10 minutes following the news release
+- [nws12_prez_120_min](../../datafields/nws12_prez_120_min.md) - The percent change in price in the first 120 minutes following the news release
+- [nws12_prez_1l](../../datafields/nws12_prez_1l.md) - Number of minutes that elapsed before price went up 1 percentage point
+- [nws12_prez_1p](../../datafields/nws12_prez_1p.md) - The minimum of L or S above for 1-minute bucket
+- [nws12_prez_1s](../../datafields/nws12_prez_1s.md) - Number of minutes that elapsed before price went down 1 percentage point
+- [nws12_prez_2l](../../datafields/nws12_prez_2l.md) - Number of minutes that elapsed before price went up 2 percentage points
+- [nws12_prez_2p](../../datafields/nws12_prez_2p.md) - The minimum of L or S above for 2-minute bucket
+- [nws12_prez_2s](../../datafields/nws12_prez_2s.md) - Number of minutes that elapsed before price went down 2 percentage points
+- [nws12_prez_30_min](../../datafields/nws12_prez_30_min.md) - The percent change in price in the first 30 minutes following the news release
+- [nws12_prez_30_seconds](../../datafields/nws12_prez_30_seconds.md) - The percent change in price in the 30 seconds following the news release
+- [nws12_prez_3l](../../datafields/nws12_prez_3l.md) - Number of minutes that elapsed before price went up 3 percentage points
+- [nws12_prez_3p](../../datafields/nws12_prez_3p.md) - The minimum of L or S above for 3-minute bucket
+- [nws12_prez_3s](../../datafields/nws12_prez_3s.md) - Number of minutes that elapsed before price went down 3 percentage points
+- [nws12_prez_41rta](../../datafields/nws12_prez_41rta.md) - Fourteen-day Average True Range
+- [nws12_prez_4l](../../datafields/nws12_prez_4l.md) - Number of minutes that elapsed before price went up 4 percentage points
+- [nws12_prez_4p](../../datafields/nws12_prez_4p.md) - The minimum of L or S above for 4-minute bucket
+- [nws12_prez_4s](../../datafields/nws12_prez_4s.md) - Number of minutes that elapsed before price went down 4 percentage points
+- [nws12_prez_5_min](../../datafields/nws12_prez_5_min.md) - The percent change in price in the first 5 minutes following the news release
+- [nws12_prez_57l](../../datafields/nws12_prez_57l.md) - Number of minutes that elapsed before price went up 7.5 percentage points
+- [nws12_prez_57p](../../datafields/nws12_prez_57p.md) - The minimum of L or S above for 7.5-minute bucket
+- [nws12_prez_57s](../../datafields/nws12_prez_57s.md) - Number of minutes that elapsed before price went down 7.5 percentage points
+- [nws12_prez_5l](../../datafields/nws12_prez_5l.md) - Number of minutes that elapsed before price went up 5 percentage points
+- [nws12_prez_5p](../../datafields/nws12_prez_5p.md) - The minimum of L or S above for 5-minute bucket
+- [nws12_prez_5s](../../datafields/nws12_prez_5s.md) - Number of minutes that elapsed before price went down 5 percentage points
+- [nws12_prez_60_min](../../datafields/nws12_prez_60_min.md) - The percent change in price in the first 60 minutes following the news release
+- [nws12_prez_90_min](../../datafields/nws12_prez_90_min.md) - The percent change in price in the first 90 minutes following the news release
+- [nws12_prez_allticks](../../datafields/nws12_prez_allticks.md) - Total number of ticks for the trading day
+- [nws12_prez_allvwap](../../datafields/nws12_prez_allvwap.md) - Volume weighted average price of all sessions
+- [nws12_prez_atrratio](../../datafields/nws12_prez_atrratio.md) - Ratio of Today Range to 20-day average true range
+- [nws12_prez_close_vol](../../datafields/nws12_prez_close_vol.md) - Main close volume
+- [nws12_prez_curr_vol](../../datafields/nws12_prez_curr_vol.md) - Current day's session volume
+- [nws12_prez_dayopen](../../datafields/nws12_prez_dayopen.md) - Price at the session open
+- [nws12_prez_div_y](../../datafields/nws12_prez_div_y.md) - Annual yield
+- [nws12_prez_eodclose](../../datafields/nws12_prez_eodclose.md) - Close price of the session
+- [nws12_prez_eodhigh](../../datafields/nws12_prez_eodhigh.md) - Highest price reached between the time of news and the end of the session
+- [nws12_prez_eodlow](../../datafields/nws12_prez_eodlow.md) - Lowest price reached between the time of news and the end of the session.
+- [nws12_prez_eodvwap](../../datafields/nws12_prez_eodvwap.md) - Volume-weighted average price between the time of news and the end of the session
+- [nws12_prez_epsactual](../../datafields/nws12_prez_epsactual.md) - The actual Earnings Per Share value that was conveyed by the news release
+- [nws12_prez_highexcstddev](../../datafields/nws12_prez_highexcstddev.md) - (EODHigh - TONLast)/StdDev, where StdDev is one standard deviation for the close price for 30 calendar days
+- [nws12_prez_lowexcstddev](../../datafields/nws12_prez_lowexcstddev.md) - (TONLast - EODLow)/StdDev, where StdDev is one standard deviation for the close price for 30 calendar days
+- [nws12_prez_mainvwap](../../datafields/nws12_prez_mainvwap.md) - Main session volume-weighted average price
+- [nws12_prez_maxdnamt](../../datafields/nws12_prez_maxdnamt.md) - The price at the time of the news minus the after the news low
+- [nws12_prez_maxdown](../../datafields/nws12_prez_maxdown.md) - Percent change from the price at the time of the news to the after the news low
+- [nws12_prez_maxup](../../datafields/nws12_prez_maxup.md) - Percent change from the price at the time of the news to the after the news high
+- [nws12_prez_maxupamt](../../datafields/nws12_prez_maxupamt.md) - The after-the-news high minus the price at the time of the news
+- [nws12_prez_mktcap](../../datafields/nws12_prez_mktcap.md) - Reported market capitalization for the calendar day of the session
+- [nws12_prez_mov_vol](../../datafields/nws12_prez_mov_vol.md) - 30-day moving average session volume
+- [nws12_prez_newrecord](../../datafields/nws12_prez_newrecord.md) - Tracks whether the news is the first instance or a duplicate
+- [nws12_prez_newssess](../../datafields/nws12_prez_newssess.md) - Index of session in which the news was reported
+- [nws12_prez_open_vol](../../datafields/nws12_prez_open_vol.md) - Main open volume
+- [nws12_prez_opengap](../../datafields/nws12_prez_opengap.md) - (DayOpen - PrevClose) / PrevClose.
+- [nws12_prez_peratio](../../datafields/nws12_prez_peratio.md) - Reported price to earnings ratio for the calendar day of the session
+- [nws12_prez_postvwap](../../datafields/nws12_prez_postvwap.md) - Post-session volume-weighted average price
+- [nws12_prez_prev_vol](../../datafields/nws12_prez_prev_vol.md) - Previous day's session volume
+- [nws12_prez_prevclose](../../datafields/nws12_prez_prevclose.md) - Previous trading day's close price
+- [nws12_prez_prevday](../../datafields/nws12_prez_prevday.md) - Percent change between the previous day's open and close
+- [nws12_prez_prevwap](../../datafields/nws12_prez_prevwap.md) - Pre-session volume weighted average price
+- [nws12_prez_provider](../../datafields/nws12_prez_provider.md) - index of name of the news provider
+- [nws12_prez_range](../../datafields/nws12_prez_range.md) - Session High Price - Session Low Price) / Session Low Price.
+- [nws12_prez_rangeamt](../../datafields/nws12_prez_rangeamt.md) - Session High Price - Session Low Price
+- [nws12_prez_rangestddev](../../datafields/nws12_prez_rangestddev.md) - (RangeAmt-AvgRange)/RangeStdDev, where AvgRange is the average of the daily range, and RangeStdDev is one standard deviation for the daily range, both for 30 calendar days
+- [nws12_prez_reportsess](../../datafields/nws12_prez_reportsess.md) - Index of Session on which the spreadsheet is reporting
+- [nws12_prez_result_vs_index](../../datafields/nws12_prez_result_vs_index.md) - ((EODClose - TONLast) / TONLast) - ((SPYClose - SPYLast) / SPYLast)
+- [nws12_prez_result1](../../datafields/nws12_prez_result1.md) - Percent change between the price at the time of the news release to the price at the close of the session
+- [nws12_prez_result2](../../datafields/nws12_prez_result2.md) - Percent change between the price at the time of the news release to the price at the close of the session
+- [nws12_prez_short_interest](../../datafields/nws12_prez_short_interest.md) - Total number of shares sold short divided by total number of shares outstanding
+- [nws12_prez_sl](../../datafields/nws12_prez_sl.md) - Whether a long or short position would have been more advantageous: If (EODHigh - Last) > (Last - EODLow) Then LS = 1; If (EODHigh - Last) = (Last - EODLow) Then LS = 0; If (EODHigh - Last) < (Last - EODLow) Then LS = -1.
+- [nws12_prez_spyclose](../../datafields/nws12_prez_spyclose.md) - Price of SPY at the close of the session
+- [nws12_prez_spylast](../../datafields/nws12_prez_spylast.md) - Last Price of the SPY at the time of the news
+- [nws12_prez_tonhigh](../../datafields/nws12_prez_tonhigh.md) - Highest price reached during the session before the time of the news
+- [nws12_prez_tonlast](../../datafields/nws12_prez_tonlast.md) - Price at the time of news
+- [nws12_prez_tonlow](../../datafields/nws12_prez_tonlow.md) - Lowest price reached during the session before the time of the news
+- [nws12_prez_vol_ratio](../../datafields/nws12_prez_vol_ratio.md) - Curr_Vol / Mov_Vol
+- [nws12_prez_volstddev](../../datafields/nws12_prez_volstddev.md) - (CurrentVolume - AvgVol)/VolStDev, where AvgVol is the average of the daily volume, and VolStdDev is one standard deviation for the daily volume, both for 30 calendar days

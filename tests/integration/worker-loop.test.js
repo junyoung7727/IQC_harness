@@ -106,3 +106,44 @@ test('worker loop polls until queue is empty and records success plus failures',
     await harness.cleanup();
   }
 });
+
+test('worker loop executes up to 3 items in parallel for each batch', async () => {
+  const harness = await startHarnessTestServer();
+  try {
+    const a1 = await submitAlpha(harness.baseUrl, 'rank(ts_delta(close, 5))', 'agent-a');
+    const a2 = await submitAlpha(harness.baseUrl, 'rank(ts_delta(low, 5))', 'agent-a');
+    const a3 = await submitAlpha(harness.baseUrl, 'rank(ts_delta(open, 5))', 'agent-a');
+    const a4 = await submitAlpha(harness.baseUrl, 'rank(ts_delta(high, 5))', 'agent-a');
+
+    let inFlight = 0;
+    let peakInFlight = 0;
+
+    const executor = async () => {
+      inFlight += 1;
+      peakInFlight = Math.max(peakInFlight, inFlight);
+      await new Promise((resolve) => setTimeout(resolve, 50));
+      inFlight -= 1;
+      return {
+        settings: { delay: 1, universe: 'TOP3000' },
+        metrics: { sharpe: 1.0, fitness: 1.0 }
+      };
+    };
+
+    const processed = await runWorkerLoop({
+      serverUrl: harness.baseUrl,
+      workerId: 'worker-1',
+      brainAccount: 'brain-a',
+      chromeProfile: 'profile-a',
+      preflight: async () => ({ currentUrl: 'https://platform.worldquantbrain.com/simulate', protectedStatus: 200 }),
+      executor
+    });
+
+    assert.equal(processed.length, 4);
+    assert.equal(peakInFlight, 3);
+
+    const persisted = harness.repo.listAlphaIdsByStatus('tested');
+    assert.deepEqual(persisted, [a1.alphaId, a2.alphaId, a3.alphaId, a4.alphaId]);
+  } finally {
+    await harness.cleanup();
+  }
+});

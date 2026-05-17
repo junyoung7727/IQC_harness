@@ -1,0 +1,81 @@
+# Datafield Category: Option / Option Analytics
+
+- Parent category: [Option](../option.md)
+- Total fields: 74
+
+## Fields
+
+- [call_breakeven_10](../../datafields/call_breakeven_10.md) - Price at which a stock's call options with expiration 10 days in the future break even based on its recent bid/ask mean.
+- [call_breakeven_1080](../../datafields/call_breakeven_1080.md) - Price at which a stock's call options with expiration 1080 days in the future break even based on its recent bid/ask mean.
+- [call_breakeven_120](../../datafields/call_breakeven_120.md) - Price at which a stock's call options with expiration 120 days in the future break even based on its recent bid/ask mean.
+- [call_breakeven_150](../../datafields/call_breakeven_150.md) - Price at which a stock's call options with expiration 150 days in the future break even based on its recent bid/ask mean.
+- [call_breakeven_180](../../datafields/call_breakeven_180.md) - Price at which a stock's call options with expiration 180 days in the future break even based on its recent bid/ask mean.
+- [call_breakeven_20](../../datafields/call_breakeven_20.md) - Price at which a stock's call options with expiration 20 days in the future break even based on its recent bid/ask mean.
+- [call_breakeven_270](../../datafields/call_breakeven_270.md) - Price at which a stock's call options with expiration 270 days in the future break even based on its recent bid/ask mean.
+- [call_breakeven_30](../../datafields/call_breakeven_30.md) - Price at which a stock's call options with expiration 30 days in the future break even based on its recent bid/ask mean.
+- [call_breakeven_360](../../datafields/call_breakeven_360.md) - Price at which a stock's call options with expiration 360 days in the future break even based on its recent bid/ask mean.
+- [call_breakeven_60](../../datafields/call_breakeven_60.md) - Price at which a stock's call options with expiration 60 days in the future break even based on its recent bid/ask mean.
+- [call_breakeven_720](../../datafields/call_breakeven_720.md) - Price at which a stock's call options with expiration 720 days in the future break even based on its recent bid/ask mean.
+- [call_breakeven_90](../../datafields/call_breakeven_90.md) - Price at which a stock's call options with expiration 90 days in the future break even based on its recent bid/ask mean.
+- [forward_price_10](../../datafields/forward_price_10.md) - Forward price at 10 days derived from a synthetic long option with payoff similar to long stock + option dynamics. Combination of long ATM call and short ATM put.
+- [forward_price_1080](../../datafields/forward_price_1080.md) - Forward price at 1080 days derived from a synthetic long option with payoff similar to long stock + option dynamics. Combination of long ATM call and short ATM put.
+- [forward_price_120](../../datafields/forward_price_120.md) - Forward price at 120 days derived from a synthetic long option with payoff similar to long stock + option dynamics. Combination of long ATM call and short ATM put.
+- [forward_price_150](../../datafields/forward_price_150.md) - Forward price at 150 days derived from a synthetic long option with payoff similar to long stock + option dynamics. Combination of long ATM call and short ATM put.
+- [forward_price_180](../../datafields/forward_price_180.md) - Forward price at 180 days derived from a synthetic long option with payoff similar to long stock + option dynamics. combination of long ATM call, and short ATM put.
+- [forward_price_20](../../datafields/forward_price_20.md) - Forward price at 20 days derived from a synthetic long option with payoff similar to long stock + option dynamics. Combination of long ATM call and short ATM put.
+- [forward_price_270](../../datafields/forward_price_270.md) - Forward price at 270 days derived from a synthetic long option with payoff similar to long stock + option dynamics. Combination of long ATM call and short ATM put.
+- [forward_price_30](../../datafields/forward_price_30.md) - Forward price at 30 days derived from a synthetic long option with payoff similar to long stock + option dynamics. Combination of long ATM call and short ATM put.
+- [forward_price_360](../../datafields/forward_price_360.md) - Forward price at 360 days derived from a synthetic long option with payoff similar to long stock + option dynamics. Combination of long ATM call and short ATM put.
+- [forward_price_60](../../datafields/forward_price_60.md) - Forward price at 60 days derived from a synthetic long option with payoff similar to long stock + option dynamics. Combination of long ATM call and short ATM put.
+- [forward_price_720](../../datafields/forward_price_720.md) - Forward price at 720 days derived from a synthetic long option with payoff similar to long stock + option dynamics. Combination of long ATM call and short ATM put.
+- [forward_price_90](../../datafields/forward_price_90.md) - Forward price at 90 days derived from a synthetic long option with payoff similar to long stock + option dynamics. Combination of long ATM call and short ATM put.
+- [option_breakeven_10](../../datafields/option_breakeven_10.md) - Price at which a stock's options with expiration 10 days in the future break even based on its recent bid/ask mean.
+- [option_breakeven_1080](../../datafields/option_breakeven_1080.md) - Price at which a stock's options with expiration 1080 days in the future break even based on its recent bid/ask mean.
+- [option_breakeven_120](../../datafields/option_breakeven_120.md) - Price at which a stock's options with expiration 120 days in the future break even based on its recent bid/ask mean.
+- [option_breakeven_150](../../datafields/option_breakeven_150.md) - Price at which a stock's options with expiration 150 days in the future break even based on its recent bid/ask mean.
+- [option_breakeven_180](../../datafields/option_breakeven_180.md) - Price at which a stock's options with expiration 180 days in the future break even based on its recent bid/ask mean.
+- [option_breakeven_20](../../datafields/option_breakeven_20.md) - Price at which a stock's options with expiration 20 days in the future break even based on its recent bid/ask mean.
+- [option_breakeven_270](../../datafields/option_breakeven_270.md) - Price at which a stock's options with expiration 270 days in the future break even based on its recent bid/ask mean.
+- [option_breakeven_30](../../datafields/option_breakeven_30.md) - Price at which a stock's options with expiration 30 days in the future break even based on its recent bid/ask mean.
+- [option_breakeven_360](../../datafields/option_breakeven_360.md) - Price at which a stock's options with expiration 360 days in the future break even based on its recent bid/ask mean.
+- [option_breakeven_60](../../datafields/option_breakeven_60.md) - Price at which a stock's options with expiration 60 days in the future break even based on its recent bid/ask mean.
+- [option_breakeven_720](../../datafields/option_breakeven_720.md) - Price at which a stock's options with expiration 720 days in the future break even based on its recent bid/ask mean.
+- [option_breakeven_90](../../datafields/option_breakeven_90.md) - Price at which a stock's options with expiration 90 days in the future break even based on its recent bid/ask mean.
+- [pcr_oi_10](../../datafields/pcr_oi_10.md) - Ratio of put open interest to call open interest on a stock's options with expiration 10 days in the future.
+- [pcr_oi_1080](../../datafields/pcr_oi_1080.md) - Ratio of put open interest to call open interest on a stock's options with expiration 1080 days in the future.
+- [pcr_oi_120](../../datafields/pcr_oi_120.md) - Ratio of put open interest to call open interest on a stock's options with expiration 120 days in the future.
+- [pcr_oi_150](../../datafields/pcr_oi_150.md) - Ratio of put open interest to call open interest on a stock's options with expiration 150 days in the future.
+- [pcr_oi_180](../../datafields/pcr_oi_180.md) - Ratio of put open interest to call open interest on a stock's options with expiration 180 days in the future.
+- [pcr_oi_20](../../datafields/pcr_oi_20.md) - Ratio of put open interest to call open interest on a stock's options with expiration 20 days in the future.
+- [pcr_oi_270](../../datafields/pcr_oi_270.md) - Ratio of put open interest to call open interest on a stock's options with expiration 270 days in the future.
+- [pcr_oi_30](../../datafields/pcr_oi_30.md) - Ratio of put open interest to call open interest on a stock's options with expiration 30 days in the future.
+- [pcr_oi_360](../../datafields/pcr_oi_360.md) - Ratio of put open interest to call open interest on a stock's options with expiration 360 days in the future.
+- [pcr_oi_60](../../datafields/pcr_oi_60.md) - Ratio of put open interest to call open interest on a stock's options with expiration 60 days in the future.
+- [pcr_oi_720](../../datafields/pcr_oi_720.md) - Ratio of put open interest to call open interest on a stock's options with expiration 720 days in the future.
+- [pcr_oi_90](../../datafields/pcr_oi_90.md) - Ratio of put open interest to call open interest on a stock's options with expiration 90 days in the future.
+- [pcr_oi_all](../../datafields/pcr_oi_all.md) - Ratio of put open interest to call open interest for all maturities on stock's options.
+- [pcr_vol_10](../../datafields/pcr_vol_10.md) - Ratio of put volume to call volume on a stock's options with expiration 10 days in the future.
+- [pcr_vol_1080](../../datafields/pcr_vol_1080.md) - Ratio of put volume to call volume on a stock's options with expiration 1080 days in the future.
+- [pcr_vol_120](../../datafields/pcr_vol_120.md) - Ratio of put volume to call volume on a stock's options with expiration 120 days in the future.
+- [pcr_vol_150](../../datafields/pcr_vol_150.md) - Ratio of put volume to call volume on a stock's options with expiration 150 days in the future.
+- [pcr_vol_180](../../datafields/pcr_vol_180.md) - Ratio of put volume to call volume on a stock's options with expiration 180 days in the future.
+- [pcr_vol_20](../../datafields/pcr_vol_20.md) - Ratio of put volume to call volume on a stock's options with expiration 20 days in the future.
+- [pcr_vol_270](../../datafields/pcr_vol_270.md) - Ratio of put volume to call volume on a stock's options with expiration 270 days in the future.
+- [pcr_vol_30](../../datafields/pcr_vol_30.md) - Ratio of put volume to call volume on a stock's options with expiration 30 days in the future.
+- [pcr_vol_360](../../datafields/pcr_vol_360.md) - Ratio of put volume to call volume on a stock's options with expiration 360 days in the future.
+- [pcr_vol_60](../../datafields/pcr_vol_60.md) - Ratio of put volume to call volume on a stock's options with expiration 60 days in the future.
+- [pcr_vol_720](../../datafields/pcr_vol_720.md) - Ratio of put volume to call volume on a stock's options with expiration 720 days in the future.
+- [pcr_vol_90](../../datafields/pcr_vol_90.md) - Ratio of put volume to call volume on a stock's options with expiration 90 days in the future.
+- [pcr_vol_all](../../datafields/pcr_vol_all.md) - Ratio of put volume to call volume for all maturities on stock's options.
+- [put_breakeven_10](../../datafields/put_breakeven_10.md) - Price at which a stock's put options with expiration 10 days in the future break even based on its recent bid/ask mean.
+- [put_breakeven_1080](../../datafields/put_breakeven_1080.md) - Price at which a stock's put options with expiration 1080 days in the future break even based on its recent bid/ask mean.
+- [put_breakeven_120](../../datafields/put_breakeven_120.md) - Price at which a stock's put options with expiration 120 days in the future break even based on its recent bid/ask mean.
+- [put_breakeven_150](../../datafields/put_breakeven_150.md) - Price at which a stock's put options with expiration 150 days in the future break even based on its recent bid/ask mean.
+- [put_breakeven_180](../../datafields/put_breakeven_180.md) - Price at which a stock's put options with expiration 180 days in the future break even based on its recent bid/ask mean.
+- [put_breakeven_20](../../datafields/put_breakeven_20.md) - Price at which a stock's put options with expiration 20 days in the future break even based on its recent bid/ask mean.
+- [put_breakeven_270](../../datafields/put_breakeven_270.md) - Price at which a stock's put options with expiration 270 days in the future break even based on its recent bid/ask mean.
+- [put_breakeven_30](../../datafields/put_breakeven_30.md) - Price at which a stock's put options with expiration 30 days in the future break even based on its recent bid/ask mean.
+- [put_breakeven_360](../../datafields/put_breakeven_360.md) - Price at which a stock's put options with expiration 360 days in the future break even based on its recent bid/ask mean.
+- [put_breakeven_60](../../datafields/put_breakeven_60.md) - Price at which a stock's put options with expiration 60 days in the future break even based on its recent bid/ask mean.
+- [put_breakeven_720](../../datafields/put_breakeven_720.md) - Price at which a stock's put options with expiration 720 days in the future break even based on its recent bid/ask mean.
+- [put_breakeven_90](../../datafields/put_breakeven_90.md) - Price at which a stock's put options with expiration 90 days in the future break even based on its recent bid/ask mean.

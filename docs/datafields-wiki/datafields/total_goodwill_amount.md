@@ -1,0 +1,19 @@
+# Datafield: total_goodwill_amount
+
+- Category: [Analyst](../categories/analyst.md)
+- Subcategory: Analyst Estimates
+- Dataset: Analyst Estimate Data for Equity (analyst4)
+- Region: USA
+- Delay: 1
+- Universe: TOP3000
+- Type: MATRIX
+- Date coverage: 1.0
+- Coverage: 0.5285
+- User count: 13
+- Alpha count: 13
+- Pyramid multiplier: 1.2
+- Themes: []
+
+## Description
+
+Total Goodwill - Value

@@ -1,0 +1,19 @@
+# Datafield: pv13_h_min22_1000_sector
+
+- Category: [Price Volume](../categories/pv.md)
+- Subcategory: Relationship
+- Dataset: Relationship Data for Equity (pv13)
+- Region: USA
+- Delay: 1
+- Universe: TOP3000
+- Type: GROUP
+- Date coverage: n/a
+- Coverage: 0.3673
+- User count: 388
+- Alpha count: 1060
+- Pyramid multiplier: 1.1
+- Themes: []
+
+## Description
+
+Grouping fields for top 1000

@@ -1,0 +1,82 @@
+# Datafield Category: News / News Sentiment
+
+- Parent category: [News](../news.md)
+- Total fields: 75
+
+## Fields
+
+- [nws18_acb](../../datafields/nws18_acb.md) - News sentiment specializing in corporate action announcements
+- [nws18_bam](../../datafields/nws18_bam.md) - News sentiment specializing in mergers and acquisitions
+- [nws18_bee](../../datafields/nws18_bee.md) - News sentiment specializing in growth of earnings
+- [nws18_ber](../../datafields/nws18_ber.md) - News sentiment specializing in earnings result
+- [nws18_event_relevance](../../datafields/nws18_event_relevance.md) - Relevance of the event to the story
+- [nws18_event_similarity_days](../../datafields/nws18_event_similarity_days.md) - Days since a similar event was detected
+- [nws18_ghc_lna](../../datafields/nws18_ghc_lna.md) - Change in analyst recommendation
+- [nws18_nip](../../datafields/nws18_nip.md) - Degree of impact of the news
+- [nws18_qcm](../../datafields/nws18_qcm.md) - News sentiment of relevant news with high confidence
+- [nws18_qep](../../datafields/nws18_qep.md) - News sentiment based on positive and negative words on global equity
+- [nws18_qmb](../../datafields/nws18_qmb.md) - News sentiment specializing in editorials on global markets
+- [nws18_relevance](../../datafields/nws18_relevance.md) - Relevance of news to the company
+- [nws18_ssc](../../datafields/nws18_ssc.md) - Sentiment of the news calculated using multiple techniques
+- [nws18_sse](../../datafields/nws18_sse.md) - Sentiment of phrases impacting the company
+- [rp_css_assets](../../datafields/rp_css_assets.md) - Composite sentiment score of assets news
+- [rp_css_business](../../datafields/rp_css_business.md) - Composite sentiment score of business-related news
+- [rp_css_credit](../../datafields/rp_css_credit.md) - Composite sentiment score of credit news
+- [rp_css_credit_ratings](../../datafields/rp_css_credit_ratings.md) - Composite sentiment score of credit ratings news
+- [rp_css_dividends](../../datafields/rp_css_dividends.md) - Composite sentiment score of dividends news
+- [rp_css_earnings](../../datafields/rp_css_earnings.md) - Composite sentiment score of earnings news
+- [rp_css_equity](../../datafields/rp_css_equity.md) - Composite sentiment score of equity action news
+- [rp_css_insider](../../datafields/rp_css_insider.md) - Composite sentiment score of insider trading news
+- [rp_css_inverstor](../../datafields/rp_css_inverstor.md) - Composite sentiment score of investor relations news
+- [rp_css_labor](../../datafields/rp_css_labor.md) - Composite sentiment score of labor issues news
+- [rp_css_legal](../../datafields/rp_css_legal.md) - Composite sentiment score of legal news
+- [rp_css_marketing](../../datafields/rp_css_marketing.md) - Composite sentiment score of marketing news
+- [rp_css_mna](../../datafields/rp_css_mna.md) - Composite sentiment score of mergers and acquisitions-related news
+- [rp_css_partner](../../datafields/rp_css_partner.md) - Composite sentiment score of partnership news
+- [rp_css_price](../../datafields/rp_css_price.md) - Composite sentiment score of stock price news
+- [rp_css_product](../../datafields/rp_css_product.md) - Composite sentiment score of product and service-related news
+- [rp_css_ptg](../../datafields/rp_css_ptg.md) - Composite sentiment score of price target news
+- [rp_css_ratings](../../datafields/rp_css_ratings.md) - Composite sentiment score of analyst ratings-related news
+- [rp_css_revenue](../../datafields/rp_css_revenue.md) - Composite sentiment score of revenue news
+- [rp_css_society](../../datafields/rp_css_society.md) - Composite sentiment score of society-related news
+- [rp_css_technical](../../datafields/rp_css_technical.md) - Composite sentiment score based on technical analysis
+- [rp_ess_assets](../../datafields/rp_ess_assets.md) - Event sentiment score of assets news
+- [rp_ess_business](../../datafields/rp_ess_business.md) - Event sentiment score of business-related news
+- [rp_ess_credit](../../datafields/rp_ess_credit.md) - Event sentiment score of credit news
+- [rp_ess_credit_ratings](../../datafields/rp_ess_credit_ratings.md) - Event sentiment score of credit ratings news
+- [rp_ess_dividends](../../datafields/rp_ess_dividends.md) - Event sentiment score of dividends news
+- [rp_ess_earnings](../../datafields/rp_ess_earnings.md) - Event sentiment score of earnings news
+- [rp_ess_equity](../../datafields/rp_ess_equity.md) - Event sentiment score of equity action news
+- [rp_ess_insider](../../datafields/rp_ess_insider.md) - Event sentiment score of insider trading news
+- [rp_ess_labor](../../datafields/rp_ess_labor.md) - Event sentiment score of labor issues news
+- [rp_ess_legal](../../datafields/rp_ess_legal.md) - Event sentiment score of legal news
+- [rp_ess_mna](../../datafields/rp_ess_mna.md) - Event sentiment score of mergers and acquisitions-related news
+- [rp_ess_partner](../../datafields/rp_ess_partner.md) - Event sentiment score of partnership news
+- [rp_ess_price](../../datafields/rp_ess_price.md) - Event sentiment score of stock price news
+- [rp_ess_product](../../datafields/rp_ess_product.md) - Event sentiment score of product and service-related news
+- [rp_ess_ptg](../../datafields/rp_ess_ptg.md) - Event sentiment score of price target news
+- [rp_ess_ratings](../../datafields/rp_ess_ratings.md) - Event sentiment score of analyst ratings-related news
+- [rp_ess_revenue](../../datafields/rp_ess_revenue.md) - Event sentiment score of revenue news
+- [rp_ess_society](../../datafields/rp_ess_society.md) - Event sentiment score of society-related news
+- [rp_ess_technical](../../datafields/rp_ess_technical.md) - Event sentiment score based on technical analysis
+- [rp_nip_assets](../../datafields/rp_nip_assets.md) - News impact projection of assets news
+- [rp_nip_business](../../datafields/rp_nip_business.md) - News impact projection of business-related news
+- [rp_nip_credit](../../datafields/rp_nip_credit.md) - News impact projection of credit news
+- [rp_nip_credit_ratings](../../datafields/rp_nip_credit_ratings.md) - News impact projection of credit ratings news
+- [rp_nip_dividends](../../datafields/rp_nip_dividends.md) - News impact projection of dividends news
+- [rp_nip_earnings](../../datafields/rp_nip_earnings.md) - News impact projection of earnings news
+- [rp_nip_equity](../../datafields/rp_nip_equity.md) - News impact projection of equity action news
+- [rp_nip_insider](../../datafields/rp_nip_insider.md) - News impact projection of insider trading news
+- [rp_nip_inverstor](../../datafields/rp_nip_inverstor.md) - News impact projection of investor relations news
+- [rp_nip_labor](../../datafields/rp_nip_labor.md) - News impact projection of labor issues news
+- [rp_nip_legal](../../datafields/rp_nip_legal.md) - News impact projection of legal news
+- [rp_nip_marketing](../../datafields/rp_nip_marketing.md) - News impact projection of marketing news
+- [rp_nip_mna](../../datafields/rp_nip_mna.md) - News impact projection of mergers and acquisitions-related news
+- [rp_nip_partner](../../datafields/rp_nip_partner.md) - News impact projection of partnership news
+- [rp_nip_price](../../datafields/rp_nip_price.md) - News impact projection of stock price news
+- [rp_nip_product](../../datafields/rp_nip_product.md) - News impact projection of product and service-related news
+- [rp_nip_ptg](../../datafields/rp_nip_ptg.md) - News impact projection of price target news
+- [rp_nip_ratings](../../datafields/rp_nip_ratings.md) - News impact projection of analyst ratings-related news
+- [rp_nip_revenue](../../datafields/rp_nip_revenue.md) - News impact projection of revenue news
+- [rp_nip_society](../../datafields/rp_nip_society.md) - News impact projection of society-related news
+- [rp_nip_technical](../../datafields/rp_nip_technical.md) - News impact projection based on technical analysis

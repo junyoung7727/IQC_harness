@@ -1,0 +1,931 @@
+# Datafield Category: Fundamental / Fundamental Data
+
+- Parent category: [Fundamental](../fundamental.md)
+- Total fields: 886
+
+## Sub-Categories
+
+### Basic Fields
+- [Basic Fields](basic-fields.md) - Core financial metrics without the `fnd6_` prefix (48 fields)
+
+### Assets
+- [fnd6 Assets](fnd6-assets.md) - Asset balance sheet items and asset-side supporting fields (43 fields)
+
+### Liabilities
+- [fnd6 Liabilities](fnd6-liabilities.md) - Liabilities, debt, payable, and liability-side supporting fields (53 fields)
+
+### Equity
+- [fnd6 Equity](fnd6-equity.md) - Equity, stock, retained earnings, and ownership-related fields (35 fields)
+
+### Income Statement
+- [fnd6 Income Statement](fnd6-income.md) - Revenue, profit, expense, tax, and operating performance fields (63 fields)
+
+### Cash Flow
+- [fnd6 Cash Flow](fnd6-cashflow.md) - Cash flow, capex, dividend, acquisition, and financing/investing flow fields (27 fields)
+
+### Ratios / Per-Share
+- [fnd6 Ratios / Per-Share](fnd6-ratios.md) - Ratios, EPS, per-share, pricing, and rank-style fields (13 fields)
+
+### Events
+- [fnd6 Events](fnd6-events.md) - Event-specific acquisition, pension, goodwill, restructuring, and special-item fields (271 fields)
+
+### Quarterly
+- [fnd6 Quarterly](fnd6-quarterly.md) - Quarterly `newq*`, `mfmq*`, and compact quarterly derivative fields (186 fields)
+
+### newa1
+- [fnd6 newa1](fnd6-newa1.md) - Annual `fnd6_newa1v1300_*` balance-sheet-oriented fields (61 fields)
+
+### newa2
+- [fnd6 newa2](fnd6-newa2.md) - Annual `fnd6_newa2v1300_*` income/cashflow-oriented fields (43 fields)
+
+### Misc
+- [fnd6 Misc](fnd6-misc.md) - Remaining identifiers, metadata, technical, and uncategorized fields (43 fields)
+
+## All Fields (Complete List)
+
+- [assets](../../datafields/assets.md) - Assets - Total
+- [assets_curr](../../datafields/assets_curr.md) - Current Assets - Total
+- [bookvalue_ps](../../datafields/bookvalue_ps.md) - Book Value Per Share
+- [capex](../../datafields/capex.md) - Capital Expenditures
+- [cash](../../datafields/cash.md) - Cash
+- [cash_st](../../datafields/cash_st.md) - Cash and Short-Term Investments
+- [cashflow](../../datafields/cashflow.md) - Cashflow (Annual)
+- [cashflow_dividends](../../datafields/cashflow_dividends.md) - Cash Dividends (Cash Flow)
+- [cashflow_fin](../../datafields/cashflow_fin.md) - Financing Activities - Net Cash Flow
+- [cashflow_invst](../../datafields/cashflow_invst.md) - Investing Activities - Net Cash Flow
+- [cashflow_op](../../datafields/cashflow_op.md) - Operating Activities - Net Cash Flow
+- [cogs](../../datafields/cogs.md) - Cost of Goods Sold
+- [current_ratio](../../datafields/current_ratio.md) - Current Ratio
+- [debt](../../datafields/debt.md) - Debt
+- [debt_lt](../../datafields/debt_lt.md) - Long-Term Debt - Total
+- [debt_st](../../datafields/debt_st.md) - Debt in Current Liabilities
+- [depre_amort](../../datafields/depre_amort.md) - Depreciation and Amortization - Total
+- [ebit](../../datafields/ebit.md) - Earnings Before Interest and Taxes
+- [ebitda](../../datafields/ebitda.md) - Earnings Before Interest
+- [employee](../../datafields/employee.md) - Employees
+- [enterprise_value](../../datafields/enterprise_value.md) - Enterprise Value
+- [eps](../../datafields/eps.md) - Earnings Per Share (Basic) - Including Extraordinary Items
+- [equity](../../datafields/equity.md) - Common/Ordinary Equity - Total
+- [fnd6_acdo](../../datafields/fnd6_acdo.md) - Current Assets of Discontinued Operations
+- [fnd6_acodo](../../datafields/fnd6_acodo.md) - Other Current Assets Excl Discontinued Operations
+- [fnd6_acox](../../datafields/fnd6_acox.md) - Current Assets - Other - Sundry
+- [fnd6_acqgdwl](../../datafields/fnd6_acqgdwl.md) - Acquired Assets - Goodwill
+- [fnd6_acqintan](../../datafields/fnd6_acqintan.md) - Acquired Assets - Intangibles
+- [fnd6_adesinda_curcd](../../datafields/fnd6_adesinda_curcd.md) - ISO Currency Code - Company Annual Market
+- [fnd6_aldo](../../datafields/fnd6_aldo.md) - Long-term Assets of Discontinued Operations
+- [fnd6_am](../../datafields/fnd6_am.md) - Amortization of Intangibles
+- [fnd6_aodo](../../datafields/fnd6_aodo.md) - Other Assets excluding Discontinued Operations
+- [fnd6_aox](../../datafields/fnd6_aox.md) - Assets - Other - Sundry
+- [fnd6_aqc](../../datafields/fnd6_aqc.md) - Acquisitions
+- [fnd6_aqi](../../datafields/fnd6_aqi.md) - Acquisitions - Income Contribution
+- [fnd6_aqs](../../datafields/fnd6_aqs.md) - Acquisitions - Sales Contribution
+- [fnd6_beta](../../datafields/fnd6_beta.md) - beta
+- [fnd6_capxs](../../datafields/fnd6_capxs.md) - Capital Expenditures
+- [fnd6_capxv](../../datafields/fnd6_capxv.md) - Capital Expend Property, Plant and Equipment Schd V
+- [fnd6_caxts](../../datafields/fnd6_caxts.md) - Cost and Expenses - Total
+- [fnd6_ceql](../../datafields/fnd6_ceql.md) - Common Equity - Liquidation Value
+- [fnd6_ch](../../datafields/fnd6_ch.md) - Cash
+- [fnd6_ci](../../datafields/fnd6_ci.md) - Comprehensive Income - Total
+- [fnd6_cibegni](../../datafields/fnd6_cibegni.md) - Comp Inc - Beginning Net Income
+- [fnd6_cicurr](../../datafields/fnd6_cicurr.md) - Comp Inc - Currency Trans Adj
+- [fnd6_cidergl](../../datafields/fnd6_cidergl.md) - Comp Inc - Derivative Gains/Losses
+- [fnd6_cik](../../datafields/fnd6_cik.md) - nonimportant technical code
+- [fnd6_cimii](../../datafields/fnd6_cimii.md) - Comprehensive Income - Noncontrolling Interest
+- [fnd6_ciother](../../datafields/fnd6_ciother.md) - Comp. Inc. - Other Adj.
+- [fnd6_cipen](../../datafields/fnd6_cipen.md) - Comprehensive Income - Minimum Pension Adjustment
+- [fnd6_cisecgl](../../datafields/fnd6_cisecgl.md) - Comp Inc - Securities Gains/Losses
+- [fnd6_citotal](../../datafields/fnd6_citotal.md) - Comprehensive Income - Parent
+- [fnd6_city](../../datafields/fnd6_city.md) - the city where a company's corporate headquarters or home office is located
+- [fnd6_cld2](../../datafields/fnd6_cld2.md) - Capitalized Leases - Due in 2nd Year
+- [fnd6_cld3](../../datafields/fnd6_cld3.md) - Capitalized Leases - Due in 3rd Year
+- [fnd6_cld4](../../datafields/fnd6_cld4.md) - Capitalized Leases - Due in 4th Year
+- [fnd6_cld5](../../datafields/fnd6_cld5.md) - Capitalized Leases - Due in 5th Year
+- [fnd6_cogss](../../datafields/fnd6_cogss.md) - Cost of Goods Sold
+- [fnd6_cptmfmq_actq](../../datafields/fnd6_cptmfmq_actq.md) - Current Assets - Total
+- [fnd6_cptmfmq_atq](../../datafields/fnd6_cptmfmq_atq.md) - Assets - Total
+- [fnd6_cptmfmq_ceqq](../../datafields/fnd6_cptmfmq_ceqq.md) - Common/Ordinary Equity - Total
+- [fnd6_cptmfmq_dlttq](../../datafields/fnd6_cptmfmq_dlttq.md) - Long-Term Debt - Total
+- [fnd6_cptmfmq_dpq](../../datafields/fnd6_cptmfmq_dpq.md) - Depreciation and Amortization - Total
+- [fnd6_cptmfmq_lctq](../../datafields/fnd6_cptmfmq_lctq.md) - Current Liabilities - Total
+- [fnd6_cptmfmq_oibdpq](../../datafields/fnd6_cptmfmq_oibdpq.md) - Operating Income Before Depreciation - Quarterly
+- [fnd6_cptmfmq_opepsq](../../datafields/fnd6_cptmfmq_opepsq.md) - Earnings Per Share from Operations
+- [fnd6_cptmfmq_saleq](../../datafields/fnd6_cptmfmq_saleq.md) - Sales/Turnover (Net)
+- [fnd6_cptnewqeventv110_actq](../../datafields/fnd6_cptnewqeventv110_actq.md) - Current Assets - Total
+- [fnd6_cptnewqeventv110_apq](../../datafields/fnd6_cptnewqeventv110_apq.md) - Accounts Payable/Creditors - Trade
+- [fnd6_cptnewqeventv110_atq](../../datafields/fnd6_cptnewqeventv110_atq.md) - Assets - Total
+- [fnd6_cptnewqeventv110_ceqq](../../datafields/fnd6_cptnewqeventv110_ceqq.md) - Common/Ordinary Equity - Total
+- [fnd6_cptnewqeventv110_dlttq](../../datafields/fnd6_cptnewqeventv110_dlttq.md) - Long-Term Debt - Total
+- [fnd6_cptnewqeventv110_dpq](../../datafields/fnd6_cptnewqeventv110_dpq.md) - Depreciation and Amortization - Total
+- [fnd6_cptnewqeventv110_epsf12](../../datafields/fnd6_cptnewqeventv110_epsf12.md) - Earnings Per Share (Diluted) - Excluding Extraordinary Items - 12 Months Moving
+- [fnd6_cptnewqeventv110_epsfxq](../../datafields/fnd6_cptnewqeventv110_epsfxq.md) - Earnings Per Share (Diluted) - Excluding Extraordinary items
+- [fnd6_cptnewqeventv110_epsx12](../../datafields/fnd6_cptnewqeventv110_epsx12.md) - Earnings Per Share (Basic) - Excluding Extraordinary Items - 12 Months Moving
+- [fnd6_cptnewqeventv110_lctq](../../datafields/fnd6_cptnewqeventv110_lctq.md) - Current Liabilities - Total
+- [fnd6_cptnewqeventv110_ltq](../../datafields/fnd6_cptnewqeventv110_ltq.md) - Liabilities - Total
+- [fnd6_cptnewqeventv110_nopiq](../../datafields/fnd6_cptnewqeventv110_nopiq.md) - Non-Operating Income (Expense) - Total
+- [fnd6_cptnewqeventv110_oeps12](../../datafields/fnd6_cptnewqeventv110_oeps12.md) - Earnings Per Share from Operations - 12 Months Moving
+- [fnd6_cptnewqeventv110_oiadpq](../../datafields/fnd6_cptnewqeventv110_oiadpq.md) - Operating Income After Depreciation - Quarterly
+- [fnd6_cptnewqeventv110_oibdpq](../../datafields/fnd6_cptnewqeventv110_oibdpq.md) - Operating Income Before Depreciation - Quarterly
+- [fnd6_cptnewqeventv110_opepsq](../../datafields/fnd6_cptnewqeventv110_opepsq.md) - Earnings Per Share from Operations
+- [fnd6_cptnewqeventv110_rectq](../../datafields/fnd6_cptnewqeventv110_rectq.md) - Receivables - Total
+- [fnd6_cptnewqeventv110_req](../../datafields/fnd6_cptnewqeventv110_req.md) - Retained Earnings
+- [fnd6_cptnewqeventv110_saleq](../../datafields/fnd6_cptnewqeventv110_saleq.md) - Sales/Turnover (Net)
+- [fnd6_cptnewqv1300_actq](../../datafields/fnd6_cptnewqv1300_actq.md) - Current Assets - Total
+- [fnd6_cptnewqv1300_apq](../../datafields/fnd6_cptnewqv1300_apq.md) - Accounts Payable/Creditors - Trade
+- [fnd6_cptnewqv1300_atq](../../datafields/fnd6_cptnewqv1300_atq.md) - Assets - Total
+- [fnd6_cptnewqv1300_ceqq](../../datafields/fnd6_cptnewqv1300_ceqq.md) - Common/Ordinary Equity - Total
+- [fnd6_cptnewqv1300_dlttq](../../datafields/fnd6_cptnewqv1300_dlttq.md) - Long-Term Debt - Total
+- [fnd6_cptnewqv1300_dpq](../../datafields/fnd6_cptnewqv1300_dpq.md) - Depreciation and Amortization - Total
+- [fnd6_cptnewqv1300_epsf12](../../datafields/fnd6_cptnewqv1300_epsf12.md) - Earnings Per Share (Diluted) - Excluding Extraordinary Items - 12 Months Moving
+- [fnd6_cptnewqv1300_epsfxq](../../datafields/fnd6_cptnewqv1300_epsfxq.md) - Earnings Per Share (Diluted) - Excluding Extraordinary items
+- [fnd6_cptnewqv1300_epsx12](../../datafields/fnd6_cptnewqv1300_epsx12.md) - Earnings Per Share (Basic) - Excluding Extraordinary Items - 12 Months Moving
+- [fnd6_cptnewqv1300_lctq](../../datafields/fnd6_cptnewqv1300_lctq.md) - Current Liabilities - Total
+- [fnd6_cptnewqv1300_ltq](../../datafields/fnd6_cptnewqv1300_ltq.md) - Liabilities - Total
+- [fnd6_cptnewqv1300_nopiq](../../datafields/fnd6_cptnewqv1300_nopiq.md) - Non-Operating Income (Expense) - Total
+- [fnd6_cptnewqv1300_oeps12](../../datafields/fnd6_cptnewqv1300_oeps12.md) - Earnings Per Share from Operations - 12 Months Moving
+- [fnd6_cptnewqv1300_oiadpq](../../datafields/fnd6_cptnewqv1300_oiadpq.md) - Operating Income After Depreciation - Quarterly
+- [fnd6_cptnewqv1300_oibdpq](../../datafields/fnd6_cptnewqv1300_oibdpq.md) - Operating Income Before Depreciation - Quarterly
+- [fnd6_cptnewqv1300_opepsq](../../datafields/fnd6_cptnewqv1300_opepsq.md) - Earnings Per Share from Operations
+- [fnd6_cptnewqv1300_rectq](../../datafields/fnd6_cptnewqv1300_rectq.md) - Receivables - Total
+- [fnd6_cptnewqv1300_req](../../datafields/fnd6_cptnewqv1300_req.md) - Retained Earnings
+- [fnd6_cptnewqv1300_saleq](../../datafields/fnd6_cptnewqv1300_saleq.md) - Sales/Turnover (Net)
+- [fnd6_cptrank_gvkeymap](../../datafields/fnd6_cptrank_gvkeymap.md) - technical code for a company, no need to use it for research
+- [fnd6_cshpri](../../datafields/fnd6_cshpri.md) - Common Shares Used to Calculate Earnings Per Share - Basic
+- [fnd6_cshr](../../datafields/fnd6_cshr.md) - Common/Ordinary Shareholders
+- [fnd6_cshtr](../../datafields/fnd6_cshtr.md) - Common Shares Traded - Annual
+- [fnd6_cshtrq](../../datafields/fnd6_cshtrq.md) - Common Shares Traded - Quarter
+- [fnd6_cstkcv](../../datafields/fnd6_cstkcv.md) - Common Stock-Carrying Value
+- [fnd6_cstkcvq](../../datafields/fnd6_cstkcvq.md) - Common Stock-Carrying Value
+- [fnd6_curcddv](../../datafields/fnd6_curcddv.md) - ISO Currency Code - Dividend
+- [fnd6_currencya_curcd](../../datafields/fnd6_currencya_curcd.md) - ISO Currency Code - Company Annual Market
+- [fnd6_currencyqv1300_curcd](../../datafields/fnd6_currencyqv1300_curcd.md) - ISO Currency Code - Company Annual Market
+- [fnd6_dc](../../datafields/fnd6_dc.md) - Deferred Charges
+- [fnd6_dclo](../../datafields/fnd6_dclo.md) - Debt - Capitalized Lease Obligations
+- [fnd6_dcpstk](../../datafields/fnd6_dcpstk.md) - Convertible Debt and Preferred Stock
+- [fnd6_dcvsr](../../datafields/fnd6_dcvsr.md) - Debt - Senior Convertible
+- [fnd6_dcvsub](../../datafields/fnd6_dcvsub.md) - Debt - Subordinated Convertible
+- [fnd6_dcvt](../../datafields/fnd6_dcvt.md) - Debt - Convertible
+- [fnd6_dd](../../datafields/fnd6_dd.md) - Debt - Debentures
+- [fnd6_dd1](../../datafields/fnd6_dd1.md) - Long-Term Debt Due in 1 Year
+- [fnd6_dd1q](../../datafields/fnd6_dd1q.md) - Long-Term Debt Due in 1 Year
+- [fnd6_dd2](../../datafields/fnd6_dd2.md) - Debt Due in 2nd Year
+- [fnd6_dd3](../../datafields/fnd6_dd3.md) - Debt Due in 3rd Year
+- [fnd6_dd4](../../datafields/fnd6_dd4.md) - Debt Due in 4th Year
+- [fnd6_dd5](../../datafields/fnd6_dd5.md) - Debt Due in 5th Year
+- [fnd6_dilavx](../../datafields/fnd6_dilavx.md) - Dilution Available - Excluding Extraordinary Items
+- [fnd6_divd](../../datafields/fnd6_divd.md) - Cash Dividends - Daily
+- [fnd6_dlcch](../../datafields/fnd6_dlcch.md) - Current Debt - Changes
+- [fnd6_dltis](../../datafields/fnd6_dltis.md) - Long-Term Debt - Issuance
+- [fnd6_dlto](../../datafields/fnd6_dlto.md) - Debt - Long-Term - Other
+- [fnd6_dltp](../../datafields/fnd6_dltp.md) - Long-Term Debt - Tied to Prime
+- [fnd6_dltr](../../datafields/fnd6_dltr.md) - Long-Term Debt - Reduction
+- [fnd6_dm](../../datafields/fnd6_dm.md) - Debt - Mortgages & Other Secured
+- [fnd6_dn](../../datafields/fnd6_dn.md) - Debt - Notes
+- [fnd6_donr](../../datafields/fnd6_donr.md) - Nonrecurring Disc Operations
+- [fnd6_dps](../../datafields/fnd6_dps.md) - Depreciation and Amortization
+- [fnd6_dpvieb](../../datafields/fnd6_dpvieb.md) - Depreciation (Accumulated) - Ending Balance (Schedule VI)
+- [fnd6_drc](../../datafields/fnd6_drc.md) - Deferred Revenue - Current
+- [fnd6_drlt](../../datafields/fnd6_drlt.md) - Deferred Revenue - Long-term
+- [fnd6_ds](../../datafields/fnd6_ds.md) - Debt - Subordinated
+- [fnd6_dudd](../../datafields/fnd6_dudd.md) - Debt - Unamortized Debt Discount and Other
+- [fnd6_dvpa](../../datafields/fnd6_dvpa.md) - Preferred Dividends in Arrears
+- [fnd6_dvrated](../../datafields/fnd6_dvrated.md) - Indicated Annual Dividend Rate - Daily
+- [fnd6_dxd2](../../datafields/fnd6_dxd2.md) - Debt (excl Capitalized Leases) - Due in 2nd Year
+- [fnd6_dxd3](../../datafields/fnd6_dxd3.md) - Debt (excl Capitalized Leases) - Due in 3rd Year
+- [fnd6_dxd4](../../datafields/fnd6_dxd4.md) - Debt (excl Capitalized Leases) - Due in 4th Year
+- [fnd6_dxd5](../../datafields/fnd6_dxd5.md) - Debt (excl Capitalized Leases) - Due in 5th Year
+- [fnd6_ein](../../datafields/fnd6_ein.md) - Employer Identification Number code for the company
+- [fnd6_emps](../../datafields/fnd6_emps.md) - Employees
+- [fnd6_esopct](../../datafields/fnd6_esopct.md) - Common ESOP Obligation - Total
+- [fnd6_esopnr](../../datafields/fnd6_esopnr.md) - Preferred ESOP Obligation - Non-Redeemable
+- [fnd6_esopr](../../datafields/fnd6_esopr.md) - Preferred ESOP Obligation - Redeemable
+- [fnd6_esubc](../../datafields/fnd6_esubc.md) - Equity in Net Loss - Earnings
+- [fnd6_esubs](../../datafields/fnd6_esubs.md) - Equity in Earnings
+- [fnd6_eventv110_aqdq](../../datafields/fnd6_eventv110_aqdq.md) - Acquisition/Merger Diluted EPS Effect
+- [fnd6_eventv110_aqepsq](../../datafields/fnd6_eventv110_aqepsq.md) - Acquisition/Merger Basic EPS Effect
+- [fnd6_eventv110_cstkcvq](../../datafields/fnd6_eventv110_cstkcvq.md) - Common Stock - Carrying Value
+- [fnd6_eventv110_dd1q](../../datafields/fnd6_eventv110_dd1q.md) - Long Term Debt Due in 1 Year
+- [fnd6_eventv110_dtedq](../../datafields/fnd6_eventv110_dtedq.md) - Extinguishment of Debt Diluted EPS Effect
+- [fnd6_eventv110_dteepsq](../../datafields/fnd6_eventv110_dteepsq.md) - Extinguishment of Debt Basic EPS Effect
+- [fnd6_eventv110_gdwlid12](../../datafields/fnd6_eventv110_gdwlid12.md) - Impairments Diluted EPS - 12mm
+- [fnd6_eventv110_gdwlidq](../../datafields/fnd6_eventv110_gdwlidq.md) - Impairment of Goodwill Diluted EPS Effect
+- [fnd6_eventv110_gdwlieps12](../../datafields/fnd6_eventv110_gdwlieps12.md) - Impairment of Goodwill Basic EPS Effect 12MM
+- [fnd6_eventv110_gdwliepsq](../../datafields/fnd6_eventv110_gdwliepsq.md) - Impairment of Goodwill Basic EPS Effect
+- [fnd6_eventv110_gldq](../../datafields/fnd6_eventv110_gldq.md) - Gain/Loss Diluted EPS Effect
+- [fnd6_eventv110_glepsq](../../datafields/fnd6_eventv110_glepsq.md) - Gain/Loss Basic EPS Effect
+- [fnd6_eventv110_npq](../../datafields/fnd6_eventv110_npq.md) - Notes Payable
+- [fnd6_eventv110_nrtxtdq](../../datafields/fnd6_eventv110_nrtxtdq.md) - Nonrecurring Income Taxes Diluted EPS Effect
+- [fnd6_eventv110_nrtxtepsq](../../datafields/fnd6_eventv110_nrtxtepsq.md) - Nonrecurring Income Taxes Basic EPS Effect
+- [fnd6_eventv110_optdrq](../../datafields/fnd6_eventv110_optdrq.md) - Dividend Rate - Assumption (%)
+- [fnd6_eventv110_optlifeq](../../datafields/fnd6_eventv110_optlifeq.md) - Life of Options - Assumption (# yrs)
+- [fnd6_eventv110_optvolq](../../datafields/fnd6_eventv110_optvolq.md) - Volatility - Assumption (%)
+- [fnd6_eventv110_pncd12](../../datafields/fnd6_eventv110_pncd12.md) - Core Pension Adjustment Diluted EPS Effect 12MM
+- [fnd6_eventv110_pncdq](../../datafields/fnd6_eventv110_pncdq.md) - Core Pension Adjustment Diluted EPS Effect
+- [fnd6_eventv110_pnceps12](../../datafields/fnd6_eventv110_pnceps12.md) - Core Pension Adjustment Basic EPS Effect 12MM
+- [fnd6_eventv110_pncepsq](../../datafields/fnd6_eventv110_pncepsq.md) - Core Pension Adjustment Basic EPS Effect
+- [fnd6_eventv110_pncidq](../../datafields/fnd6_eventv110_pncidq.md) - Core Pension Interest Adjustment Diluted EPS Effect
+- [fnd6_eventv110_pncwidq](../../datafields/fnd6_eventv110_pncwidq.md) - Core Pension w/o Interest Adjustment Diluted EPS Effect
+- [fnd6_eventv110_pncwiepsq](../../datafields/fnd6_eventv110_pncwiepsq.md) - Core Pension w/o Interest Adjustment Basic EPS Effect
+- [fnd6_eventv110_setdq](../../datafields/fnd6_eventv110_setdq.md) - Settlement (Litigation/Insurance) Diluted EPS Effect
+- [fnd6_eventv110_setepsq](../../datafields/fnd6_eventv110_setepsq.md) - Settlement (Litigation/Insurance) Basic EPS Effect
+- [fnd6_eventv110_spced12](../../datafields/fnd6_eventv110_spced12.md) - S&P Core Earnings EPS Diluted 12MM
+- [fnd6_eventv110_spidq](../../datafields/fnd6_eventv110_spidq.md) - Other Special Items Diluted EPS Effect
+- [fnd6_eventv110_spiepsq](../../datafields/fnd6_eventv110_spiepsq.md) - Other Special Items Basic EPS Effect
+- [fnd6_eventv110_txdbcaq](../../datafields/fnd6_eventv110_txdbcaq.md) - Current Deferred Tax Asset
+- [fnd6_eventv110_txdbclq](../../datafields/fnd6_eventv110_txdbclq.md) - Current Deferred Tax Liability
+- [fnd6_eventv110_wddq](../../datafields/fnd6_eventv110_wddq.md) - Writedowns Diluted EPS Effect
+- [fnd6_eventv110_wdepsq](../../datafields/fnd6_eventv110_wdepsq.md) - Writedowns Basic EPS Effect
+- [fnd6_eventv110_xaccq](../../datafields/fnd6_eventv110_xaccq.md) - Accrued Expenses
+- [fnd6_exre](../../datafields/fnd6_exre.md) - Exchange Rate Effect
+- [fnd6_fatb](../../datafields/fnd6_fatb.md) - Plant, Property and Equipment at Cost - Buildings
+- [fnd6_fatc](../../datafields/fnd6_fatc.md) - Plant, Property and Equipment at Cost - Construction in Progress
+- [fnd6_fate](../../datafields/fnd6_fate.md) - Plant, Property and Equipment at Cost - Machinery & Equipment
+- [fnd6_fatl](../../datafields/fnd6_fatl.md) - Property, Plant, and Equipment - Leases at Cost
+- [fnd6_fatn](../../datafields/fnd6_fatn.md) - Property, Plant, and Equipment - Natural Resources at Cost
+- [fnd6_fato](../../datafields/fnd6_fato.md) - Plant, Property and Equipment at Cost - Other
+- [fnd6_fatp](../../datafields/fnd6_fatp.md) - Plant, Property and Equipment at Cost - Land & Improvements
+- [fnd6_fiao](../../datafields/fnd6_fiao.md) - Financing Activities - Other
+- [fnd6_fic](../../datafields/fnd6_fic.md) - identifies the country in which the company is incorporated or legally registered
+- [fnd6_fopo](../../datafields/fnd6_fopo.md) - Funds from Operations - Other
+- [fnd6_fopox](../../datafields/fnd6_fopox.md) - Funds from Operations - Other excluding Option Tax Benefit
+- [fnd6_fyrc](../../datafields/fnd6_fyrc.md) - Unimportant technical code, please ignore for research purposes
+- [fnd6_gdwls](../../datafields/fnd6_gdwls.md) - Goodwill
+- [fnd6_ias](../../datafields/fnd6_ias.md) - Identifiable (Total) Assets
+- [fnd6_ibmii](../../datafields/fnd6_ibmii.md) - Income before Extraordinary Items and Noncontrolling Interests
+- [fnd6_ibs](../../datafields/fnd6_ibs.md) - Income before Extraordinary Items
+- [fnd6_idesindq_curcd](../../datafields/fnd6_idesindq_curcd.md) - ISO Currency Code - Company Annual Market
+- [fnd6_idit](../../datafields/fnd6_idit.md) - Interest and Related Income - Total
+- [fnd6_iints](../../datafields/fnd6_iints.md) - Interest Income
+- [fnd6_incorp](../../datafields/fnd6_incorp.md) - Incorporated
+- [fnd6_intan](../../datafields/fnd6_intan.md) - Intangible Assets - Total
+- [fnd6_intc](../../datafields/fnd6_intc.md) - Interest Capitalized
+- [fnd6_intpn](../../datafields/fnd6_intpn.md) - Interest Paid - Net
+- [fnd6_intseg](../../datafields/fnd6_intseg.md) - Intersegment Eliminations
+- [fnd6_invfg](../../datafields/fnd6_invfg.md) - Inventories - Finished Goods
+- [fnd6_invo](../../datafields/fnd6_invo.md) - Inventories - Other
+- [fnd6_invrm](../../datafields/fnd6_invrm.md) - Inventories - Raw Materials
+- [fnd6_invwip](../../datafields/fnd6_invwip.md) - Inventories - Work In Process
+- [fnd6_itcb](../../datafields/fnd6_itcb.md) - Investment Tax Credit (Balance Sheet)
+- [fnd6_itci](../../datafields/fnd6_itci.md) - Investment Tax Credit (Income Account)
+- [fnd6_ivaco](../../datafields/fnd6_ivaco.md) - Investing Activities - Other
+- [fnd6_ivaeq](../../datafields/fnd6_ivaeq.md) - Investment and Advances - Equity
+- [fnd6_ivaeqs](../../datafields/fnd6_ivaeqs.md) - Investments at Equity
+- [fnd6_ivao](../../datafields/fnd6_ivao.md) - Investment and Advances - Other
+- [fnd6_ivch](../../datafields/fnd6_ivch.md) - Increase in Investments
+- [fnd6_ivst](../../datafields/fnd6_ivst.md) - Short-Term Investments - Total
+- [fnd6_ivstch](../../datafields/fnd6_ivstch.md) - Short-Term Investments - Change
+- [fnd6_lcox](../../datafields/fnd6_lcox.md) - Current Liabilities - Other - Sundry
+- [fnd6_lcoxdr](../../datafields/fnd6_lcoxdr.md) - Current Liabilities - Other - Excluding Deferred Revenue
+- [fnd6_lifr](../../datafields/fnd6_lifr.md) - LIFO Reserve
+- [fnd6_lno](../../datafields/fnd6_lno.md) - Liabilities Netting & Other Adjustments
+- [fnd6_loc](../../datafields/fnd6_loc.md) - string for locating the Headquarters of the company
+- [fnd6_lol2](../../datafields/fnd6_lol2.md) - Liabilities Level 2 (Observable)
+- [fnd6_loxdr](../../datafields/fnd6_loxdr.md) - Liabilities - Other - Excluding Deferred Revenue
+- [fnd6_lqpl1](../../datafields/fnd6_lqpl1.md) - Liabilities Level 1 (Quoted Prices)
+- [fnd6_lul3](../../datafields/fnd6_lul3.md) - Liabilities Level 3 (Unobservable)
+- [fnd6_mfma1_aoloch](../../datafields/fnd6_mfma1_aoloch.md) - Assets and Liabilities - Other - Net Change
+- [fnd6_mfma1_apalch](../../datafields/fnd6_mfma1_apalch.md) - Accounts Payable and Accrued Liabilities - Increase/(Decrease)
+- [fnd6_mfma1_at](../../datafields/fnd6_mfma1_at.md) - Assets - Total
+- [fnd6_mfma1_capx](../../datafields/fnd6_mfma1_capx.md) - Capital Expenditures
+- [fnd6_mfma1_csho](../../datafields/fnd6_mfma1_csho.md) - Common Shares Outstanding
+- [fnd6_mfma1_dp](../../datafields/fnd6_mfma1_dp.md) - Depreciation and Amortization
+- [fnd6_mfma1_dpc](../../datafields/fnd6_mfma1_dpc.md) - Depreciation and Amortization (Cash Flow)
+- [fnd6_mfma1_invch](../../datafields/fnd6_mfma1_invch.md) - Mortgages - Decrease (Increase)
+- [fnd6_mfma2_oancf](../../datafields/fnd6_mfma2_oancf.md) - Operating Activities - Net Cash Flow
+- [fnd6_mfma2_opeps](../../datafields/fnd6_mfma2_opeps.md) - Earnings Per Share from Operations
+- [fnd6_mfma2_recch](../../datafields/fnd6_mfma2_recch.md) - Accounts Receivable - Decrease (Increase)
+- [fnd6_mfma2_revt](../../datafields/fnd6_mfma2_revt.md) - Revenue - Total
+- [fnd6_mfma2_txach](../../datafields/fnd6_mfma2_txach.md) - Income Taxes - Accrued - Increase/(Decrease)
+- [fnd6_mfmq_cheq](../../datafields/fnd6_mfmq_cheq.md) - Cash and Short-Term Investments
+- [fnd6_mfmq_cogsq](../../datafields/fnd6_mfmq_cogsq.md) - Cost of Goods Sold
+- [fnd6_mfmq_cshprq](../../datafields/fnd6_mfmq_cshprq.md) - Common Shares Used to Calculate Earnings Per Share - Basic
+- [fnd6_mfmq_dlcq](../../datafields/fnd6_mfmq_dlcq.md) - Debt in Current Liabilities
+- [fnd6_mfmq_ibcomq](../../datafields/fnd6_mfmq_ibcomq.md) - Income Before Extraordinary Items - Available for Common
+- [fnd6_mfmq_mibtq](../../datafields/fnd6_mfmq_mibtq.md) - Noncontrolling Interests - Total - Balance Sheet - Quarterly
+- [fnd6_mfmq_piq](../../datafields/fnd6_mfmq_piq.md) - Pretax Income
+- [fnd6_mibn](../../datafields/fnd6_mibn.md) - Noncontrolling Interests - Nonredeemable - Balance Sheet
+- [fnd6_mibt](../../datafields/fnd6_mibt.md) - Noncontrolling Interests - Total - Balance Sheet
+- [fnd6_mkvalt](../../datafields/fnd6_mkvalt.md) - Market Value - Total
+- [fnd6_mkvaltq](../../datafields/fnd6_mkvaltq.md) - Market Value - Total
+- [fnd6_mrc1](../../datafields/fnd6_mrc1.md) - Rental Commitments - Minimum - 1st Year
+- [fnd6_mrc2](../../datafields/fnd6_mrc2.md) - Rental Commitments - Minimum - 2nd Year
+- [fnd6_mrc3](../../datafields/fnd6_mrc3.md) - Rental Commitments - Minimum - 3rd Year
+- [fnd6_mrc4](../../datafields/fnd6_mrc4.md) - Rental Commitments - Minimum - 4th Year
+- [fnd6_mrc5](../../datafields/fnd6_mrc5.md) - Rental Commitments - Minimum - 5th Year
+- [fnd6_mrct](../../datafields/fnd6_mrct.md) - Rental Commitments - Minimum - 5-Year Total
+- [fnd6_mrcta](../../datafields/fnd6_mrcta.md) - Thereafter Portion of Leases
+- [fnd6_msa](../../datafields/fnd6_msa.md) - Marketable Securities Adjustment
+- [fnd6_naicss](../../datafields/fnd6_naicss.md) - NAICS Code
+- [fnd6_newa1v1300_aco](../../datafields/fnd6_newa1v1300_aco.md) - Current Assets - Other - Total
+- [fnd6_newa1v1300_acominc](../../datafields/fnd6_newa1v1300_acominc.md) - Accumulated Other Comprehensive Income (Loss)
+- [fnd6_newa1v1300_act](../../datafields/fnd6_newa1v1300_act.md) - Current Assets - Total
+- [fnd6_newa1v1300_ano](../../datafields/fnd6_newa1v1300_ano.md) - Assets Netting & Other Adjustments
+- [fnd6_newa1v1300_ao](../../datafields/fnd6_newa1v1300_ao.md) - Assets - Other
+- [fnd6_newa1v1300_aocidergl](../../datafields/fnd6_newa1v1300_aocidergl.md) - Accum Other Comp Inc - Derivatives Unrealized Gain/Loss
+- [fnd6_newa1v1300_aociother](../../datafields/fnd6_newa1v1300_aociother.md) - Accum Other Comp Inc - Other Adjustments
+- [fnd6_newa1v1300_aocipen](../../datafields/fnd6_newa1v1300_aocipen.md) - Accum Other Comp Inc - Min Pension Liab Adj
+- [fnd6_newa1v1300_aol2](../../datafields/fnd6_newa1v1300_aol2.md) - Assets Level 2 (Observable)
+- [fnd6_newa1v1300_aoloch](../../datafields/fnd6_newa1v1300_aoloch.md) - Assets and Liabilities - Other - Net Change
+- [fnd6_newa1v1300_ap](../../datafields/fnd6_newa1v1300_ap.md) - Accounts Payable - Trade
+- [fnd6_newa1v1300_apalch](../../datafields/fnd6_newa1v1300_apalch.md) - Accounts Payable and Accrued Liabilities - Increase/(Decrease)
+- [fnd6_newa1v1300_aqpl1](../../datafields/fnd6_newa1v1300_aqpl1.md) - Assets Level 1 (Quoted Prices)
+- [fnd6_newa1v1300_at](../../datafields/fnd6_newa1v1300_at.md) - Assets - Total
+- [fnd6_newa1v1300_aul3](../../datafields/fnd6_newa1v1300_aul3.md) - Assets Level 3 (Unobservable)
+- [fnd6_newa1v1300_bkvlps](../../datafields/fnd6_newa1v1300_bkvlps.md) - Book Value Per Share
+- [fnd6_newa1v1300_caps](../../datafields/fnd6_newa1v1300_caps.md) - Capital Surplus/Share Premium Reserve
+- [fnd6_newa1v1300_capx](../../datafields/fnd6_newa1v1300_capx.md) - Capital Expenditures
+- [fnd6_newa1v1300_ceq](../../datafields/fnd6_newa1v1300_ceq.md) - Common/Ordinary Equity - Total
+- [fnd6_newa1v1300_ceqt](../../datafields/fnd6_newa1v1300_ceqt.md) - Common Equity - Tangible
+- [fnd6_newa1v1300_che](../../datafields/fnd6_newa1v1300_che.md) - Cash and Short-Term Investments
+- [fnd6_newa1v1300_chech](../../datafields/fnd6_newa1v1300_chech.md) - Cash and Cash Equivalents - Increase/(Decrease)
+- [fnd6_newa1v1300_cogs](../../datafields/fnd6_newa1v1300_cogs.md) - Cost of Goods Sold
+- [fnd6_newa1v1300_cshfd](../../datafields/fnd6_newa1v1300_cshfd.md) - Common Shares Used to Calc Earnings Per Share - Fully Diluted
+- [fnd6_newa1v1300_cshi](../../datafields/fnd6_newa1v1300_cshi.md) - Common Shares Issued
+- [fnd6_newa1v1300_csho](../../datafields/fnd6_newa1v1300_csho.md) - Common Shares Outstanding
+- [fnd6_newa1v1300_cstk](../../datafields/fnd6_newa1v1300_cstk.md) - Common/Ordinary Stock (Capital)
+- [fnd6_newa1v1300_dcom](../../datafields/fnd6_newa1v1300_dcom.md) - Deferred Compensation
+- [fnd6_newa1v1300_dlc](../../datafields/fnd6_newa1v1300_dlc.md) - Debt in Current Liabilities - Total
+- [fnd6_newa1v1300_dltt](../../datafields/fnd6_newa1v1300_dltt.md) - Long-Term Debt - Total
+- [fnd6_newa1v1300_dp](../../datafields/fnd6_newa1v1300_dp.md) - Depreciation and Amortization
+- [fnd6_newa1v1300_dpact](../../datafields/fnd6_newa1v1300_dpact.md) - Depreciation, Depletion and Amortization (Accumulated)
+- [fnd6_newa1v1300_dpc](../../datafields/fnd6_newa1v1300_dpc.md) - Depreciation and Amortization (Cash Flow)
+- [fnd6_newa1v1300_dv](../../datafields/fnd6_newa1v1300_dv.md) - Cash Dividends (Cash Flow)
+- [fnd6_newa1v1300_dvc](../../datafields/fnd6_newa1v1300_dvc.md) - Dividends Common/Ordinary
+- [fnd6_newa1v1300_dvt](../../datafields/fnd6_newa1v1300_dvt.md) - Dividends - Total
+- [fnd6_newa1v1300_ebit](../../datafields/fnd6_newa1v1300_ebit.md) - Earnings Before Interest and Taxes
+- [fnd6_newa1v1300_ebitda](../../datafields/fnd6_newa1v1300_ebitda.md) - Earnings Before Interest
+- [fnd6_newa1v1300_emp](../../datafields/fnd6_newa1v1300_emp.md) - Employees
+- [fnd6_newa1v1300_epsfi](../../datafields/fnd6_newa1v1300_epsfi.md) - Earnings Per Share (Diluted) - Including Extraordinary Items
+- [fnd6_newa1v1300_epsfx](../../datafields/fnd6_newa1v1300_epsfx.md) - Earnings Per Share (Diluted) - Excluding Extraordinary Items
+- [fnd6_newa1v1300_epspi](../../datafields/fnd6_newa1v1300_epspi.md) - Earnings Per Share (Basic) - Including Extraordinary Items
+- [fnd6_newa1v1300_epspx](../../datafields/fnd6_newa1v1300_epspx.md) - Earnings Per Share (Basic) - Excluding Extraordinary Items
+- [fnd6_newa1v1300_fca](../../datafields/fnd6_newa1v1300_fca.md) - Foreign Exchange Income (Loss)
+- [fnd6_newa1v1300_fincf](../../datafields/fnd6_newa1v1300_fincf.md) - Financing Activities - Net Cash Flow
+- [fnd6_newa1v1300_gdwl](../../datafields/fnd6_newa1v1300_gdwl.md) - Goodwill
+- [fnd6_newa1v1300_gp](../../datafields/fnd6_newa1v1300_gp.md) - Gross Profit (Loss)
+- [fnd6_newa1v1300_ib](../../datafields/fnd6_newa1v1300_ib.md) - Income Before Extraordinary Items
+- [fnd6_newa1v1300_ibadj](../../datafields/fnd6_newa1v1300_ibadj.md) - Income Before Extraordinary Items - Adjusted for Common Stock Equivalents
+- [fnd6_newa1v1300_ibc](../../datafields/fnd6_newa1v1300_ibc.md) - Income Before Extraordinary Items (Cash Flow)
+- [fnd6_newa1v1300_ibcom](../../datafields/fnd6_newa1v1300_ibcom.md) - Income Before Extraordinary Items - Available for Common
+- [fnd6_newa1v1300_icapt](../../datafields/fnd6_newa1v1300_icapt.md) - Invested Capital - Total
+- [fnd6_newa1v1300_intano](../../datafields/fnd6_newa1v1300_intano.md) - Other Intangibles
+- [fnd6_newa1v1300_invch](../../datafields/fnd6_newa1v1300_invch.md) - Mortgages - Decrease (Increase)
+- [fnd6_newa1v1300_invt](../../datafields/fnd6_newa1v1300_invt.md) - Inventories - Total
+- [fnd6_newa1v1300_ivncf](../../datafields/fnd6_newa1v1300_ivncf.md) - Investing Activities - Net Cash Flow
+- [fnd6_newa1v1300_lco](../../datafields/fnd6_newa1v1300_lco.md) - Current Liabilities - Other - Total
+- [fnd6_newa1v1300_lct](../../datafields/fnd6_newa1v1300_lct.md) - Current Liabilities - Total
+- [fnd6_newa1v1300_lo](../../datafields/fnd6_newa1v1300_lo.md) - Liabilities - Other - Total
+- [fnd6_newa1v1300_lse](../../datafields/fnd6_newa1v1300_lse.md) - Liabilities and Stockholders Equity - Total
+- [fnd6_newa1v1300_lt](../../datafields/fnd6_newa1v1300_lt.md) - Liabilities - Total
+- [fnd6_newa2v1300_mib](../../datafields/fnd6_newa2v1300_mib.md) - Minority Interest (Balance Sheet)
+- [fnd6_newa2v1300_mii](../../datafields/fnd6_newa2v1300_mii.md) - Noncontrolling Interest (Income Account)
+- [fnd6_newa2v1300_ni](../../datafields/fnd6_newa2v1300_ni.md) - Net Income (Loss)
+- [fnd6_newa2v1300_nopi](../../datafields/fnd6_newa2v1300_nopi.md) - Nonoperating Income (Expense)
+- [fnd6_newa2v1300_oancf](../../datafields/fnd6_newa2v1300_oancf.md) - Operating Activities - Net Cash Flow
+- [fnd6_newa2v1300_oiadp](../../datafields/fnd6_newa2v1300_oiadp.md) - Operating Income After Depreciation
+- [fnd6_newa2v1300_oibdp](../../datafields/fnd6_newa2v1300_oibdp.md) - Operating Income Before Depreciation
+- [fnd6_newa2v1300_opeps](../../datafields/fnd6_newa2v1300_opeps.md) - Earnings Per Share from Operations
+- [fnd6_newa2v1300_optexd](../../datafields/fnd6_newa2v1300_optexd.md) - Options - Exercised (-)
+- [fnd6_newa2v1300_pi](../../datafields/fnd6_newa2v1300_pi.md) - Pretax Income
+- [fnd6_newa2v1300_ppegt](../../datafields/fnd6_newa2v1300_ppegt.md) - Property, Plant and Equipment - Total (Gross)
+- [fnd6_newa2v1300_ppent](../../datafields/fnd6_newa2v1300_ppent.md) - Property, Plant and Equipment - Total (Net)
+- [fnd6_newa2v1300_prsho](../../datafields/fnd6_newa2v1300_prsho.md) - Redeem Pfd Shares Outs (000)
+- [fnd6_newa2v1300_rdip](../../datafields/fnd6_newa2v1300_rdip.md) - In Process R&D Expense
+- [fnd6_newa2v1300_rdipa](../../datafields/fnd6_newa2v1300_rdipa.md) - In-Process R&D Expense After-tax
+- [fnd6_newa2v1300_rdipd](../../datafields/fnd6_newa2v1300_rdipd.md) - In Process R&D Expense Diluted EPS Effect
+- [fnd6_newa2v1300_rdipeps](../../datafields/fnd6_newa2v1300_rdipeps.md) - In Process R&D Expense Basic EPS Effect
+- [fnd6_newa2v1300_re](../../datafields/fnd6_newa2v1300_re.md) - Retained Earnings
+- [fnd6_newa2v1300_recch](../../datafields/fnd6_newa2v1300_recch.md) - Accounts Receivable - Decrease (Increase)
+- [fnd6_newa2v1300_rect](../../datafields/fnd6_newa2v1300_rect.md) - Receivables - Total
+- [fnd6_newa2v1300_reuna](../../datafields/fnd6_newa2v1300_reuna.md) - Retained Earnings - Unadjusted
+- [fnd6_newa2v1300_revt](../../datafields/fnd6_newa2v1300_revt.md) - Revenue - Total
+- [fnd6_newa2v1300_sale](../../datafields/fnd6_newa2v1300_sale.md) - Sales/Turnover (Net)
+- [fnd6_newa2v1300_seq](../../datafields/fnd6_newa2v1300_seq.md) - Stockholders Equity - Parent
+- [fnd6_newa2v1300_seqo](../../datafields/fnd6_newa2v1300_seqo.md) - Other Stockholders' Equity Adjustments
+- [fnd6_newa2v1300_spced](../../datafields/fnd6_newa2v1300_spced.md) - S&P Core Earnings EPS Diluted
+- [fnd6_newa2v1300_spceeps](../../datafields/fnd6_newa2v1300_spceeps.md) - S&P Core Earnings EPS Basic
+- [fnd6_newa2v1300_spi](../../datafields/fnd6_newa2v1300_spi.md) - Special Items
+- [fnd6_newa2v1300_stkco](../../datafields/fnd6_newa2v1300_stkco.md) - Stock Compensation Expense
+- [fnd6_newa2v1300_tstk](../../datafields/fnd6_newa2v1300_tstk.md) - Treasury Stock - Total (All Capital)
+- [fnd6_newa2v1300_tstkn](../../datafields/fnd6_newa2v1300_tstkn.md) - Treasury Stock - Number of Common Shares
+- [fnd6_newa2v1300_txach](../../datafields/fnd6_newa2v1300_txach.md) - Income Taxes - Accrued - Increase/(Decrease)
+- [fnd6_newa2v1300_txdb](../../datafields/fnd6_newa2v1300_txdb.md) - Deferred Taxes - Balance Sheet
+- [fnd6_newa2v1300_txditc](../../datafields/fnd6_newa2v1300_txditc.md) - Deferred Taxes and Investment Tax Credit
+- [fnd6_newa2v1300_txp](../../datafields/fnd6_newa2v1300_txp.md) - Income Taxes Payable
+- [fnd6_newa2v1300_txt](../../datafields/fnd6_newa2v1300_txt.md) - Income Taxes - Total
+- [fnd6_newa2v1300_wcap](../../datafields/fnd6_newa2v1300_wcap.md) - Working Capital (Balance Sheet)
+- [fnd6_newa2v1300_xidoc](../../datafields/fnd6_newa2v1300_xidoc.md) - Extraordinary Items and Discontinued Operations (Cash Flow)
+- [fnd6_newa2v1300_xint](../../datafields/fnd6_newa2v1300_xint.md) - Interest and Related Expense - Total
+- [fnd6_newa2v1300_xoptd](../../datafields/fnd6_newa2v1300_xoptd.md) - Implied Option EPS Diluted
+- [fnd6_newa2v1300_xopteps](../../datafields/fnd6_newa2v1300_xopteps.md) - Implied Option EPS Basic
+- [fnd6_newa2v1300_xrd](../../datafields/fnd6_newa2v1300_xrd.md) - Research and Development Expense
+- [fnd6_newa2v1300_xsga](../../datafields/fnd6_newa2v1300_xsga.md) - Selling, General and Administrative Expense
+- [fnd6_newq_xoptdqp](../../datafields/fnd6_newq_xoptdqp.md) - Implied Option EPS Diluted Preliminary
+- [fnd6_newq_xoptepsqp](../../datafields/fnd6_newq_xoptepsqp.md) - Implied Option EPS Basic Preliminary
+- [fnd6_newq_xoptqp](../../datafields/fnd6_newq_xoptqp.md) - Implied Option Expense Preliminary
+- [fnd6_newqeventv110_acchgq](../../datafields/fnd6_newqeventv110_acchgq.md) - Accounting Changes - Cumulative Effect
+- [fnd6_newqeventv110_acomincq](../../datafields/fnd6_newqeventv110_acomincq.md) - Accumulated Other Comprehensive Income (Loss)
+- [fnd6_newqeventv110_acoq](../../datafields/fnd6_newqeventv110_acoq.md) - Current Assets - Other - Total
+- [fnd6_newqeventv110_altoq](../../datafields/fnd6_newqeventv110_altoq.md) - Other Long-term Assets
+- [fnd6_newqeventv110_ancq](../../datafields/fnd6_newqeventv110_ancq.md) - Non-Current Assets - Total
+- [fnd6_newqeventv110_anoq](../../datafields/fnd6_newqeventv110_anoq.md) - Assets Netting & Other Adjustments
+- [fnd6_newqeventv110_aociderglq](../../datafields/fnd6_newqeventv110_aociderglq.md) - Accumulated Other Comprehensive Income - Derivatives Unrealized Gain/Loss
+- [fnd6_newqeventv110_aociotherq](../../datafields/fnd6_newqeventv110_aociotherq.md) - Accum Other Comp Inc - Other Adjustments
+- [fnd6_newqeventv110_aocipenq](../../datafields/fnd6_newqeventv110_aocipenq.md) - Accum Other Comp Inc - Min Pension Liab Adj
+- [fnd6_newqeventv110_aocisecglq](../../datafields/fnd6_newqeventv110_aocisecglq.md) - Accum. Other Comp. Inc. - Unreal G/L Ret. Int. in Sec. Assets
+- [fnd6_newqeventv110_aol2q](../../datafields/fnd6_newqeventv110_aol2q.md) - Assets Level 2 (Observable)
+- [fnd6_newqeventv110_aoq](../../datafields/fnd6_newqeventv110_aoq.md) - Assets - Other - Total
+- [fnd6_newqeventv110_aqaq](../../datafields/fnd6_newqeventv110_aqaq.md) - Acquisition/Merger After-Tax
+- [fnd6_newqeventv110_aqpl1q](../../datafields/fnd6_newqeventv110_aqpl1q.md) - Assets Level 1 (Quoted Prices)
+- [fnd6_newqeventv110_aqpq](../../datafields/fnd6_newqeventv110_aqpq.md) - Acquisition/Merger Pretax
+- [fnd6_newqeventv110_aul3q](../../datafields/fnd6_newqeventv110_aul3q.md) - Assets Level 3 (Unobservable)
+- [fnd6_newqeventv110_capsq](../../datafields/fnd6_newqeventv110_capsq.md) - Capital Surplus/Share Premium Reserve
+- [fnd6_newqeventv110_cheq](../../datafields/fnd6_newqeventv110_cheq.md) - Cash and Short-Term Investments
+- [fnd6_newqeventv110_chq](../../datafields/fnd6_newqeventv110_chq.md) - Cash
+- [fnd6_newqeventv110_cibegniq](../../datafields/fnd6_newqeventv110_cibegniq.md) - Comp Inc - Beginning Net Income
+- [fnd6_newqeventv110_cicurrq](../../datafields/fnd6_newqeventv110_cicurrq.md) - Comp Inc - Currency Trans Adj
+- [fnd6_newqeventv110_ciderglq](../../datafields/fnd6_newqeventv110_ciderglq.md) - Comprehensive Income - Derivative Gains/Losses
+- [fnd6_newqeventv110_cimiiq](../../datafields/fnd6_newqeventv110_cimiiq.md) - Comprehensive Income - Noncontrolling Interest
+- [fnd6_newqeventv110_ciotherq](../../datafields/fnd6_newqeventv110_ciotherq.md) - Comprehensive Income - Other Adjustments
+- [fnd6_newqeventv110_cipenq](../../datafields/fnd6_newqeventv110_cipenq.md) - Comp Inc - Minimum Pension Adj
+- [fnd6_newqeventv110_ciq](../../datafields/fnd6_newqeventv110_ciq.md) - Comprehensive Income - Total
+- [fnd6_newqeventv110_cisecglq](../../datafields/fnd6_newqeventv110_cisecglq.md) - Comp Inc - Securities Gains/Losses
+- [fnd6_newqeventv110_citotalq](../../datafields/fnd6_newqeventv110_citotalq.md) - Comprehensive Income - Parent
+- [fnd6_newqeventv110_cogsq](../../datafields/fnd6_newqeventv110_cogsq.md) - Cost of Goods Sold
+- [fnd6_newqeventv110_csh12q](../../datafields/fnd6_newqeventv110_csh12q.md) - Common Shares Used to Calculate Earnings Per Share - 12 Months Moving
+- [fnd6_newqeventv110_cshfdq](../../datafields/fnd6_newqeventv110_cshfdq.md) - Common Shares for Diluted EPS
+- [fnd6_newqeventv110_cshiq](../../datafields/fnd6_newqeventv110_cshiq.md) - Common Shares Issued
+- [fnd6_newqeventv110_cshopq](../../datafields/fnd6_newqeventv110_cshopq.md) - Total Shares Repurchased - Quarter
+- [fnd6_newqeventv110_cshoq](../../datafields/fnd6_newqeventv110_cshoq.md) - Common Shares Outstanding
+- [fnd6_newqeventv110_cshprq](../../datafields/fnd6_newqeventv110_cshprq.md) - Common Shares Used to Calculate Earnings Per Share - Basic
+- [fnd6_newqeventv110_cstkeq](../../datafields/fnd6_newqeventv110_cstkeq.md) - Common Stock Equivalents - Dollar Savings
+- [fnd6_newqeventv110_cstkq](../../datafields/fnd6_newqeventv110_cstkq.md) - Common/Ordinary Stock (Capital)
+- [fnd6_newqeventv110_dcomq](../../datafields/fnd6_newqeventv110_dcomq.md) - Deferred Compensation
+- [fnd6_newqeventv110_diladq](../../datafields/fnd6_newqeventv110_diladq.md) - Dilution Adjustment
+- [fnd6_newqeventv110_dilavq](../../datafields/fnd6_newqeventv110_dilavq.md) - Dilution Available - Excluding Extraordinary Items
+- [fnd6_newqeventv110_dlcq](../../datafields/fnd6_newqeventv110_dlcq.md) - Debt in Current Liabilities
+- [fnd6_newqeventv110_doq](../../datafields/fnd6_newqeventv110_doq.md) - Discontinued Operations
+- [fnd6_newqeventv110_dpactq](../../datafields/fnd6_newqeventv110_dpactq.md) - Depreciation, Depletion and Amortization (Accumulated)
+- [fnd6_newqeventv110_drcq](../../datafields/fnd6_newqeventv110_drcq.md) - Deferred Revenue - Current
+- [fnd6_newqeventv110_drltq](../../datafields/fnd6_newqeventv110_drltq.md) - Deferred Revenue - Long-term
+- [fnd6_newqeventv110_dteaq](../../datafields/fnd6_newqeventv110_dteaq.md) - Extinguishment of Debt After-tax
+- [fnd6_newqeventv110_dtepq](../../datafields/fnd6_newqeventv110_dtepq.md) - Extinguishment of Debt Pretax
+- [fnd6_newqeventv110_dvpq](../../datafields/fnd6_newqeventv110_dvpq.md) - Dividends - Preferred/Preference
+- [fnd6_newqeventv110_epsfiq](../../datafields/fnd6_newqeventv110_epsfiq.md) - Earnings Per Share (Diluted) - Including Extraordinary Items
+- [fnd6_newqeventv110_epspiq](../../datafields/fnd6_newqeventv110_epspiq.md) - Earnings Per Share (Basic) - Including Extraordinary Items
+- [fnd6_newqeventv110_epspxq](../../datafields/fnd6_newqeventv110_epspxq.md) - Earnings Per Share (Basic) - Excluding Extraordinary Items
+- [fnd6_newqeventv110_esopctq](../../datafields/fnd6_newqeventv110_esopctq.md) - Common ESOP Obligation - Total
+- [fnd6_newqeventv110_esopnrq](../../datafields/fnd6_newqeventv110_esopnrq.md) - Preferred ESOP Obligation - Non-Redeemable
+- [fnd6_newqeventv110_esoprq](../../datafields/fnd6_newqeventv110_esoprq.md) - Preferred ESOP Obligation - Redeemable
+- [fnd6_newqeventv110_esoptq](../../datafields/fnd6_newqeventv110_esoptq.md) - Preferred ESOP Obligation - Total
+- [fnd6_newqeventv110_fcaq](../../datafields/fnd6_newqeventv110_fcaq.md) - Foreign Exchange Income (Loss)
+- [fnd6_newqeventv110_gdwlamq](../../datafields/fnd6_newqeventv110_gdwlamq.md) - Amortization of Goodwill
+- [fnd6_newqeventv110_gdwlia12](../../datafields/fnd6_newqeventv110_gdwlia12.md) - Impairments of Goodwill After-Tax - 12MM
+- [fnd6_newqeventv110_gdwliaq](../../datafields/fnd6_newqeventv110_gdwliaq.md) - Impairment of Goodwill After-tax
+- [fnd6_newqeventv110_gdwlipq](../../datafields/fnd6_newqeventv110_gdwlipq.md) - Impairment of Goodwill Pretax
+- [fnd6_newqeventv110_gdwlq](../../datafields/fnd6_newqeventv110_gdwlq.md) - Goodwill (net)
+- [fnd6_newqeventv110_glaq](../../datafields/fnd6_newqeventv110_glaq.md) - Gain/Loss After-Tax
+- [fnd6_newqeventv110_glcea12](../../datafields/fnd6_newqeventv110_glcea12.md) - Gain/Loss on Sale (Core Earnings Adjusted) After-tax 12MM
+- [fnd6_newqeventv110_glceaq](../../datafields/fnd6_newqeventv110_glceaq.md) - Gain/Loss on Sale (Core Earnings Adjusted) After-tax
+- [fnd6_newqeventv110_glced12](../../datafields/fnd6_newqeventv110_glced12.md) - Gain/Loss on Sale (Core Earnings Adjusted) Diluted EPS Effect 12MM
+- [fnd6_newqeventv110_glcedq](../../datafields/fnd6_newqeventv110_glcedq.md) - Gain/Loss on Sale (Core Earnings Adjusted) Diluted EPS
+- [fnd6_newqeventv110_glceeps12](../../datafields/fnd6_newqeventv110_glceeps12.md) - Gain/Loss on Sale (Core Earnings Adjusted) Basic EPS Effect 12MM
+- [fnd6_newqeventv110_glceepsq](../../datafields/fnd6_newqeventv110_glceepsq.md) - Gain/Loss on Sale (Core Earnings Adjusted) Basic EPS Effect
+- [fnd6_newqeventv110_glcepq](../../datafields/fnd6_newqeventv110_glcepq.md) - Gain/Loss on Sale (Core Earnings Adjusted) Pretax
+- [fnd6_newqeventv110_glpq](../../datafields/fnd6_newqeventv110_glpq.md) - Gain/Loss Pretax
+- [fnd6_newqeventv110_hedgeglq](../../datafields/fnd6_newqeventv110_hedgeglq.md) - Gain/Loss on Ineffective Hedges
+- [fnd6_newqeventv110_ibadj12](../../datafields/fnd6_newqeventv110_ibadj12.md) - Income Before Extra Items - Adj for Common Stock Equivalents - 12MM
+- [fnd6_newqeventv110_ibadjq](../../datafields/fnd6_newqeventv110_ibadjq.md) - Income Before Extraordinary Items - Adjusted for Common Stock Equivalents
+- [fnd6_newqeventv110_ibcomq](../../datafields/fnd6_newqeventv110_ibcomq.md) - Income Before Extraordinary Items - Available for Common
+- [fnd6_newqeventv110_ibmiiq](../../datafields/fnd6_newqeventv110_ibmiiq.md) - Income before Extraordinary Items and Noncontrolling Interests
+- [fnd6_newqeventv110_ibq](../../datafields/fnd6_newqeventv110_ibq.md) - Income Before Extraordinary Items
+- [fnd6_newqeventv110_icaptq](../../datafields/fnd6_newqeventv110_icaptq.md) - Invested Capital - Total - Quarterly
+- [fnd6_newqeventv110_intanoq](../../datafields/fnd6_newqeventv110_intanoq.md) - Other Intangibles
+- [fnd6_newqeventv110_intanq](../../datafields/fnd6_newqeventv110_intanq.md) - Intangible Assets - Total
+- [fnd6_newqeventv110_invfgq](../../datafields/fnd6_newqeventv110_invfgq.md) - Inventory - Finished Goods
+- [fnd6_newqeventv110_invoq](../../datafields/fnd6_newqeventv110_invoq.md) - Inventory - Other
+- [fnd6_newqeventv110_invrmq](../../datafields/fnd6_newqeventv110_invrmq.md) - Inventory - Raw Materials
+- [fnd6_newqeventv110_invtq](../../datafields/fnd6_newqeventv110_invtq.md) - Inventories - Total
+- [fnd6_newqeventv110_invwipq](../../datafields/fnd6_newqeventv110_invwipq.md) - Inventory - Work in Process
+- [fnd6_newqeventv110_ivltq](../../datafields/fnd6_newqeventv110_ivltq.md) - Total Long-term Investments
+- [fnd6_newqeventv110_ivstq](../../datafields/fnd6_newqeventv110_ivstq.md) - Short-Term Investments - Total
+- [fnd6_newqeventv110_lcoq](../../datafields/fnd6_newqeventv110_lcoq.md) - Current Liabilities - Other - Total
+- [fnd6_newqeventv110_lltq](../../datafields/fnd6_newqeventv110_lltq.md) - Long-Term Liabilities (Total)
+- [fnd6_newqeventv110_lnoq](../../datafields/fnd6_newqeventv110_lnoq.md) - Liabilities Netting & Other Adjustments
+- [fnd6_newqeventv110_lol2q](../../datafields/fnd6_newqeventv110_lol2q.md) - Liabilities Level 2 (Observable)
+- [fnd6_newqeventv110_loq](../../datafields/fnd6_newqeventv110_loq.md) - Liabilities - Other
+- [fnd6_newqeventv110_loxdrq](../../datafields/fnd6_newqeventv110_loxdrq.md) - Liabilities - Other - Excluding Deferred Revenue
+- [fnd6_newqeventv110_lqpl1q](../../datafields/fnd6_newqeventv110_lqpl1q.md) - Liabilities Level 1 (Quoted Prices)
+- [fnd6_newqeventv110_lseq](../../datafields/fnd6_newqeventv110_lseq.md) - Liabilities and Stockholders' Equity - Total
+- [fnd6_newqeventv110_ltmibq](../../datafields/fnd6_newqeventv110_ltmibq.md) - Liabilities - Total and Noncontrolling Interest
+- [fnd6_newqeventv110_lul3q](../../datafields/fnd6_newqeventv110_lul3q.md) - Liabilities Level 3 (Unobservable)
+- [fnd6_newqeventv110_mibnq](../../datafields/fnd6_newqeventv110_mibnq.md) - NonRedeemable Noncontrolling Interest (Balance Sheet) - Quarterly
+- [fnd6_newqeventv110_mibq](../../datafields/fnd6_newqeventv110_mibq.md) - Noncontrolling Interest - Redeemable - Balance Sheet
+- [fnd6_newqeventv110_mibtq](../../datafields/fnd6_newqeventv110_mibtq.md) - Noncontrolling Interests - Total - Balance Sheet - Quarterly
+- [fnd6_newqeventv110_miiq](../../datafields/fnd6_newqeventv110_miiq.md) - Noncontrolling Interest - Income Account
+- [fnd6_newqeventv110_msaq](../../datafields/fnd6_newqeventv110_msaq.md) - Accum Other Comp Inc - Marketable Security Adjustments
+- [fnd6_newqeventv110_nrtxtq](../../datafields/fnd6_newqeventv110_nrtxtq.md) - Nonrecurring Income Taxes - After-tax
+- [fnd6_newqeventv110_oepf12](../../datafields/fnd6_newqeventv110_oepf12.md) - Earnings Per Share - Diluted - from Operations - 12MM
+- [fnd6_newqeventv110_oepsxq](../../datafields/fnd6_newqeventv110_oepsxq.md) - Earnings Per Share - Diluted - from Operations
+- [fnd6_newqeventv110_optfvgrq](../../datafields/fnd6_newqeventv110_optfvgrq.md) - Options - Fair Value of Options Granted
+- [fnd6_newqeventv110_optrfrq](../../datafields/fnd6_newqeventv110_optrfrq.md) - Risk Free Rate - Assumption (%)
+- [fnd6_newqeventv110_piq](../../datafields/fnd6_newqeventv110_piq.md) - Pretax Income
+- [fnd6_newqeventv110_pnc12](../../datafields/fnd6_newqeventv110_pnc12.md) - Pension Core Adjustment - 12mm
+- [fnd6_newqeventv110_pnciapq](../../datafields/fnd6_newqeventv110_pnciapq.md) - Core Pension Interest Adjustment After-tax Preliminary
+- [fnd6_newqeventv110_pnciaq](../../datafields/fnd6_newqeventv110_pnciaq.md) - Core Pension Interest Adjustment After-tax
+- [fnd6_newqeventv110_pncidpq](../../datafields/fnd6_newqeventv110_pncidpq.md) - Core Pension Interest Adjustment Diluted EPS Effect Preliminary
+- [fnd6_newqeventv110_pnciepspq](../../datafields/fnd6_newqeventv110_pnciepspq.md) - Core Pension Interest Adjustment Basic EPS Effect Preliminary
+- [fnd6_newqeventv110_pnciepsq](../../datafields/fnd6_newqeventv110_pnciepsq.md) - Core Pension Interest Adjustment Basic EPS Effect
+- [fnd6_newqeventv110_pncippq](../../datafields/fnd6_newqeventv110_pncippq.md) - Core Pension Interest Adjustment Pretax Preliminary
+- [fnd6_newqeventv110_pncipq](../../datafields/fnd6_newqeventv110_pncipq.md) - Core Pension Interest Adjustment Pretax
+- [fnd6_newqeventv110_pncpd12](../../datafields/fnd6_newqeventv110_pncpd12.md) - Core Pension Adjustment 12MM Diluted EPS Effect Preliminary
+- [fnd6_newqeventv110_pncpdq](../../datafields/fnd6_newqeventv110_pncpdq.md) - Core Pension Adjustment Diluted EPS Effect Preliminary
+- [fnd6_newqeventv110_pncpeps12](../../datafields/fnd6_newqeventv110_pncpeps12.md) - Core Pension Adjustment 12MM Basic EPS Effect Preliminary
+- [fnd6_newqeventv110_pncpepsq](../../datafields/fnd6_newqeventv110_pncpepsq.md) - Core Pension Adjustment Basic EPS Effect Preliminary
+- [fnd6_newqeventv110_pncpq](../../datafields/fnd6_newqeventv110_pncpq.md) - Core Pension Adjustment Preliminary
+- [fnd6_newqeventv110_pncq](../../datafields/fnd6_newqeventv110_pncq.md) - Core Pension Adjustment
+- [fnd6_newqeventv110_pncwiapq](../../datafields/fnd6_newqeventv110_pncwiapq.md) - Core Pension w/o Interest Adjustment After-tax Preliminary
+- [fnd6_newqeventv110_pncwiaq](../../datafields/fnd6_newqeventv110_pncwiaq.md) - Core Pension w/o Interest Adjustment After-tax
+- [fnd6_newqeventv110_pncwidpq](../../datafields/fnd6_newqeventv110_pncwidpq.md) - Core Pension w/o Interest Adjustment Diluted EPS Effect Preliminary
+- [fnd6_newqeventv110_pncwiepq](../../datafields/fnd6_newqeventv110_pncwiepq.md) - Core Pension Without Interest Adjustment Basic EPS Effect Preliminary
+- [fnd6_newqeventv110_pncwippq](../../datafields/fnd6_newqeventv110_pncwippq.md) - Core Pension w/o Interest Adjustment Pretax Preliminary
+- [fnd6_newqeventv110_pncwipq](../../datafields/fnd6_newqeventv110_pncwipq.md) - Core Pension Without Interest Adjustment Pretax
+- [fnd6_newqeventv110_pnrshoq](../../datafields/fnd6_newqeventv110_pnrshoq.md) - Nonred Pfd Shares Outs (000) - Quarterly
+- [fnd6_newqeventv110_ppegtq](../../datafields/fnd6_newqeventv110_ppegtq.md) - Property, Plant and Equipment - Total (Gross) - Quarterly
+- [fnd6_newqeventv110_ppentq](../../datafields/fnd6_newqeventv110_ppentq.md) - Property Plant and Equipment - Total (Net)
+- [fnd6_newqeventv110_prcaq](../../datafields/fnd6_newqeventv110_prcaq.md) - Core Post-Retirement Adjustment
+- [fnd6_newqeventv110_prcd12](../../datafields/fnd6_newqeventv110_prcd12.md) - Core Post Retirement Adjustment Diluted EPS Effect 12 MM
+- [fnd6_newqeventv110_prcdq](../../datafields/fnd6_newqeventv110_prcdq.md) - Core Post-Retirement Adjustment Diluted EPS Effect
+- [fnd6_newqeventv110_prce12](../../datafields/fnd6_newqeventv110_prce12.md) - Core Post Retirement Adjustment 12MM
+- [fnd6_newqeventv110_prceps12](../../datafields/fnd6_newqeventv110_prceps12.md) - Core Post Retirement Adjustment Basic EPS Effect 12MM
+- [fnd6_newqeventv110_prcepsq](../../datafields/fnd6_newqeventv110_prcepsq.md) - Core Post-Retirement Adjustment Basic EPS Effect
+- [fnd6_newqeventv110_prcpd12](../../datafields/fnd6_newqeventv110_prcpd12.md) - Core Post-Retirement Adjustment 12MM Diluted EPS Effect Preliminary
+- [fnd6_newqeventv110_prcpdq](../../datafields/fnd6_newqeventv110_prcpdq.md) - Core Post Retirement Adjustment Diluted EPS Effect Preliminary
+- [fnd6_newqeventv110_prcpeps12](../../datafields/fnd6_newqeventv110_prcpeps12.md) - Core Post-Retirement Adjustment 12MM Basic EPS Effect Preliminary
+- [fnd6_newqeventv110_prcpepsq](../../datafields/fnd6_newqeventv110_prcpepsq.md) - Core Post-Retirement Adjustment Basic EPS Effect Preliminary
+- [fnd6_newqeventv110_prcpq](../../datafields/fnd6_newqeventv110_prcpq.md) - Core Post-Retirement Adjustment Preliminary
+- [fnd6_newqeventv110_prcraq](../../datafields/fnd6_newqeventv110_prcraq.md) - Repurchase Price - Average per share
+- [fnd6_newqeventv110_prshoq](../../datafields/fnd6_newqeventv110_prshoq.md) - Redeem Pfd Shares Outs (000)
+- [fnd6_newqeventv110_pstknq](../../datafields/fnd6_newqeventv110_pstknq.md) - Preferred/Preference Stock - Nonredeemable
+- [fnd6_newqeventv110_pstkq](../../datafields/fnd6_newqeventv110_pstkq.md) - Preferred/Preference Stock (Capital) - Total
+- [fnd6_newqeventv110_pstkrq](../../datafields/fnd6_newqeventv110_pstkrq.md) - Preferred/Preference Stock - Redeemable
+- [fnd6_newqeventv110_rcaq](../../datafields/fnd6_newqeventv110_rcaq.md) - Restructuring Cost After-tax
+- [fnd6_newqeventv110_rcdq](../../datafields/fnd6_newqeventv110_rcdq.md) - Restructuring Cost Diluted EPS Effect
+- [fnd6_newqeventv110_rcepsq](../../datafields/fnd6_newqeventv110_rcepsq.md) - Restructuring Cost Basic EPS Effect
+- [fnd6_newqeventv110_rcpq](../../datafields/fnd6_newqeventv110_rcpq.md) - Restructuring Cost Pretax
+- [fnd6_newqeventv110_rdipaq](../../datafields/fnd6_newqeventv110_rdipaq.md) - In Process R&D Expense After-tax
+- [fnd6_newqeventv110_rdipdq](../../datafields/fnd6_newqeventv110_rdipdq.md) - In-Process R&D Expense Diluted EPS Effect
+- [fnd6_newqeventv110_rdipepsq](../../datafields/fnd6_newqeventv110_rdipepsq.md) - In-Process R&D Expense Basic EPS Effect
+- [fnd6_newqeventv110_rdipq](../../datafields/fnd6_newqeventv110_rdipq.md) - In Process R&D
+- [fnd6_newqeventv110_recdq](../../datafields/fnd6_newqeventv110_recdq.md) - Receivables - Estimated Doubtful
+- [fnd6_newqeventv110_rectaq](../../datafields/fnd6_newqeventv110_rectaq.md) - Accum Other Comp Inc - Cumulative Translation Adjustments
+- [fnd6_newqeventv110_rectoq](../../datafields/fnd6_newqeventv110_rectoq.md) - Receivables - Current Other incl. Tax Refunds
+- [fnd6_newqeventv110_rectrq](../../datafields/fnd6_newqeventv110_rectrq.md) - Receivables - Trade
+- [fnd6_newqeventv110_reunaq](../../datafields/fnd6_newqeventv110_reunaq.md) - Unadjusted Retained Earnings
+- [fnd6_newqeventv110_revtq](../../datafields/fnd6_newqeventv110_revtq.md) - Revenue - Total
+- [fnd6_newqeventv110_rrpq](../../datafields/fnd6_newqeventv110_rrpq.md) - Reversal - Restructuring/Acquisition Pretax
+- [fnd6_newqeventv110_seqoq](../../datafields/fnd6_newqeventv110_seqoq.md) - Other Stockholders' Equity Adjustments
+- [fnd6_newqeventv110_seqq](../../datafields/fnd6_newqeventv110_seqq.md) - Stockholders' Equity - Total - Quarterly
+- [fnd6_newqeventv110_seta12](../../datafields/fnd6_newqeventv110_seta12.md) - Settlement (Litigation/Insurance) After Tax - 12mm
+- [fnd6_newqeventv110_setaq](../../datafields/fnd6_newqeventv110_setaq.md) - Settlement (Litigation/Insurance) After-tax
+- [fnd6_newqeventv110_setd12](../../datafields/fnd6_newqeventv110_setd12.md) - Settlement (Litigation/Insurance) Diluted EPS Effect 12MM
+- [fnd6_newqeventv110_seteps12](../../datafields/fnd6_newqeventv110_seteps12.md) - Settlement (Litigation/Insurance) Basic EPS Effect 12MM
+- [fnd6_newqeventv110_setpq](../../datafields/fnd6_newqeventv110_setpq.md) - Settlement (Litigation/Insurance) Pretax
+- [fnd6_newqeventv110_spce12](../../datafields/fnd6_newqeventv110_spce12.md) - S&P Core Earnings 12MM
+- [fnd6_newqeventv110_spcedpq](../../datafields/fnd6_newqeventv110_spcedpq.md) - S&P Core Earnings EPS Diluted - Preliminary
+- [fnd6_newqeventv110_spcedq](../../datafields/fnd6_newqeventv110_spcedq.md) - S&P Core Earnings EPS Diluted
+- [fnd6_newqeventv110_spceeps12](../../datafields/fnd6_newqeventv110_spceeps12.md) - S&P Core Earnings EPS Basic 12MM
+- [fnd6_newqeventv110_spceepsp12](../../datafields/fnd6_newqeventv110_spceepsp12.md) - S&P Core 12MM EPS - Basic - Preliminary
+- [fnd6_newqeventv110_spceepspq](../../datafields/fnd6_newqeventv110_spceepspq.md) - S&P Core Earnings EPS Basic - Preliminary
+- [fnd6_newqeventv110_spceepsq](../../datafields/fnd6_newqeventv110_spceepsq.md) - S&P Core Earnings EPS Basic
+- [fnd6_newqeventv110_spcep12](../../datafields/fnd6_newqeventv110_spcep12.md) - S&P Core Earnings 12MM - Preliminary
+- [fnd6_newqeventv110_spcepd12](../../datafields/fnd6_newqeventv110_spcepd12.md) - S&P Core Earnings 12MM EPS Diluted - Preliminary
+- [fnd6_newqeventv110_spcepq](../../datafields/fnd6_newqeventv110_spcepq.md) - S&P Core Earnings - Preliminary
+- [fnd6_newqeventv110_spceq](../../datafields/fnd6_newqeventv110_spceq.md) - S&P Core Earnings
+- [fnd6_newqeventv110_spioaq](../../datafields/fnd6_newqeventv110_spioaq.md) - Other Special Items After-tax
+- [fnd6_newqeventv110_spiopq](../../datafields/fnd6_newqeventv110_spiopq.md) - Other Special Items Pretax
+- [fnd6_newqeventv110_spiq](../../datafields/fnd6_newqeventv110_spiq.md) - Special Items
+- [fnd6_newqeventv110_stkcoq](../../datafields/fnd6_newqeventv110_stkcoq.md) - Stock Compensation Expense
+- [fnd6_newqeventv110_stkcpaq](../../datafields/fnd6_newqeventv110_stkcpaq.md) - After-tax stock compensation
+- [fnd6_newqeventv110_teqq](../../datafields/fnd6_newqeventv110_teqq.md) - Stockholders' Equity - Total - Quarterly
+- [fnd6_newqeventv110_tfvaq](../../datafields/fnd6_newqeventv110_tfvaq.md) - Total Fair Value Assets
+- [fnd6_newqeventv110_tfvceq](../../datafields/fnd6_newqeventv110_tfvceq.md) - Total Fair Value Changes including Earnings
+- [fnd6_newqeventv110_tfvlq](../../datafields/fnd6_newqeventv110_tfvlq.md) - Total Fair Value Liabilities
+- [fnd6_newqeventv110_tstknq](../../datafields/fnd6_newqeventv110_tstknq.md) - Treasury Stock - Number of Common Shares
+- [fnd6_newqeventv110_tstkq](../../datafields/fnd6_newqeventv110_tstkq.md) - Treasury Stock - Total (All Capital)
+- [fnd6_newqeventv110_txdbaq](../../datafields/fnd6_newqeventv110_txdbaq.md) - Deferred Tax Asset - Long Term
+- [fnd6_newqeventv110_txdbq](../../datafields/fnd6_newqeventv110_txdbq.md) - Deferred Taxes - Balance Sheet
+- [fnd6_newqeventv110_txdiq](../../datafields/fnd6_newqeventv110_txdiq.md) - Income Taxes - Deferred
+- [fnd6_newqeventv110_txditcq](../../datafields/fnd6_newqeventv110_txditcq.md) - Deferred Taxes and Investment Tax Credit
+- [fnd6_newqeventv110_txpq](../../datafields/fnd6_newqeventv110_txpq.md) - Income Taxes Payable
+- [fnd6_newqeventv110_txtq](../../datafields/fnd6_newqeventv110_txtq.md) - Income Taxes - Total
+- [fnd6_newqeventv110_txwq](../../datafields/fnd6_newqeventv110_txwq.md) - Excise Taxes
+- [fnd6_newqeventv110_wcapq](../../datafields/fnd6_newqeventv110_wcapq.md) - Working Capital (Balance Sheet)
+- [fnd6_newqeventv110_wdaq](../../datafields/fnd6_newqeventv110_wdaq.md) - Writedowns After-tax
+- [fnd6_newqeventv110_wdpq](../../datafields/fnd6_newqeventv110_wdpq.md) - Writedowns Pretax
+- [fnd6_newqeventv110_xidoq](../../datafields/fnd6_newqeventv110_xidoq.md) - Extraordinary Items and Discontinued Operations
+- [fnd6_newqeventv110_xintq](../../datafields/fnd6_newqeventv110_xintq.md) - Interest and Related Expense - Total
+- [fnd6_newqeventv110_xiq](../../datafields/fnd6_newqeventv110_xiq.md) - Extraordinary Items
+- [fnd6_newqeventv110_xoprq](../../datafields/fnd6_newqeventv110_xoprq.md) - Operating Expense - Total
+- [fnd6_newqeventv110_xopt12](../../datafields/fnd6_newqeventv110_xopt12.md) - Implied Option Expense - 12mm
+- [fnd6_newqeventv110_xoptd12](../../datafields/fnd6_newqeventv110_xoptd12.md) - Implied Option EPS Diluted 12MM
+- [fnd6_newqeventv110_xoptd12p](../../datafields/fnd6_newqeventv110_xoptd12p.md) - Implied Option 12MM EPS Diluted Preliminary
+- [fnd6_newqeventv110_xoptdq](../../datafields/fnd6_newqeventv110_xoptdq.md) - Implied Option EPS Diluted
+- [fnd6_newqeventv110_xoptdqp](../../datafields/fnd6_newqeventv110_xoptdqp.md) - Implied Option EPS Diluted Preliminary
+- [fnd6_newqeventv110_xopteps12](../../datafields/fnd6_newqeventv110_xopteps12.md) - Implied Option EPS Basic 12MM
+- [fnd6_newqeventv110_xoptepsp12](../../datafields/fnd6_newqeventv110_xoptepsp12.md) - Implied Option 12MM EPS Basic Preliminary
+- [fnd6_newqeventv110_xoptepsq](../../datafields/fnd6_newqeventv110_xoptepsq.md) - Implied Option EPS Basic
+- [fnd6_newqeventv110_xoptepsqp](../../datafields/fnd6_newqeventv110_xoptepsqp.md) - Implied Option EPS Basic Preliminary
+- [fnd6_newqeventv110_xoptq](../../datafields/fnd6_newqeventv110_xoptq.md) - Implied Option Expense
+- [fnd6_newqeventv110_xoptqp](../../datafields/fnd6_newqeventv110_xoptqp.md) - Implied Option Expense Preliminary
+- [fnd6_newqeventv110_xrdq](../../datafields/fnd6_newqeventv110_xrdq.md) - Research and Development Expense
+- [fnd6_newqeventv110_xsgaq](../../datafields/fnd6_newqeventv110_xsgaq.md) - Selling, General and Administrative Expenses
+- [fnd6_newqv1300_acomincq](../../datafields/fnd6_newqv1300_acomincq.md) - Accumulated Other Comprehensive Income (Loss)
+- [fnd6_newqv1300_acoq](../../datafields/fnd6_newqv1300_acoq.md) - Current Assets - Other - Total
+- [fnd6_newqv1300_altoq](../../datafields/fnd6_newqv1300_altoq.md) - Other Long-term Assets
+- [fnd6_newqv1300_ancq](../../datafields/fnd6_newqv1300_ancq.md) - Non-Current Assets - Total
+- [fnd6_newqv1300_anoq](../../datafields/fnd6_newqv1300_anoq.md) - Assets Netting & Other Adjustments
+- [fnd6_newqv1300_aociderglq](../../datafields/fnd6_newqv1300_aociderglq.md) - Accum Other Comp Inc - Derivatives Unrealized Gain/Loss
+- [fnd6_newqv1300_aociotherq](../../datafields/fnd6_newqv1300_aociotherq.md) - Accumulated Other Comprehensive Income - Other Adjustments
+- [fnd6_newqv1300_aocipenq](../../datafields/fnd6_newqv1300_aocipenq.md) - Accum Other Comp Inc - Min Pension Liab Adj
+- [fnd6_newqv1300_aocisecglq](../../datafields/fnd6_newqv1300_aocisecglq.md) - Accum Other Comp Inc - Unreal G/L Ret Int in Sec Assets
+- [fnd6_newqv1300_aol2q](../../datafields/fnd6_newqv1300_aol2q.md) - Assets Level 2 (Observable)
+- [fnd6_newqv1300_aoq](../../datafields/fnd6_newqv1300_aoq.md) - Assets - Other - Total
+- [fnd6_newqv1300_aqpl1q](../../datafields/fnd6_newqv1300_aqpl1q.md) - Assets Level 1 (Quoted Prices)
+- [fnd6_newqv1300_aul3q](../../datafields/fnd6_newqv1300_aul3q.md) - Assets Level 3 (Unobservable)
+- [fnd6_newqv1300_capsq](../../datafields/fnd6_newqv1300_capsq.md) - Capital Surplus/Share Premium Reserve
+- [fnd6_newqv1300_chq](../../datafields/fnd6_newqv1300_chq.md) - Cash
+- [fnd6_newqv1300_cibegniq](../../datafields/fnd6_newqv1300_cibegniq.md) - Comp Inc - Beginning Net Income
+- [fnd6_newqv1300_cicurrq](../../datafields/fnd6_newqv1300_cicurrq.md) - Comp Inc - Currency Trans Adj
+- [fnd6_newqv1300_ciderglq](../../datafields/fnd6_newqv1300_ciderglq.md) - Comp Inc - Derivative Gains/Losses
+- [fnd6_newqv1300_cimiiq](../../datafields/fnd6_newqv1300_cimiiq.md) - Comprehensive Income - Noncontrolling Interest
+- [fnd6_newqv1300_ciotherq](../../datafields/fnd6_newqv1300_ciotherq.md) - Comp Inc - Other Adj
+- [fnd6_newqv1300_cipenq](../../datafields/fnd6_newqv1300_cipenq.md) - Comp Inc - Minimum Pension Adj
+- [fnd6_newqv1300_ciq](../../datafields/fnd6_newqv1300_ciq.md) - Comprehensive Income - Total
+- [fnd6_newqv1300_cisecglq](../../datafields/fnd6_newqv1300_cisecglq.md) - Comp Inc - Securities Gains/Losses
+- [fnd6_newqv1300_citotalq](../../datafields/fnd6_newqv1300_citotalq.md) - Comprehensive Income - Parent
+- [fnd6_newqv1300_cogsq](../../datafields/fnd6_newqv1300_cogsq.md) - Cost of Goods Sold
+- [fnd6_newqv1300_csh12q](../../datafields/fnd6_newqv1300_csh12q.md) - Common Shares Used to Calculate Earnings Per Share - 12 Months Moving
+- [fnd6_newqv1300_cshfdq](../../datafields/fnd6_newqv1300_cshfdq.md) - Common Shares for Diluted EPS
+- [fnd6_newqv1300_cshiq](../../datafields/fnd6_newqv1300_cshiq.md) - Common Shares Issued
+- [fnd6_newqv1300_cshopq](../../datafields/fnd6_newqv1300_cshopq.md) - Total Shares Repurchased - Quarter
+- [fnd6_newqv1300_cshoq](../../datafields/fnd6_newqv1300_cshoq.md) - Common Shares Outstanding
+- [fnd6_newqv1300_cshprq](../../datafields/fnd6_newqv1300_cshprq.md) - Common Shares Used to Calculate Earnings Per Share - Basic
+- [fnd6_newqv1300_cstkq](../../datafields/fnd6_newqv1300_cstkq.md) - Common/Ordinary Stock (Capital)
+- [fnd6_newqv1300_dcomq](../../datafields/fnd6_newqv1300_dcomq.md) - Deferred Compensation
+- [fnd6_newqv1300_dilavq](../../datafields/fnd6_newqv1300_dilavq.md) - Dilution Available - Excluding Extraordinary Items
+- [fnd6_newqv1300_dlcq](../../datafields/fnd6_newqv1300_dlcq.md) - Debt in Current Liabilities
+- [fnd6_newqv1300_dpactq](../../datafields/fnd6_newqv1300_dpactq.md) - Depreciation, Depletion and Amortization (Accumulated)
+- [fnd6_newqv1300_drcq](../../datafields/fnd6_newqv1300_drcq.md) - Deferred Revenue - Current
+- [fnd6_newqv1300_drltq](../../datafields/fnd6_newqv1300_drltq.md) - Deferred Revenue - Long-term
+- [fnd6_newqv1300_epsfiq](../../datafields/fnd6_newqv1300_epsfiq.md) - Earnings Per Share (Diluted) - Including Extraordinary Items
+- [fnd6_newqv1300_epspiq](../../datafields/fnd6_newqv1300_epspiq.md) - Earnings Per Share (Basic) - Including Extraordinary Items
+- [fnd6_newqv1300_epspxq](../../datafields/fnd6_newqv1300_epspxq.md) - Earnings Per Share (Basic) - Excluding Extraordinary Items
+- [fnd6_newqv1300_esopnrq](../../datafields/fnd6_newqv1300_esopnrq.md) - Preferred ESOP Obligation - Non-Redeemable
+- [fnd6_newqv1300_esoprq](../../datafields/fnd6_newqv1300_esoprq.md) - Preferred ESOP Obligation - Redeemable
+- [fnd6_newqv1300_fcaq](../../datafields/fnd6_newqv1300_fcaq.md) - Foreign Exchange Income (Loss)
+- [fnd6_newqv1300_gdwlq](../../datafields/fnd6_newqv1300_gdwlq.md) - Goodwill (net)
+- [fnd6_newqv1300_glcea12](../../datafields/fnd6_newqv1300_glcea12.md) - Gain/Loss on Sale (Core Earnings Adjusted) After-tax 12MM
+- [fnd6_newqv1300_glced12](../../datafields/fnd6_newqv1300_glced12.md) - Gain/Loss on Sale (Core Earnings Adjusted) Diluted EPS Effect 12MM
+- [fnd6_newqv1300_glceeps12](../../datafields/fnd6_newqv1300_glceeps12.md) - Gain/Loss on Sale (Core Earnings Adjusted) Basic EPS Effect 12MM
+- [fnd6_newqv1300_ibadj12](../../datafields/fnd6_newqv1300_ibadj12.md) - Income Before Extra Items - Adj for Common Stock Equivalents - 12MM
+- [fnd6_newqv1300_ibadjq](../../datafields/fnd6_newqv1300_ibadjq.md) - Income Before Extraordinary Items - Adjusted for Common Stock Equivalents
+- [fnd6_newqv1300_ibcomq](../../datafields/fnd6_newqv1300_ibcomq.md) - Income Before Extraordinary Items - Available for Common
+- [fnd6_newqv1300_ibmiiq](../../datafields/fnd6_newqv1300_ibmiiq.md) - Income before Extraordinary Items and Noncontrolling Interests
+- [fnd6_newqv1300_ibq](../../datafields/fnd6_newqv1300_ibq.md) - Income Before Extraordinary Items
+- [fnd6_newqv1300_icaptq](../../datafields/fnd6_newqv1300_icaptq.md) - Invested Capital - Total - Quarterly
+- [fnd6_newqv1300_intanoq](../../datafields/fnd6_newqv1300_intanoq.md) - Other Intangibles
+- [fnd6_newqv1300_intanq](../../datafields/fnd6_newqv1300_intanq.md) - Intangible Assets - Total
+- [fnd6_newqv1300_invfgq](../../datafields/fnd6_newqv1300_invfgq.md) - Inventory - Finished Goods
+- [fnd6_newqv1300_invoq](../../datafields/fnd6_newqv1300_invoq.md) - Inventory - Other
+- [fnd6_newqv1300_invrmq](../../datafields/fnd6_newqv1300_invrmq.md) - Inventory - Raw Materials
+- [fnd6_newqv1300_invtq](../../datafields/fnd6_newqv1300_invtq.md) - Inventories - Total
+- [fnd6_newqv1300_invwipq](../../datafields/fnd6_newqv1300_invwipq.md) - Inventory - Work in Process
+- [fnd6_newqv1300_ivltq](../../datafields/fnd6_newqv1300_ivltq.md) - Total Long-term Investments
+- [fnd6_newqv1300_ivstq](../../datafields/fnd6_newqv1300_ivstq.md) - Short-Term Investments - Total
+- [fnd6_newqv1300_lcoq](../../datafields/fnd6_newqv1300_lcoq.md) - Current Liabilities - Other - Total
+- [fnd6_newqv1300_lltq](../../datafields/fnd6_newqv1300_lltq.md) - Long-Term Liabilities (Total)
+- [fnd6_newqv1300_lnoq](../../datafields/fnd6_newqv1300_lnoq.md) - Liabilities Netting & Other Adjustments
+- [fnd6_newqv1300_lol2q](../../datafields/fnd6_newqv1300_lol2q.md) - Liabilities Level 2 (Observable)
+- [fnd6_newqv1300_loq](../../datafields/fnd6_newqv1300_loq.md) - Liabilities - Other
+- [fnd6_newqv1300_loxdrq](../../datafields/fnd6_newqv1300_loxdrq.md) - Liabilities - Other - Excluding Deferred Revenue
+- [fnd6_newqv1300_lqpl1q](../../datafields/fnd6_newqv1300_lqpl1q.md) - Liabilities Level 1 (Quoted Prices)
+- [fnd6_newqv1300_lseq](../../datafields/fnd6_newqv1300_lseq.md) - Liabilities and Stockholders' Equity - Total
+- [fnd6_newqv1300_ltmibq](../../datafields/fnd6_newqv1300_ltmibq.md) - Liabilities - Total and Noncontrolling Interest
+- [fnd6_newqv1300_lul3q](../../datafields/fnd6_newqv1300_lul3q.md) - Liabilities Level 3 (Unobservable)
+- [fnd6_newqv1300_mibnq](../../datafields/fnd6_newqv1300_mibnq.md) - Non-Redeemable Noncontrolling Interest (Balance Sheet) - Quarterly
+- [fnd6_newqv1300_mibtq](../../datafields/fnd6_newqv1300_mibtq.md) - Noncontrolling Interests - Total - Balance Sheet - Quarterly
+- [fnd6_newqv1300_miiq](../../datafields/fnd6_newqv1300_miiq.md) - Noncontrolling Interest - Income Account
+- [fnd6_newqv1300_msaq](../../datafields/fnd6_newqv1300_msaq.md) - Accumulated Other Comprehensive Income - Marketable Security Adjustments
+- [fnd6_newqv1300_oepf12](../../datafields/fnd6_newqv1300_oepf12.md) - Earnings Per Share - Diluted - from Operations - 12MM
+- [fnd6_newqv1300_oepsxq](../../datafields/fnd6_newqv1300_oepsxq.md) - Earnings Per Share - Diluted - from Operations
+- [fnd6_newqv1300_optfvgrq](../../datafields/fnd6_newqv1300_optfvgrq.md) - Options - Fair Value of Options Granted
+- [fnd6_newqv1300_optrfrq](../../datafields/fnd6_newqv1300_optrfrq.md) - Risk-Free Rate - Assumption (%)
+- [fnd6_newqv1300_piq](../../datafields/fnd6_newqv1300_piq.md) - Pretax Income
+- [fnd6_newqv1300_pncq](../../datafields/fnd6_newqv1300_pncq.md) - Core Pension Adjustment
+- [fnd6_newqv1300_ppegtq](../../datafields/fnd6_newqv1300_ppegtq.md) - Property, Plant and Equipment - Total (Gross) - Quarterly
+- [fnd6_newqv1300_ppentq](../../datafields/fnd6_newqv1300_ppentq.md) - Property Plant and Equipment - Total (Net)
+- [fnd6_newqv1300_prcaq](../../datafields/fnd6_newqv1300_prcaq.md) - Core Post Retirement Adjustment
+- [fnd6_newqv1300_prcdq](../../datafields/fnd6_newqv1300_prcdq.md) - Core Post Retirement Adjustment Diluted EPS Effect
+- [fnd6_newqv1300_prcepsq](../../datafields/fnd6_newqv1300_prcepsq.md) - Core Post Retirement Adjustment Basic EPS Effect
+- [fnd6_newqv1300_prcraq](../../datafields/fnd6_newqv1300_prcraq.md) - Repurchase Price - Average per share
+- [fnd6_newqv1300_rcpq](../../datafields/fnd6_newqv1300_rcpq.md) - Restructuring Cost Pretax
+- [fnd6_newqv1300_rdipaq](../../datafields/fnd6_newqv1300_rdipaq.md) - In Process R&D Expense After-tax
+- [fnd6_newqv1300_rdipdq](../../datafields/fnd6_newqv1300_rdipdq.md) - In Process R&D Expense Diluted EPS Effect
+- [fnd6_newqv1300_rdipepsq](../../datafields/fnd6_newqv1300_rdipepsq.md) - In-Process R&D Expense Basic EPS Effect
+- [fnd6_newqv1300_rdipq](../../datafields/fnd6_newqv1300_rdipq.md) - In Process R&D
+- [fnd6_newqv1300_recdq](../../datafields/fnd6_newqv1300_recdq.md) - Receivables - Estimated Doubtful
+- [fnd6_newqv1300_rectaq](../../datafields/fnd6_newqv1300_rectaq.md) - Accum Other Comp Inc - Cumulative Translation Adjustments
+- [fnd6_newqv1300_rectoq](../../datafields/fnd6_newqv1300_rectoq.md) - Receivables - Current Other incl Tax Refunds
+- [fnd6_newqv1300_rectrq](../../datafields/fnd6_newqv1300_rectrq.md) - Receivables - Trade
+- [fnd6_newqv1300_reunaq](../../datafields/fnd6_newqv1300_reunaq.md) - Unadjusted Retained Earnings
+- [fnd6_newqv1300_revtq](../../datafields/fnd6_newqv1300_revtq.md) - Revenue - Total
+- [fnd6_newqv1300_seqoq](../../datafields/fnd6_newqv1300_seqoq.md) - Other Stockholders' Equity Adjustments
+- [fnd6_newqv1300_seqq](../../datafields/fnd6_newqv1300_seqq.md) - Stockholders' Equity - Total - Quarterly
+- [fnd6_newqv1300_spcedpq](../../datafields/fnd6_newqv1300_spcedpq.md) - S&P Core Earnings EPS Diluted - Preliminary
+- [fnd6_newqv1300_spcedq](../../datafields/fnd6_newqv1300_spcedq.md) - S&P Core Earnings EPS Diluted
+- [fnd6_newqv1300_spceepsp12](../../datafields/fnd6_newqv1300_spceepsp12.md) - S&P Core 12MM EPS - Basic - Preliminary
+- [fnd6_newqv1300_spceepspq](../../datafields/fnd6_newqv1300_spceepspq.md) - S&P Core Earnings EPS Basic - Preliminary
+- [fnd6_newqv1300_spceepsq](../../datafields/fnd6_newqv1300_spceepsq.md) - S&P Core Earnings EPS Basic
+- [fnd6_newqv1300_spcep12](../../datafields/fnd6_newqv1300_spcep12.md) - S&P Core Earnings 12MM - Preliminary
+- [fnd6_newqv1300_spcepd12](../../datafields/fnd6_newqv1300_spcepd12.md) - S&P Core Earnings 12MM EPS Diluted - Preliminary
+- [fnd6_newqv1300_spcepq](../../datafields/fnd6_newqv1300_spcepq.md) - S&P Core Earnings - Preliminary
+- [fnd6_newqv1300_spceq](../../datafields/fnd6_newqv1300_spceq.md) - S&P Core Earnings
+- [fnd6_newqv1300_spiq](../../datafields/fnd6_newqv1300_spiq.md) - Special Items
+- [fnd6_newqv1300_stkcoq](../../datafields/fnd6_newqv1300_stkcoq.md) - Stock Compensation Expense
+- [fnd6_newqv1300_stkcpaq](../../datafields/fnd6_newqv1300_stkcpaq.md) - After-tax stock compensation
+- [fnd6_newqv1300_teqq](../../datafields/fnd6_newqv1300_teqq.md) - Stockholders' Equity - Total - Quarterly
+- [fnd6_newqv1300_tfvaq](../../datafields/fnd6_newqv1300_tfvaq.md) - Total Fair Value Assets
+- [fnd6_newqv1300_tfvceq](../../datafields/fnd6_newqv1300_tfvceq.md) - Total Fair Value Changes including Earnings
+- [fnd6_newqv1300_tfvlq](../../datafields/fnd6_newqv1300_tfvlq.md) - Total Fair Value Liabilities
+- [fnd6_newqv1300_tstknq](../../datafields/fnd6_newqv1300_tstknq.md) - Treasury Stock - Number of Common Shares
+- [fnd6_newqv1300_tstkq](../../datafields/fnd6_newqv1300_tstkq.md) - Treasury Stock - Total (All Capital)
+- [fnd6_newqv1300_txdbaq](../../datafields/fnd6_newqv1300_txdbaq.md) - Deferred Tax Asset - Long Term
+- [fnd6_newqv1300_txdbq](../../datafields/fnd6_newqv1300_txdbq.md) - Deferred Taxes - Balance Sheet
+- [fnd6_newqv1300_txdiq](../../datafields/fnd6_newqv1300_txdiq.md) - Income Taxes - Deferred
+- [fnd6_newqv1300_txditcq](../../datafields/fnd6_newqv1300_txditcq.md) - Deferred Taxes and Investment Tax Credit
+- [fnd6_newqv1300_txpq](../../datafields/fnd6_newqv1300_txpq.md) - Income Taxes Payable
+- [fnd6_newqv1300_txtq](../../datafields/fnd6_newqv1300_txtq.md) - Income Taxes - Total
+- [fnd6_newqv1300_txwq](../../datafields/fnd6_newqv1300_txwq.md) - Excise Taxes
+- [fnd6_newqv1300_wcapq](../../datafields/fnd6_newqv1300_wcapq.md) - Working Capital (Balance Sheet)
+- [fnd6_newqv1300_xintq](../../datafields/fnd6_newqv1300_xintq.md) - Interest and Related Expense - Total
+- [fnd6_newqv1300_xoprq](../../datafields/fnd6_newqv1300_xoprq.md) - Operating Expense - Total
+- [fnd6_newqv1300_xoptdq](../../datafields/fnd6_newqv1300_xoptdq.md) - Implied Option EPS Diluted
+- [fnd6_newqv1300_xoptepsq](../../datafields/fnd6_newqv1300_xoptepsq.md) - Implied Option EPS Basic
+- [fnd6_newqv1300_xoptq](../../datafields/fnd6_newqv1300_xoptq.md) - Implied Option Expense
+- [fnd6_newqv1300_xrdq](../../datafields/fnd6_newqv1300_xrdq.md) - Research and Development Expense
+- [fnd6_newqv1300_xsgaq](../../datafields/fnd6_newqv1300_xsgaq.md) - Selling, General and Administrative Expenses
+- [fnd6_niadj](../../datafields/fnd6_niadj.md) - Net Income Adjusted for Common/Ordinary Stock (Capital) Equivalents
+- [fnd6_nis](../../datafields/fnd6_nis.md) - Net Income (Loss)
+- [fnd6_nopio](../../datafields/fnd6_nopio.md) - Nonoperating Income (Expense) - Other
+- [fnd6_nopxs](../../datafields/fnd6_nopxs.md) - Nonoperating Income (Expense) - excluding Interest
+- [fnd6_np](../../datafields/fnd6_np.md) - Notes Payable - Short-Term Borrowings
+- [fnd6_npq](../../datafields/fnd6_npq.md) - Notes Payable
+- [fnd6_nxints](../../datafields/fnd6_nxints.md) - Net Interest Income (Expense)
+- [fnd6_obs](../../datafields/fnd6_obs.md) - Order Backlog
+- [fnd6_ocaxs](../../datafields/fnd6_ocaxs.md) - Other Costs and Expenses
+- [fnd6_oelim](../../datafields/fnd6_oelim.md) - Other Eliminations (Income)
+- [fnd6_oiadps](../../datafields/fnd6_oiadps.md) - Operating Income after Depreciation
+- [fnd6_oibdps](../../datafields/fnd6_oibdps.md) - Operating Income before Depreciation
+- [fnd6_oprepsx](../../datafields/fnd6_oprepsx.md) - Earnings Per Share - Diluted - from Operations
+- [fnd6_ops](../../datafields/fnd6_ops.md) - Operating Profit (Loss)
+- [fnd6_optca](../../datafields/fnd6_optca.md) - Options - Cancelled (-)
+- [fnd6_optdr](../../datafields/fnd6_optdr.md) - Dividend Rate - Assumption (%)
+- [fnd6_optdrq](../../datafields/fnd6_optdrq.md) - Dividend Rate - Assumption (%)
+- [fnd6_optex](../../datafields/fnd6_optex.md) - Options Exercisable (000)
+- [fnd6_optfvgr](../../datafields/fnd6_optfvgr.md) - Options - Fair Value of Options Granted
+- [fnd6_optgr](../../datafields/fnd6_optgr.md) - Options - Granted
+- [fnd6_optlife](../../datafields/fnd6_optlife.md) - Life of Options - Assumption (# yrs)
+- [fnd6_optlifeq](../../datafields/fnd6_optlifeq.md) - Life of Options - Assumption (# yrs)
+- [fnd6_optosby](../../datafields/fnd6_optosby.md) - Options Outstanding - Beginning of Year
+- [fnd6_optosey](../../datafields/fnd6_optosey.md) - Options Outstanding - End of Year
+- [fnd6_optprcby](../../datafields/fnd6_optprcby.md) - Options Outstanding Beginning of Year - Price
+- [fnd6_optprcca](../../datafields/fnd6_optprcca.md) - Options Cancelled - Price
+- [fnd6_optprcex](../../datafields/fnd6_optprcex.md) - Options Exercised - Price
+- [fnd6_optprcey](../../datafields/fnd6_optprcey.md) - Options Outstanding End of Year - Price
+- [fnd6_optprcgr](../../datafields/fnd6_optprcgr.md) - Options Granted - Price
+- [fnd6_optprcwa](../../datafields/fnd6_optprcwa.md) - Options Exercisable - Weighted Avg Price
+- [fnd6_optrfr](../../datafields/fnd6_optrfr.md) - Risk-Free Rate - Assumption (%)
+- [fnd6_optvol](../../datafields/fnd6_optvol.md) - Volatility - Assumption (%)
+- [fnd6_optvolq](../../datafields/fnd6_optvolq.md) - Volatility - Assumption (%)
+- [fnd6_pidom](../../datafields/fnd6_pidom.md) - Pretax Income - Domestic
+- [fnd6_pifo](../../datafields/fnd6_pifo.md) - Pretax Income - Foreign
+- [fnd6_pncdq](../../datafields/fnd6_pncdq.md) - Core Pension Adjustment Diluted EPS Effect
+- [fnd6_pncepsq](../../datafields/fnd6_pncepsq.md) - Core Pension Adjustment Basic EPS Effect
+- [fnd6_pnrsho](../../datafields/fnd6_pnrsho.md) - Nonred Pfd Shares Outs (000)
+- [fnd6_ppents](../../datafields/fnd6_ppents.md) - Property, Plant & Equipment
+- [fnd6_ppeveb](../../datafields/fnd6_ppeveb.md) - Property, Plant, and Equipment - Ending Balance (Schedule V)
+- [fnd6_prcc](../../datafields/fnd6_prcc.md) - Price Close - Annual
+- [fnd6_prccq](../../datafields/fnd6_prccq.md) - Price Close - Quarter
+- [fnd6_prch](../../datafields/fnd6_prch.md) - Price High - Annual
+- [fnd6_prchq](../../datafields/fnd6_prchq.md) - Price High - Quarter
+- [fnd6_prcl](../../datafields/fnd6_prcl.md) - Price Low - Annual
+- [fnd6_prclq](../../datafields/fnd6_prclq.md) - Price Low - Quarter
+- [fnd6_prstkc](../../datafields/fnd6_prstkc.md) - Purchase of Common and Preferred Stock
+- [fnd6_pstkc](../../datafields/fnd6_pstkc.md) - Preferred Stock - Convertible
+- [fnd6_pstkl](../../datafields/fnd6_pstkl.md) - Preferred Stock - Liquidating Value
+- [fnd6_pstkrv](../../datafields/fnd6_pstkrv.md) - Preferred Stock - Redemption Value
+- [fnd6_ptis](../../datafields/fnd6_ptis.md) - Pretax Income
+- [fnd6_rank](../../datafields/fnd6_rank.md) - SP rank with the following meaning: // 0----invalid rank //1----A+//2----A//3----A-//4----B+//5----B//6----B-//7----C+//8----C//9----C-
+- [fnd6_ranks](../../datafields/fnd6_ranks.md) - Ranking
+- [fnd6_rds](../../datafields/fnd6_rds.md) - Research and Development
+- [fnd6_rea](../../datafields/fnd6_rea.md) - Retained Earnings - Restatement
+- [fnd6_reajo](../../datafields/fnd6_reajo.md) - Retained Earnings - Other Adjustments
+- [fnd6_recco](../../datafields/fnd6_recco.md) - Receivables - Current - Other
+- [fnd6_recd](../../datafields/fnd6_recd.md) - Receivables - Estimated Doubtful
+- [fnd6_recta](../../datafields/fnd6_recta.md) - Retained Earnings - Cumulative Translation Adjustment
+- [fnd6_rectr](../../datafields/fnd6_rectr.md) - Receivables - Trade
+- [fnd6_revts](../../datafields/fnd6_revts.md) - Total Revenues
+- [fnd6_sales](../../datafields/fnd6_sales.md) - Net Sales
+- [fnd6_salexg](../../datafields/fnd6_salexg.md) - Export Sales
+- [fnd6_sics](../../datafields/fnd6_sics.md) - SIC Code
+- [fnd6_siv](../../datafields/fnd6_siv.md) - Sale of Investments
+- [fnd6_snms](../../datafields/fnd6_snms.md) - Segment Name
+- [fnd6_spce](../../datafields/fnd6_spce.md) - S&P Core Earnings
+- [fnd6_spis](../../datafields/fnd6_spis.md) - Special Items
+- [fnd6_sppe](../../datafields/fnd6_sppe.md) - Sale of Property
+- [fnd6_sppiv](../../datafields/fnd6_sppiv.md) - Sale of Property, Plant and Equipment and Investments - Gain (Loss)
+- [fnd6_sstk](../../datafields/fnd6_sstk.md) - Sale of Common and Preferred Stock
+- [fnd6_state](../../datafields/fnd6_state.md) - integer for identifying the state of the company
+- [fnd6_stkcpa](../../datafields/fnd6_stkcpa.md) - After-tax stock compensation
+- [fnd6_stype](../../datafields/fnd6_stype.md) - Segment Type
+- [fnd6_teq](../../datafields/fnd6_teq.md) - Stockholders' Equity - Total
+- [fnd6_tfva](../../datafields/fnd6_tfva.md) - Total Fair Value Assets
+- [fnd6_tfvce](../../datafields/fnd6_tfvce.md) - Total Fair Value Changes including Earnings
+- [fnd6_tfvl](../../datafields/fnd6_tfvl.md) - Total Fair Value Liabilities
+- [fnd6_tlcf](../../datafields/fnd6_tlcf.md) - Tax Loss Carry Forward
+- [fnd6_tstkc](../../datafields/fnd6_tstkc.md) - Treasury Stock - Common
+- [fnd6_txbco](../../datafields/fnd6_txbco.md) - Excess Tax Benefit Stock Options - Cash Flow Operating
+- [fnd6_txbcof](../../datafields/fnd6_txbcof.md) - Excess Tax Benefit of Stock Options - Cash Flow Financing
+- [fnd6_txc](../../datafields/fnd6_txc.md) - Income Taxes - Current
+- [fnd6_txdba](../../datafields/fnd6_txdba.md) - Deferred Tax Asset - Long Term
+- [fnd6_txdbca](../../datafields/fnd6_txdbca.md) - Deferred Tax Asset - Current
+- [fnd6_txdbcl](../../datafields/fnd6_txdbcl.md) - Deferred Tax Liability - Current
+- [fnd6_txdbclq](../../datafields/fnd6_txdbclq.md) - Current Deferred Tax Liability
+- [fnd6_txdc](../../datafields/fnd6_txdc.md) - Deferred Taxes (Cash Flow)
+- [fnd6_txdfed](../../datafields/fnd6_txdfed.md) - Deferred Taxes - Federal
+- [fnd6_txdfo](../../datafields/fnd6_txdfo.md) - Deferred Taxes - Foreign
+- [fnd6_txdi](../../datafields/fnd6_txdi.md) - Income Taxes - Deferred
+- [fnd6_txds](../../datafields/fnd6_txds.md) - Deferred Taxes - State
+- [fnd6_txfed](../../datafields/fnd6_txfed.md) - Income Taxes - Federal
+- [fnd6_txfo](../../datafields/fnd6_txfo.md) - Income Taxes - Foreign
+- [fnd6_txndb](../../datafields/fnd6_txndb.md) - Net Deferred Tax Asset (Liab) - Total
+- [fnd6_txndba](../../datafields/fnd6_txndba.md) - Net Deferred Tax Asset
+- [fnd6_txndbl](../../datafields/fnd6_txndbl.md) - Net Deferred Tax Liability
+- [fnd6_txndbr](../../datafields/fnd6_txndbr.md) - Deferred Tax Residual
+- [fnd6_txo](../../datafields/fnd6_txo.md) - Income Taxes - Other
+- [fnd6_txpd](../../datafields/fnd6_txpd.md) - Income Taxes Paid
+- [fnd6_txr](../../datafields/fnd6_txr.md) - Income Tax Refund
+- [fnd6_txs](../../datafields/fnd6_txs.md) - Income Taxes - State
+- [fnd6_txts](../../datafields/fnd6_txts.md) - Income Taxes
+- [fnd6_txtubadjust](../../datafields/fnd6_txtubadjust.md) - Other Unrecognized Tax Benefit Adjustment
+- [fnd6_txtubbegin](../../datafields/fnd6_txtubbegin.md) - Unrecog. Tax Benefits - Beg of Year
+- [fnd6_txtubend](../../datafields/fnd6_txtubend.md) - Unrecog. Tax Benefits - End of Year
+- [fnd6_txtubposdec](../../datafields/fnd6_txtubposdec.md) - Decrease - Current Tax Positions
+- [fnd6_txtubposinc](../../datafields/fnd6_txtubposinc.md) - Increase - Current Tax Positions
+- [fnd6_txtubpospdec](../../datafields/fnd6_txtubpospdec.md) - Decrease - Prior Tax Positions
+- [fnd6_txtubpospinc](../../datafields/fnd6_txtubpospinc.md) - Increase - Prior Tax Positions
+- [fnd6_txtubsettle](../../datafields/fnd6_txtubsettle.md) - Settlements with Tax Authorities
+- [fnd6_txtubsoflimit](../../datafields/fnd6_txtubsoflimit.md) - Lapse of Statute of Limitations
+- [fnd6_txtubtxtr](../../datafields/fnd6_txtubtxtr.md) - Impact on Effective Tax Rate
+- [fnd6_txtubxintbs](../../datafields/fnd6_txtubxintbs.md) - Interest & Penalties Accrued - B/S
+- [fnd6_txtubxintis](../../datafields/fnd6_txtubxintis.md) - Interest & Penalties Recognized - I/S
+- [fnd6_txw](../../datafields/fnd6_txw.md) - Excise Taxes
+- [fnd6_txws](../../datafields/fnd6_txws.md) - Excise Taxes
+- [fnd6_weburl](../../datafields/fnd6_weburl.md) - WEB URL code for the company
+- [fnd6_xacc](../../datafields/fnd6_xacc.md) - Accrued Expenses
+- [fnd6_xaccq](../../datafields/fnd6_xaccq.md) - Accrued Expenses
+- [fnd6_xad](../../datafields/fnd6_xad.md) - Advertising Expense
+- [fnd6_xidos](../../datafields/fnd6_xidos.md) - Extraordinary Items and Discontinued Operations
+- [fnd6_xintopt](../../datafields/fnd6_xintopt.md) - Implied Option Expense
+- [fnd6_xints](../../datafields/fnd6_xints.md) - Interest Expense
+- [fnd6_xopr](../../datafields/fnd6_xopr.md) - Operating Expenses - Total
+- [fnd6_xpp](../../datafields/fnd6_xpp.md) - Prepaid Expenses
+- [fnd6_xpr](../../datafields/fnd6_xpr.md) - Pension and Retirement Expense
+- [fnd6_xrent](../../datafields/fnd6_xrent.md) - Rental Expense
+- [fnd6_xsgas](../../datafields/fnd6_xsgas.md) - Selling, General & Administrative
+- [fnd6_zipcode](../../datafields/fnd6_zipcode.md) - ZIP code related to the company
+- [goodwill](../../datafields/goodwill.md) - Goodwill (net)
+- [income](../../datafields/income.md) - Net Income
+- [income_beforeextra](../../datafields/income_beforeextra.md) - Income Before Extraordinary Items
+- [income_tax](../../datafields/income_tax.md) - Income Taxes - Total
+- [interest_expense](../../datafields/interest_expense.md) - Interest and Related Expense - Total
+- [inventory](../../datafields/inventory.md) - Inventories - Total
+- [inventory_turnover](../../datafields/inventory_turnover.md) - Inventory Turnover
+- [invested_capital](../../datafields/invested_capital.md) - Invested Capital - Total - Quarterly
+- [liabilities](../../datafields/liabilities.md) - Liabilities - Total
+- [liabilities_curr](../../datafields/liabilities_curr.md) - Current Liabilities - Total
+- [operating_expense](../../datafields/operating_expense.md) - Operating Expense - Total
+- [operating_income](../../datafields/operating_income.md) - Operating Income After Depreciation - Quarterly
+- [ppent](../../datafields/ppent.md) - Property Plant and Equipment - Total (Net)
+- [pretax_income](../../datafields/pretax_income.md) - Pretax Income
+- [rd_expense](../../datafields/rd_expense.md) - Research And Development (Quarterly)
+- [receivable](../../datafields/receivable.md) - Receivables - Total
+- [retained_earnings](../../datafields/retained_earnings.md) - Retained Earnings
+- [return_assets](../../datafields/return_assets.md) - Return on Assets
+- [return_equity](../../datafields/return_equity.md) - Return on Equity
+- [revenue](../../datafields/revenue.md) - Revenue - Total
+- [sales](../../datafields/sales.md) - Sales/Turnover (Net)
+- [sales_growth](../../datafields/sales_growth.md) - Growth in Sales (Quarterly)
+- [sales_ps](../../datafields/sales_ps.md) - Sales per Share (Quarterly)
+- [sga_expense](../../datafields/sga_expense.md) - Selling, General and Administrative Expenses
+- [working_capital](../../datafields/working_capital.md) - Working Capital (Balance Sheet)

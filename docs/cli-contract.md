@@ -76,6 +76,28 @@ A Brain execution agent runs this loop:
 5. call `alp report failure` for each failed run
 6. repeat
 
+### Continuous worker (credentials-first, npm script)
+```bash
+npm run worker:continuous -- --brain-id <account-id> --brain-password <password>
+```
+
+This runs in an infinite loop:
+- resolves login profile by `id + ps` from `worldquant-login.md`
+- requests work in batch (`count=3` by default)
+- executes each batch via existing `runWorkerLoop` logic
+- records success/failure back to server (`submitResult`, `reportFailure`)
+- sleeps and retries when queue is empty or transiently failing
+
+Optional flags:
+- `--server-url` (default: `http://127.0.0.1:3000`)
+- `--brain-url` (default: `https://platform.worldquantbrain.com`)
+- `--worker-id` (default: `worker-<safe brain-id>`)
+- `--concurrency` (default: `3`)
+- `--poll-interval-ms` (default: `5000`)
+- `--error-retry-ms` (default: `30000`)
+- `--headed true|false` (default: `false`)
+- `--requeue-retryable true|false` (default: `false`)
+
 ## Minimal payload expectations
 - `settings` must include the observed BRAIN run settings used for the simulation
 - `metrics` must include the observed simulation outputs returned by BRAIN

@@ -1,0 +1,19 @@
+# Datafield: fnd6_newqeventv110_epsfiq
+
+- Category: [Fundamental](../categories/fundamental.md)
+- Subcategory: Fundamental Data
+- Dataset: Company Fundamental Data for Equity (fundamental6)
+- Region: USA
+- Delay: 1
+- Universe: TOP3000
+- Type: VECTOR
+- Date coverage: 1.0
+- Coverage: 0.5
+- User count: 36
+- Alpha count: 49
+- Pyramid multiplier: 1.2
+- Themes: []
+
+## Description
+
+Earnings Per Share (Diluted) - Including Extraordinary Items

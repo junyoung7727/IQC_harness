@@ -1,0 +1,60 @@
+# Datafield Category: Fundamental / fnd6 Liabilities
+
+- Parent category: [Fundamental](../fundamental.md)
+- Total fields: 53
+
+## Fields
+
+- [fnd6_cld2](../../datafields/fnd6_cld2.md) - Capitalized Leases - Due in 2nd Year
+- [fnd6_cld3](../../datafields/fnd6_cld3.md) - Capitalized Leases - Due in 3rd Year
+- [fnd6_cld4](../../datafields/fnd6_cld4.md) - Capitalized Leases - Due in 4th Year
+- [fnd6_cld5](../../datafields/fnd6_cld5.md) - Capitalized Leases - Due in 5th Year
+- [fnd6_dclo](../../datafields/fnd6_dclo.md) - Debt - Capitalized Lease Obligations
+- [fnd6_dcvsr](../../datafields/fnd6_dcvsr.md) - Debt - Senior Convertible
+- [fnd6_dcvsub](../../datafields/fnd6_dcvsub.md) - Debt - Subordinated Convertible
+- [fnd6_dcvt](../../datafields/fnd6_dcvt.md) - Debt - Convertible
+- [fnd6_dd](../../datafields/fnd6_dd.md) - Debt - Debentures
+- [fnd6_dd1](../../datafields/fnd6_dd1.md) - Long-Term Debt Due in 1 Year
+- [fnd6_dd1q](../../datafields/fnd6_dd1q.md) - Long-Term Debt Due in 1 Year
+- [fnd6_dd2](../../datafields/fnd6_dd2.md) - Debt Due in 2nd Year
+- [fnd6_dd3](../../datafields/fnd6_dd3.md) - Debt Due in 3rd Year
+- [fnd6_dd4](../../datafields/fnd6_dd4.md) - Debt Due in 4th Year
+- [fnd6_dd5](../../datafields/fnd6_dd5.md) - Debt Due in 5th Year
+- [fnd6_dlcch](../../datafields/fnd6_dlcch.md) - Current Debt - Changes
+- [fnd6_dltis](../../datafields/fnd6_dltis.md) - Long-Term Debt - Issuance
+- [fnd6_dlto](../../datafields/fnd6_dlto.md) - Debt - Long-Term - Other
+- [fnd6_dltp](../../datafields/fnd6_dltp.md) - Long-Term Debt - Tied to Prime
+- [fnd6_dltr](../../datafields/fnd6_dltr.md) - Long-Term Debt - Reduction
+- [fnd6_dm](../../datafields/fnd6_dm.md) - Debt - Mortgages & Other Secured
+- [fnd6_dn](../../datafields/fnd6_dn.md) - Debt - Notes
+- [fnd6_drc](../../datafields/fnd6_drc.md) - Deferred Revenue - Current
+- [fnd6_drlt](../../datafields/fnd6_drlt.md) - Deferred Revenue - Long-term
+- [fnd6_ds](../../datafields/fnd6_ds.md) - Debt - Subordinated
+- [fnd6_dudd](../../datafields/fnd6_dudd.md) - Debt - Unamortized Debt Discount and Other
+- [fnd6_dxd2](../../datafields/fnd6_dxd2.md) - Debt (excl Capitalized Leases) - Due in 2nd Year
+- [fnd6_dxd3](../../datafields/fnd6_dxd3.md) - Debt (excl Capitalized Leases) - Due in 3rd Year
+- [fnd6_dxd4](../../datafields/fnd6_dxd4.md) - Debt (excl Capitalized Leases) - Due in 4th Year
+- [fnd6_dxd5](../../datafields/fnd6_dxd5.md) - Debt (excl Capitalized Leases) - Due in 5th Year
+- [fnd6_lcox](../../datafields/fnd6_lcox.md) - Current Liabilities - Other - Sundry
+- [fnd6_lcoxdr](../../datafields/fnd6_lcoxdr.md) - Current Liabilities - Other - Excluding Deferred Revenue
+- [fnd6_lno](../../datafields/fnd6_lno.md) - Liabilities Netting & Other Adjustments
+- [fnd6_lol2](../../datafields/fnd6_lol2.md) - Liabilities Level 2 (Observable)
+- [fnd6_loxdr](../../datafields/fnd6_loxdr.md) - Liabilities - Other - Excluding Deferred Revenue
+- [fnd6_lqpl1](../../datafields/fnd6_lqpl1.md) - Liabilities Level 1 (Quoted Prices)
+- [fnd6_lul3](../../datafields/fnd6_lul3.md) - Liabilities Level 3 (Unobservable)
+- [fnd6_mrc1](../../datafields/fnd6_mrc1.md) - Rental Commitments - Minimum - 1st Year
+- [fnd6_mrc2](../../datafields/fnd6_mrc2.md) - Rental Commitments - Minimum - 2nd Year
+- [fnd6_mrc3](../../datafields/fnd6_mrc3.md) - Rental Commitments - Minimum - 3rd Year
+- [fnd6_mrc4](../../datafields/fnd6_mrc4.md) - Rental Commitments - Minimum - 4th Year
+- [fnd6_mrc5](../../datafields/fnd6_mrc5.md) - Rental Commitments - Minimum - 5th Year
+- [fnd6_mrct](../../datafields/fnd6_mrct.md) - Rental Commitments - Minimum - 5-Year Total
+- [fnd6_mrcta](../../datafields/fnd6_mrcta.md) - Thereafter Portion of Leases
+- [fnd6_np](../../datafields/fnd6_np.md) - Notes Payable - Short-Term Borrowings
+- [fnd6_npq](../../datafields/fnd6_npq.md) - Notes Payable
+- [fnd6_tfvl](../../datafields/fnd6_tfvl.md) - Total Fair Value Liabilities
+- [fnd6_tlcf](../../datafields/fnd6_tlcf.md) - Tax Loss Carry Forward
+- [fnd6_txdbcl](../../datafields/fnd6_txdbcl.md) - Deferred Tax Liability - Current
+- [fnd6_txdbclq](../../datafields/fnd6_txdbclq.md) - Current Deferred Tax Liability
+- [fnd6_txndbl](../../datafields/fnd6_txndbl.md) - Net Deferred Tax Liability
+- [fnd6_xacc](../../datafields/fnd6_xacc.md) - Accrued Expenses
+- [fnd6_xaccq](../../datafields/fnd6_xaccq.md) - Accrued Expenses

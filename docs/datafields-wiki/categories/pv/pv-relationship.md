@@ -1,0 +1,172 @@
+# Datafield Category: Price Volume / Relationship
+
+- Parent category: [Price Volume](../pv.md)
+- Total fields: 165
+
+## Fields
+
+- [primary_sector_focused_company_count](../../datafields/primary_sector_focused_company_count.md) - Number of companies primarily focused in a given sector.
+- [pv13_1l_scibr](../../datafields/pv13_1l_scibr.md) - grouping fields
+- [pv13_2l_scibr](../../datafields/pv13_2l_scibr.md) - grouping fields
+- [pv13_3l_scibr](../../datafields/pv13_3l_scibr.md) - grouping fields
+- [pv13_4l_scibr](../../datafields/pv13_4l_scibr.md) - grouping fields
+- [pv13_5l_scibr](../../datafields/pv13_5l_scibr.md) - grouping fields
+- [pv13_6l_scibr](../../datafields/pv13_6l_scibr.md) - grouping fields
+- [pv13_com_page_rank](../../datafields/pv13_com_page_rank.md) - the PageRank of competitors
+- [pv13_com_rk_au](../../datafields/pv13_com_rk_au.md) - the HITS authority score of competitors
+- [pv13_custretsig_retsig](../../datafields/pv13_custretsig_retsig.md) - Sign of customer return
+- [pv13_di_5l](../../datafields/pv13_di_5l.md) - grouping fields
+- [pv13_di_6l](../../datafields/pv13_di_6l.md) - grouping fields
+- [pv13_h_f1_sector](../../datafields/pv13_h_f1_sector.md) - grouping fields
+- [pv13_h_f3_sector](../../datafields/pv13_h_f3_sector.md) - grouping fields
+- [pv13_h_min10_all_sector](../../datafields/pv13_h_min10_all_sector.md) - grouping fields
+- [pv13_h_min10_top3000_sector](../../datafields/pv13_h_min10_top3000_sector.md) - grouping fields
+- [pv13_h_min2_3000_sector](../../datafields/pv13_h_min2_3000_sector.md) - grouping fields
+- [pv13_h_min2_focused_pureplay_3000_sector](../../datafields/pv13_h_min2_focused_pureplay_3000_sector.md) - grouping fields
+- [pv13_h_min2_focused_sector](../../datafields/pv13_h_min2_focused_sector.md) - Grouping fields for top 200
+- [pv13_h_min20_top3000_sector](../../datafields/pv13_h_min20_top3000_sector.md) - grouping fields
+- [pv13_h_min22_1000_sector](../../datafields/pv13_h_min22_1000_sector.md) - Grouping fields for top 1000
+- [pv13_h_min24_500_sector](../../datafields/pv13_h_min24_500_sector.md) - Grouping fields for top 500
+- [pv13_h_min30_3000_mapped_sector](../../datafields/pv13_h_min30_3000_mapped_sector.md) - grouping fields
+- [pv13_h_min5_3000_sector](../../datafields/pv13_h_min5_3000_sector.md) - grouping fields
+- [pv13_h_min5_500_sector](../../datafields/pv13_h_min5_500_sector.md) - Grouping fields
+- [pv13_h_min51_f3_sector](../../datafields/pv13_h_min51_f3_sector.md) - grouping fields
+- [pv13_h_min52_1k_sector](../../datafields/pv13_h_min52_1k_sector.md) - Grouping fields for top 1000
+- [pv13_h_min52_3000_sector](../../datafields/pv13_h_min52_3000_sector.md) - grouping fields
+- [pv13_h2_min2_1k_sector](../../datafields/pv13_h2_min2_1k_sector.md) - Grouping fields for top 1000
+- [pv13_h2_sector](../../datafields/pv13_h2_sector.md) - grouping fields
+- [pv13_hierarchy_f1_513_sector](../../datafields/pv13_hierarchy_f1_513_sector.md) - grouping fields
+- [pv13_hierarchy_f2_513_sector](../../datafields/pv13_hierarchy_f2_513_sector.md) - grouping fields
+- [pv13_hierarchy_f2_sector](../../datafields/pv13_hierarchy_f2_sector.md) - grouping fields
+- [pv13_hierarchy_f3_513_sector](../../datafields/pv13_hierarchy_f3_513_sector.md) - grouping fields
+- [pv13_hierarchy_f4_513_sector](../../datafields/pv13_hierarchy_f4_513_sector.md) - grouping fields
+- [pv13_hierarchy_f4_sector](../../datafields/pv13_hierarchy_f4_sector.md) - grouping fields
+- [pv13_hierarchy_min10_1000_513_sector](../../datafields/pv13_hierarchy_min10_1000_513_sector.md) - grouping fields
+- [pv13_hierarchy_min10_2k_513_sector](../../datafields/pv13_hierarchy_min10_2k_513_sector.md) - grouping fields
+- [pv13_hierarchy_min10_2k_sector](../../datafields/pv13_hierarchy_min10_2k_sector.md) - grouping fields
+- [pv13_hierarchy_min10_3k_all_sector](../../datafields/pv13_hierarchy_min10_3k_all_sector.md) - grouping fields
+- [pv13_hierarchy_min10_513_sector](../../datafields/pv13_hierarchy_min10_513_sector.md) - grouping fields
+- [pv13_hierarchy_min10_industry_3000_513_sector](../../datafields/pv13_hierarchy_min10_industry_3000_513_sector.md) - grouping fields
+- [pv13_hierarchy_min10_industry_3000_sector](../../datafields/pv13_hierarchy_min10_industry_3000_sector.md) - grouping fields
+- [pv13_hierarchy_min10_sector](../../datafields/pv13_hierarchy_min10_sector.md) - grouping fields
+- [pv13_hierarchy_min10_sector_3000_513_sector](../../datafields/pv13_hierarchy_min10_sector_3000_513_sector.md) - grouping fields
+- [pv13_hierarchy_min10_sector_3000_sector](../../datafields/pv13_hierarchy_min10_sector_3000_sector.md) - grouping fields
+- [pv13_hierarchy_min10_top3000_513_sector](../../datafields/pv13_hierarchy_min10_top3000_513_sector.md) - grouping fields
+- [pv13_hierarchy_min100_2000_513_sector](../../datafields/pv13_hierarchy_min100_2000_513_sector.md) - grouping fields
+- [pv13_hierarchy_min100_corr21_513_sector](../../datafields/pv13_hierarchy_min100_corr21_513_sector.md) - grouping fields
+- [pv13_hierarchy_min100_corr21_sector](../../datafields/pv13_hierarchy_min100_corr21_sector.md) - grouping fields
+- [pv13_hierarchy_min2_1000_513_sector](../../datafields/pv13_hierarchy_min2_1000_513_sector.md) - grouping fields
+- [pv13_hierarchy_min2_3000_513_sector](../../datafields/pv13_hierarchy_min2_3000_513_sector.md) - grouping fields
+- [pv13_hierarchy_min2_513_sector](../../datafields/pv13_hierarchy_min2_513_sector.md) - grouping fields
+- [pv13_hierarchy_min2_focused_only_513_sector](../../datafields/pv13_hierarchy_min2_focused_only_513_sector.md) - grouping fields
+- [pv13_hierarchy_min2_focused_only_sector](../../datafields/pv13_hierarchy_min2_focused_only_sector.md) - grouping fields
+- [pv13_hierarchy_min2_focused_pureplay_3000_513_sector](../../datafields/pv13_hierarchy_min2_focused_pureplay_3000_513_sector.md) - grouping fields
+- [pv13_hierarchy_min2_focused_pureplay_513_sector](../../datafields/pv13_hierarchy_min2_focused_pureplay_513_sector.md) - grouping fields
+- [pv13_hierarchy_min2_focused_pureplay_sector](../../datafields/pv13_hierarchy_min2_focused_pureplay_sector.md) - grouping fields
+- [pv13_hierarchy_min2_pureplay_only_513_sector](../../datafields/pv13_hierarchy_min2_pureplay_only_513_sector.md) - grouping fields
+- [pv13_hierarchy_min2_pureplay_only_sector](../../datafields/pv13_hierarchy_min2_pureplay_only_sector.md) - grouping fields
+- [pv13_hierarchy_min2_sector](../../datafields/pv13_hierarchy_min2_sector.md) - grouping fields
+- [pv13_hierarchy_min20_3k_513_sector](../../datafields/pv13_hierarchy_min20_3k_513_sector.md) - grouping fields
+- [pv13_hierarchy_min20_3k_sector](../../datafields/pv13_hierarchy_min20_3k_sector.md) - grouping fields
+- [pv13_hierarchy_min20_513_sector](../../datafields/pv13_hierarchy_min20_513_sector.md) - grouping fields
+- [pv13_hierarchy_min20_f3_513_sector](../../datafields/pv13_hierarchy_min20_f3_513_sector.md) - grouping fields
+- [pv13_hierarchy_min20_sector](../../datafields/pv13_hierarchy_min20_sector.md) - grouping fields
+- [pv13_hierarchy_min20_top3000_513_sector](../../datafields/pv13_hierarchy_min20_top3000_513_sector.md) - grouping fields
+- [pv13_hierarchy_min22_1000_513_sector](../../datafields/pv13_hierarchy_min22_1000_513_sector.md) - grouping fields
+- [pv13_hierarchy_min22_513_sector](../../datafields/pv13_hierarchy_min22_513_sector.md) - grouping fields
+- [pv13_hierarchy_min22_sector](../../datafields/pv13_hierarchy_min22_sector.md) - grouping fields
+- [pv13_hierarchy_min25_513_sector](../../datafields/pv13_hierarchy_min25_513_sector.md) - grouping fields
+- [pv13_hierarchy_min25_sector](../../datafields/pv13_hierarchy_min25_sector.md) - grouping fields
+- [pv13_hierarchy_min30_3000_513_sector](../../datafields/pv13_hierarchy_min30_3000_513_sector.md) - grouping fields
+- [pv13_hierarchy_min30_3000_mapped_513_sector](../../datafields/pv13_hierarchy_min30_3000_mapped_513_sector.md) - grouping fields
+- [pv13_hierarchy_min30_513_sector](../../datafields/pv13_hierarchy_min30_513_sector.md) - grouping fields
+- [pv13_hierarchy_min30_sector](../../datafields/pv13_hierarchy_min30_sector.md) - grouping fields
+- [pv13_hierarchy_min40_3000_513_sector](../../datafields/pv13_hierarchy_min40_3000_513_sector.md) - grouping fields
+- [pv13_hierarchy_min5_1000_513_sector](../../datafields/pv13_hierarchy_min5_1000_513_sector.md) - grouping fields
+- [pv13_hierarchy_min5_3000_513_sector](../../datafields/pv13_hierarchy_min5_3000_513_sector.md) - grouping fields
+- [pv13_hierarchy_min5_513_sector](../../datafields/pv13_hierarchy_min5_513_sector.md) - grouping fields
+- [pv13_hierarchy_min5_corr21_1000_513_sector](../../datafields/pv13_hierarchy_min5_corr21_1000_513_sector.md) - grouping fields
+- [pv13_hierarchy_min5_f3g2_sector](../../datafields/pv13_hierarchy_min5_f3g2_sector.md) - grouping fields
+- [pv13_hierarchy_min5_sector](../../datafields/pv13_hierarchy_min5_sector.md) - grouping fields
+- [pv13_hierarchy_min50_f3_513_sector](../../datafields/pv13_hierarchy_min50_f3_513_sector.md) - grouping fields
+- [pv13_hierarchy_min51_f1_513_sector](../../datafields/pv13_hierarchy_min51_f1_513_sector.md) - grouping fields
+- [pv13_hierarchy_min51_f1_sector](../../datafields/pv13_hierarchy_min51_f1_sector.md) - grouping fields
+- [pv13_hierarchy_min51_f2_513_sector](../../datafields/pv13_hierarchy_min51_f2_513_sector.md) - grouping fields
+- [pv13_hierarchy_min51_f2_sector](../../datafields/pv13_hierarchy_min51_f2_sector.md) - grouping fields
+- [pv13_hierarchy_min51_f3_513_sector](../../datafields/pv13_hierarchy_min51_f3_513_sector.md) - grouping fields
+- [pv13_hierarchy_min51_f4_513_sector](../../datafields/pv13_hierarchy_min51_f4_513_sector.md) - grouping fields
+- [pv13_hierarchy_min51_f4_sector](../../datafields/pv13_hierarchy_min51_f4_sector.md) - grouping fields
+- [pv13_hierarchy_min52_1k_513_sector](../../datafields/pv13_hierarchy_min52_1k_513_sector.md) - grouping fields
+- [pv13_hierarchy_min52_2k_513_sector](../../datafields/pv13_hierarchy_min52_2k_513_sector.md) - grouping fields
+- [pv13_hierarchy_min52_2k_sector](../../datafields/pv13_hierarchy_min52_2k_sector.md) - grouping fields
+- [pv13_hierarchy_min52_513_sector](../../datafields/pv13_hierarchy_min52_513_sector.md) - grouping fields
+- [pv13_hierarchy_min52_sector](../../datafields/pv13_hierarchy_min52_sector.md) - grouping fields
+- [pv13_hierarchy_min54_3000_sector](../../datafields/pv13_hierarchy_min54_3000_sector.md) - grouping fields
+- [pv13_hierarchy_sector](../../datafields/pv13_hierarchy_sector.md) - grouping fields
+- [pv13_hierarchy2_513_sector](../../datafields/pv13_hierarchy2_513_sector.md) - grouping fields
+- [pv13_hierarchy2_min2_1k_513_sector](../../datafields/pv13_hierarchy2_min2_1k_513_sector.md) - grouping fields
+- [pv13_hierarchy23_513_sector](../../datafields/pv13_hierarchy23_513_sector.md) - grouping fields
+- [pv13_hierarchy23_sector](../../datafields/pv13_hierarchy23_sector.md) - grouping fields
+- [pv13_hierarchys32_513_sector](../../datafields/pv13_hierarchys32_513_sector.md) - grouping fields
+- [pv13_hierarchys32_sector](../../datafields/pv13_hierarchys32_sector.md) - grouping fields
+- [pv13_new_1l_scibr](../../datafields/pv13_new_1l_scibr.md) - grouping fields
+- [pv13_new_2l_scibr](../../datafields/pv13_new_2l_scibr.md) - grouping fields
+- [pv13_new_3l_scibr](../../datafields/pv13_new_3l_scibr.md) - grouping fields
+- [pv13_new_4l_scibr](../../datafields/pv13_new_4l_scibr.md) - grouping fields
+- [pv13_new_5l_scibr](../../datafields/pv13_new_5l_scibr.md) - grouping fields
+- [pv13_new_6l_scibr](../../datafields/pv13_new_6l_scibr.md) - grouping fields
+- [pv13_ompetitorgraphrank_hub_rank](../../datafields/pv13_ompetitorgraphrank_hub_rank.md) - the HITS hub score of competitors
+- [pv13_r2_liquid_min10_sector](../../datafields/pv13_r2_liquid_min10_sector.md) - grouping fields
+- [pv13_r2_liquid_min2_sector](../../datafields/pv13_r2_liquid_min2_sector.md) - grouping fields
+- [pv13_r2_liquid_min5_sector](../../datafields/pv13_r2_liquid_min5_sector.md) - grouping fields
+- [pv13_r2_min10_1000_sector](../../datafields/pv13_r2_min10_1000_sector.md) - grouping fields
+- [pv13_r2_min10_3000_sector](../../datafields/pv13_r2_min10_3000_sector.md) - grouping fields
+- [pv13_r2_min2_1000_sector](../../datafields/pv13_r2_min2_1000_sector.md) - grouping fields
+- [pv13_r2_min2_3000_sector](../../datafields/pv13_r2_min2_3000_sector.md) - grouping fields
+- [pv13_r2_min20_1000_sector](../../datafields/pv13_r2_min20_1000_sector.md) - grouping fields
+- [pv13_r2_min20_3000_sector](../../datafields/pv13_r2_min20_3000_sector.md) - grouping fields
+- [pv13_r2_min5_1000_sector](../../datafields/pv13_r2_min5_1000_sector.md) - grouping fields
+- [pv13_r2_min5_3000_sector](../../datafields/pv13_r2_min5_3000_sector.md) - grouping fields
+- [pv13_rcsed_6l](../../datafields/pv13_rcsed_6l.md) - grouping fields
+- [pv13_revere_city](../../datafields/pv13_revere_city.md) - City code
+- [pv13_revere_company_total](../../datafields/pv13_revere_company_total.md) - Total number of companies in the sector
+- [pv13_revere_comproduct_company](../../datafields/pv13_revere_comproduct_company.md) - Company product
+- [pv13_revere_country](../../datafields/pv13_revere_country.md) - Country code
+- [pv13_revere_index_cap](../../datafields/pv13_revere_index_cap.md) - Company market capitalization
+- [pv13_revere_index_value](../../datafields/pv13_revere_index_value.md) - Value of specified index for the date
+- [pv13_revere_key_sector_total](../../datafields/pv13_revere_key_sector_total.md) - Number of key focus sectors for the company
+- [pv13_revere_level](../../datafields/pv13_revere_level.md) - Level of the sector within the hierarchy
+- [pv13_revere_parent](../../datafields/pv13_revere_parent.md) - Code of parent sector
+- [pv13_revere_term](../../datafields/pv13_revere_term.md) - Indicates when a sector is the terminal sector (i.e., no sub-sectors)
+- [pv13_revere_term_sector_total](../../datafields/pv13_revere_term_sector_total.md) - Number of terminal sectors for the company
+- [pv13_revere_zipcode](../../datafields/pv13_revere_zipcode.md) - Zip code
+- [pv13_reveremap](../../datafields/pv13_reveremap.md) - Mapping data
+- [pv13_rha2_min10_1000_513_sector](../../datafields/pv13_rha2_min10_1000_513_sector.md) - grouping fields
+- [pv13_rha2_min10_3000_513_sector](../../datafields/pv13_rha2_min10_3000_513_sector.md) - grouping fields
+- [pv13_rha2_min10_513_sector](../../datafields/pv13_rha2_min10_513_sector.md) - grouping fields
+- [pv13_rha2_min10_sector](../../datafields/pv13_rha2_min10_sector.md) - grouping fields
+- [pv13_rha2_min2_1000_513_sector](../../datafields/pv13_rha2_min2_1000_513_sector.md) - grouping fields
+- [pv13_rha2_min2_3000_513_sector](../../datafields/pv13_rha2_min2_3000_513_sector.md) - grouping fields
+- [pv13_rha2_min2_513_sector](../../datafields/pv13_rha2_min2_513_sector.md) - grouping fields
+- [pv13_rha2_min2_sector](../../datafields/pv13_rha2_min2_sector.md) - grouping fields
+- [pv13_rha2_min20_3000_513_sector](../../datafields/pv13_rha2_min20_3000_513_sector.md) - grouping fields
+- [pv13_rha2_min20_513_sector](../../datafields/pv13_rha2_min20_513_sector.md) - grouping fields
+- [pv13_rha2_min20_sector](../../datafields/pv13_rha2_min20_sector.md) - grouping fields
+- [pv13_rha2_min30_3000_513_sector](../../datafields/pv13_rha2_min30_3000_513_sector.md) - grouping fields
+- [pv13_rha2_min40_3000_513_sector](../../datafields/pv13_rha2_min40_3000_513_sector.md) - grouping fields
+- [pv13_rha2_min5_1000_513_sector](../../datafields/pv13_rha2_min5_1000_513_sector.md) - grouping fields
+- [pv13_rha2_min5_3000_513_sector](../../datafields/pv13_rha2_min5_3000_513_sector.md) - grouping fields
+- [pv13_rha2_min5_513_sector](../../datafields/pv13_rha2_min5_513_sector.md) - grouping fields
+- [pv13_rha2_min5_sector](../../datafields/pv13_rha2_min5_sector.md) - grouping fields
+- [pv13_ustomergraphrank_auth_rank](../../datafields/pv13_ustomergraphrank_auth_rank.md) - the HITS authority score of customers
+- [pv13_ustomergraphrank_hub_rank](../../datafields/pv13_ustomergraphrank_hub_rank.md) - the HITS hub score of customers
+- [pv13_ustomergraphrank_page_rank](../../datafields/pv13_ustomergraphrank_page_rank.md) - the PageRank of customers
+- [rel_num_all](../../datafields/rel_num_all.md) - number of the companies whose product overlapped with the instrument
+- [rel_num_comp](../../datafields/rel_num_comp.md) - number of the instrument's competitors
+- [rel_num_cust](../../datafields/rel_num_cust.md) - number of the instrument's customers
+- [rel_num_part](../../datafields/rel_num_part.md) - number of the instrument's partners
+- [rel_ret_all](../../datafields/rel_ret_all.md) - Averaged one-day return of the companies whose product overlapped with the instrument
+- [rel_ret_comp](../../datafields/rel_ret_comp.md) - Averaged one-day return of the competing companies
+- [rel_ret_cust](../../datafields/rel_ret_cust.md) - averaged one-day-return of the instrument's customers
+- [rel_ret_part](../../datafields/rel_ret_part.md) - Averaged one-day return of the instrument's partners
+- [single_sector_pureplay_company_count](../../datafields/single_sector_pureplay_company_count.md) - Number of companies exclusively operating in a single sector.

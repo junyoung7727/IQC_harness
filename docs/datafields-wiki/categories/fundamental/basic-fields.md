@@ -1,0 +1,55 @@
+# Datafield Category: Fundamental / Basic Fields
+
+- Parent category: [Fundamental](../fundamental.md)
+- Total fields: 48
+
+## Fields
+
+- [assets](../../datafields/assets.md) - Assets - Total
+- [assets_curr](../../datafields/assets_curr.md) - Current Assets - Total
+- [bookvalue_ps](../../datafields/bookvalue_ps.md) - Book Value Per Share
+- [capex](../../datafields/capex.md) - Capital Expenditures
+- [cash](../../datafields/cash.md) - Cash
+- [cash_st](../../datafields/cash_st.md) - Cash and Short-Term Investments
+- [cashflow](../../datafields/cashflow.md) - Cashflow (Annual)
+- [cashflow_dividends](../../datafields/cashflow_dividends.md) - Cash Dividends (Cash Flow)
+- [cashflow_fin](../../datafields/cashflow_fin.md) - Financing Activities - Net Cash Flow
+- [cashflow_invst](../../datafields/cashflow_invst.md) - Investing Activities - Net Cash Flow
+- [cashflow_op](../../datafields/cashflow_op.md) - Operating Activities - Net Cash Flow
+- [cogs](../../datafields/cogs.md) - Cost of Goods Sold
+- [current_ratio](../../datafields/current_ratio.md) - Current Ratio
+- [debt](../../datafields/debt.md) - Debt
+- [debt_lt](../../datafields/debt_lt.md) - Long-Term Debt - Total
+- [debt_st](../../datafields/debt_st.md) - Debt in Current Liabilities
+- [depre_amort](../../datafields/depre_amort.md) - Depreciation and Amortization - Total
+- [ebit](../../datafields/ebit.md) - Earnings Before Interest and Taxes
+- [ebitda](../../datafields/ebitda.md) - Earnings Before Interest
+- [employee](../../datafields/employee.md) - Employees
+- [enterprise_value](../../datafields/enterprise_value.md) - Enterprise Value
+- [eps](../../datafields/eps.md) - Earnings Per Share (Basic) - Including Extraordinary Items
+- [equity](../../datafields/equity.md) - Common/Ordinary Equity - Total
+- [goodwill](../../datafields/goodwill.md) - Goodwill (net)
+- [income](../../datafields/income.md) - Net Income
+- [income_beforeextra](../../datafields/income_beforeextra.md) - Income Before Extraordinary Items
+- [income_tax](../../datafields/income_tax.md) - Income Taxes - Total
+- [interest_expense](../../datafields/interest_expense.md) - Interest and Related Expense - Total
+- [inventory](../../datafields/inventory.md) - Inventories - Total
+- [inventory_turnover](../../datafields/inventory_turnover.md) - Inventory Turnover
+- [invested_capital](../../datafields/invested_capital.md) - Invested Capital - Total - Quarterly
+- [liabilities](../../datafields/liabilities.md) - Liabilities - Total
+- [liabilities_curr](../../datafields/liabilities_curr.md) - Current Liabilities - Total
+- [operating_expense](../../datafields/operating_expense.md) - Operating Expense - Total
+- [operating_income](../../datafields/operating_income.md) - Operating Income After Depreciation - Quarterly
+- [ppent](../../datafields/ppent.md) - Property Plant and Equipment - Total (Net)
+- [pretax_income](../../datafields/pretax_income.md) - Pretax Income
+- [rd_expense](../../datafields/rd_expense.md) - Research And Development (Quarterly)
+- [receivable](../../datafields/receivable.md) - Receivables - Total
+- [retained_earnings](../../datafields/retained_earnings.md) - Retained Earnings
+- [return_assets](../../datafields/return_assets.md) - Return on Assets
+- [return_equity](../../datafields/return_equity.md) - Return on Equity
+- [revenue](../../datafields/revenue.md) - Revenue - Total
+- [sales](../../datafields/sales.md) - Sales/Turnover (Net)
+- [sales_growth](../../datafields/sales_growth.md) - Growth in Sales (Quarterly)
+- [sales_ps](../../datafields/sales_ps.md) - Sales per Share (Quarterly)
+- [sga_expense](../../datafields/sga_expense.md) - Selling, General and Administrative Expenses
+- [working_capital](../../datafields/working_capital.md) - Working Capital (Balance Sheet)

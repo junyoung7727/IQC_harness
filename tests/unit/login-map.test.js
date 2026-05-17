@@ -48,6 +48,20 @@ test('resolveLoginEntry falls back to single-field lookup only when the other fi
   assert.equal(byProfile?.id, 'alpha@example.com');
 });
 
+test('resolveLoginEntry uses exact id+password when both are provided', () => {
+  const exact = resolveLoginEntry(entries, {
+    brainAccount: 'alpha@example.com',
+    password: 'pw1'
+  });
+  const mismatch = resolveLoginEntry(entries, {
+    brainAccount: 'alpha@example.com',
+    password: 'wrong'
+  });
+
+  assert.equal(exact?.id, 'alpha@example.com');
+  assert.equal(mismatch, null);
+});
+
 test('normalizeChromeProfilePath normalizes slash direction and casing', () => {
   assert.equal(
     normalizeChromeProfilePath('C:/Profiles/Alpha'),

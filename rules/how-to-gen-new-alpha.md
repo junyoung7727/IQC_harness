@@ -1,5 +1,7 @@
 Alpha Research Principles
 
+대전제: 모든 오퍼레이터와 데이터 필드는 @C:\Users\user\worldquant-multi-agent-harness\docs\datafields-reference.md와 @C:\Users\user\worldquant-multi-agent-harness\docs\operators-reference.md 파일에 존재하는 것만 조합할 수 있다.
+
 1. 알파는 식이 아니라 오판 구조다
 
 좋은 알파는 수식에서 출발하지 않는다.

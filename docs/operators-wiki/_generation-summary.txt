@@ -1,0 +1,3 @@
+Generated: 66 operators
+Category files: 7
+Root: C:/Users/user/worldquant-multi-agent-harness/docs/operators-wiki
