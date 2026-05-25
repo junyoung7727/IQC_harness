@@ -1,5 +1,5 @@
 import { markRunning, reportFailure, requestNext, requeue, submitResult } from './client.js';
-import { preflightBrainAccess, runBrainSimulation } from './brain.js';
+import { createBrainRuntime, preflightBrainAccess, runBrainSimulation } from './brain.js';
 
 function noOpLogger() {}
 
@@ -12,6 +12,7 @@ async function executeQueuedItem({
   workerId,
   brainAccount,
   chromeProfile,
+  brainCredentials,
   brainUrl,
   headed,
   requeueRetryable,
@@ -28,6 +29,7 @@ async function executeQueuedItem({
       brainUrl,
       brainAccount,
       chromeProfile,
+      brainCredentials,
       expression: item.expression,
       headed
     });
@@ -67,50 +69,79 @@ export async function runWorkerLoop({
   workerId,
   brainAccount,
   chromeProfile,
+  brainCredentials,
   brainUrl,
   headed = false,
   requeueRetryable = false,
   executor = runBrainSimulation,
   preflight = preflightBrainAccess,
+  brainRuntimeFactory = createBrainRuntime,
   concurrency = 3,
+  shouldStop = () => false,
   logger
 }) {
   const safeLogger = logger ?? noOpLogger;
   const processed = [];
-  safeLogger(toLogLine('DEBUG', `prefetching queue with concurrency=${concurrency}`));
-  await preflight({ brainAccount, chromeProfile, headed });
-  while (true) {
-    const batch = await requestNext(serverUrl, { count: concurrency, workerId, brainAccount, chromeProfile });
-    if (batch.count === 0) {
-      safeLogger(toLogLine('DEBUG', 'no work available now'));
-      return processed;
-    }
-
-    safeLogger(toLogLine('INFO', `fetched ${batch.count} item(s), lease=${batch.leaseId}`));
-
-    const promises = batch.items.map((item) => executeQueuedItem({
-      serverUrl,
-      workerId,
+  const useSharedRuntime = executor === runBrainSimulation && preflight === preflightBrainAccess;
+  const runtime = useSharedRuntime
+    ? brainRuntimeFactory({
       brainAccount,
       chromeProfile,
-      brainUrl,
+      brainCredentials,
       headed,
-      requeueRetryable,
-      item,
-      leaseId: batch.leaseId,
-      executor,
-      logger: safeLogger
-    }));
+      sessionCount: concurrency
+    })
+    : null;
+  const effectivePreflight = runtime
+    ? async () => runtime.preflight()
+    : preflight;
+  const effectiveExecutor = runtime
+    ? async ({ expression }) => runtime.runSimulation(expression)
+    : executor;
 
-    const outcomes = await Promise.allSettled(promises);
+  safeLogger(toLogLine('DEBUG', `prefetching queue with concurrency=${concurrency}`));
 
-    for (const outcome of outcomes) {
-      if (outcome.status === 'fulfilled') {
-        processed.push(outcome.value);
-      } else {
-        safeLogger(toLogLine('ERROR', `batch error: ${outcome.reason?.message ?? outcome.reason}`));
-        throw outcome.reason;
+  try {
+    await effectivePreflight({ brainAccount, chromeProfile, brainCredentials, headed });
+    while (!shouldStop()) {
+      const batch = await requestNext(serverUrl, { count: concurrency, workerId, brainAccount, chromeProfile });
+      if (batch.count === 0) {
+        safeLogger(toLogLine('DEBUG', 'no work available now'));
+        return processed;
+      }
+
+      safeLogger(toLogLine('INFO', `fetched ${batch.count} item(s), lease=${batch.leaseId}`));
+
+      const promises = batch.items.map((item) => executeQueuedItem({
+        serverUrl,
+        workerId,
+        brainAccount,
+        chromeProfile,
+        brainUrl,
+        headed,
+        requeueRetryable,
+        brainCredentials,
+        item,
+        leaseId: batch.leaseId,
+        executor: effectiveExecutor,
+        logger: safeLogger
+      }));
+
+      const outcomes = await Promise.allSettled(promises);
+
+      for (const outcome of outcomes) {
+        if (outcome.status === 'fulfilled') {
+          processed.push(outcome.value);
+        } else {
+          safeLogger(toLogLine('ERROR', `batch error: ${outcome.reason?.message ?? outcome.reason}`));
+          throw outcome.reason;
+        }
       }
     }
+
+    safeLogger(toLogLine('INFO', 'stop requested, ending worker loop before next lease'));
+    return processed;
+  } finally {
+    await runtime?.close();
   }
 }

@@ -1,4 +1,6 @@
 #!/usr/bin/env node
+import os from 'node:os';
+import path from 'node:path';
 import process from 'node:process';
 import { runWorkerLoop } from '../src/harness/worker.js';
 import { findLoginEntryByIdAndPassword } from '../src/harness/login-map.js';
@@ -54,6 +56,10 @@ function logLine(prefix, message) {
   return `[${new Date().toISOString()}] [${prefix}] ${message}`;
 }
 
+function defaultChromeProfile(brainAccount) {
+  return path.join(os.tmpdir(), 'worldquant-multi-agent-harness', 'chrome-profiles', safeWorkerId(brainAccount));
+}
+
 function usage() {
   return [
     'Usage:',
@@ -67,6 +73,7 @@ function usage() {
     '  --server-url          Harness server URL (default: http://127.0.0.1:3000)',
     '  --brain-url           WorldQuant brain URL (default: https://platform.worldquantbrain.com)',
     '  --worker-id           Worker id (default: worker-<safe brain-id>)',
+    '  --chrome-profile      Chrome profile dir override (default: login map or temp profile)',
     '  --concurrency         Batch size for each requestNext call (default: 3)',
     '  --poll-interval-ms    Delay when queue is empty (default: 5000)',
     '  --error-retry-ms      Delay after unexpected loop errors (default: 30000)',
@@ -95,20 +102,23 @@ async function main() {
   }
 
   const loginEntry = findLoginEntryByIdAndPassword({ brainAccount, password });
-  if (!loginEntry) {
-    throw new Error(`missing_or_mismatched_credentials: no login entry found for ${brainAccount}`);
-  }
 
   const serverUrl = flags['server-url'] ?? DEFAULT_SERVER_URL;
   const brainUrl = flags['brain-url'] ?? DEFAULT_BRAIN_URL;
   const workerId = flags['worker-id'] ?? `worker-${safeWorkerId(brainAccount)}`;
+  const chromeProfile = flags['chrome-profile'] ?? loginEntry?.chromeProfileDir ?? defaultChromeProfile(brainAccount);
+  const brainCredentials = {
+    id: loginEntry?.id ?? brainAccount,
+    password: loginEntry?.password ?? password
+  };
   const concurrency = toNumber(flags.concurrency, 3);
   const pollIntervalMs = toNumber(flags['poll-interval-ms'], DEFAULT_POLL_INTERVAL_MS);
   const errorRetryMs = toNumber(flags['error-retry-ms'], DEFAULT_ERROR_RETRY_MS);
   const headed = parseBoolean(flags.headed, false);
   const requeueRetryable = parseBoolean(flags['requeue-retryable'], false);
 
-  process.stdout.write(`${logLine('INFO', `resolved worker ${workerId} for brain ${brainAccount} (profile=${loginEntry.chromeProfileDir})`)}\n`);
+  const credentialSource = loginEntry ? 'login-map' : 'cli';
+  process.stdout.write(`${logLine('INFO', `resolved worker ${workerId} for brain ${brainAccount} (profile=${chromeProfile}, credentials=${credentialSource}, concurrency=${concurrency})`)}\n`);
 
   let shouldStop = false;
   process.on('SIGINT', () => {
@@ -122,25 +132,31 @@ async function main() {
         serverUrl,
         workerId,
         brainAccount,
-        chromeProfile: loginEntry.chromeProfileDir,
+        chromeProfile,
+        brainCredentials,
         brainUrl,
         headed,
         requeueRetryable,
         concurrency,
         logger: (line) => {
           process.stdout.write(`${logLine('WORKER', line)}\n`);
-        }
+        },
+        shouldStop: () => shouldStop
       });
 
       if (processed.length === 0) {
-        process.stdout.write(`${logLine('WAIT', `no work, sleep ${pollIntervalMs}ms`)}\n`);
-        await sleep(pollIntervalMs);
+        if (!shouldStop) {
+          process.stdout.write(`${logLine('WAIT', `no work, sleep ${pollIntervalMs}ms`)}\n`);
+          await sleep(pollIntervalMs);
+        }
       } else {
         process.stdout.write(`${logLine('BATCH', `processed=${processed.length} items`)}\n`);
       }
     } catch (error) {
       process.stderr.write(`${logLine('ERROR', `worker_error: ${error.message}`)}\n`);
-      await sleep(errorRetryMs);
+      if (!shouldStop) {
+        await sleep(errorRetryMs);
+      }
     }
   }
 

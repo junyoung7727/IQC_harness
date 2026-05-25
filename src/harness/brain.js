@@ -56,9 +56,9 @@ async function gotoWithRetry(page, url, options = {}) {
   throw fallbackError;
 }
 
-async function launchBrainContext(chromeProfile, headed) {
+async function launchBrainBrowser(headed) {
   try {
-    return await chromium.launchPersistentContext(chromeProfile, { channel: 'chrome', headless: !headed });
+    return await chromium.launch({ channel: 'chrome', headless: !headed });
   } catch (error) {
     if (looksRetryable(error)) {
       const wrapped = createBrainError(`brain_context_launch_failed:${error.message}`, 'transient_browser_start', true);
@@ -263,6 +263,17 @@ async function ensureLoggedIn(page, credentials) {
   return { page: activePage, proof };
 }
 
+export function resolveBrainCredentials({ brainAccount, chromeProfile, brainCredentials }) {
+  if (brainCredentials?.id && brainCredentials?.password) {
+    return {
+      id: brainCredentials.id,
+      password: brainCredentials.password,
+      chromeProfileDir: chromeProfile ?? ''
+    };
+  }
+  return findLoginEntry({ brainAccount, chromeProfile });
+}
+
 async function fetchJsonInPage(page, url, options = {}) {
   return page.evaluate(async ({ url, options }) => {
     const headers = { ...(options.headers ?? {}) };
@@ -376,58 +387,241 @@ async function fetchAlphaResult(page, alphaId) {
   return response.text ? JSON.parse(response.text) : null;
 }
 
-export async function preflightBrainAccess({ brainAccount, chromeProfile, headed = false }) {
-  const credentials = findLoginEntry({ brainAccount, chromeProfile });
-  if (!credentials) {
-    throw createBrainError('missing_brain_credentials', 'credential_binding_error', false);
+function shouldRecycleSlot(error) {
+  if (!error) return false;
+  if (looksRetryable(error)) return true;
+  return [
+    'auth_session_expired',
+    'auth_state_proof_failed',
+    'transient_navigation_error'
+  ].includes(error.failureClass);
+}
+
+async function closeIfPossible(target) {
+  if (!target || typeof target.close !== 'function') return;
+  await target.close().catch(() => {});
+}
+
+async function normalizeSlotResource(resource) {
+  const pages = typeof resource?.context?.pages === 'function'
+    ? resource.context.pages().filter((page) => !page.isClosed())
+    : [];
+
+  if (pages.length > 0) {
+    const activePage = pages.includes(resource.page) && !resource.page.isClosed()
+      ? resource.page
+      : pages.at(-1);
+    const stalePages = pages.filter((page) => page !== activePage);
+    await Promise.all(stalePages.map((page) => closeIfPossible(page)));
+    resource.page = activePage;
   }
 
-  const context = await launchBrainContext(chromeProfile, headed);
+  return resource;
+}
+
+export function createBrainRuntime({
+  brainAccount,
+  chromeProfile,
+  brainCredentials,
+  headed = false,
+  sessionCount = 1
+}, dependencies = {}) {
+  const {
+    launchBrowser = launchBrainBrowser,
+    login = ensureLoggedIn,
+    submitSimulation = submitSimulationWithRelogin,
+    pollSimulationResult = pollSimulation,
+    fetchAlpha = fetchAlphaResult,
+    verifySession = verifyBrainSession,
+    sleepMs = sleep
+  } = dependencies;
+
+  const credentials = resolveBrainCredentials({ brainAccount, chromeProfile, brainCredentials });
+  const normalizedSessionCount = Math.max(1, Number.isFinite(sessionCount) ? Math.floor(sessionCount) : 1);
+  const slots = Array.from({ length: normalizedSessionCount }, () => ({ busy: false, resource: null }));
+  const waiters = [];
+  let browser = null;
+  let browserPromise = null;
+  let closed = false;
+
+  function assertOpen() {
+    if (closed) {
+      throw createBrainError('brain_runtime_closed', 'browser_runtime_closed', false);
+    }
+  }
+
+  async function ensureBrowserStarted() {
+    assertOpen();
+    if (browser) return browser;
+    if (!browserPromise) {
+      browserPromise = launchBrowser(headed)
+        .then((startedBrowser) => {
+          browser = startedBrowser;
+          return startedBrowser;
+        })
+        .finally(() => {
+          browserPromise = null;
+        });
+    }
+    return browserPromise;
+  }
+
+  async function createSlotResource() {
+    if (!credentials) {
+      throw createBrainError('missing_brain_credentials', 'credential_binding_error', false);
+    }
+
+    const activeBrowser = await ensureBrowserStarted();
+    const context = await activeBrowser.newContext();
+    try {
+      const page = await context.newPage();
+      const loginResult = await login(page, credentials);
+      return normalizeSlotResource({
+        context,
+        page: loginResult.page,
+        proof: loginResult.proof
+      });
+    } catch (error) {
+      await closeIfPossible(context);
+      throw error;
+    }
+  }
+
+  async function resetSlot(index) {
+    const slot = slots[index];
+    const resource = slot.resource;
+    slot.resource = null;
+    if (!resource) return;
+    await closeIfPossible(resource.context ?? resource.page);
+  }
+
+  function isReusable(resource) {
+    return Boolean(resource?.page) && typeof resource.page.isClosed === 'function' && !resource.page.isClosed();
+  }
+
+  async function getOrCreateSlot(index) {
+    const slot = slots[index];
+    if (isReusable(slot.resource)) {
+      return normalizeSlotResource(slot.resource);
+    }
+    await resetSlot(index);
+    const resource = await createSlotResource();
+    slot.resource = resource;
+    return resource;
+  }
+
+  async function acquireSlot() {
+    assertOpen();
+    while (true) {
+      const index = slots.findIndex((slot) => slot.busy === false);
+      if (index >= 0) {
+        slots[index].busy = true;
+        return index;
+      }
+      await new Promise((resolve) => waiters.push(resolve));
+      assertOpen();
+    }
+  }
+
+  function releaseSlot(index) {
+    const slot = slots[index];
+    if (!slot) return;
+    slot.busy = false;
+    const wake = waiters.shift();
+    wake?.();
+  }
+
+  async function runSimulationInSlot(index, expression, canRetry) {
+    try {
+      const slot = await getOrCreateSlot(index);
+      const submission = await submitSimulation(slot.page, credentials, expression);
+      await sleepMs(submission.retryAfterMs);
+      const simulation = await pollSimulationResult(slot.page, submission.location);
+      const alphaPayload = simulation.alpha ? await fetchAlpha(slot.page, simulation.alpha) : null;
+
+      if (simulation.status === 'ERROR' || simulation.status === 'FAIL') {
+        const error = new Error(simulation.message ?? simulation.status);
+        error.failureClass = 'simulation_error';
+        error.retryable = false;
+        throw error;
+      }
+
+      return {
+        settings: submission.settings,
+        metrics: {
+          simulationStatus: simulation.status ?? null,
+          simulationProgress: simulation.progress ?? null,
+          alphaId: simulation.alpha ?? null,
+          sharpe: alphaPayload?.is?.sharpe ?? null,
+          fitness: alphaPayload?.is?.fitness ?? null,
+          turnover: alphaPayload?.is?.turnover ?? null,
+          grade: alphaPayload?.grade ?? null
+        }
+      };
+    } catch (error) {
+      if (canRetry && shouldRecycleSlot(error)) {
+        await resetSlot(index);
+        return runSimulationInSlot(index, expression, false);
+      }
+      throw error;
+    }
+  }
+
+  return {
+    async preflight() {
+      const index = await acquireSlot();
+      try {
+        const slot = await getOrCreateSlot(index);
+        const proof = await verifySession(slot.page);
+        slot.proof = proof;
+        return proof;
+      } catch (error) {
+        if (shouldRecycleSlot(error)) {
+          await resetSlot(index);
+        }
+        throw error;
+      } finally {
+        releaseSlot(index);
+      }
+    },
+
+    async runSimulation(expression) {
+      const index = await acquireSlot();
+      try {
+        return await runSimulationInSlot(index, expression, true);
+      } finally {
+        releaseSlot(index);
+      }
+    },
+
+    async close() {
+      if (closed) return;
+      closed = true;
+      while (waiters.length > 0) {
+        waiters.shift()?.();
+      }
+      await Promise.all(slots.map((_, index) => resetSlot(index)));
+      const activeBrowser = browser;
+      browser = null;
+      await closeIfPossible(activeBrowser);
+    }
+  };
+}
+
+export async function preflightBrainAccess({ brainAccount, chromeProfile, brainCredentials, headed = false }) {
+  const runtime = createBrainRuntime({ brainAccount, chromeProfile, brainCredentials, headed, sessionCount: 1 });
   try {
-    const page = context.pages()[0] ?? await context.newPage();
-    const { proof } = await ensureLoggedIn(page, credentials);
-    return proof;
+    return await runtime.preflight();
   } finally {
-    await context.close();
+    await runtime.close();
   }
 }
 
-export async function runBrainSimulation({ brainAccount, chromeProfile, expression, headed = false }) {
-  const credentials = findLoginEntry({ brainAccount, chromeProfile });
-  if (!credentials) {
-    const error = createBrainError('missing_brain_credentials', 'credential_binding_error', false);
-    throw error;
-  }
-
-  const context = await launchBrainContext(chromeProfile, headed);
+export async function runBrainSimulation({ brainAccount, chromeProfile, brainCredentials, expression, headed = false }) {
+  const runtime = createBrainRuntime({ brainAccount, chromeProfile, brainCredentials, headed, sessionCount: 1 });
   try {
-    const page = context.pages()[0] ?? await context.newPage();
-    let { page: activePage } = await ensureLoggedIn(page, credentials);
-    const submission = await submitSimulationWithRelogin(activePage, credentials, expression);
-    await sleep(submission.retryAfterMs);
-    const simulation = await pollSimulation(activePage, submission.location);
-    const alphaPayload = simulation.alpha ? await fetchAlphaResult(activePage, simulation.alpha) : null;
-
-    if (simulation.status === 'ERROR' || simulation.status === 'FAIL') {
-      const error = new Error(simulation.message ?? simulation.status);
-      error.failureClass = 'simulation_error';
-      error.retryable = false;
-      throw error;
-    }
-
-    return {
-      settings: submission.settings,
-      metrics: {
-        simulationStatus: simulation.status ?? null,
-        simulationProgress: simulation.progress ?? null,
-        alphaId: simulation.alpha ?? null,
-        sharpe: alphaPayload?.is?.sharpe ?? null,
-        fitness: alphaPayload?.is?.fitness ?? null,
-        turnover: alphaPayload?.is?.turnover ?? null,
-        grade: alphaPayload?.grade ?? null
-      }
-    };
+    return await runtime.runSimulation(expression);
   } finally {
-    await context.close();
+    await runtime.close();
   }
 }

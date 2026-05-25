@@ -1,6 +1,23 @@
-Datafields & Operators Wiki 탐색 스킬
+# Datafields & Operators Wiki Lookup
 
-1단계 - 목적 정의: 찾고자 하는 필드가 측정하려는 경제적 상태나 연산의 목적을 한 문장으로 명확히 한다 (예: "애널리스트 기대와 옵션 리스크의 충돌 포착").
-2단계 - 카테고리 탐색: category-index.md 에서 목적에 맞는 대분류를 선택하고, 해당 카테고리의 서브카테고리 파일로 이동해 후보 필드명 목록만 스캔한다. 절대 전체 파일을 읽지 말고 키워드로 매칭한다.
-3단계 - 개별 파일 확인: 후보 필드 1-2 개를 특정 후 datafields/ 또는 operators/ 디렉토리에서 해당 파일만 열어 상세 설명, 인수 구조, 사용 예시를 확인한다.
-원칙: 항상 목적 → 카테고리 → 필드명 → 개별 파일 순으로 좁혀나가며, 한 번의 탐색에서 읽는 파일 수를 3 개 이하로 제한한다.
+## Goal
+Never guess names or syntax. Narrow the search from purpose to verified candidate.
+
+## 3-step protocol
+1. Define the purpose in one sentence.
+   - Example: "Capture conflict between analyst optimism and option-implied downside risk."
+2. Scan categories only.
+   - Read `docs/datafields-wiki/category-index.md` or `docs/operators-wiki/category-index.md`.
+   - Open only the matching sub-category file.
+   - Extract candidate names; do not read whole trees.
+3. Verify the candidate file.
+   - Confirm exact name.
+   - Confirm argument structure or arity.
+   - Confirm data type.
+   - Confirm region availability.
+
+## Hard limits
+- Read at most 3 wiki files per alpha draft.
+- Follow this order: purpose -> category -> candidate -> individual file.
+- Do not invent names from memory.
+- If a candidate is not documented, do not use it.

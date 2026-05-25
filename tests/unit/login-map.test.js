@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { normalizeChromeProfilePath, resolveLoginEntry } from '../../src/harness/login-map.js';
+import { loadLoginEntries, normalizeChromeProfilePath, resolveLoginEntry } from '../../src/harness/login-map.js';
 
 const entries = [
   {
@@ -80,4 +80,10 @@ test('resolveLoginEntry rejects ambiguous profile matches', () => {
     }),
     /ambiguous_chrome_profile/
   );
+});
+
+test('loadLoginEntries returns an empty list when the login map path is missing', () => {
+  const entries = loadLoginEntries('C:/__missing__/worldquant-login.md');
+
+  assert.deepEqual(entries, []);
 });

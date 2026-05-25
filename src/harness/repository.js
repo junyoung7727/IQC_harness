@@ -2,6 +2,30 @@ import { randomUUID } from 'node:crypto';
 import { computeSimilarity, deserializeCounts, parseExpression, serializeCounts } from './similarity.js';
 import { extractStructuredValues, materializeStructuredObject, METRICS_FIELDS, SETTINGS_FIELDS } from './result-schema.js';
 
+const VIEWER_STATUSES = new Set([
+  'pending',
+  'leased',
+  'running',
+  'tested',
+  'failed_retryable',
+  'failed_terminal'
+]);
+
+const VIEWER_SELECT_COLUMNS = [
+  'alpha_id',
+  'expression',
+  'hypothesis',
+  'status',
+  'attempt_count',
+  'last_error_class',
+  'max_similarity_at_submit',
+  'closest_alpha_id_at_submit',
+  'created_at',
+  'updated_at',
+  ...SETTINGS_FIELDS.map((field) => field.column),
+  ...METRICS_FIELDS.map((field) => field.column)
+].join(', ');
+
 function nowIso() {
   return new Date().toISOString();
 }
@@ -42,6 +66,41 @@ function rowToAlpha(row) {
     createdAt: row.created_at,
     updatedAt: row.updated_at
   };
+}
+
+function rowToViewerAlpha(row) {
+  if (!row) return null;
+  return {
+    alphaId: row.alpha_id,
+    expression: row.expression,
+    hypothesis: row.hypothesis,
+    status: row.status,
+    attemptCount: row.attempt_count,
+    lastErrorClass: row.last_error_class,
+    maxSimilarityAtSubmit: row.max_similarity_at_submit,
+    closestAlphaIdAtSubmit: row.closest_alpha_id_at_submit,
+    settings: materializeStructuredObject(row, SETTINGS_FIELDS),
+    metrics: materializeStructuredObject(row, METRICS_FIELDS),
+    createdAt: row.created_at,
+    updatedAt: row.updated_at
+  };
+}
+
+function clampViewerLimit(limit) {
+  const numeric = Number(limit);
+  if (!Number.isFinite(numeric)) return 50;
+  return Math.min(Math.max(Math.trunc(numeric), 1), 100);
+}
+
+function normalizeViewerStatus(status) {
+  if (status === undefined || status === null || status === '') {
+    return null;
+  }
+  const normalized = String(status).trim();
+  if (!VIEWER_STATUSES.has(normalized)) {
+    throw new Error('invalid_viewer_status');
+  }
+  return normalized;
 }
 
 export class HarnessRepository {
@@ -264,9 +323,51 @@ export class HarnessRepository {
     return { status: 'accepted', alphaId, state: 'pending' };
   }
 
+  resetLeasedAndRetryableToPending() {
+    const before = {
+      leased: this.listAlphaIdsByStatus('leased').length,
+      failedRetryable: this.listAlphaIdsByStatus('failed_retryable').length,
+      pending: this.listAlphaIdsByStatus('pending').length
+    };
+    const timestamp = nowIso();
+    const result = this.db.prepare(`
+      UPDATE alphas
+      SET status = 'pending', lease_id = NULL, leased_to = NULL, updated_at = ?
+      WHERE status IN ('leased', 'failed_retryable')
+    `).run(timestamp);
+    const after = {
+      leased: this.listAlphaIdsByStatus('leased').length,
+      failedRetryable: this.listAlphaIdsByStatus('failed_retryable').length,
+      pending: this.listAlphaIdsByStatus('pending').length
+    };
+    return {
+      status: 'accepted',
+      resetCount: result.changes,
+      before,
+      after
+    };
+  }
+
   getAlpha(alphaId) {
     const row = this.db.prepare('SELECT * FROM alphas WHERE alpha_id = ?').get(alphaId);
     return rowToAlpha(row);
+  }
+
+  listViewerAlphas({ status = null, limit = 50 } = {}) {
+    const normalizedStatus = normalizeViewerStatus(status);
+    const boundedLimit = clampViewerLimit(limit);
+    const query = normalizedStatus
+      ? `SELECT ${VIEWER_SELECT_COLUMNS} FROM alphas WHERE status = ? ORDER BY alpha_id DESC LIMIT ?`
+      : `SELECT ${VIEWER_SELECT_COLUMNS} FROM alphas ORDER BY alpha_id DESC LIMIT ?`;
+    const rows = normalizedStatus
+      ? this.db.prepare(query).all(normalizedStatus, boundedLimit)
+      : this.db.prepare(query).all(boundedLimit);
+    return rows.map(rowToViewerAlpha);
+  }
+
+  getViewerAlpha(alphaId) {
+    const row = this.db.prepare(`SELECT ${VIEWER_SELECT_COLUMNS} FROM alphas WHERE alpha_id = ?`).get(alphaId);
+    return rowToViewerAlpha(row);
   }
 
   listAlphaIdsByStatus(status) {

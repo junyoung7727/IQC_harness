@@ -7,10 +7,13 @@ export function makeTempDir(prefix) {
   return mkdtempSync(join(tmpdir(), prefix));
 }
 
-export async function startHarnessTestServer(prefix = 'harness-db-') {
-  const dir = makeTempDir(prefix);
+export async function startHarnessTestServer(optionsOrPrefix = 'harness-db-') {
+  const options = typeof optionsOrPrefix === 'string'
+    ? { prefix: optionsOrPrefix }
+    : { ...(optionsOrPrefix ?? {}) };
+  const dir = makeTempDir(options.prefix ?? 'harness-db-');
   const dbPath = join(dir, 'harness.db');
-  const started = await startServer({ dbPath, port: 0 });
+  const started = await startServer({ ...options, dbPath, port: 0 });
   return {
     ...started,
     async cleanup() {

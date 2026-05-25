@@ -1,11 +1,13 @@
 # Central Server Spec
 
 ## Scope
-The central server does only four things:
+The central server does only four private automation things:
 - intake alpha submissions
 - reject near-duplicates before storage
 - serve queued work to Brain execution agents
 - store observed simulation results
+
+The central server also provides one separate read-only viewer surface for public observation.
 
 The central server does not log into WorldQuant BRAIN, does not run browser automation, and does not invent new alphas.
 
@@ -103,6 +105,17 @@ Stored alpha states:
 
 Unstored outcome:
 - `rejected_similarity` - returned to the submitting agent but not saved as a stored alpha
+
+## Viewer surface
+The server exposes a separate read-only HTML viewer under `/viewer`.
+
+Viewer rules:
+- the viewer is authenticated independently from the private JSON automation APIs
+- the viewer is read-only and exposes no database write action
+- the viewer must not reuse the full private `getAlpha` payload
+- the viewer must use an explicit allowlist of fields for list and detail pages
+- the viewer must not expose `lease_id`, `leased_to`, `brain_account_id`, `chrome_profile_id`, or raw `last_error_message`
+- viewer HTML responses should send defensive security headers
 
 ## Authority rule
 The central server database is the source of truth for:

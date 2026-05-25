@@ -12,8 +12,17 @@ function pick(block, key) {
   return match ? match[1].trim() : '';
 }
 
-export function loadLoginEntries() {
-  const text = readFileSync(LOGIN_MAP_PATH, 'utf8');
+export function loadLoginEntries(loginMapPath = LOGIN_MAP_PATH) {
+  let text;
+  try {
+    text = readFileSync(loginMapPath, 'utf8');
+  } catch (error) {
+    if (error?.code === 'ENOENT') {
+      return [];
+    }
+    throw error;
+  }
+
   return parseBlocks(text)
     .filter((block) => /agent:\s*/.test(block))
     .map((block) => ({

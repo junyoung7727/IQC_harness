@@ -5,7 +5,7 @@ import { execFile } from 'node:child_process';
 import { promisify } from 'node:util';
 import { DatabaseSync } from 'node:sqlite';
 import { join } from 'node:path';
-import { getAlpha, reportFailure, requestNext, requeue, submitAlpha, submitResult, markRunning } from '../../src/harness/client.js';
+import { getAlpha, reportFailure, requestNext, requeue, resetPendingStates, submitAlpha, submitResult, markRunning } from '../../src/harness/client.js';
 import { normalizeCurrentHarnessDb } from '../../src/harness/admin.js';
 import { startServer } from '../../src/harness/server.js';
 import { makeTempDir, startHarnessTestServer } from '../helpers.js';
@@ -14,6 +14,17 @@ const execFileAsync = promisify(execFile);
 
 function closeServer(server) {
   return new Promise((resolve) => server.close(resolve));
+}
+
+function viewerAuthHeaders(username = 'viewer', password = 'secret') {
+  return {
+    authorization: `Basic ${Buffer.from(`${username}:${password}`).toString('base64')}`
+  };
+}
+
+async function fetchText(url, options) {
+  const response = await fetch(url, options);
+  return { response, body: await response.text() };
 }
 
 test('submit accepts novel alpha and rejects near-duplicate before storage', async () => {
@@ -239,6 +250,58 @@ test('normalizeCurrentHarnessDb clears stale terminal leases and requeues 401 su
   }
 });
 
+test('admin reset endpoint moves leased and failed_retryable rows back to pending', async () => {
+  const harness = await startHarnessTestServer();
+  try {
+    const leasedAlpha = await submitAlpha(harness.baseUrl, 'rank(ts_delta(close, 5))');
+    const retryableAlpha = await submitAlpha(harness.baseUrl, 'rank(ts_delta(open, 5))');
+    const terminalAlpha = await submitAlpha(harness.baseUrl, 'rank(ts_delta(low, 5))');
+    const leased = await requestNext(harness.baseUrl, { count: 3, workerId: 'w1', brainAccount: 'a1', chromeProfile: 'p1' });
+
+    await markRunning(harness.baseUrl, { alphaId: retryableAlpha.alphaId, leaseId: leased.leaseId });
+    await reportFailure(harness.baseUrl, {
+      alphaId: retryableAlpha.alphaId,
+      leaseId: leased.leaseId,
+      workerId: 'w1',
+      brainAccount: 'a1',
+      chromeProfile: 'p1',
+      retryable: true,
+      failureClass: 'retryable_platform',
+      failureMessage: 'temp'
+    });
+
+    await markRunning(harness.baseUrl, { alphaId: terminalAlpha.alphaId, leaseId: leased.leaseId });
+    await reportFailure(harness.baseUrl, {
+      alphaId: terminalAlpha.alphaId,
+      leaseId: leased.leaseId,
+      workerId: 'w1',
+      brainAccount: 'a1',
+      chromeProfile: 'p1',
+      retryable: false,
+      failureClass: 'terminal_platform',
+      failureMessage: 'bad'
+    });
+
+    const summary = await resetPendingStates(harness.baseUrl);
+    assert.equal(summary.status, 'accepted');
+    assert.equal(summary.before.leased, 1);
+    assert.equal(summary.before.failedRetryable, 1);
+    assert.equal(summary.after.leased, 0);
+    assert.equal(summary.after.failedRetryable, 0);
+
+    const leasedRow = await getAlpha(harness.baseUrl, leasedAlpha.alphaId);
+    const retryableRow = await getAlpha(harness.baseUrl, retryableAlpha.alphaId);
+    const terminalRow = await getAlpha(harness.baseUrl, terminalAlpha.alphaId);
+    assert.equal(leasedRow.status, 'pending');
+    assert.equal(retryableRow.status, 'pending');
+    assert.equal(terminalRow.status, 'failed_terminal');
+    assert.equal(leasedRow.leaseId, null);
+    assert.equal(retryableRow.leaseId, null);
+  } finally {
+    await harness.cleanup();
+  }
+});
+
 test('server migrates legacy JSON result blobs into structured columns', async () => {
   const dir = makeTempDir('harness-legacy-db-');
   const dbPath = join(dir, 'harness.db');
@@ -336,5 +399,135 @@ test('server migrates legacy JSON result blobs into structured columns', async (
     await closeServer(harness.server);
     harness.repo.db.close();
     rmSync(dir, { recursive: true, force: true });
+  }
+});
+
+test('viewer requires basic auth', async () => {
+  const harness = await startHarnessTestServer({ viewerAuth: { username: 'viewer', password: 'secret' } });
+  try {
+    const { response, body } = await fetchText(`${harness.baseUrl}/viewer`);
+    assert.equal(response.status, 401);
+    assert.equal(response.headers.get('www-authenticate'), 'Basic realm="viewer", charset="UTF-8"');
+    assert.match(body, /viewer_auth_required/);
+  } finally {
+    await harness.cleanup();
+  }
+});
+
+test('viewer rate limits repeated unauthorized basic auth attempts', async () => {
+  const harness = await startHarnessTestServer({
+    viewerAuth: { username: 'viewer', password: 'secret' },
+    viewerRateLimit: { maxUnauthorizedAttempts: 2, windowMs: 60_000, blockDurationMs: 5_000 }
+  });
+  try {
+    const first = await fetchText(`${harness.baseUrl}/viewer`, {
+      headers: viewerAuthHeaders('viewer', 'wrong-secret')
+    });
+    assert.equal(first.response.status, 401);
+    assert.equal(first.response.headers.get('www-authenticate'), 'Basic realm="viewer", charset="UTF-8"');
+    assert.match(first.body, /viewer_auth_required/);
+
+    const second = await fetchText(`${harness.baseUrl}/viewer`, {
+      headers: viewerAuthHeaders('viewer', 'wrong-secret')
+    });
+    assert.equal(second.response.status, 401);
+    assert.match(second.body, /viewer_auth_required/);
+
+    const third = await fetchText(`${harness.baseUrl}/viewer`, {
+      headers: viewerAuthHeaders('viewer', 'wrong-secret')
+    });
+    assert.equal(third.response.status, 429);
+    assert.equal(third.response.headers.get('retry-after'), '5');
+    assert.match(third.body, /viewer_rate_limited/);
+  } finally {
+    await harness.cleanup();
+  }
+});
+
+test('viewer serves authenticated read-only html with security headers and allowlisted fields', async () => {
+  const harness = await startHarnessTestServer({ viewerAuth: { username: 'viewer', password: 'secret' } });
+  try {
+    const accepted = await submitAlpha(
+      harness.baseUrl,
+      'rank(ts_delta(close, 5))',
+      'agent-a',
+      'Public thesis for tested alpha.'
+    );
+    const leased = await requestNext(harness.baseUrl, { count: 1, workerId: 'worker-a', brainAccount: 'brain-a', chromeProfile: 'profile-a' });
+    await markRunning(harness.baseUrl, { alphaId: accepted.alphaId, leaseId: leased.leaseId });
+    await submitResult(harness.baseUrl, {
+      alphaId: accepted.alphaId,
+      leaseId: leased.leaseId,
+      workerId: 'worker-a',
+      brainAccount: 'brain-a',
+      chromeProfile: 'profile-a',
+      settings: { delay: 1, universe: 'TOP3000' },
+      metrics: { sharpe: 1.2, fitness: 0.9, grade: 'A' }
+    });
+
+    const { response, body } = await fetchText(`${harness.baseUrl}/viewer/alphas/${accepted.alphaId}`, {
+      headers: viewerAuthHeaders()
+    });
+    assert.equal(response.status, 200);
+    assert.equal(response.headers.get('content-type'), 'text/html; charset=utf-8');
+    assert.equal(response.headers.get('cache-control'), 'no-store');
+    assert.equal(response.headers.get('x-frame-options'), 'DENY');
+    assert.equal(response.headers.get('x-content-type-options'), 'nosniff');
+    assert.match(response.headers.get('content-security-policy'), /default-src 'none'/);
+    assert.match(body, /Harness viewer alpha/);
+    assert.match(body, /Public thesis for tested alpha/);
+    assert.match(body, /TOP3000/);
+    assert.match(body, /1\.2/);
+    assert.doesNotMatch(body, /worker-a/);
+    assert.doesNotMatch(body, /brain-a/);
+    assert.doesNotMatch(body, /profile-a/);
+    assert.doesNotMatch(body, new RegExp(leased.leaseId));
+  } finally {
+    await harness.cleanup();
+  }
+});
+
+test('viewer escapes html and omits raw failure messages', async () => {
+  const harness = await startHarnessTestServer({ viewerAuth: { username: 'viewer', password: 'secret' } });
+  try {
+    const hypothesis = '<img src=x onerror=alert(1)>';
+    const accepted = await submitAlpha(harness.baseUrl, 'rank(ts_delta(close, 5))', 'agent-a', hypothesis);
+    const leased = await requestNext(harness.baseUrl, { count: 1, workerId: 'worker-a', brainAccount: 'brain-a', chromeProfile: 'profile-a' });
+    await markRunning(harness.baseUrl, { alphaId: accepted.alphaId, leaseId: leased.leaseId });
+    await reportFailure(harness.baseUrl, {
+      alphaId: accepted.alphaId,
+      leaseId: leased.leaseId,
+      workerId: 'worker-a',
+      brainAccount: 'brain-a',
+      chromeProfile: 'profile-a',
+      retryable: false,
+      failureClass: 'submission_error',
+      failureMessage: '<script>top-secret failure</script>'
+    });
+
+    const { response, body } = await fetchText(`${harness.baseUrl}/viewer/alphas/${accepted.alphaId}`, {
+      headers: viewerAuthHeaders()
+    });
+    assert.equal(response.status, 200);
+    assert.match(body, /&lt;img src=x onerror=alert\(1\)&gt;/);
+    assert.doesNotMatch(body, /<img src=x onerror=alert\(1\)>/);
+    assert.match(body, /submission_error/);
+    assert.doesNotMatch(body, /top-secret failure/);
+    assert.doesNotMatch(body, /<script>/);
+  } finally {
+    await harness.cleanup();
+  }
+});
+
+test('viewer auth does not change existing private json api behavior', async () => {
+  const harness = await startHarnessTestServer({ viewerAuth: { username: 'viewer', password: 'secret' } });
+  try {
+    const accepted = await submitAlpha(harness.baseUrl, 'rank(ts_delta(close, 5))', 'agent-a', 'Private API still works.');
+    const stored = await getAlpha(harness.baseUrl, accepted.alphaId);
+    assert.equal(stored.submittedBy, 'agent-a');
+    assert.equal(stored.hypothesis, 'Private API still works.');
+    assert.equal(stored.status, 'pending');
+  } finally {
+    await harness.cleanup();
   }
 });

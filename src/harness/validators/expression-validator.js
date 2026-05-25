@@ -542,4 +542,27 @@ export function validateAlphaExpression(expr) {
   const allTokens = collectNestedTokens(tokens, errors);
   for (const token of allTokens) {
     if (token.type === 'function') {
-    
+      const operator = operatorMap.get(token.name.toLowerCase());
+      if (!operator) {
+        errors.push(`Unknown operator: '${token.name}' (not found in IQC_brain_operators.csv)`);
+        continue;
+      }
+
+      const arityResult = validateOperatorArity(token.name, token.args, operator);
+      if (!arityResult.valid) {
+        errors.push(arityResult.message);
+      }
+      continue;
+    }
+
+    if (!datafieldNames.has(token.name) && !datafieldNames.has(token.name.toLowerCase())) {
+      errors.push(`Unknown datafield: '${token.name}' (not found in IQC_brain_datafields.csv)`);
+    }
+  }
+
+  return {
+    valid: errors.length === 0,
+    errors,
+    warnings
+  };
+}

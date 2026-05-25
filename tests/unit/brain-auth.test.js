@@ -1,6 +1,6 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
-import { assertAuthenticatedNavigationState } from '../../src/harness/brain.js';
+import { assertAuthenticatedNavigationState, resolveBrainCredentials } from '../../src/harness/brain.js';
 
 test('assertAuthenticatedNavigationState rejects sign-in redirects', () => {
   assert.throws(
@@ -32,4 +32,30 @@ test('assertAuthenticatedNavigationState accepts the live simulate page when sig
       protectedStatus: 200
     });
   });
+});
+
+test('resolveBrainCredentials prefers explicit runtime credentials over the login map', () => {
+  const credentials = resolveBrainCredentials({
+    brainAccount: 'brain-a',
+    chromeProfile: 'profile-a',
+    brainCredentials: {
+      id: 'runtime@example.com',
+      password: 'secret'
+    }
+  });
+
+  assert.deepEqual(credentials, {
+    id: 'runtime@example.com',
+    password: 'secret',
+    chromeProfileDir: 'profile-a'
+  });
+});
+
+test('resolveBrainCredentials returns null when no runtime credentials or login binding exist', () => {
+  const credentials = resolveBrainCredentials({
+    brainAccount: 'missing@example.com',
+    chromeProfile: 'missing-profile'
+  });
+
+  assert.equal(credentials, null);
 });

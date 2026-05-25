@@ -2,7 +2,7 @@
 import { mkdirSync } from 'node:fs';
 import { dirname, resolve } from 'node:path';
 import { pathToFileURL } from 'node:url';
-import { submitAlpha, requestNext, submitResult, reportFailure } from './client.js';
+import { submitAlpha, requestNext, submitResult, reportFailure, resetPendingStates } from './client.js';
 import { startServer } from './server.js';
 import { runWorkerLoop } from './worker.js';
 import { validateAlphaExpression } from './validators/expression-validator.js';
@@ -140,6 +140,21 @@ async function main() {
       requeueRetryable: flags['requeue-retryable'] === 'true'
     });
     output(['status=accepted', `processed=${JSON.stringify(result)}`]);
+    return;
+  }
+
+  if (command === 'admin' && subcommand === 'reset-pending') {
+    const result = await resetPendingStates(serverUrl);
+    output([
+      'status=accepted',
+      `reset_count=${result.resetCount}`,
+      `before_leased=${result.before.leased}`,
+      `before_failed_retryable=${result.before.failedRetryable}`,
+      `before_pending=${result.before.pending}`,
+      `after_leased=${result.after.leased}`,
+      `after_failed_retryable=${result.after.failedRetryable}`,
+      `after_pending=${result.after.pending}`
+    ]);
     return;
   }
 

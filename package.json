@@ -10,7 +10,8 @@
     "start:server": "node ./src/harness/server.js",
     "worker": "node ./src/harness/cli.js worker run",
     "worker:continuous": "node ./scripts/continuous-worker-from-credentials.mjs",
-    "normalize-db": "node ./scripts/normalize-current-db.mjs"
+    "normalize-db": "node ./scripts/normalize-current-db.mjs",
+    "export-db-csv": "node ./scripts/export-db-csv.mjs"
   },
   "dependencies": {
     "playwright": "1.60.0"

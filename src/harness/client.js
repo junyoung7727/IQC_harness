@@ -56,6 +56,13 @@ export async function requeue(baseUrl, alphaId) {
   });
 }
 
+export async function resetPendingStates(baseUrl) {
+  return requestJson(`${base(baseUrl)}/admin/reset-pending`, {
+    method: 'POST',
+    body: JSON.stringify({})
+  });
+}
+
 export async function getAlpha(baseUrl, alphaId) {
   return requestJson(`${base(baseUrl)}/alphas/${alphaId}`, { method: 'GET', headers: {} });
 }

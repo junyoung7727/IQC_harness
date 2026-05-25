@@ -147,3 +147,183 @@ test('worker loop executes up to 3 items in parallel for each batch', async () =
     await harness.cleanup();
   }
 });
+
+test('worker loop forwards runtime brain credentials to preflight and executor', async () => {
+  const harness = await startHarnessTestServer();
+  try {
+    await submitAlpha(harness.baseUrl, 'rank(ts_delta(close, 5))', 'agent-a');
+
+    const brainCredentials = {
+      id: 'runtime@example.com',
+      password: 'secret'
+    };
+    const seen = [];
+
+    const processed = await runWorkerLoop({
+      serverUrl: harness.baseUrl,
+      workerId: 'worker-1',
+      brainAccount: 'brain-a',
+      chromeProfile: 'profile-a',
+      brainCredentials,
+      preflight: async (args) => {
+        seen.push({ stage: 'preflight', args });
+        return { currentUrl: 'https://platform.worldquantbrain.com/simulate', protectedStatus: 200 };
+      },
+      executor: async (args) => {
+        seen.push({ stage: 'executor', args });
+        return {
+          settings: { delay: 1 },
+          metrics: { sharpe: 1, fitness: 1 }
+        };
+      }
+    });
+
+    assert.equal(processed.length, 1);
+    assert.deepEqual(seen[0], {
+      stage: 'preflight',
+      args: {
+        brainAccount: 'brain-a',
+        chromeProfile: 'profile-a',
+        brainCredentials,
+        headed: false
+      }
+    });
+    assert.equal(seen[1].stage, 'executor');
+    assert.deepEqual(seen[1].args.brainCredentials, brainCredentials);
+    assert.equal(seen[1].args.chromeProfile, 'profile-a');
+    assert.equal(seen[1].args.brainAccount, 'brain-a');
+  } finally {
+    await harness.cleanup();
+  }
+});
+
+test('worker loop reuses one shared brain runtime and closes it after processing', async () => {
+  const harness = await startHarnessTestServer();
+  try {
+    await submitAlpha(harness.baseUrl, 'rank(ts_delta(close, 5))', 'agent-a');
+    await submitAlpha(harness.baseUrl, 'rank(ts_delta(low, 5))', 'agent-a');
+
+    const seen = {
+      factoryArgs: null,
+      preflightCalls: 0,
+      closeCalls: 0,
+      expressions: []
+    };
+
+    const processed = await runWorkerLoop({
+      serverUrl: harness.baseUrl,
+      workerId: 'worker-1',
+      brainAccount: 'brain-a',
+      chromeProfile: 'profile-a',
+      brainCredentials: { id: 'runtime@example.com', password: 'secret' },
+      concurrency: 2,
+      brainRuntimeFactory: (args) => {
+        seen.factoryArgs = args;
+        return {
+          async preflight() {
+            seen.preflightCalls += 1;
+            return { currentUrl: 'https://platform.worldquantbrain.com/simulate', protectedStatus: 200 };
+          },
+          async runSimulation(expression) {
+            seen.expressions.push(expression);
+            return {
+              settings: { delay: 1 },
+              metrics: { sharpe: 1, fitness: 1 }
+            };
+          },
+          async close() {
+            seen.closeCalls += 1;
+          }
+        };
+      }
+    });
+
+    assert.equal(processed.length, 2);
+    assert.equal(seen.preflightCalls, 1);
+    assert.equal(seen.closeCalls, 1);
+    assert.equal(seen.factoryArgs.sessionCount, 2);
+    assert.equal(seen.factoryArgs.brainAccount, 'brain-a');
+    assert.equal(seen.factoryArgs.chromeProfile, 'profile-a');
+    assert.deepEqual(seen.expressions.sort(), [
+      'rank(ts_delta(close, 5))',
+      'rank(ts_delta(low, 5))'
+    ]);
+  } finally {
+    await harness.cleanup();
+  }
+});
+
+test('worker loop closes shared brain runtime when preflight fails', async () => {
+  const harness = await startHarnessTestServer();
+  try {
+    await submitAlpha(harness.baseUrl, 'rank(ts_delta(close, 5))', 'agent-a');
+
+    let closeCalls = 0;
+
+    await assert.rejects(
+      () => runWorkerLoop({
+        serverUrl: harness.baseUrl,
+        workerId: 'worker-1',
+        brainAccount: 'brain-a',
+        chromeProfile: 'profile-a',
+        brainRuntimeFactory: () => ({
+          async preflight() {
+            const error = new Error('runtime preflight blocked');
+            error.failureClass = 'auth_state_proof_failed';
+            error.retryable = false;
+            throw error;
+          },
+          async runSimulation() {
+            throw new Error('should not run');
+          },
+          async close() {
+            closeCalls += 1;
+          }
+        })
+      }),
+      /runtime preflight blocked/
+    );
+
+    assert.equal(closeCalls, 1);
+  } finally {
+    await harness.cleanup();
+  }
+});
+
+test('worker loop stops before requesting another lease after stop is requested during a batch', async () => {
+  const harness = await startHarnessTestServer();
+  try {
+    const a1 = await submitAlpha(harness.baseUrl, 'rank(ts_delta(close, 5))', 'agent-a');
+    const a2 = await submitAlpha(harness.baseUrl, 'rank(ts_delta(low, 5))', 'agent-a');
+
+    let shouldStop = false;
+    let executorRuns = 0;
+    const processed = await runWorkerLoop({
+      serverUrl: harness.baseUrl,
+      workerId: 'worker-1',
+      brainAccount: 'brain-a',
+      chromeProfile: 'profile-a',
+      concurrency: 1,
+      shouldStop: () => shouldStop,
+      preflight: async () => ({ currentUrl: 'https://platform.worldquantbrain.com/simulate', protectedStatus: 200 }),
+      executor: async () => {
+        executorRuns += 1;
+        shouldStop = true;
+        return {
+          settings: { delay: 1 },
+          metrics: { sharpe: 1, fitness: 1 }
+        };
+      }
+    });
+
+    assert.equal(executorRuns, 1);
+    assert.equal(processed.length, 1);
+    assert.equal(processed[0].alphaId, a1.alphaId);
+    const stored1 = await getAlpha(harness.baseUrl, a1.alphaId);
+    const stored2 = await getAlpha(harness.baseUrl, a2.alphaId);
+    assert.equal(stored1.status, 'tested');
+    assert.equal(stored2.status, 'pending');
+  } finally {
+    await harness.cleanup();
+  }
+});
